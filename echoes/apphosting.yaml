@@ -1,0 +1,15 @@
+# Google Firebase App Hosting configuration. Uses standard Next.js for Google deployment.
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 40
+  cpu: 1
+  memoryMiB: 512
+scripts:
+  buildCommand: npm run build:next
+  runCommand: npm run start:next
+outputFiles:
+  serverApp:
+    include: [.]
+# Add GEMINI_API_KEY and GOOGLE_MAPS_BROWSER_KEY in Firebase App Hosting's
+# Environment settings. Keep GEMINI_API_KEY a server-only Secret Manager secret.
