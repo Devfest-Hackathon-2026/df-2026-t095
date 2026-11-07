@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function preferences(data) {
+      return data.preferences is list && data.preferences.size() >= 1 && data.preferences.size() <= 6
+        && data.preferences.hasOnly(['water', 'green', 'quiet', 'walk', 'cafes', 'history'])
+        && data.destination is string && data.destination.size() <= 100;
+    }
+    match /users/{uid}/favorites/{id} {
+      allow read, delete: if owner(uid);
+      allow create, update: if owner(uid)
+        && request.resource.data.keys().hasOnly(['placeId', 'sampleId', 'savedAt'])
+        && request.resource.data.placeId is string && request.resource.data.placeId.size() <= 256
+        && request.resource.data.sampleId is string && request.resource.data.sampleId.size() <= 64
+        && (request.resource.data.placeId.size() > 0 || request.resource.data.sampleId.size() > 0)
+        && request.resource.data.savedAt == request.time;
+    }
+    match /users/{uid}/settings/discovery {
+      allow read: if owner(uid);
+      allow create, update: if owner(uid) && preferences(request.resource.data)
+        && request.resource.data.keys().hasOnly(['preferences', 'destination', 'updatedAt'])
+        && request.resource.data.updatedAt == request.time;
+    }
+    match /shares/{id} {
+      allow get: if id.size() <= 64;
+      allow list: if false;
+      allow create: if request.auth != null && preferences(request.resource.data)
+        && request.resource.data.keys().hasOnly(['sourcePlaceId', 'sourceSampleId', 'preferences', 'destination', 'createdBy', 'createdAt'])
+        && request.resource.data.sourcePlaceId is string && request.resource.data.sourcePlaceId.size() <= 256
+        && request.resource.data.sourceSampleId is string && request.resource.data.sourceSampleId.size() <= 64
+        && request.resource.data.createdBy == request.auth.uid && request.resource.data.createdAt == request.time;
+      allow delete: if request.auth != null && resource.data.createdBy == request.auth.uid;
+    }
+  }
+}

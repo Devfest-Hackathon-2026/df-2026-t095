@@ -7,16 +7,22 @@
   },
   "scripts": {
     "install:ci": "node scripts/install-ci.mjs",
-    "dev": "node scripts/run-framework.mjs dev",
-    "build": "node scripts/run-framework.mjs build",
-    "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
+    "dev": "next dev --hostname 127.0.0.1 --port 5173",
+    "build": "next build --webpack",
+    "start": "next start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "dev:next": "next dev",
     "build:next": "next build --webpack",
     "start:next": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/*.test.ts"
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "dev:sites": "node scripts/run-framework.mjs dev",
+    "build:sites": "node scripts/run-framework.mjs build",
+    "start:sites": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
+    "google:setup": "node scripts/google/setup.mjs",
+    "google:check": "node --env-file=.env.local scripts/google/doctor.mjs",
+    "google:rules": "node scripts/google/deploy-rules.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -44,7 +50,9 @@
     "vaul": "^1.1.2",
     "zod": "^3.25.76",
     "leaflet": "1.9.4",
-    "@phosphor-icons/react": "^2.1.10"
+    "@phosphor-icons/react": "^2.1.10",
+    "firebase": "^13.2.0",
+    "google-auth-library": "^11.3.3"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",

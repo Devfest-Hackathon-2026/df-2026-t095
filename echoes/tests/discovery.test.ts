@@ -11,7 +11,7 @@ test("changing the user's priorities changes the recommendations", () => {
 });
 test("destination constraints apply before ranking", () => {
   assert.ok(rankPlaces(places[0], ["water"], "Asia").every(p => p.continent === "Asia"));
-  assert.equal(rankPlaces(places[0], ["water"], "Seoul")[0].id, "seoul");
+  assert.equal(rankPlaces(places[0], ["water"], "ソウル")[0].id, "seoul");
   assert.deepEqual(rankPlaces(places[0], [], "world"), []);
   assert.deepEqual(rankPlaces(places[0], ["water"], "Atlantis"), []);
 });
@@ -28,5 +28,5 @@ test("unsafe model-provided URLs cannot become links", () => {
 test("distance is symmetric and map links encode place names", () => {
   assert.equal(distanceKm(places[0], places[0]), 0);
   assert.equal(distanceKm(places[0], places[1]), distanceKm(places[1], places[0]));
-  assert.equal(new URL(mapsUrl(places[0])).searchParams.get("query"), "Kamo River, Kyoto");
+  assert.equal(new URL(mapsUrl(places[0])).searchParams.get("query"), "鴨川, 京都");
 });
