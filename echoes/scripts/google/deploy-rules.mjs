@@ -3,7 +3,7 @@ import {execFileSync} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
 const project='devfest-hackathon-hexagon';
 const token=execFileSync('gcloud',['auth','print-access-token','--project',project],{encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
-const headers={Authorization:`Bearer ${token}`,'Content-Type':'application/json'};
+const headers={Authorization:`Bearer ${token}`,'Content-Type':'application/json','x-goog-user-project':project};
 const source=await readFile('firestore.rules','utf8');
 async function api(path,method,body){const r=await fetch(`https://firebaserules.googleapis.com/v1/${path}`,{method,headers,body:JSON.stringify(body)});const data=await r.json();if(!r.ok)throw new Error(data.error?.message||'ルールを反映できませんでした。');return data;}
 const ruleset=await api(`projects/${project}/rulesets`,'POST',{source:{files:[{name:'firestore.rules',content:source}]}});

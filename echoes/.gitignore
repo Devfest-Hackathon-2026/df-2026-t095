@@ -43,3 +43,6 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+
+# Commons の解析キャッシュ（再作成可能）
+/.cache/

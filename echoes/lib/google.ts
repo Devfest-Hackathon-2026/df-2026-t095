@@ -29,7 +29,7 @@ export function parseGroundedPlaces(result:GeminiResult):Place[]{
 }
 export const japaneseStyle='自然な日本語のです・ます調で、短く具体的に書いてください。英語の直訳や大げさな表現、意味のない比喩は避けます。元の資料にない事実、数値、保証は加えません。静かさや雰囲気は推定として書き、混雑・安全性・営業状況を断定しません。';
 export async function generateGoogle(prompt:string,grounded=false,location?:{lat:number;lng:number}):Promise<GeminiResult>{
- const model=process.env.GEMINI_MODEL||'gemini-2.5-flash';if(!/^[a-zA-Z0-9._-]+$/.test(model))throw new Error('AI モデルの設定を確認してください。');
+ const model=process.env.GEMINI_MODEL||'gemini-3.8-flash';if(!/^[a-zA-Z0-9._-]+$/.test(model))throw new Error('AI モデルの設定を確認してください。');
  const key=process.env.GEMINI_API_KEY;const project=process.env.GOOGLE_CLOUD_PROJECT;
  const url=project?`https://aiplatform.googleapis.com/v1/projects/${googleProject()}/locations/${process.env.GOOGLE_CLOUD_LOCATION||'global'}/publishers/google/models/${model}:generateContent`:`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
  if(!project&&!key)throw new Error('Google の AI 接続が未設定です。');

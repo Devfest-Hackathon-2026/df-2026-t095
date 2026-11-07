@@ -52,7 +52,8 @@
     "leaflet": "1.9.4",
     "@phosphor-icons/react": "^2.1.10",
     "firebase": "^13.2.0",
-    "google-auth-library": "^11.3.3"
+    "google-auth-library": "^11.3.3",
+    "@google/earthengine": "^1.7.51"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",

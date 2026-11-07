@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://elsewhere-place-discovery.hexagon-one.chatgpt.site"),
-  title: "Elsewhere — find a familiar feeling",
-  description: "Start with a place you love. Discover new places that share its feeling, compare what makes them different, and save your next little adventure.",
-  openGraph: { title: "Elsewhere — somewhere new, something familiar", description: "Find the feeling of a place you love, somewhere new.", type: "website", images: ["/images/kamo.jpg"] },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://127.0.0.1:5173"),
+  title: "Elsewhere｜好きな場所から、次の行き先へ",
+  description: "好きな場所の風景や過ごし方から、似た場所を探せます。共通点と違いを比べて、次に訪ねたい場所を見つけましょう。",
+  openGraph: { title: "Elsewhere｜好きな場所から、次の行き先へ", description: "風景や過ごし方から、次に行きたい場所を探す。", type: "website", images: ["/images/kamo.jpg"] },
   icons: {
     icon: "/elsewhere.svg",
     shortcut: "/elsewhere.svg",
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className="antialiased">{children}</body>
     </html>
   );
