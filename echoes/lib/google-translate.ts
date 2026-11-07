@@ -1,5 +1,5 @@
-import type {Place} from './places';
-import {cloudHeaders,googleProject} from './google-auth';
+import type {Place} from './places.ts';
+import {cloudHeaders,googleProject} from './google-auth.ts';
 const keys=['description','detail','difference','bestFor'] as const;
 export async function translatePlacesIfNeeded(places:Place[]):Promise<Place[]>{
  const texts:{index:number;key:typeof keys[number];text:string}[]=[];

@@ -5,7 +5,7 @@ import type { Place } from "@/lib/places";
 import { Icon } from "./icons";
 
 type MapClick = {placeId?:string;latLng?:{lat:()=>number;lng:()=>number};stop?:()=>void};
-type GMap = { addListener:(event:string,handler:(event:MapClick)=>void)=>void;setMapTypeId:(type:string)=>void;fitBounds: (b: GBounds, padding?: number) => void; getZoom: () => number | undefined; setZoom: (v: number) => void };
+type GMap = { setCenter:(point:{lat:number;lng:number})=>void; addListener:(event:string,handler:(event:MapClick)=>void)=>void;setMapTypeId:(type:string)=>void;fitBounds: (b: GBounds, padding?: number) => void; getZoom: () => number | undefined; setZoom: (v: number) => void };
 type GBounds = { extend: (p: {lat:number;lng:number}) => void };
 type GItem = { setMap: (m: GMap | null) => void; addListener?: (event: string, handler: () => void) => void };
 type GoogleApi = { Map: new (el: HTMLElement, options: object) => GMap; Marker: new (options: object) => GItem; Polyline: new (options: object) => GItem; LatLngBounds: new () => GBounds };
@@ -29,11 +29,12 @@ export function MapView({ source, places, activeId, onSelect, mapsKey, live, onP
   const container = useRef<HTMLDivElement>(null);
   const leaf = useRef<{ L: typeof Leaflet; map: Leaflet.Map; layers: Leaflet.Layer[] } | null>(null);
   const google = useRef<{ api: GoogleApi; map: GMap; layers: GItem[] } | null>(null);
-  const select = useRef(onSelect); select.current = onSelect;
+  const select = useRef(onSelect);
   const [ready, setReady] = useState(0);
   const [satellite,setSatellite]=useState(false);
-  const pickLocation=useRef(onPickLocation);pickLocation.current=onPickLocation;
-  const pickPlace=useRef(onPickPlace);pickPlace.current=onPickPlace;
+  const pickLocation=useRef(onPickLocation);
+  const pickPlace=useRef(onPickPlace);
+  useEffect(()=>{select.current=onSelect;pickLocation.current=onPickLocation;pickPlace.current=onPickPlace;},[onSelect,onPickLocation,onPickPlace]);
   const [error, setError] = useState("");
   const bounds = useRef<() => void>(() => {});
   const fittedGeometry = useRef("");
@@ -46,7 +47,7 @@ export function MapView({ source, places, activeId, onSelect, mapsKey, live, onP
         const map = new api.Map(container.current, { center: {lat: 39, lng: 65}, zoom: 2, disableDefaultUI: true, streetViewControl:true, gestureHandling: "cooperative", styles: [
           { featureType: "water", elementType: "geometry", stylers: [{color: "#c8dfe0"}] },
           { featureType: "landscape", elementType: "geometry", stylers: [{color: "#edf0e8"}] },
-          { featureType: "poi", stylers: [{visibility: "off"}] }, { featureType: "road", stylers: [{visibility: "off"}] },
+          { featureType: "poi.business", stylers: [{visibility: "simplified"}] },
           { featureType: "administrative", elementType: "labels.text.fill", stylers: [{color: "#6c837a"}] },
         ] });
         map.addListener('click',event=>{event.stop?.();if(event.placeId)pickPlace.current?.(event.placeId);else if(event.latLng)pickLocation.current?.({lat:event.latLng.lat(),lng:event.latLng.lng()});});
@@ -86,7 +87,7 @@ export function MapView({ source, places, activeId, onSelect, mapsKey, live, onP
         if (index > 0) marker.addListener?.("click", () => select.current(p.id)); layers.push(marker);
         if (index > 0) layers.push(new api.Polyline({ map, path:[{lat:source.lat,lng:source.lng},{lat:p.lat,lng:p.lng}], geodesic:true, strokeColor: "#477f64", strokeOpacity:0.5, strokeWeight:1.5 }));
       });
-      bounds.current = () => { const b = new api.LatLngBounds(); points.forEach(p => b.extend({lat:p.lat,lng:p.lng})); map.fitBounds(b,48); }; const geometry=JSON.stringify(points.map(p=>[p.id,p.lat,p.lng]));if(fittedGeometry.current!==geometry){bounds.current();fittedGeometry.current=geometry;}
+      bounds.current = () => { if(points.length===1){map.setCenter({lat:source.lat,lng:source.lng});map.setZoom(12);return;} const b = new api.LatLngBounds(); points.forEach(p => b.extend({lat:p.lat,lng:p.lng})); map.fitBounds(b,48); }; const geometry=JSON.stringify(points.map(p=>[p.id,p.lat,p.lng]));if(fittedGeometry.current!==geometry){bounds.current();fittedGeometry.current=geometry;}
     }
   }, [source, places, activeId, ready]);
   useEffect(() => {

@@ -81,7 +81,7 @@ const existing=await readFile('.env.local','utf8').catch(()=> '');
 const values={GOOGLE_CLOUD_PROJECT:project,GOOGLE_CLOUD_LOCATION:'global',GOOGLE_AUTH_USE_GCLOUD:'true',GEMINI_MODEL:'gemini-3.8-flash',GOOGLE_MAPS_BROWSER_KEY:mapsBrowser,GOOGLE_MAPS_SERVER_KEY:mapsServer,FIREBASE_WEB_CONFIG:JSON.stringify({...webConfig,apiKey:firebaseKey}),NEXT_PUBLIC_SITE_URL:'http://127.0.0.1:5173'};
 let env=existing;
 for(const [name,value] of Object.entries(values)){
- const line=`${name}=${JSON.stringify(value)}`;const regex=new RegExp(`^${name}=.*$`,'m');env=regex.test(env)?env.replace(regex,()=>line):env.replace(/\s*$/,'')+'\n'+line+'\n';
+ const line=name==='FIREBASE_WEB_CONFIG'?`${name}='${value}'`:`${name}=${JSON.stringify(value)}`;const regex=new RegExp(`^${name}=.*$`,'m');env=regex.test(env)?env.replace(regex,()=>line):env.replace(/\s*$/,'')+'\n'+line+'\n';
 }
 await writeFile('.env.local',env,{mode:0o600});await chmod('.env.local',0o600);
 await writeFile('.firebaserc',JSON.stringify({projects:{default:project}},null,2)+'\n');

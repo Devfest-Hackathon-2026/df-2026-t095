@@ -1,63 +1,78 @@
 # Elsewhere
 
-Find the feeling of a place you love, somewhere new.
+好きな場所の風景や過ごし方から、次の行き先を探すウェブアプリです。画面は日本語で、スマートフォンとPCの両方で使えます。現在はローカルで動かし、Google Cloud プロジェクト `devfest-hackathon-hexagon` に接続しています。
 
-A responsive Next.js / React app for discovering places by the qualities that matter to you. Includes a usable curated collection, an interactive map, preference-based ranking, destination filters, comparisons with meaningful differences and sources, browser-local bookmarks, and shareable sample searches.
+## 起動
 
-## Run locally
+Node.js 22.13 以降が必要です。
 
-Requires Node.js 22.13 or newer.
-
-```sh
+```bash
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server (normally http://127.0.0.1:5173).
+[ローカル版](http://127.0.0.1:5173/)を開いてください。認証は既存の `.env.local` と `gcloud` のログイン状態を使います。サーバー用のキーやアクセストークンはブラウザーへ渡しません。
 
-For the standard Next.js development server instead of the Sites-compatible preview:
+別の環境で接続を作る場合は `.env.example` を参照してください。`npm run google:setup` は、指定プロジェクトの Firebase アプリ、用途を制限したキー、Firestore、匿名認証、ローカル設定を用意します。Firestore のルールは `npm run google:rules` で反映します。既存の設定がある環境では、内容を確認してから実行してください。
 
-```sh
-npm run dev:next
+## 場所の探し方
+
+「雰囲気から」は、Google Places で選んだ出発点について、Gemini が Google Maps の情報を参照して似た場所を探します。水辺、緑、カフェなどの特徴を選び、共通点と違いを比べられます。参照元は各候補に表示します。
+
+「写真の風景から」は、ユーザーが写真を用意せずに使えます。まずは、既存12地点の Commons 写真を比較対象にします。別の場所を入力した場合も Commons で写真を探しますが、場所名や所在地を照合できない写真は採用しません。写真が近くで撮られたという理由だけでは採用せず、Gemini でも景観が主な被写体か確認します。適切な写真が見つからない場合や画像埋め込みを使えない場合は、Google Maps の情報による検索に切り替わり、理由を表示します。地図の検索も使えない場合は、既存の紹介用データを表示します。
+
+「地形から」は、Google Earth Engine の Satellite Embedding V1、Copernicus DEM、JRC Global Surface Water を使う試験機能です。参照点の周辺100 mの平均埋め込みと、周辺5〜20 kmから抽出した地点を比べ、候補を地図に示します。2024年の衛星埋め込みを使用します。ラグーン、メサ、ビュートを確定する分類器ではありません。地形の輪郭の抽出や世界全域の探索は未実装です。レグールは土壌なので、写真の色だけで判定せず、土壌の資料を使う段階が必要です。現在は説明のみで、自動判定には対応していません。
+
+## 写真の比較
+
+モデルは、プロジェクトで画像入力を確認した `gemini-embedding-2` です。Google Cloud の `us` エンドポイントの `embedContent` に Commons の画像データを送り、768次元の埋め込みを取得します。Google Maps / Places の写真から埋め込みを作ることはありません。
+
+順位の初期設定は、写真の近さ6：選んだ特徴4です。画面のスライダーで0：10から10：0まで調整できます。写真の近さにはコサイン類似度を0〜1に変換した値を使い、特徴の近さと加重平均します。特徴は選んだ項目の近さと候補側の強さを組み合わせます。出発点の特徴が未確認の場合は、選んだ特徴が候補側にあるかを使います。地域の条件と出発点の除外を先に適用します。
+
+この数値は順位を決める手がかりです。一致率や、同じ体験ができる確率ではありません。天候、構図、撮影時期にも影響されます。説明では、写真で見える水面・木々・建物などと、静かさ・混雑などの推定を分けます。
+
+比較対象は写真を用意した12地点です。埋め込みだけで世界中の未登録地点を検索する仕組みではありません。比較対象がない地域では、写真を使わない Google Maps 検索に切り替わったことを表示します。「雰囲気から」でも同じ検索を利用できます。外部のベクトルデータベースは使用していません。
+
+## 写真の出典とキャッシュ
+
+既存12枚について、Commons API からファイルの説明、撮影者、ライセンス、ファイルID、SHA-1を再取得しました。記録は `data/commons-samples.json`、従来の出典は `lib/photo-credits.json` と `public/images/*.jpg.json` にあります。いずれも CC BY または CC BY-SA の写真です。表示用の縮小・トリミングがあることも画面に記載します。
+
+```bash
+node scripts/visual/audit-commons.mjs
 ```
 
-## Connect Google
+新しい写真では、ファイルの説明に場所名があることと、所在地の情報が一致することを確認します。必要に応じて Wikidata の名称を照合します。利用するライセンスは CC BY、CC BY-SA、CC0、Public Domain のうち、出典と利用条件のURLを確認できるものに限定します。これは自動照合なので、場所の同定に誤りが残る可能性はあります。
 
-The curated sample works without credentials. Copy `.env.example` to `.env.local` and supply:
+埋め込みは `.cache/commons-embeddings/` に保存します。キャッシュには画像のID・SHA-1・実際に解析したバイト列のSHA-256・モデル・次元数・Googleプロジェクト・出典・撮影者・ライセンスを含めます。画像やモデルが変わると別のキャッシュになります。削除しても再作成できます。Gitやコンテナーのビルド対象には含めません。
 
-- `GEMINI_API_KEY`: a server-only Google AI Studio key with access to the configured model and Google Maps grounding.
-- `GOOGLE_MAPS_BROWSER_KEY`: a Google Maps JavaScript API key restricted to your app's domains and that API. This key is intentionally public; the Gemini key is never sent to the browser.
-- `GEMINI_MODEL`: defaults to `gemini-2.5-flash`; change it to a model available to your Google project that supports Maps grounding.
+## Google との接続
 
-Restart the server. A "Discover with Gemini + Google Maps" switch appears below the results when Gemini is configured. Enable it, enter any named source place with its city, and search. Unknown sources are resolved and profiled with grounded Gemini before candidates are retrieved. The original collection remains available with the switch off.
+| サービス | 用途 |
+| --- | --- |
+| Maps JavaScript API | 日本語の地図、航空写真、地点の選択 |
+| Places API | 入力候補、場所の詳細、雰囲気検索の写真 |
+| Geocoding API | 地図で押した地点の住所・場所の解決 |
+| Routes API | 許可した現在地からの経路 |
+| Vertex AI / Gemini | Maps に基づく候補、Commons 写真の照合と説明 |
+| Gemini Embedding 2 | Commons 写真の画像埋め込み |
+| Cloud Translation | 説明が英語で返った場合の日本語訳 |
+| Firebase Authentication | 匿名ユーザーの認証 |
+| Cloud Firestore | 保存した場所のID、検索条件、共有用の条件 |
+| Secret Manager | サーバー用 Maps キーの保管 |
+| Earth Engine | 範囲を限定した衛星・標高・水域の解析 |
 
-`GET /api/config` returns only live-search availability and the restricted browser Maps key. `POST /api/resolve` identifies a source place. `POST /api/discover` retrieves candidates. The two POST routes validate input, apply upstream timeouts, reject recommendations without a matching Google Maps grounding source, and return useful errors. Live results are never silently replaced with sample data.
+保存情報は、このブラウザーの匿名ユーザーにひもづきます。Google アカウントでのログインや、複数端末間の同期は未実装です。共有リンクは条件を共有し、同じ画像結果を固定して保存するものではありません。Google の写真や場所の説明を Firestore に複製しません。現在地は「現在地から調べる」を押して許可したときだけ使い、保存しません。
 
-No credentials were supplied during development, so actual Google calls have not been exercised. Grounded-response parsing is covered with fixtures; connect your project to validate model availability and live search quality. Google Maps grounding currently requires English prompts and responses. The UI and prompts are English.
+## 検証と今後の公開
 
-## Google deployment
-
-Google Firebase App Hosting supports Next.js. `apphosting.yaml` uses the standard Next.js build and runtime rather than the Sites worker. Connect this directory as the backend root in your Firebase project and add the keys in its Environment settings. Store the Gemini key in Secret Manager. The custom build/run commands keep the included Sites preview scripts independent of your Google deployment.
-
-A Dockerfile is also included for Cloud Run. It builds standard Next.js and listens on `PORT` (8080 by default). No Google Cloud resources or paid services have been provisioned.
-
-For the private Sites preview, use the provided workflow helpers and the retained `.openai/hosting.json` identity. Source is built as a Next.js-compatible Vinext worker. Runtime keys can be set through Sites environment settings and require a redeploy.
-
-## Verification
-
-```sh
-npm run typecheck
+```bash
 npm test
-npm run build:next
+npm run typecheck
+npm run lint
 npm run build
+npm run google:check
 ```
 
-The tests cover preference sensitivity, destination constraints, geographic diversity, source exclusion, link validation, distance, and required live grounding evidence. Desktop and mobile flows are manually verified in the browser.
+写真検索、API接続、保存・共有、画面の検証結果は `VERIFICATION.md` に記録します。
 
-## Data and privacy
-
-The twelve sample places have editorial feature ratings and approximate suggested starting points. These are illustrative comparisons, not calibrated similarity measurements or live crowd data. The collection covers selected cities in Asia and Europe, not every place worldwide. Global sample searches favor another country and diverse regions.
-
-Sample bookmarks persist as IDs in this browser's local storage. Live bookmarks last for the session. No sign-in, analytics, or location permission is required. The sample map uses OpenStreetMap tiles; configured live maps use Google Maps. Sharing sample discoveries encodes the source ID, qualities, and destination in the URL.
-
-Photos are Wikimedia Commons thumbnails with author/license metadata in `lib/photo-credits.json`, full provenance beside the images, and a visible Photo credits view. Photographs are displayed with responsive crops. The original licenses apply to the photos. Place details link to reference sources; map providers retain their visible attribution.
+アプリは公開していません。Google に公開するときは Firebase App Hosting または Cloud Run を利用できます。標準の Next.js の `build` / `start` と Dockerfile を用意しています。公開先のドメイン制限、実行用サービスアカウントの権限、Firebase の認証ドメイン、Secrets を別途設定してください。ローカルの `.env.local` をアップロードしないでください。

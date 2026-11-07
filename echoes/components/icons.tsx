@@ -28,7 +28,9 @@ import { Footprints } from "@phosphor-icons/react/dist/csr/Footprints";
 import { MagnifyingGlass } from "@phosphor-icons/react/dist/csr/MagnifyingGlass";
 import { SlidersHorizontal } from "@phosphor-icons/react/dist/csr/SlidersHorizontal";
 import { ArrowLeft } from "@phosphor-icons/react/dist/csr/ArrowLeft";
-const icons = { ArrowRight, ArrowUpRight, BookmarkSimple, Buildings, CaretDown, Check, Coffee, Compass, Crosshair, GlobeHemisphereWest, Heart, Info, Leaf, ListBullets, MapPin, MapTrifold, Minus, NavigationArrow, Plus, ShareNetwork, Sparkle, Tree, Waves, Wind, X, Footprints, MagnifyingGlass, SlidersHorizontal, ArrowLeft };
+import { Image } from "@phosphor-icons/react/dist/csr/Image";
+import { Mountains } from "@phosphor-icons/react/dist/csr/Mountains";
+const icons = { Image, Mountains, ArrowRight, ArrowUpRight, BookmarkSimple, Buildings, CaretDown, Check, Coffee, Compass, Crosshair, GlobeHemisphereWest, Heart, Info, Leaf, ListBullets, MapPin, MapTrifold, Minus, NavigationArrow, Plus, ShareNetwork, Sparkle, Tree, Waves, Wind, X, Footprints, MagnifyingGlass, SlidersHorizontal, ArrowLeft };
 export type IconName = keyof typeof icons;
 export function Icon({ name, size = 20, weight = "regular", className = "" }: { name: IconName; size?: number; weight?: "regular" | "fill" | "bold"; className?: string }) {
   const Component = icons[name];

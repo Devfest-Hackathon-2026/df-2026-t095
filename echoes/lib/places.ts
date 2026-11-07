@@ -1,3 +1,4 @@
+import type {CommonsPhoto,VisualEvidence} from './visual-types.ts';
 export const qualities = [
   { id: "water", label: "水辺を歩きたい", description: "川や運河に沿って歩けること", icon: "Waves" },
   { id: "green", label: "緑に囲まれたい", description: "木々や庭園など、緑が身近にあること", icon: "Tree" },
@@ -15,6 +16,7 @@ export type Place = {
   features: Record<Quality, number>; sources: SourceLink[]; placeId?: string;
   photoAuthors?: {name:string;url:string}[]; googleMapsUri?:string; websiteUri?:string;
   address?:string; profiled?:boolean;
+  commonsPhoto?:CommonsPhoto; visual?:VisualEvidence;
 };
 export const defaultPreferences: Quality[] = ["water", "green", "quiet"];
 export const places: Place[] = [

@@ -1,4 +1,4 @@
-import {type Place,type Quality} from './places.ts';
+import {type Place} from './places.ts';
 import {safeUrl} from './discovery.ts';
 export type GooglePlace={id:string;displayName?:{text:string};formattedAddress?:string;location?:{latitude:number;longitude:number};addressComponents?:{longText:string;shortText:string;types:string[]}[];googleMapsUri?:string;websiteUri?:string;photos?:{name:string;authorAttributions?:{displayName:string;uri:string}[]}[];editorialSummary?:{text:string};primaryType?:string;rating?:number;};
 const fields='id,displayName,formattedAddress,location,addressComponents,googleMapsUri,photos,primaryType,websiteUri';
@@ -32,8 +32,8 @@ export async function reverseGeocode(lat:number,lng:number){
 export function toPlace(p:GooglePlace,profile?:Partial<Place>):Place{
  if(!p.location||!p.id)throw new Error('場所の位置情報を確認できませんでした。');
  const components=p.addressComponents||[];
- const city=components.find(c=>c.types.includes('locality'))?.longText || components.find(c=>c.types.includes('administrative_area_level_1'))?.longText || '';
- const country=components.find(c=>c.types.includes('country'))?.longText || '';
+ const city=components.find(c=>c.types.includes('locality'))?.longText || components.find(c=>c.types.includes('administrative_area_level_1'))?.longText || profile?.city || '';
+ const country=components.find(c=>c.types.includes('country'))?.longText || profile?.country || '';
  const photos=p.photos?.[0];
  return {...profile,id:`google-${p.id}`,placeId:p.id,name:p.displayName?.text || profile?.name || p.formattedAddress || '地図で選んだ場所',city,country,continent:profile?.continent || '',lat:p.location.latitude,lng:p.location.longitude,
  image:photos?`/api/photo?name=${encodeURIComponent(photos.name)}`:'',photoAuthors:photos?.authorAttributions?.flatMap(a=>safeUrl(a.uri)?[{name:a.displayName,url:a.uri}]:[])||[],
