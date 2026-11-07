@@ -171,136 +171,46 @@
 }
 ---
 
-# Design System: Elsewhere
+# Elsewhere のデザイン
 
-## Overview
+## 基本方針
 
-**Creative North Star: "The Modern Park Field Guide"**
+既存の「Modern Park Field Guide」を引き継ぎます。公園の案内のように、緑の文字と明るい背景を使い、場所の写真と地図を中心に配置します。機能の追加に合わせて日本語の組版と操作を整え、ブランドの置き換えは行いません。
 
-Elsewhere borrows the calm clarity of modern park visitor guides: pine green ink, a mist-green shell, pale blue map water, real place photography, and Manrope throughout. Its tone is welcoming and curious; controls remain recognizable and labels stay compact.
+写真から分かることと、過ごし方についての解釈を分けます。比較できる範囲、代わりに使った検索方法、未対応の機能を、その場で確認できるようにします。順位を実測の一致率に見せないことも、画面のルールです。
 
-The system is a working guide. Borders, restrained tonal fills, and clear typography organize comparison without competing with geography or photographs. Motion marks interaction and loading, while reduced-motion preferences remove travel and breathing effects.
+## 色と文字
 
-**Key Characteristics:**
-- Pine green actions and ink on cool, lightly tinted surfaces.
-- One Manrope family, compact labels, and generous principal headings.
-- Real place photography and maps carry the sense of location.
-- Familiar inputs, buttons, tabs, cards, and centered native dialogs.
+色・角丸・基本の間隔は、冒頭のトークンを基準にします。主な操作は濃い緑、選択状態は薄い緑の背景で示します。状態は色だけに頼らず、チェック、文言、押下状態も合わせて伝えます。補足文には supporting-copy、地図の凡例には map-key-ink を使います。
 
-## Colors
+欧文のブランドは Manrope、日本語は Noto Sans JP を使います。見出しと入力項目の書体をそろえ、写真や地名が読み取りやすい組版にします。
 
-The palette uses pine greens for action and selection, cool near-whites for surfaces, and pale blue-green water for geographic context. The frontmatter is the normative color source.
+主見出しはPCで48px、太さ600、行高1.35、字間−0.03emです。幅1250px以下では34px、1000px以下では32pxにします。幅760px以下は30px、行高1.5、字間−0.04emです。本文の基本は14px、行高1.7。導入文の行高は1.8、案内ダイアログの見出しは1.6、場所の詳細の見出しは1.5です。スマートフォンの入力欄は16pxにします。
 
-### Primary
+## 配置と画面幅
 
-- **Pine Green** (`green`): filled primary actions, text actions, input carets, and the brand compass.
-- **Deep Pine** (`green-dark`): primary hover and selected navigation text.
-- **Mist Green** (`mint`): selected navigation and source suggestion hover.
-- **Quality Green** (`quality-fill`, `quality-ink`): selected preference surfaces and their text.
-- **Quiet Leaf** (`chip-fill`, `chip-ink`): compact shared-quality labels.
-- **Soft Leaf** (`secondary-fill`, `secondary-ink`): secondary actions.
+PCでは、見出しと検索フォームの下に、出発点と特徴を選ぶ左カラム、地図と候補を見る右カラムを置きます。基本の外側余白は48px、左カラムは280pxです。幅1250px以下では外側余白32px、左カラム260px。幅1000px以下では左カラム240px、候補を2列にします。
 
-### Neutral
+幅760px以下は1列にし、外側余白16px、上側余白24px、主な領域間の間隔20pxにします。出発点は幅88pxの写真と説明を横に並べた小さな表示に変えます。選んだ特徴を短く表示し、「変更」で選択肢を開きます。写真と特徴の比重も、detailsを開いたときだけ調整欄を表示します。候補は1列に並べます。
 
-- **Cool Paper** (`paper`): the page shell.
-- **White** (`white`): cards, search fields, and floating controls.
-- **Pine Ink** (`ink`): body and principal heading text.
-- **Muted Ink** (`muted`): ordinary secondary descriptions, including the introductory subtitle.
-- **Guide Line** (`line`): shared dividers and shell boundaries; individual component borders use closely related authored tints.
-- **Map Water** (`water`): the map canvas fallback. Google map styling has its own pale-water and land tints in the map component.
-- **Supporting Copy** (`supporting-copy`): final reviewed text for the introductory aside, empty states, information dialog lead paragraphs, and collection-note paragraphs.
-- **Map Key Ink** (`map-key-ink`): final reviewed map legend text.
-- **Dialog Paper** (`dialog-surface`): softly tinted modal interiors.
-- **Focus Green** (`focus`): visible keyboard focus outlines.
+地形の画面では、特徴を選ぶ左カラムと地域の入力欄を隠し、解析条件・地図・観測値を全幅で表示します。地形の地図はPCで400px、スマートフォンで320px。観測値の表は狭い画面で横にスクロールできます。
 
-**The Green State Rule.** Use deeper green for primary actions and pale green for selected controls; retain text or icon state cues alongside color.
+## 操作と状態
 
-**The Supporting Copy Rule.** Use the final supporting-copy and map-key-ink tokens for their assigned roles; do not restore the lighter values replaced by the finish review.
+主要ボタンは高さ48pxを基準にします。スマートフォンの地図操作、保存ボタン、ダイアログの閉じるボタンは44px。フォーカスの枠線と、選択・読み込み中・無効の状態を残します。特徴は一つ以上選択された状態を保ちます。
 
-## Typography
+入力候補は、ラベル付きのコンボボックスとして表示します。キーボードで選択・決定・閉じる操作ができます。検索中は進行中の文言と中止ボタンを表示し、候補がないときは次にできる操作を案内します。APIを使えないときに、実行していない画像比較や地形解析を成功したように見せません。
 
-**Display Font:** Manrope, with a sans-serif fallback.
-**Body Font:** Manrope, with a sans-serif fallback.
+地図のピンと一覧は同じ場所を指し、選んだ候補を双方で確認できる構成を保ちます。共有リンクは画面にも表示し、コピー機能を使えない場合にもURLを確認できます。
 
-The single family gives the interface a clear, contemporary guidebook character. Heading letter spacing tightens gently while small labels remain plain sentence case. The wordmark is heavier than ordinary headings.
+## 写真・地図・出典
 
-### Hierarchy
+写真は表示枠に合わせてトリミングします。Commons の写真には元のページ、撮影者、ライセンス、縮小・トリミングの記載を添えます。Google が配信する地図・写真の表示には、提供元の表記を残します。提供元の名称・撮影者・ライセンス名を、アプリの都合で翻訳しません。
 
-- **Display:** principal app heading; desktop role uses the frontmatter display token, then becomes (36px / 40px) at the (1250px) breakpoint.
-- **Headline:** information dialog heading; place detail headings use the same scale with a firmer weight (600), becoming (24px / 32px) on mobile.
-- **Title:** result-section and empty-state headings. The source title uses a firmer weight (650); mobile result-card titles use the title scale.
-- **Section:** preference and compact result-card headings.
-- **Body:** ordinary interface copy; detail paragraphs relax to a (24px) line height.
-- **Body Large:** introductory and detail descriptions; search values use this size with weight (600).
-- **Label:** compact field labels; buttons and navigation vary weight by emphasis.
-- **Note:** explanatory hints, footnotes, and compact descriptions.
+写真の比較では、写真で見える共通点と違いを説明し、静かさや混雑を画像だけで断定しません。サンプル、Mapsからの候補、写真の比較、地形の試験的な探索が、それぞれ何を根拠にしているかを明示します。
 
-**The Working Guide Rule.** Use Manrope for both headings and controls. Keep the large heading light enough to feel inviting and the small interactive labels firm enough to scan.
+## 動きと仕上げ
 
-## Layout
+動きは、選択、ホバー、読み込み、通知を伝えるために使います。大きな装飾の動きで写真や地図を邪魔しません。動きを減らす設定では、移動・拡大や読み込みのアニメーションを抑えます。
 
-The desktop shell is centered with a maximum width (1536px), a header (80px), horizontal gutters (48px), and main top padding (40px). The search bar uses three columns (1.15fr 1fr auto). The workspace pairs a fixed source sidebar (280px) with a flexible discovery area and a gap (32px). Results use three equal columns with gaps (16px). Most internal spacing is drawn from the frontmatter scale, particularly (8px), (12px), (16px), and (24px).
-
-At widths up to (1250px), gutters reduce to (32px), the sidebar to (256px), and the workspace gap to (24px). At widths up to (1000px), the sidebar is (240px), results use two columns with the last card spanning both, and the search action moves to its own row.
-
-At widths up to (760px), gutters are (24px), the header is (72px), search and workspace become single columns, preferences form a two-column grid, and result cards stack. The source card becomes a compact image-and-copy row; phone preferences retain a minimum height (44px). Header actions disappear, but navigation remains. At widths up to (400px), header gutters reduce to (16px). Footer content wraps. Desktop map heights range from (320px) to (400px); the phone map is (300px).
-
-The alternate list layout pairs an image column with content: (240px) on wide screens, (160px) at the intermediate breakpoint, and (104px) on phones. Native dialogs remain centered with `margin: auto` and `inset: 0`; they fit within the viewport and scroll internally.
-
-## Elevation & Depth
-
-The resting interface is mostly flat: cool paper, white surfaces, green selection fills, and fine borders supply separation. Soft translucent shadows identify floating or interactive layers. The search bar has a near-imperceptible ambient shadow, cards lift slightly on hover, and dialogs have the strongest shadow plus a dark translucent backdrop. Exact shadows and motion values are recorded in the sidecar.
-
-**The Quiet Depth Rule.** Keep cards largely flat at rest. Use a soft shadow for hover, an anchored menu, a toast, or a modal rather than adding permanent decorative lift.
-
-## Shapes
-
-Small labels, checkboxes, and compact view tabs use the small radius. Buttons, navigation items, map tools, and preference controls use the control radius. Search, cards, map shells, and notices use the surface radius. Dialogs use the dialog radius on desktop and the surface radius on phones. Circular save controls and map pin dots make discrete actions and geographic points easy to recognize.
-
-Cards clip their cover photography at the same outer radius. Borders stay thin (1px); active result cards add a quiet outline rather than changing the whole surface. These shapes support ordinary web controls rather than disguising them as physical objects.
-
-## Components
-
-### Buttons
-
-Primary actions are filled Pine Green with white text, an inline icon, and a control radius. Their standard minimum height is (48px), with padding (12px 24px); the wide-screen search action is (56px) tall. Hover deepens the fill. Secondary actions use Soft Leaf with a light border and padding (12px 16px). Text actions use Pine Green and an underline on hover. Icon buttons are square (40px), white, and softly bordered; map tools become (32px) on phones.
-
-All button-like controls use visible focus with an outline offset (4px). Ordinary focus outlines are (3px), fields use (2px), and enabled press states move down (1px). Color and surface transitions use the shared easing over (200ms). Disabled search actions use a muted green and the loading label.
-
-### Chips
-
-Shared-quality chips are informational, compact, and softly filled, with a small radius and padding (4px 8px). They pair a short text label with a small icon. Preference choices are separate full-width toggle buttons with checks and pressed state; selection changes both fill and border. A minimum of one preference remains selected.
-
-### Cards / Containers
-
-Place cards use white backgrounds, thin pale borders, the surface radius, cover photography, and compact content padding (16px, or 12px in the intermediate desktop layout). Hover adds a soft shadow and firmer border. The active card adds a green border and faint outer ring. Result photos use a gentle scale effect (1.04) over (700ms); the image remains clipped. Image failure produces a calm geographic fallback rather than a broken image element.
-
-### Inputs / Fields
-
-The source combobox and destination select share a white search container and visible labels. Input values are green-black, with minimal individual chrome and an explicit focus outline. A divider separates fields horizontally on desktop and vertically on phones. Source suggestions use a bordered white floating list, a surface radius, and Mist Green hover or keyboard highlight. The error notice uses a distinct pale warm background and readable brown text.
-
-### Navigation
-
-Navigation uses compact icon-and-text buttons, a control radius, and a minimum height (40px). The selected item uses Mist Green with Deep Pine text; hover uses the same pale surface. Labels remain visible on phones, while the smallest breakpoint removes their icons. The map/list switch uses a tinted rail and a white pressed segment with a small shadow.
-
-### Map and dialogs
-
-Geographic lines connect the source to results; selecting a result emphasizes its map point and card. The sample Leaflet map uses dashed connections, numbered result dots, and a lighter source dot. The Google map uses its own map-native points and lines. Phone map pins omit the place-name badge to preserve space. Map tools remain ordinary labeled buttons and attribution remains visible.
-
-Dialogs use native modal behavior, a close button, a dark translucent backdrop, and viewport-bound scrolling. The standard width caps at (560px), place-detail dialogs at (680px), and mobile detail actions stack. Information content uses padding (40px), detail content (32px), with smaller phone insets. Toasts use a dark green fill, light text, a surface radius, and a brief upward entrance; loading cards use a soft opacity pulse. Reduced-motion preferences collapse animation and transition durations and remove smooth scrolling.
-
-## Do's and Don'ts
-
-### Do:
-
-- Do use real place photography with cover crops and keep map and photograph attributions available.
-- Do pair selected green fills with explicit labels, checks, pressed state, or active outlines.
-- Do preserve visible keyboard focus, native dialog dismissal, and reduced-motion behavior.
-- Do reflow the workspace and result cards at the observed breakpoints instead of shrinking desktop controls into the phone layout.
-
-### Don't:
-
-- Don't restore the superseded lighter supporting-copy or map-key text colors.
-- Don't use a display family different from Manrope for new app surfaces.
-- Don't use shadows as the main boundary between resting cards; retain the light border and tonal hierarchy.
-- Don't hide geographic attribution or replace a place photograph with decorative artwork when a real image is available.
+幅360・390・768・1280・1440pxで、写真の読み込み、文言、ページ全体の横方向のはみ出しを確認します。今回の拡張は既存の構成を維持するため、新規の品質カード・comp・seedロールの対象外です。実際の画面と検証結果は `.impeccable/review/` と `VERIFICATION.md` を参照してください。
