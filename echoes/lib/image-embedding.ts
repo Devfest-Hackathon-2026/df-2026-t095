@@ -4,6 +4,7 @@ import {resolve} from 'node:path';
 import {cloudHeaders,googleProject} from './google-auth.ts';
 import {commonsImageBytes} from './commons.ts';
 import type {CommonsPhoto} from './visual-types.ts';
+import {bqTable,bqString,queryBigQuery} from './bigquery.ts';
 export const embeddingModel=()=>process.env.GOOGLE_EMBEDDING_MODEL||'gemini-embedding-2';
 const dimensions=768;
 type CacheEntry={schema:1;model:string;dimensions:number;project:string;bytesSha256:string;createdAt:string;photo:CommonsPhoto;values:number[]};
@@ -17,7 +18,9 @@ export async function imageEmbedding(photo:CommonsPhoto):Promise<number[]>{
  const task=(async()=>{
   const dir=resolve(process.cwd(),'.cache/commons-embeddings');const file=resolve(dir,`${key}.json`);
   try{const cached=JSON.parse(await readFile(file,'utf8')) as CacheEntry;if(cached.schema===1&&cached.model===model&&cached.project===project&&cached.bytesSha256===bytesSha256&&cached.values.length===dimensions&&cached.values.every(Number.isFinite))return cached.values;}catch{}
-  const values=await embedImageBytes(bytes,photo.mime);
+  let remote:number[]|undefined;
+  if(process.env.BIGQUERY_ENABLED==='true')try{const rows=await queryBigQuery(`SELECT TO_JSON_STRING(embedding) AS vector FROM ${bqTable('commons_embeddings')} WHERE id=@id AND model=@model AND bytes_sha256=@bytes LIMIT 1`,[bqString('id',key),bqString('model',model),bqString('bytes',bytesSha256)]);if(rows[0]){const vector=JSON.parse(String(rows[0].vector));if(Array.isArray(vector)&&vector.length===dimensions&&vector.every(Number.isFinite))remote=vector;}}catch{}
+  const values=remote||await embedImageBytes(bytes,photo.mime);
   const record:CacheEntry={schema:1,model,dimensions,project,bytesSha256,createdAt:new Date().toISOString(),photo,values};
   try{await mkdir(dir,{recursive:true});const temp=`${file}.${crypto.randomUUID()}.tmp`;await writeFile(temp,JSON.stringify(record));await rename(temp,file);}catch{/* 書き込みできない環境では、このリクエストのメモリー内で再利用する。 */}
   return values;

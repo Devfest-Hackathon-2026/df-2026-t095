@@ -35,7 +35,7 @@ export function toPlace(p:GooglePlace,profile?:Partial<Place>):Place{
  const city=components.find(c=>c.types.includes('locality'))?.longText || components.find(c=>c.types.includes('administrative_area_level_1'))?.longText || profile?.city || '';
  const country=components.find(c=>c.types.includes('country'))?.longText || profile?.country || '';
  const photos=p.photos?.[0];
- return {...profile,id:`google-${p.id}`,placeId:p.id,name:p.displayName?.text || profile?.name || p.formattedAddress || '地図で選んだ場所',city,country,continent:profile?.continent || '',lat:p.location.latitude,lng:p.location.longitude,
+ return {...profile,id:`google-${p.id}`,placeId:p.id,name:p.displayName?.text || profile?.name || p.formattedAddress || '地図で選んだ場所',city,country,countryCode:components.find(c=>c.types.includes('country'))?.shortText||profile?.countryCode,continent:profile?.continent || '',lat:p.location.latitude,lng:p.location.longitude,
  image:photos?`/api/photo?name=${encodeURIComponent(photos.name)}`:'',photoAuthors:photos?.authorAttributions?.flatMap(a=>safeUrl(a.uri)?[{name:a.displayName,url:a.uri}]:[])||[],
  googleMapsUri:safeUrl(p.googleMapsUri)||undefined,websiteUri:safeUrl(p.websiteUri)||undefined,address:p.formattedAddress||'',
  description:profile?.description||p.formattedAddress||'Google Maps で確認できる場所です。',detail:profile?.detail||'詳しい情報や行き方は Google Maps で確認できます。',difference:profile?.difference||'',bestFor:profile?.bestFor||'',

@@ -22,7 +22,11 @@
     "start:sites": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "google:setup": "node scripts/google/setup.mjs",
     "google:check": "node --env-file=.env.local scripts/google/doctor.mjs",
-    "google:rules": "node scripts/google/deploy-rules.mjs"
+    "google:rules": "node scripts/google/deploy-rules.mjs",
+    "data:climate": "python3 scripts/data/prepare-climate.py",
+    "data:tourism": "node scripts/data-tourism.mjs",
+    "google:catalog": "node --env-file=.env.local scripts/google/setup-catalog.mjs",
+    "google:terrain": "node --env-file=.env.local scripts/google/warm-terrain.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

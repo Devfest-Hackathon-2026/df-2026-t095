@@ -61,7 +61,7 @@ export function useDiscovery(){
  useEffect(()=>{if(!restored.current)return;try{localStorage.setItem('elsewhere:saved-v2',JSON.stringify(savedRefs));}catch{queueMicrotask(()=>setToast('このブラウザーでは保存情報を保持できません。'));}},[savedRefs]);
  useEffect(()=>{
   let cancelled=false;
-  (async()=>{const data=await Promise.all(savedRefs.map(async ref=>{const key=refKey(ref);const cached=known.current.get(key);if(cached)return cached;if(!ref.placeId)return places.find(p=>p.id===ref.sampleId)||null;try{const p=await resolve({placeId:ref.placeId});known.current.set(p.id,p);return p;}catch{return null;}}));if(!cancelled)setSavedPlaces(data.filter((p):p is Place=>Boolean(p)));})();
+  (async()=>{const data=await Promise.all(savedRefs.map(async ref=>{const key=refKey(ref);const cached=known.current.get(key);if(cached)return cached;if(!ref.placeId){const sample=places.find(p=>p.id===ref.sampleId);if(sample)return sample;try{return await resolve({sampleId:ref.sampleId});}catch{return null;}}try{const p=await resolve({placeId:ref.placeId});known.current.set(p.id,p);return p;}catch{return null;}}));if(!cancelled)setSavedPlaces(data.filter((p):p is Place=>Boolean(p)));})();
   return()=>{cancelled=true;};
  },[savedRefs]);
  useEffect(()=>{if(!cloudReady.current||!session.current||storageStatus!=='cloud')return;const timer=setTimeout(()=>{import('./firebase-client').then(c=>c.saveSettings(session.current!,{preferences,destination})).catch(()=>setToast('検索条件を保存できませんでした。'));},700);return()=>clearTimeout(timer);},[preferences,destination,storageStatus]);
@@ -107,7 +107,7 @@ export function useDiscovery(){
  };
  const cancelSearch=()=>{request.current?.abort();setLoading(false);setToast('検索を中止しました。');};
  const togglePreference=(q:Quality)=>{setShareUrl('');userChanged.current=true;if(searchKind==='visual'){setLivePlaces([]);setVisualSearch(null);}setPreferences(prev=>prev.includes(q)?prev.length>1?prev.filter(x=>x!==q):prev:[...prev,q]);setActiveId(null);};
- const setFilters=(value:SearchFilters)=>{request.current?.abort();setLoading(false);setFiltersState(value);setShareUrl('');setLivePlaces([]);setVisualSearch(null);setError('');};
+ const setFilters=(value:SearchFilters)=>{userChanged.current=true;request.current?.abort();setLoading(false);setFiltersState(value);setShareUrl('');setLivePlaces([]);setVisualSearch(null);setError('');};
  const setDestination=(value:string)=>{setShareUrl('');userChanged.current=true;setDestinationState(value);setActiveId(null);setLivePlaces([]);};
  const setSearchKind=(kind:'atmosphere'|'visual'|'terrain')=>{if(uploadFile&&kind!=='visual')selectUpload(null);setShareUrl('');request.current?.abort();setLoading(false);setSearchKindState(kind);setLivePlaces([]);setVisualSearch(null);setError('');};
  const setVisualWeight=(weight:number)=>{setShareUrl('');setVisualWeightState(weight);setLivePlaces([]);setVisualSearch(null);};

@@ -21,5 +21,5 @@ export async function commonsVision(photo:CommonsPhoto){
 const generic=new Set(['water','sky','plant','cloud','tree','daytime','nature','natural landscape','landscape','outdoor','outdoors','blue','green','photograph','ecoregion','world']);
 /** 一般的すぎるラベルは除き、川・海岸・市街地などの違いを補助信号にする。 */
 export function visionOverlap(a:VisionEvidence,b:VisionEvidence){
- const normalize=(labels:VisionLabel[])=>new Map(labels.filter(x=>!generic.has(x.name.toLowerCase())).map(x=>[x.name.toLowerCase(),x.score]));const x=normalize(a.labels),y=normalize(b.labels);const all=new Set([...x.keys(),...y.keys()]);let shared=0,total=0;for(const key of all){shared+=Math.min(x.get(key)||0,y.get(key)||0);total+=Math.max(x.get(key)||0,y.get(key)||0);}return total?shared/total:null;
+ const normalize=(labels:VisionLabel[])=>new Map(labels.filter(x=>!generic.has(x.name.toLowerCase())).map(x=>[x.name.toLowerCase(),x.score]));const x=normalize(a.labels),y=normalize(b.labels);if(!x.size||!y.size)return null;const all=new Set([...x.keys(),...y.keys()]);let shared=0,total=0;for(const key of all){shared+=Math.min(x.get(key)||0,y.get(key)||0);total+=Math.max(x.get(key)||0,y.get(key)||0);}return total?shared/total:null;
 }

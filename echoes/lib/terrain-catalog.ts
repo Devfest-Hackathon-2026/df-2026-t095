@@ -7,7 +7,7 @@ import {bqString,bqTable,queryBigQuery} from './bigquery.ts';
 import type {TerrainRecord} from './terrain-ranking.ts';
 const path=()=>resolve(process.cwd(),'.cache/terrain-regions-v2.json');
 export async function terrainCatalog(){
- if(process.env.BIGQUERY_ENABLED==='true')try{const rows=await queryBigQuery(`SELECT record_json FROM ${bqTable('terrain_regions')} ORDER BY id LIMIT 500`);if(rows.length)return{records:rows.map(r=>JSON.parse(String(r.record_json)) as TerrainRecord),provider:'bigquery' as const};}catch{}
+ if(process.env.BIGQUERY_ENABLED==='true')try{const rows=await queryBigQuery(`SELECT record_json FROM ${bqTable('terrain_regions')} ORDER BY id LIMIT 500`);if(rows.length)return{records:rows.map(r=>{const parsed=JSON.parse(String(r.record_json));return(typeof parsed==='string'?JSON.parse(parsed):parsed) as TerrainRecord;}).filter(r=>Array.isArray(r.vector)&&r.vector.length===64&&r.vector.every(Number.isFinite)),provider:'bigquery' as const};}catch{}
  try{return{records:JSON.parse(await readFile(path(),'utf8')) as TerrainRecord[],provider:'local' as const};}catch{return{records:[] as TerrainRecord[],provider:'local' as const};}
 }
 export async function refreshTerrainCatalog(){
@@ -16,7 +16,7 @@ export async function refreshTerrainCatalog(){
  await mkdir(resolve(process.cwd(),'.cache'),{recursive:true});await writeFile(path(),JSON.stringify(records));
  if(process.env.BIGQUERY_ENABLED==='true'){
   await queryBigQuery(`CREATE TABLE IF NOT EXISTS ${bqTable('terrain_regions')} (id STRING NOT NULL, record_json STRING, updated_at TIMESTAMP) CLUSTER BY id`);
-  await queryBigQuery(`MERGE ${bqTable('terrain_regions')} T USING (SELECT JSON_VALUE(x,'$.id') id,TO_JSON_STRING(x) record_json FROM UNNEST(JSON_QUERY_ARRAY(@records)) x) S ON T.id=S.id WHEN MATCHED THEN UPDATE SET record_json=S.record_json,updated_at=CURRENT_TIMESTAMP() WHEN NOT MATCHED THEN INSERT(id,record_json,updated_at) VALUES(S.id,S.record_json,CURRENT_TIMESTAMP())`,[bqString('records',JSON.stringify(records))]);
+  await queryBigQuery(`MERGE ${bqTable('terrain_regions')} T USING (SELECT JSON_VALUE(x,'$.id') id,x record_json FROM UNNEST(JSON_QUERY_ARRAY(@records)) x) S ON T.id=S.id WHEN MATCHED THEN UPDATE SET record_json=S.record_json,updated_at=CURRENT_TIMESTAMP() WHEN NOT MATCHED THEN INSERT(id,record_json,updated_at) VALUES(S.id,S.record_json,CURRENT_TIMESTAMP())`,[bqString('records',JSON.stringify(records))]);
  }
  return records;
 }

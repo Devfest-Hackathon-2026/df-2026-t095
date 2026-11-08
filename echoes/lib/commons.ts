@@ -1,4 +1,5 @@
-import {readFile} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import {resolve as resolvePath} from 'node:path';
 import type {Place} from './places.ts';
 import type {CommonsPhoto} from './visual-types.ts';
@@ -48,7 +49,11 @@ export async function commonsImageBytes(photo:CommonsPhoto):Promise<Buffer>{
  if(photo.localImage){if(!/^\/images\/[a-z]+\.jpg$/.test(photo.localImage))throw new Error('写真のパスが正しくありません。');return readFile(resolvePath(process.cwd(),'public',photo.localImage.slice(1)));}
  const cached=byteCache.get(photo.sha1+'|'+photo.thumbnailUrl);if(cached)return cached;
  const url=new URL(photo.thumbnailUrl);if(!['upload.wikimedia.org','thumb.wikimedia.org'].includes(url.hostname)||url.protocol!=='https:')throw new Error('Commons 以外の写真は解析できません。');
+ const diskKey=createHash('sha256').update(`${photo.pageId}|${photo.sha1}|${photo.thumbnailUrl}`).digest('hex');const dir=resolvePath(process.cwd(),'.cache/commons-images');const file=resolvePath(dir,diskKey);
+ try{const [bytes,meta]=await Promise.all([readFile(file),readFile(file+'.json','utf8').then(JSON.parse)]);if(bytes.length>0&&bytes.length<=8*1024*1024&&meta.sha256===createHash('sha256').update(bytes).digest('hex')&&meta.photo.sha1===photo.sha1)return bytes;}catch{}
  const response=await fetch(url,{headers:{'User-Agent':userAgent},signal:AbortSignal.timeout(20000),redirect:'error'});if(!response.ok||!['image/jpeg','image/png'].includes(response.headers.get('content-type')?.split(';')[0]||''))throw new Error('写真を読み込めませんでした。');
- if(Number(response.headers.get('content-length'))>8*1024*1024)throw new Error('写真が大きすぎます。');const reader=response.body?.getReader();if(!reader)throw new Error('写真を読み込めませんでした。');const chunks:Uint8Array[]=[];let size=0;while(true){const part=await reader.read();if(part.done)break;size+=part.value.length;if(size>8*1024*1024){await reader.cancel();throw new Error('写真が大きすぎます。');}chunks.push(part.value);}const bytes=Buffer.concat(chunks);if(byteCache.size>=8)byteCache.delete(byteCache.keys().next().value!);byteCache.set(photo.sha1+'|'+photo.thumbnailUrl,bytes);return bytes;
+ if(Number(response.headers.get('content-length'))>8*1024*1024)throw new Error('写真が大きすぎます。');const reader=response.body?.getReader();if(!reader)throw new Error('写真を読み込めませんでした。');const chunks:Uint8Array[]=[];let size=0;while(true){const part=await reader.read();if(part.done)break;size+=part.value.length;if(size>8*1024*1024){await reader.cancel();throw new Error('写真が大きすぎます。');}chunks.push(part.value);}const bytes=Buffer.concat(chunks);if(byteCache.size>=8)byteCache.delete(byteCache.keys().next().value!);byteCache.set(photo.sha1+'|'+photo.thumbnailUrl,bytes);
+ try{await mkdir(dir,{recursive:true});const temporary=file+'.'+crypto.randomUUID()+'.tmp';await writeFile(temporary,bytes);await rename(temporary,file);await writeFile(file+'.json',JSON.stringify({photo,sha256:createHash('sha256').update(bytes).digest('hex')}));}catch{}
+ return bytes;
 }
 export function withCommonsPhoto(place:Place,photo:CommonsPhoto):Place{return{...place,image:photo.localImage||photo.thumbnailUrl,imagePage:photo.sourcePage,commonsPhoto:photo,photoAuthors:undefined};}

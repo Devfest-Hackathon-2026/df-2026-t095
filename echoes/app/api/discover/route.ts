@@ -18,5 +18,5 @@ export async function POST(request:Request){
   const filtered=await environmentFilter(source,candidates,filters);
   const translated=await translatePlacesIfNeeded([filtered.source,...filtered.places]);
   return Response.json({source:translated[0],places:translated.slice(1),mode:'live',note:'Google Maps の情報をもとに、AI が共通点と違いを整理しています。'},{headers:{'Cache-Control':'no-store'}});
- }catch(e){return Response.json({error:e instanceof SyntaxError?'検索結果を読み取れませんでした。もう一度お試しください。':e instanceof Error?e.message:'検索を完了できませんでした。'},{status:502});}
+ }catch(e){return Response.json({error:e instanceof SyntaxError?'検索結果を読み取れませんでした。もう一度お試しください。':e instanceof Error?e.message:'検索を完了できませんでした。'},{status:e instanceof SyntaxError||e instanceof Error&&/気候|区分|条件/.test(e.message)?400:502});}
 }

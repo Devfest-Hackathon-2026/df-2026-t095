@@ -1,7 +1,7 @@
 "use client";
 import {useId,useRef,useState} from 'react';
 import {Icon} from './icons';
-const options=['世界中','アジア','ヨーロッパ','アフリカ','北米','南米','オセアニア','日本','北海道','ソウル','東京','京都','サモア','パラオ','セーシェル'];
+const options=['世界中','アジア','ヨーロッパ','アフリカ','北アメリカ','南アメリカ','オセアニア','日本','北海道','ソウル','東京','京都','サモア','パラオ','セーシェル'];
 export function DestinationSearch({value,onChange}:{value:string;onChange:(value:string)=>void}){
  const [open,setOpen]=useState(false),[active,setActive]=useState(0);const id=useId(),input=useRef<HTMLInputElement>(null);const shown=options.filter(o=>value==='世界中'||!value||o.includes(value)).slice(0,15);
  const choose=(v:string)=>{onChange(v);setOpen(false);input.current?.focus();};

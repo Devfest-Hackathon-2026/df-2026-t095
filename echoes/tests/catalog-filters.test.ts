@@ -5,7 +5,7 @@ import {distinctTerrainPlaces,rankTerrainRegions,type TerrainRecord} from '../li
 import {environmentFilter} from '../lib/search-filters.ts';
 import {parseSearchFilters} from '../lib/climate-types.ts';
 import {visionOverlap} from '../lib/vision.ts';
-import {evidenceScore} from '../lib/visual-ranking.ts';
+import {evidenceScore,compatiblePhotoScenes} from '../lib/visual-ranking.ts';
 const point=places[0];
 const climate=(code:string)=>({code,label:code,period:'1991–2020',source:'https://doi.org/10.6084/m9.figshare.21789074',nearby:false});
 test('same-climate filtering is exact and unknown climate never silently broadens results',async()=>{
@@ -28,9 +28,11 @@ test('terrain ranking compares region vectors, preserves named destinations, and
  const result=rankTerrainRegions(record('source',-15,-148.16),[a,b,c],pool);assert.deepEqual(result.map(p=>p.id),['a','c']);assert.ok(result.every(p=>p.distanceKm>=100));assert.equal(result[0].elevation,null);
 });
 test('generic green, sky and water labels do not manufacture visual agreement',()=>{
- const evidence=(names:string[])=>({labels:names.map(name=>({name,score:.9})),landmarks:[]});assert.equal(visionOverlap(evidence(['Water','Tree','Sky']),evidence(['Water','Tree','Sky'])),null);
+ const evidence=(names:string[])=>({labels:names.map(name=>({name,score:.9})),landmarks:[]});assert.equal(visionOverlap(evidence(['Water','Tree','Sky']),evidence(['Water','Tree','Sky'])),null);assert.equal(visionOverlap(evidence([]),evidence(['River'])),null);
  assert.ok(visionOverlap(evidence(['River','Canal']),evidence(['River','Canal']))!>visionOverlap(evidence(['River','Canal']),evidence(['Mountain','Forest']))!);
 });
 test('photo structure evidence reranks candidates and missing optional signals remain comparable',()=>{
  const river=evidenceScore(.7,.8,.8,.8,'strong'),unrelated=evidenceScore(.9,.8,.8,.1,'weak');assert.ok(river>unrelated);assert.equal(evidenceScore(.6,.2,1,null,undefined),.8);assert.equal(evidenceScore(.8,.7,0,.3,'weak'),.7);
 });
+
+test('a river is not treated as a lagoon merely because both contain water',()=>{assert.equal(compatiblePhotoScenes('flowing_water','reef_lagoon'),false);assert.equal(compatiblePhotoScenes('flowing_water','flowing_water'),true);assert.equal(compatiblePhotoScenes('coast','reef_lagoon'),true);assert.equal(compatiblePhotoScenes('other','forest'),true);});

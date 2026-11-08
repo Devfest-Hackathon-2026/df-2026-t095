@@ -1,9 +1,11 @@
+import {localCatalog} from '@/lib/catalog';
 import {resolveGooglePlace} from '@/lib/google-maps';
 import {profilePlace} from '@/lib/google';
 export async function POST(request:Request){
  try{
   const raw=await request.text();if(raw.length>2048)return Response.json({error:'場所の指定が長すぎます。'},{status:413});
   const body=JSON.parse(raw);
+  if(typeof body?.sampleId==='string'){const sample=(await localCatalog()).find(p=>p.id===body.sampleId);if(!sample)return Response.json({error:'登録地点が見つかりませんでした。'},{status:404});return Response.json({place:sample},{headers:{'Cache-Control':'no-store'}});}
   const query=typeof body?.query==='string'?body.query.trim():undefined;
   const placeId=typeof body?.placeId==='string'?body.placeId:undefined;
   const point=body?.location;
