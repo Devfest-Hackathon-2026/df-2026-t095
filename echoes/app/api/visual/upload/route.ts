@@ -23,5 +23,5 @@ export async function POST(request:Request){
   const result=await uploadedVisualDiscovery(prepared.data,preferences as Quality[],destination,weight,undefined,filters);
   const hydrated=result.visualSearch.mode==='visual'?await hydrateVisualResults(result):result;
   return Response.json(hydrated,{headers:{'Cache-Control':'no-store'}});
- }catch(e){return Response.json({error:e instanceof InputError?e.message:e instanceof Error&&/気候区分/.test(e.message)?e.message:e instanceof Error&&/気候区分/.test(e.message)?e.message:'写真の解析を完了できませんでした。もう一度お試しください。'},{status:e instanceof InputError?e.status:e instanceof Error&&/気候区分/.test(e.message)?400:502,headers:{'Cache-Control':'no-store'}});}finally{active--;}
+ }catch(e){return Response.json({error:e instanceof InputError?e.message:e instanceof Error&&/気候区分/.test(e.message)?e.message:'写真の解析を完了できませんでした。もう一度お試しください。'},{status:e instanceof InputError?e.status:e instanceof Error&&/気候区分/.test(e.message)?400:502,headers:{'Cache-Control':'no-store'}});}finally{active--;}
 }

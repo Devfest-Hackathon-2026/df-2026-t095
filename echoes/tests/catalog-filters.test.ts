@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import {globeRangeForExtent} from '../lib/globe-camera.ts';
 import assert from 'node:assert/strict';
 import {places} from '../lib/places.ts';
 import {distinctTerrainPlaces,rankTerrainRegions,type TerrainRecord} from '../lib/terrain-ranking.ts';
@@ -36,3 +37,5 @@ test('photo structure evidence reranks candidates and missing optional signals r
 });
 
 test('a river is not treated as a lagoon merely because both contain water',()=>{assert.equal(compatiblePhotoScenes('flowing_water','reef_lagoon'),false);assert.equal(compatiblePhotoScenes('flowing_water','flowing_water'),true);assert.equal(compatiblePhotoScenes('coast','reef_lagoon'),true);assert.equal(compatiblePhotoScenes('other','forest'),true);});
+
+test('terrain camera fits geographic extent with padding on both wide and narrow viewports',()=>{const extent={widthKm:60,heightKm:25};for(const viewport of [{width:1200,height:440},{width:320,height:360},{width:180,height:360}]){const range=globeRangeForExtent(extent,viewport);const span=2*range*Math.tan(20*Math.PI/180);assert.ok(span>=extent.heightKm*1000*1.39);assert.ok(span*viewport.width/viewport.height>=extent.widthKm*1000*1.39);}assert.ok(globeRangeForExtent(extent,{width:180,height:360})>globeRangeForExtent(extent,{width:1200,height:440}));});

@@ -1,57 +1,9 @@
 {
-  "amsterdam": {
-    "author": "Dguendel",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg"
-  },
   "copenhagen": {
     "author": "European Commission",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "creditUrl": "https://commons.wikimedia.org/wiki/File:The_Nyhavn_Canal_3.jpg"
-  },
-  "kamo": {
-    "author": "Moja",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Kamogawa_sakura.jpg"
-  },
-  "ljubljana": {
-    "author": "Mihael Grmek",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Ljubljanica_01.jpg"
-  },
-  "london": {
-    "author": "Mark Hogan from London, UK, USA",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Regents_Canal,_London,_England_-Islington_tunnel-21March2010.jpg"
-  },
-  "munich": {
-    "author": "Florian Sch\u00fctz",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Isar_River_in_the_north_of_Munich.jpeg"
-  },
-  "osaka": {
-    "author": "Mc681",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Central_Public_Hall_in_201409.JPG"
-  },
-  "paris": {
-    "author": "Mortimer62",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Bercy,_Paris_01.jpg"
-  },
-  "philosopher": {
-    "author": "David Monniaux",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "creditUrl": "https://commons.wikimedia.org/wiki/File:Japan_Kyoto_philosophers_walk_DSC00297.jpg"
   },
   "seoul": {
     "author": "Basile Morin",
@@ -65,10 +17,58 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "creditUrl": "https://commons.wikimedia.org/wiki/File:Kallang_River_at_Bishan_Park.jpg"
   },
+  "paris": {
+    "author": "Mortimer62",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Bercy,_Paris_01.jpg"
+  },
+  "kamo": {
+    "author": "Moja",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Kamogawa_sakura.jpg"
+  },
+  "amsterdam": {
+    "author": "Dguendel",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg"
+  },
+  "ljubljana": {
+    "author": "Mihael Grmek",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Ljubljanica_01.jpg"
+  },
+  "osaka": {
+    "author": "Mc681",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Central_Public_Hall_in_201409.JPG"
+  },
+  "philosopher": {
+    "author": "David Monniaux",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Japan_Kyoto_philosophers_walk_DSC00297.jpg"
+  },
   "ueno": {
     "author": "Bernard Gagnon",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "creditUrl": "https://commons.wikimedia.org/wiki/File:Ueno_park.jpg"
+  },
+  "london": {
+    "author": "Mark Hogan from London, UK, USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Regents_Canal,_London,_England_-Islington_tunnel-21March2010.jpg"
+  },
+  "munich": {
+    "author": "Florian Sch\u00fctz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Isar_River_in_the_north_of_Munich.jpeg"
   }
 }
