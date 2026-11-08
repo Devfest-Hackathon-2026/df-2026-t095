@@ -20,7 +20,7 @@ export async function samplePhoto(place:Place):Promise<CommonsPhoto|null>{
  try{const manifest=JSON.parse(await readFile(resolvePath(process.cwd(),'data/commons-samples.json'),'utf8')) as {photos:Record<string,CommonsPhoto>};const p=manifest.photos[place.id];return p?.verified&&eligibleLicense(p)?p:null;}catch{return null;}
 }
 export async function resolvePhotoAliases(place:Place):Promise<string[]>{
- const aliases=[place.name];try{
+ const aliases=[place.name,...(place.aliases||[])];if(place.aliases?.length)return [...new Set(aliases)];try{
   const search=await wiki('https://www.wikidata.org/w/api.php',{action:'wbsearchentities',search:place.name,language:'ja',uselang:'ja',limit:'4',type:'item'});
   const ids=(search.search||[]).map((v:{id:string})=>v.id).filter((id:string)=>/^Q\d+$/.test(id));if(!ids.length)return aliases;
   const data=await wiki('https://www.wikidata.org/w/api.php',{action:'wbgetentities',ids:ids.join('|'),props:'labels|aliases|claims',languages:'ja|en'});
@@ -29,7 +29,7 @@ export async function resolvePhotoAliases(place:Place):Promise<string[]>{
 }
 export async function lookupCommonsPhoto(place:Place):Promise<CommonsPhoto|null>{
  const existing=await samplePhoto(place);if(existing)return existing;
- const aliases=await resolvePhotoAliases(place);const contextNames=[place.city];
+ const aliases=await resolvePhotoAliases(place);const contextNames=[place.city,place.country];if(place.countryCode)try{contextNames.push(new Intl.DisplayNames(['en'],{type:'region'}).of(place.countryCode)||'');}catch{}
  const prefecture=place.address?.match(/東京都|大阪府|京都府|北海道|[^\s、,]{2,3}県/)?.[0];
  for(const name of [...new Set([place.city,prefecture].filter((s):s is string=>Boolean(s)))])try{const labels=await wiki('https://www.wikidata.org/w/api.php',{action:'wbsearchentities',search:name,language:'ja',uselang:'en',limit:'2',type:'item'});const matches=labels.search as unknown as {label?:string;match?:{text?:string}}[];for(const match of matches||[])if(match.match?.text&&normalize(match.match.text)===normalize(name)&&match.label)contextNames.push(match.label);}catch{}
  const query=aliases.find(s=>/^[\x20-\x7e]+$/.test(s))||place.name;

@@ -1,0 +1,1209 @@
+[
+  {
+    "id": "tikehau",
+    "name": "ティケハウ環礁",
+    "aliases": [
+      "Tikehau",
+      "Tikehau"
+    ],
+    "city": "ティケハウ環礁",
+    "country": "フランス領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -15,
+    "lng": -148.16,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_%281-150%2C000%29.jpg/960px-Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_%281-150%2C000%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "フランス領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Tikehau",
+        "url": "https://en.wikipedia.org/wiki/Tikehau"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 12,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_(1-150,000).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 5269854,
+      "title": "File:Tikehau Atoll - Landsat ETM+ S-06-10 2000 and S-06-15 2000 (1-150,000).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_(1-150,000).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_%281-150%2C000%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_%281-150%2C000%29.jpg/960px-Tikehau_Atoll_-_Landsat_ETM%2B_S-06-10_2000_and_S-06-15_2000_%281-150%2C000%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9b09d75b13d5f2a62de5abce15fd7edf7c5ea23e",
+      "mime": "image/jpeg",
+      "author": "Mr Minton",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Tikehau Atoll - Landsat S-06-15_2000 (1:150,000)",
+      "categories": "Flickr images uploaded by Flickr upload bot|EVS Precision Island Maps|Satellite pictures of Tikehau",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイルの説明と画像からティケハウ環礁を捉えた衛星画像であることが確認でき、環礁全体の地形が主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "fakarava",
+    "name": "ファカラヴァ環礁",
+    "aliases": [
+      "Fakarava",
+      "Fakarava"
+    ],
+    "city": "ファカラヴァ環礁",
+    "country": "フランス領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -16.3,
+    "lng": -145.63,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Fakarava_-_Lagon_vert_au_motu_Farakau.jpg/960px-Fakarava_-_Lagon_vert_au_motu_Farakau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "フランス領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Fakarava",
+        "url": "https://en.wikipedia.org/wiki/Fakarava"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 10,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fakarava_-_Lagon_vert_au_motu_Farakau.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 72119358,
+      "title": "File:Fakarava - Lagon vert au motu Farakau.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fakarava_-_Lagon_vert_au_motu_Farakau.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Fakarava_-_Lagon_vert_au_motu_Farakau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Fakarava_-_Lagon_vert_au_motu_Farakau.jpg/960px-Fakarava_-_Lagon_vert_au_motu_Farakau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3cd51696ff755d28b01ed9d298740aa33e8d9948",
+      "mime": "image/jpeg",
+      "author": "Fanny98716",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Lagon vert motu Farakau à Fakarava",
+      "categories": "Fakarava Atoll|Self-published work|Media supported by Wikimedia France|Images from Photographiez les Outre-mer|Uploaded via Campaign:Photographiez les Outre-mer|Photographiez les Outre-mer 2018 Polynésie française",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にファカラヴァのモトゥ・ファラカウにあるラグーンと記載されており、ファカラヴァ環礁の海とヤシの木が並ぶ島影の景観が写されています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "aldabra",
+    "name": "アルダブラ環礁",
+    "aliases": [
+      "Aldabra",
+      "Aldabra"
+    ],
+    "city": "アルダブラ環礁",
+    "country": "セーシェル",
+    "countryCode": "SC",
+    "continent": "Africa",
+    "lat": -9.4167,
+    "lng": 46.35,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Seychelles_outer_islands_25.08.2009_10-19-35.jpg/960px-Seychelles_outer_islands_25.08.2009_10-19-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "セーシェルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Aldabra",
+        "url": "https://en.wikipedia.org/wiki/Aldabra"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 10,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Seychelles_outer_islands_25.08.2009_10-19-35.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 7812547,
+      "title": "File:Seychelles outer islands 25.08.2009 10-19-35.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seychelles_outer_islands_25.08.2009_10-19-35.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Seychelles_outer_islands_25.08.2009_10-19-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Seychelles_outer_islands_25.08.2009_10-19-35.jpg/960px-Seychelles_outer_islands_25.08.2009_10-19-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "c09321a67ba873db4c968cb3e82b5a708fd2fc79",
+      "mime": "image/jpeg",
+      "author": "Simisa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "The Aldabra Islands form the largest lagoon in the Indian Ocean. The length is 34 km and the width is 14.5 km. The islands are a UN world heritage and not inhabited.",
+      "categories": "Aerial photographs of Seychelles|Aldabra|Files with coordinates missing SDC location of creation|Lagoons of Seychelles|Files by User:simisa|Islands with clouds",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：上空から撮影されたアルダブラ環礁の全景であり、説明文でもアルダブラ諸島であることが明記されています。環礁の景観そのものが主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "cocos",
+    "name": "ココス諸島",
+    "aliases": [
+      "Cocos (Keeling) Islands",
+      "Cocos (Keeling) Islands"
+    ],
+    "city": "ココス諸島",
+    "country": "オーストラリア",
+    "countryCode": "AU",
+    "continent": "Oceania",
+    "lat": -12.17,
+    "lng": 96.84,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg/960px-Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "オーストラリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Cocos (Keeling) Islands",
+        "url": "https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 8,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cocos_(Keeling)_Islands_(32206670676).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 54948959,
+      "title": "File:Cocos (Keeling) Islands (32206670676).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cocos_(Keeling)_Islands_(32206670676).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg/960px-Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "4a46908bc874677bdfa0236feee28641ffafc290",
+      "mime": "image/jpeg",
+      "author": "paullymac",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Cocos (Keeling) Islands",
+      "categories": "Cocos (Keeling) Islands|Images with extracted images|Flickr images reviewed by FlickreviewR|January 2017 in Cocos (Keeling) Islands|Photographs by Paul McFarlane",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名と説明に「Cocos (Keeling) Islands」と明記されており、ココス諸島の海と島の景観が主な被写体として写されています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "funafuti",
+    "name": "フナフティ環礁",
+    "aliases": [
+      "Funafuti",
+      "Funafuti"
+    ],
+    "city": "フナフティ環礁",
+    "country": "ツバル",
+    "countryCode": "TV",
+    "continent": "Oceania",
+    "lat": -8.5167,
+    "lng": 179.2167,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Funafuti_township.jpg/960px-Funafuti_township.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ツバルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Funafuti",
+        "url": "https://en.wikipedia.org/wiki/Funafuti"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 8,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Funafuti_township.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 15873387,
+      "title": "File:Funafuti township.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Funafuti_township.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Funafuti_township.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Funafuti_township.jpg/960px-Funafuti_township.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "dd14f551051e51c5576d48ac22ceaca848bd19f4",
+      "mime": "image/jpeg",
+      "author": "Davidarfonjones",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "On main road, Funafuti looking south.",
+      "categories": "Taken with Canon EOS 400D|Self-published work|Roads in Tuvalu|Vaiaku",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にフナフティの幹線道路からの眺めと記載されており、写真も現地の道路や町並みの景観を捉えています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "aitutaki",
+    "name": "アイツタキ島",
+    "aliases": [
+      "Aitutaki",
+      "Aitutaki"
+    ],
+    "city": "アイツタキ島",
+    "country": "クック諸島",
+    "countryCode": "CK",
+    "continent": "Oceania",
+    "lat": -18.86,
+    "lng": -159.76,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/1_Aitutaki_Tapuaetai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "description": "クック諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Aitutaki",
+        "url": "https://en.wikipedia.org/wiki/Aitutaki"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 7,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:1_Aitutaki_Tapuaetai.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 46453447,
+      "title": "File:1 Aitutaki Tapuaetai.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1_Aitutaki_Tapuaetai.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/1_Aitutaki_Tapuaetai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/1_Aitutaki_Tapuaetai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "85b4c828705adc9efb122204d6ee68c98e3dfa1d",
+      "mime": "image/jpeg",
+      "author": "Julius Silver",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Aitutaki, Tapuaetai",
+      "categories": "GFDL|License migration redundant|Tapuaetai|Self-published work|Beaches of Aitutaki",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にアイツタキ島（Aitutaki）のタプアエタイ（Tapuaetai）であることが示されており、島のビーチやラグーンの風景が主な被写体として捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "chilika",
+    "name": "チリカ湖",
+    "aliases": [
+      "Chilika Lake",
+      "Chilika Lake"
+    ],
+    "city": "チリカ湖",
+    "country": "インド",
+    "countryCode": "IN",
+    "continent": "Asia",
+    "lat": 19.7,
+    "lng": 85.3,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Chilika_Bhubaneswar.me.jpg/960px-Chilika_Bhubaneswar.me.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "インドにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Chilika Lake",
+        "url": "https://en.wikipedia.org/wiki/Chilika_Lake"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chilika_Bhubaneswar.me.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 72792170,
+      "title": "File:Chilika Bhubaneswar.me.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chilika_Bhubaneswar.me.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Chilika_Bhubaneswar.me.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Chilika_Bhubaneswar.me.jpg/960px-Chilika_Bhubaneswar.me.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "2d216072071b7bc8e5af9921920ff7c9330405de",
+      "mime": "image/jpeg",
+      "author": "Government of Odisha",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Migratory birds at Chilika Lake",
+      "categories": "Odisha semi-evergreen forests|Content donated by Government of Odisha|Phoenicopterus roseus in India|Birds of Chilika",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にチリカ湖（Chilika Lake）と記載されており、指定された場所と一致しています。湖の水面や湿原の風景とともに、渡り鳥の群れが広がる自然景観が捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "riaformosa",
+    "name": "リア・フォルモーザ",
+    "aliases": [
+      "Ria Formosa",
+      "Ria Formosa"
+    ],
+    "city": "リア・フォルモーザ",
+    "country": "ポルトガル",
+    "countryCode": "PT",
+    "continent": "Europe",
+    "lat": 37.02,
+    "lng": -7.83,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Ria_formosa.jpg/960px-Ria_formosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ポルトガルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Ria Formosa",
+        "url": "https://en.wikipedia.org/wiki/Ria_Formosa"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 7,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ria_formosa.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 92715784,
+      "title": "File:Ria formosa.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ria_formosa.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Ria_formosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Ria_formosa.jpg/960px-Ria_formosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "11373938d4f582e8950c65d4aeaa58439bc08016",
+      "mime": "image/jpeg",
+      "author": "Mpicado",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Ria Formosa",
+      "categories": "Ria Formosa|Self-published work|Uploaded via Campaign:wle-pt|Portugal photographs taken on 2021-06-07|Images from Wiki Loves Earth 2020|Images from Wiki Loves Earth 2020 in Portugal|Images from Wiki Loves Earth missing SDC location of creation|Sites indexed in the WDPA in Portugal with known IDs|Images from Wiki Loves Earth 2020 in Portugal to check",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文とファイル名が指定された場所（Ria Formosa）と一致しており、写真も砂州や水辺の広がる景観を捉えています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "sanelijo",
+    "name": "サン・エリホ・ラグーン",
+    "aliases": [
+      "San Elijo Lagoon",
+      "San Elijo Lagoon"
+    ],
+    "city": "サン・エリホ・ラグーン",
+    "country": "アメリカ",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 33.006,
+    "lng": -117.271,
+    "image": "",
+    "description": "アメリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "San Elijo Lagoon",
+        "url": "https://en.wikipedia.org/wiki/San_Elijo_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 1
+  },
+  {
+    "id": "stockholmarchipelago",
+    "name": "ストックホルム群島",
+    "aliases": [
+      "Stockholm archipelago",
+      "Stockholm archipelago"
+    ],
+    "city": "ストックホルム群島",
+    "country": "スウェーデン",
+    "countryCode": "SE",
+    "continent": "Europe",
+    "lat": 59.35,
+    "lng": 18.65,
+    "image": "",
+    "description": "スウェーデンにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Stockholm archipelago",
+        "url": "https://en.wikipedia.org/wiki/Stockholm_archipelago"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 5
+  },
+  {
+    "id": "kornati",
+    "name": "コルナティ諸島",
+    "aliases": [
+      "Kornati",
+      "Kornati"
+    ],
+    "city": "コルナティ諸島",
+    "country": "クロアチア",
+    "countryCode": "HR",
+    "continent": "Europe",
+    "lat": 43.82,
+    "lng": 15.3,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Kornati_2.JPG/960px-Kornati_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "クロアチアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kornati",
+        "url": "https://en.wikipedia.org/wiki/Kornati"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 5,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kornati_2.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 660262,
+      "title": "File:Kornati 2.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kornati_2.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kornati_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Kornati_2.JPG/960px-Kornati_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "19457b1f34b4d27a1cd19b004feb6c488f3e3a30",
+      "mime": "image/jpeg",
+      "author": "Ivana",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Kornati",
+      "categories": "GFDL|CC-BY-SA-2.5,2.0,1.0|Kornati|License migration redundant|Self-published work|Featured pictures on Wikipedia, Croatian|Files with Assessments template missing SDC Commons no value quality assessment",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名および説明に「Kornati」と記載されており、コルナティ諸島の島々と海の景観が主な被写体として写っています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "rockislands",
+    "name": "ロックアイランド",
+    "aliases": [
+      "Rock Islands",
+      "Rock Islands (Palau)"
+    ],
+    "city": "ロックアイランド",
+    "country": "パラオ",
+    "countryCode": "PW",
+    "continent": "Oceania",
+    "lat": 7.22,
+    "lng": 134.35,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg/960px-Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "パラオにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Rock Islands (Palau)",
+        "url": "https://en.wikipedia.org/wiki/Rock_Islands_(Palau)"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 5,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 91442902,
+      "title": "File:Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg/960px-Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "de515ea0d65a9026ddfc3cc5fa8d8eaaa97a42e8",
+      "mime": "image/jpeg",
+      "author": "Luka Peternel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "View of Rock Islands in Palau from the lagoon.",
+      "categories": "Rock Islands|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にパラオのロックアイランドの風景であることが明記されており、写真もラグーンに浮かぶ島々の景観が主体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "lofoten",
+    "name": "ロフォーテン諸島",
+    "aliases": [
+      "Lofoten",
+      "Lofoten"
+    ],
+    "city": "ロフォーテン諸島",
+    "country": "ノルウェー",
+    "countryCode": "NO",
+    "continent": "Europe",
+    "lat": 68.2,
+    "lng": 13.6,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/V%C3%A5gakallen_from_Storv%C3%A5gan%2C_Austv%C3%A5g%C3%B8ya%2C_Lofoten%2C_Norway%2C_2015_April.jpg/960px-V%C3%A5gakallen_from_Storv%C3%A5gan%2C_Austv%C3%A5g%C3%B8ya%2C_Lofoten%2C_Norway%2C_2015_April.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ノルウェーにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Lofoten",
+        "url": "https://en.wikipedia.org/wiki/Lofoten"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 6,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:V%C3%A5gakallen_from_Storv%C3%A5gan,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_April.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 41045364,
+      "title": "File:Vågakallen from Storvågan, Austvågøya, Lofoten, Norway, 2015 April.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:V%C3%A5gakallen_from_Storv%C3%A5gan,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_April.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/V%C3%A5gakallen_from_Storv%C3%A5gan%2C_Austv%C3%A5g%C3%B8ya%2C_Lofoten%2C_Norway%2C_2015_April.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/V%C3%A5gakallen_from_Storv%C3%A5gan%2C_Austv%C3%A5g%C3%B8ya%2C_Lofoten%2C_Norway%2C_2015_April.jpg/960px-V%C3%A5gakallen_from_Storv%C3%A5gan%2C_Austv%C3%A5g%C3%B8ya%2C_Lofoten%2C_Norway%2C_2015_April.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "e3fd6854ff38ab0daeb5ca64c5bffa888866a4b9",
+      "mime": "image/jpeg",
+      "author": "Ximonic (Simo Räsänen)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Vågakallen mountain as seen from Lofotakvariet in Storvågan, Kabelvåg, Austvågøya, Lofoten, Nordland, Norway in 2015 April.",
+      "categories": "Vågakallen|Uploaded with VicuñaUploader|Norway photographs taken on 2015-04-26|Files with coordinates missing SDC location of creation|Vågan by User:Ximonic",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文の通り、ロフォーテン諸島のアウストヴォーグ島にあるヴォーガカレン山と海の景観が写されており、指定された場所の自然風景が主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "roraima",
+    "name": "ロライマ山",
+    "aliases": [
+      "Mount Roraima",
+      "Mount Roraima"
+    ],
+    "city": "ロライマ山",
+    "country": "ベネズエラ",
+    "countryCode": "VE",
+    "continent": "South America",
+    "lat": 5.143,
+    "lng": -60.762,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Roraima_vistaBase.JPG/960px-Roraima_vistaBase.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ベネズエラにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 1,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Mount Roraima",
+        "url": "https://en.wikipedia.org/wiki/Mount_Roraima"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 3,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Roraima_vistaBase.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 4920041,
+      "title": "File:Roraima vistaBase.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Roraima_vistaBase.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Roraima_vistaBase.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Roraima_vistaBase.JPG/960px-Roraima_vistaBase.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "c93f556cddf3c5bdef077bc899758e9cae7e533f",
+      "mime": "image/jpeg",
+      "author": "Csar13",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Foto tomada en excursión al Roraima en el Estado Bolívar en Venezuela",
+      "categories": "GFDL|Taken with Sanyo Xacti VPC-E6|FAL|License migration redundant|Mount Roraima|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にベネズエラのロライマ山で撮影された写真と記載されており、ロライマ山の断崖と周辺の自然景観が主な被写体として捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "grandmesa",
+    "name": "グランド・メサ",
+    "aliases": [
+      "Grand Mesa",
+      "Grand Mesa"
+    ],
+    "city": "グランド・メサ",
+    "country": "アメリカ",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 39.04,
+    "lng": -107.95,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Cliff_edge_on_Grand_Mesa_Colorado.jpg/960px-Cliff_edge_on_Grand_Mesa_Colorado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "アメリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 1,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Grand Mesa",
+        "url": "https://en.wikipedia.org/wiki/Grand_Mesa"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 5,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cliff_edge_on_Grand_Mesa_Colorado.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 16873799,
+      "title": "File:Cliff edge on Grand Mesa Colorado.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cliff_edge_on_Grand_Mesa_Colorado.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cliff_edge_on_Grand_Mesa_Colorado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Cliff_edge_on_Grand_Mesa_Colorado.jpg/960px-Cliff_edge_on_Grand_Mesa_Colorado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "18ffa9c40805d0dde1632f79f406149f53fe62f1",
+      "mime": "image/jpeg",
+      "author": "DrunkDriver",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "This is the edge of Grand Mesa, Colorado, a large mountain in the western United States.The mountain's flat top abruptly ends at these cliffs, which plunge several hundred feet downwards towards the forests below.These cliffs completely surround the edge of the Mesa's flat top. Photo taken on September 24, 2011. Photo is looking Northeast.",
+      "categories": "Grand Mesa|Taken with Canon PowerShot A590 IS|Cliffs|Grand Mesa Scenic and Historic Byway|Self-published work|Inland cliffs of Colorado|Stone runs in the United States",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にコロラド州のグランド・メサの崖の端であると明記されており、写真でもその断崖と広がる自然景観が主な被写体として捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "mesaverde",
+    "name": "メサ・ヴェルデ",
+    "aliases": [
+      "Mesa Verde National Park",
+      "Mesa Verde National Park"
+    ],
+    "city": "メサ・ヴェルデ",
+    "country": "アメリカ",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 37.235,
+    "lng": -108.461,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/MesaVerdeNationalParkCliffPalace.jpg/960px-MesaVerdeNationalParkCliffPalace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "アメリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 1,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Mesa Verde National Park",
+        "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 2,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MesaVerdeNationalParkCliffPalace.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 4298454,
+      "title": "File:MesaVerdeNationalParkCliffPalace.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:MesaVerdeNationalParkCliffPalace.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/MesaVerdeNationalParkCliffPalace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/MesaVerdeNationalParkCliffPalace.jpg/960px-MesaVerdeNationalParkCliffPalace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "14b6b14f1fc6e542c9eb26a27ec9748ec2cdca3b",
+      "mime": "image/jpeg",
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "A photograph taken of the Cliff Palace in Mesa Verde National Park, Colorado.",
+      "categories": "Taken with Canon EOS 350D|Cliff Palace|Self-published work|National Register of Historic Places with known IDs",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にある通り、メサ・ヴェルデ国立公園内のクリフ・パレスを写しており、指定された場所の景観そのものが主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "monumentvalley",
+    "name": "モニュメント・バレー",
+    "aliases": [
+      "Monument Valley",
+      "Monument Valley"
+    ],
+    "city": "モニュメント・バレー",
+    "country": "アメリカ",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 36.991,
+    "lng": -110.098,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Monumentvalley.jpg/960px-Monumentvalley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "アメリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 1,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Monument Valley",
+        "url": "https://en.wikipedia.org/wiki/Monument_Valley"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 2,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Monumentvalley.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 166401,
+      "title": "File:Monumentvalley.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monumentvalley.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Monumentvalley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Monumentvalley.jpg/960px-Monumentvalley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3182cb83b3e42b613ef5573864c1c70a981d2d6d",
+      "mime": "image/jpeg",
+      "author": "Moritz Zimmermann",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "View of Monument Valley, between Arizona and Utah.",
+      "categories": "GFDL|License migration completed|Images with extracted images|Files with derivative versions|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Turkish|Featured pictures on Wikipedia, Vietnamese|August 2004 in Arizona|United States photographs taken on 2004-08-08|Clouds and blue sky in Arizona|West Mitten Butte, East Mitten Butte, and Merrick Butte|Panoramics in Monument Valley|Featured pictures on Wikipedia, Arabic|Dirt roads in Monument Valley|Featured pictures of Monument Valley",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイルの説明にモニュメント・バレーの景色と明記されており、写真でも特徴的な岩山群が広がる風景が主役として写っています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "courthousebutte",
+    "name": "コートハウス・ビュート",
+    "aliases": [
+      "Courthouse Butte",
+      "Courthouse Butte"
+    ],
+    "city": "コートハウス・ビュート",
+    "country": "アメリカ",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 34.797,
+    "lng": -111.757,
+    "image": "",
+    "description": "アメリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 1,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Courthouse Butte",
+        "url": "https://en.wikipedia.org/wiki/Courthouse_Butte"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 1
+  },
+  {
+    "id": "tossua",
+    "name": "ト・スア・オーシャン・トレンチ",
+    "aliases": [
+      "To Sua Ocean Trench",
+      "To Sua Ocean Trench"
+    ],
+    "city": "ト・スア・オーシャン・トレンチ",
+    "country": "サモア",
+    "countryCode": "WS",
+    "continent": "Oceania",
+    "lat": -14.043,
+    "lng": -171.56,
+    "image": "",
+    "description": "サモアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "To Sua Ocean Trench",
+        "url": "https://en.wikipedia.org/wiki/To_Sua_Ocean_Trench"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 1
+  },
+  {
+    "id": "champagnebeach",
+    "name": "シャンパンビーチ",
+    "aliases": [
+      "Champagne Beach",
+      "Champagne Beach (Vanuatu)"
+    ],
+    "city": "シャンパンビーチ",
+    "country": "バヌアツ",
+    "countryCode": "VU",
+    "continent": "Oceania",
+    "lat": -15.143,
+    "lng": 167.122,
+    "image": "",
+    "description": "バヌアツにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Champagne Beach (Vanuatu)",
+        "url": "https://en.wikipedia.org/wiki/Champagne_Beach_(Vanuatu)"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 1
+  },
+  {
+    "id": "ansesource",
+    "name": "アンス・スルス・ダルジャン",
+    "aliases": [
+      "Anse Source d'Argent",
+      "Anse Source d’Argent",
+      "Anse Source d’Argent"
+    ],
+    "city": "アンス・スルス・ダルジャン",
+    "country": "セーシェル",
+    "countryCode": "SC",
+    "continent": "Africa",
+    "lat": -4.371,
+    "lng": 55.827,
+    "image": "",
+    "description": "セーシェルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Anse Source d’Argent",
+        "url": "https://en.wikipedia.org/wiki/Anse_Source_d’Argent"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 1
+  },
+  {
+    "id": "tigernest",
+    "name": "パロ・タクツァン",
+    "aliases": [
+      "Paro Taktsang",
+      "Paro Taktsang"
+    ],
+    "city": "パロ・タクツァン",
+    "country": "ブータン",
+    "countryCode": "BT",
+    "continent": "Asia",
+    "lat": 27.4919,
+    "lng": 89.3635,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg/960px-Paro_Taktsang%2C_Bhutan_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ブータンにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Paro Taktsang",
+        "url": "https://en.wikipedia.org/wiki/Paro_Taktsang"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 1,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang,_Bhutan_(edited).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 163890881,
+      "title": "File:Paro Taktsang, Bhutan (edited).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang,_Bhutan_(edited).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Paro_Taktsang%2C_Bhutan_%28edited%29.jpg/960px-Paro_Taktsang%2C_Bhutan_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "31ccefea4066d13fe5b31448a4a475dd538cec77",
+      "mime": "image/jpeg",
+      "author": "Original: Nina R from Africa Derivative work: UnpetitproleX",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Paro Taktsang monastery in the upper Paro valley of Bhutan. Also known as the Taktsang Palphug Monastery and the Tiger's Nest, it is located in the cliffside of a mountain, around a cave where Guru Padmasambhava meditated and practiced Vajrayana Buddhism in the early 9th century. It was built in 1692 by 4th Druk Desi Tenzin Rabgey .",
+      "categories": "Taken with Sony ILCE-7|Retouched pictures|Paro Taktsang|Taken with Sony FE 28-70mm F3.5-5.6 OSS|Featured pictures on Wikipedia, English|Featured pictures of Bhutan|Featured pictures on Wikipedia, Hebrew|Featured pictures on Wikipedia, Spanish|Derivative versions|Media with estimated locations|Files with coordinates missing SDC location of creation|Bhutan photographs taken on 2018-06-02|Featured pictures of the Himalayas|Files from ninara31 Flickr stream|Pictures of the Year/2025 (finalist)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "公開地点ページの代表写真と Commons の説明・画像を照合：ブータンのパロ・ツァツァン（タクツァン寺院）とそれを取り囲む断崖絶壁の景観が主たる被写体として鮮明に捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "terelj",
+    "name": "ゴルヒ・テレルジ国立公園",
+    "aliases": [
+      "Gorkhi-Terelj National Park",
+      "Gorkhi-Terelj National Park"
+    ],
+    "city": "ゴルヒ・テレルジ国立公園",
+    "country": "モンゴル",
+    "countryCode": "MN",
+    "continent": "Asia",
+    "lat": 47.98,
+    "lng": 107.45,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gorkhi-Terelj_National_Park.jpg/960px-Gorkhi-Terelj_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "モンゴルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Gorkhi-Terelj National Park",
+        "url": "https://en.wikipedia.org/wiki/Gorkhi-Terelj_National_Park"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 4,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gorkhi-Terelj_National_Park.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 150623340,
+      "title": "File:Gorkhi-Terelj National Park.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gorkhi-Terelj_National_Park.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gorkhi-Terelj_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gorkhi-Terelj_National_Park.jpg/960px-Gorkhi-Terelj_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9c4c46a2b4aa7c493ac374fd7a7e2a16ff924c60",
+      "mime": "image/jpeg",
+      "author": "Chongkian",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Gorkhi-Terelj National Park, Nalaikh, Ulaanbaatar, Mongolia",
+      "categories": "Gorkhi-Terelj National Park|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "公開地点ページの代表写真と Commons の説明・画像を照合：モンゴルのゴルヒ・テレルジ国立公園の山並みと谷の自然風景が主たる被写体として捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "boilinglake",
+    "name": "ボイリング湖",
+    "aliases": [
+      "Boiling Lake",
+      "Boiling Lake"
+    ],
+    "city": "ボイリング湖",
+    "country": "ドミニカ国",
+    "countryCode": "DM",
+    "continent": "North America",
+    "lat": 15.319,
+    "lng": -61.294,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Dominica_Boiling_Lake.jpg/960px-Dominica_Boiling_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ドミニカ国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Boiling Lake",
+        "url": "https://en.wikipedia.org/wiki/Boiling_Lake"
+      }
+    ],
+    "landform": null,
+    "referenceHalfKm": 1,
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dominica_Boiling_Lake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 56252119,
+      "title": "File:Dominica Boiling Lake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dominica_Boiling_Lake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Dominica_Boiling_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Dominica_Boiling_Lake.jpg/960px-Dominica_Boiling_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "bb70aaa9a48480d972a86ec84c48b75cab565b0e",
+      "mime": "image/jpeg",
+      "author": "Bayukjdr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Dominica Boiling Lake",
+      "categories": "Hot springs|Lakes of Dominica|Saint Patrick Parish, Dominica|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "公開地点ページの代表写真と Commons の説明・画像を照合：ドミニカ国にあるボイリング湖（Boiling Lake）の沸騰する湖面と湯気が上がる火口状の風景が中心に捉えられています。",
+      "verified": true
+    }
+  }
+]

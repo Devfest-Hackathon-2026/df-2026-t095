@@ -17,6 +17,9 @@ export type Place = {
   photoAuthors?: {name:string;url:string}[]; googleMapsUri?:string; websiteUri?:string;
   address?:string; profiled?:boolean;
   locationUnknown?:boolean;uploadPhoto?:UploadPhoto;commonsPhoto?:CommonsPhoto; visual?:VisualEvidence;
+  aliases?:string[];countryCode?:string;landform?:string|null;referenceHalfKm?:number;
+  climate?:{code:string;label:string;period:string;source:string;nearby:boolean}|null;
+  tourism?:{arrivals:number;year:number;source:string}|null;
 };
 export const defaultPreferences: Quality[] = ["water", "green", "quiet"];
 export const places: Place[] = [

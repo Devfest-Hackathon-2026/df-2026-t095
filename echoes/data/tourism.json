@@ -1,0 +1,1263 @@
+{
+  "indicator": "ST.INT.ARVL",
+  "year": 2019,
+  "threshold": 1000000,
+  "source": "https://data.worldbank.org/indicator/ST.INT.ARVL",
+  "license": "CC BY 4.0",
+  "method": "同じ年で比較するため2019年の国際観光客到着数を使用。現時点の人気・混雑・安全性を表さない。",
+  "countries": [
+    {
+      "iso3": "ALB",
+      "iso2": "AL",
+      "name": "Albania",
+      "arrivals": 6406000,
+      "year": 2019
+    },
+    {
+      "iso3": "DZA",
+      "iso2": "DZ",
+      "name": "Algeria",
+      "arrivals": 2371000,
+      "year": 2019
+    },
+    {
+      "iso3": "ASM",
+      "iso2": "AS",
+      "name": "American Samoa",
+      "arrivals": 19200,
+      "year": 2019
+    },
+    {
+      "iso3": "AND",
+      "iso2": "AD",
+      "name": "Andorra",
+      "arrivals": 8235000,
+      "year": 2019
+    },
+    {
+      "iso3": "AGO",
+      "iso2": "AO",
+      "name": "Angola",
+      "arrivals": 218000,
+      "year": 2019
+    },
+    {
+      "iso3": "ATG",
+      "iso2": "AG",
+      "name": "Antigua and Barbuda",
+      "arrivals": 1035000,
+      "year": 2019
+    },
+    {
+      "iso3": "ARG",
+      "iso2": "AR",
+      "name": "Argentina",
+      "arrivals": 7399000,
+      "year": 2019
+    },
+    {
+      "iso3": "ARM",
+      "iso2": "AM",
+      "name": "Armenia",
+      "arrivals": 1894000,
+      "year": 2019
+    },
+    {
+      "iso3": "ABW",
+      "iso2": "AW",
+      "name": "Aruba",
+      "arrivals": 1951000,
+      "year": 2019
+    },
+    {
+      "iso3": "AUS",
+      "iso2": "AU",
+      "name": "Australia",
+      "arrivals": 9466000,
+      "year": 2019
+    },
+    {
+      "iso3": "AUT",
+      "iso2": "AT",
+      "name": "Austria",
+      "arrivals": 31884000,
+      "year": 2019
+    },
+    {
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "name": "Azerbaijan",
+      "arrivals": 3170000,
+      "year": 2019
+    },
+    {
+      "iso3": "BHS",
+      "iso2": "BS",
+      "name": "Bahamas, The",
+      "arrivals": 7250000,
+      "year": 2019
+    },
+    {
+      "iso3": "BHR",
+      "iso2": "BH",
+      "name": "Bahrain",
+      "arrivals": 11061000,
+      "year": 2019
+    },
+    {
+      "iso3": "BGD",
+      "iso2": "BD",
+      "name": "Bangladesh",
+      "arrivals": 323000,
+      "year": 2019
+    },
+    {
+      "iso3": "BRB",
+      "iso2": "BB",
+      "name": "Barbados",
+      "arrivals": 966000,
+      "year": 2019
+    },
+    {
+      "iso3": "BLR",
+      "iso2": "BY",
+      "name": "Belarus",
+      "arrivals": 11832000,
+      "year": 2019
+    },
+    {
+      "iso3": "BEL",
+      "iso2": "BE",
+      "name": "Belgium",
+      "arrivals": 9343000,
+      "year": 2019
+    },
+    {
+      "iso3": "BLZ",
+      "iso2": "BZ",
+      "name": "Belize",
+      "arrivals": 1674000,
+      "year": 2019
+    },
+    {
+      "iso3": "BEN",
+      "iso2": "BJ",
+      "name": "Benin",
+      "arrivals": 337000,
+      "year": 2019
+    },
+    {
+      "iso3": "BMU",
+      "iso2": "BM",
+      "name": "Bermuda",
+      "arrivals": 805000,
+      "year": 2019
+    },
+    {
+      "iso3": "BTN",
+      "iso2": "BT",
+      "name": "Bhutan",
+      "arrivals": 316000,
+      "year": 2019
+    },
+    {
+      "iso3": "BOL",
+      "iso2": "BO",
+      "name": "Bolivia",
+      "arrivals": 1239000,
+      "year": 2019
+    },
+    {
+      "iso3": "BIH",
+      "iso2": "BA",
+      "name": "Bosnia and Herzegovina",
+      "arrivals": 1198000,
+      "year": 2019
+    },
+    {
+      "iso3": "BRA",
+      "iso2": "BR",
+      "name": "Brazil",
+      "arrivals": 6353000,
+      "year": 2019
+    },
+    {
+      "iso3": "VGB",
+      "iso2": "VG",
+      "name": "British Virgin Islands",
+      "arrivals": 302400,
+      "year": 2019
+    },
+    {
+      "iso3": "BRN",
+      "iso2": "BN",
+      "name": "Brunei Darussalam",
+      "arrivals": 4449000,
+      "year": 2019
+    },
+    {
+      "iso3": "BGR",
+      "iso2": "BG",
+      "name": "Bulgaria",
+      "arrivals": 12552000,
+      "year": 2019
+    },
+    {
+      "iso3": "BFA",
+      "iso2": "BF",
+      "name": "Burkina Faso",
+      "arrivals": 143000,
+      "year": 2019
+    },
+    {
+      "iso3": "CPV",
+      "iso2": "CV",
+      "name": "Cabo Verde",
+      "arrivals": 758000,
+      "year": 2019
+    },
+    {
+      "iso3": "KHM",
+      "iso2": "KH",
+      "name": "Cambodia",
+      "arrivals": 6611000,
+      "year": 2019
+    },
+    {
+      "iso3": "CMR",
+      "iso2": "CM",
+      "name": "Cameroon",
+      "arrivals": 1021000,
+      "year": 2019
+    },
+    {
+      "iso3": "CAN",
+      "iso2": "CA",
+      "name": "Canada",
+      "arrivals": 32430000,
+      "year": 2019
+    },
+    {
+      "iso3": "CYM",
+      "iso2": "KY",
+      "name": "Cayman Islands",
+      "arrivals": 2334000,
+      "year": 2019
+    },
+    {
+      "iso3": "CAF",
+      "iso2": "CF",
+      "name": "Central African Republic",
+      "arrivals": 87000,
+      "year": 2019
+    },
+    {
+      "iso3": "TCD",
+      "iso2": "TD",
+      "name": "Chad",
+      "arrivals": 81000,
+      "year": 2019
+    },
+    {
+      "iso3": "CHL",
+      "iso2": "CL",
+      "name": "Chile",
+      "arrivals": 5431000,
+      "year": 2019
+    },
+    {
+      "iso3": "CHN",
+      "iso2": "CN",
+      "name": "China",
+      "arrivals": 162538000,
+      "year": 2019
+    },
+    {
+      "iso3": "COL",
+      "iso2": "CO",
+      "name": "Colombia",
+      "arrivals": 4531000,
+      "year": 2019
+    },
+    {
+      "iso3": "COM",
+      "iso2": "KM",
+      "name": "Comoros",
+      "arrivals": 45100,
+      "year": 2019
+    },
+    {
+      "iso3": "CRI",
+      "iso2": "CR",
+      "name": "Costa Rica",
+      "arrivals": 3366000,
+      "year": 2019
+    },
+    {
+      "iso3": "CIV",
+      "iso2": "CI",
+      "name": "Cote d'Ivoire",
+      "arrivals": 2070000,
+      "year": 2019
+    },
+    {
+      "iso3": "HRV",
+      "iso2": "HR",
+      "name": "Croatia",
+      "arrivals": 60021000,
+      "year": 2019
+    },
+    {
+      "iso3": "CUB",
+      "iso2": "CU",
+      "name": "Cuba",
+      "arrivals": 4276000,
+      "year": 2019
+    },
+    {
+      "iso3": "CUW",
+      "iso2": "CW",
+      "name": "Curacao",
+      "arrivals": 1293000,
+      "year": 2019
+    },
+    {
+      "iso3": "CYP",
+      "iso2": "CY",
+      "name": "Cyprus",
+      "arrivals": 4117000,
+      "year": 2019
+    },
+    {
+      "iso3": "CZE",
+      "iso2": "CZ",
+      "name": "Czechia",
+      "arrivals": 37202000,
+      "year": 2019
+    },
+    {
+      "iso3": "DNK",
+      "iso2": "DK",
+      "name": "Denmark",
+      "arrivals": 33093000,
+      "year": 2019
+    },
+    {
+      "iso3": "DMA",
+      "iso2": "DM",
+      "name": "Dominica",
+      "arrivals": 322000,
+      "year": 2019
+    },
+    {
+      "iso3": "DOM",
+      "iso2": "DO",
+      "name": "Dominican Republic",
+      "arrivals": 7550000,
+      "year": 2019
+    },
+    {
+      "iso3": "ECU",
+      "iso2": "EC",
+      "name": "Ecuador",
+      "arrivals": 2108000,
+      "year": 2019
+    },
+    {
+      "iso3": "EGY",
+      "iso2": "EG",
+      "name": "Egypt, Arab Rep.",
+      "arrivals": 13026000,
+      "year": 2019
+    },
+    {
+      "iso3": "SLV",
+      "iso2": "SV",
+      "name": "El Salvador",
+      "arrivals": 2639000,
+      "year": 2019
+    },
+    {
+      "iso3": "EST",
+      "iso2": "EE",
+      "name": "Estonia",
+      "arrivals": 6103000,
+      "year": 2019
+    },
+    {
+      "iso3": "SWZ",
+      "iso2": "SZ",
+      "name": "Eswatini",
+      "arrivals": 1226000,
+      "year": 2019
+    },
+    {
+      "iso3": "ETH",
+      "iso2": "ET",
+      "name": "Ethiopia",
+      "arrivals": 812000,
+      "year": 2019
+    },
+    {
+      "iso3": "FJI",
+      "iso2": "FJ",
+      "name": "Fiji",
+      "arrivals": 969000,
+      "year": 2019
+    },
+    {
+      "iso3": "FIN",
+      "iso2": "FI",
+      "name": "Finland",
+      "arrivals": 3290000,
+      "year": 2019
+    },
+    {
+      "iso3": "FRA",
+      "iso2": "FR",
+      "name": "France",
+      "arrivals": 217877000,
+      "year": 2019
+    },
+    {
+      "iso3": "PYF",
+      "iso2": "PF",
+      "name": "French Polynesia",
+      "arrivals": 300000,
+      "year": 2019
+    },
+    {
+      "iso3": "GMB",
+      "iso2": "GM",
+      "name": "Gambia, The",
+      "arrivals": 620000,
+      "year": 2019
+    },
+    {
+      "iso3": "GEO",
+      "iso2": "GE",
+      "name": "Georgia",
+      "arrivals": 7726000,
+      "year": 2019
+    },
+    {
+      "iso3": "DEU",
+      "iso2": "DE",
+      "name": "Germany",
+      "arrivals": 39563000,
+      "year": 2019
+    },
+    {
+      "iso3": "GRC",
+      "iso2": "GR",
+      "name": "Greece",
+      "arrivals": 34005000,
+      "year": 2019
+    },
+    {
+      "iso3": "GRD",
+      "iso2": "GD",
+      "name": "Grenada",
+      "arrivals": 526000,
+      "year": 2019
+    },
+    {
+      "iso3": "GUM",
+      "iso2": "GU",
+      "name": "Guam",
+      "arrivals": 1667000,
+      "year": 2019
+    },
+    {
+      "iso3": "GTM",
+      "iso2": "GT",
+      "name": "Guatemala",
+      "arrivals": 2560000,
+      "year": 2019
+    },
+    {
+      "iso3": "GNB",
+      "iso2": "GW",
+      "name": "Guinea-Bissau",
+      "arrivals": 52400,
+      "year": 2019
+    },
+    {
+      "iso3": "GUY",
+      "iso2": "GY",
+      "name": "Guyana",
+      "arrivals": 315000,
+      "year": 2019
+    },
+    {
+      "iso3": "HTI",
+      "iso2": "HT",
+      "name": "Haiti",
+      "arrivals": 938000,
+      "year": 2019
+    },
+    {
+      "iso3": "HND",
+      "iso2": "HN",
+      "name": "Honduras",
+      "arrivals": 2315000,
+      "year": 2019
+    },
+    {
+      "iso3": "HKG",
+      "iso2": "HK",
+      "name": "Hong Kong SAR, China",
+      "arrivals": 55913000,
+      "year": 2019
+    },
+    {
+      "iso3": "HUN",
+      "iso2": "HU",
+      "name": "Hungary",
+      "arrivals": 61397000,
+      "year": 2019
+    },
+    {
+      "iso3": "ISL",
+      "iso2": "IS",
+      "name": "Iceland",
+      "arrivals": 2202000,
+      "year": 2019
+    },
+    {
+      "iso3": "IND",
+      "iso2": "IN",
+      "name": "India",
+      "arrivals": 17914000,
+      "year": 2019
+    },
+    {
+      "iso3": "IDN",
+      "iso2": "ID",
+      "name": "Indonesia",
+      "arrivals": 16107000,
+      "year": 2019
+    },
+    {
+      "iso3": "IRN",
+      "iso2": "IR",
+      "name": "Iran, Islamic Rep.",
+      "arrivals": 9107000,
+      "year": 2019
+    },
+    {
+      "iso3": "IRL",
+      "iso2": "IE",
+      "name": "Ireland",
+      "arrivals": 10951000,
+      "year": 2019
+    },
+    {
+      "iso3": "ISR",
+      "iso2": "IL",
+      "name": "Israel",
+      "arrivals": 4905000,
+      "year": 2019
+    },
+    {
+      "iso3": "ITA",
+      "iso2": "IT",
+      "name": "Italy",
+      "arrivals": 95399000,
+      "year": 2019
+    },
+    {
+      "iso3": "JAM",
+      "iso2": "JM",
+      "name": "Jamaica",
+      "arrivals": 4233000,
+      "year": 2019
+    },
+    {
+      "iso3": "JPN",
+      "iso2": "JP",
+      "name": "Japan",
+      "arrivals": 31881000,
+      "year": 2019
+    },
+    {
+      "iso3": "JOR",
+      "iso2": "JO",
+      "name": "Jordan",
+      "arrivals": 5361000,
+      "year": 2019
+    },
+    {
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "name": "Kazakhstan",
+      "arrivals": 8515000,
+      "year": 2019
+    },
+    {
+      "iso3": "KEN",
+      "iso2": "KE",
+      "name": "Kenya",
+      "arrivals": 2049000,
+      "year": 2019
+    },
+    {
+      "iso3": "KIR",
+      "iso2": "KI",
+      "name": "Kiribati",
+      "arrivals": 12000,
+      "year": 2019
+    },
+    {
+      "iso3": "KOR",
+      "iso2": "KR",
+      "name": "Korea, Rep.",
+      "arrivals": 17503000,
+      "year": 2019
+    },
+    {
+      "iso3": "KWT",
+      "iso2": "KW",
+      "name": "Kuwait",
+      "arrivals": 8565000,
+      "year": 2019
+    },
+    {
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "name": "Kyrgyz Republic",
+      "arrivals": 8508000,
+      "year": 2019
+    },
+    {
+      "iso3": "LAO",
+      "iso2": "LA",
+      "name": "Lao PDR",
+      "arrivals": 4791000,
+      "year": 2019
+    },
+    {
+      "iso3": "LVA",
+      "iso2": "LV",
+      "name": "Latvia",
+      "arrivals": 8342000,
+      "year": 2019
+    },
+    {
+      "iso3": "LBN",
+      "iso2": "LB",
+      "name": "Lebanon",
+      "arrivals": 1936000,
+      "year": 2019
+    },
+    {
+      "iso3": "LSO",
+      "iso2": "LS",
+      "name": "Lesotho",
+      "arrivals": 1142000,
+      "year": 2019
+    },
+    {
+      "iso3": "LIE",
+      "iso2": "LI",
+      "name": "Liechtenstein",
+      "arrivals": 98100,
+      "year": 2019
+    },
+    {
+      "iso3": "LTU",
+      "iso2": "LT",
+      "name": "Lithuania",
+      "arrivals": 6150000,
+      "year": 2019
+    },
+    {
+      "iso3": "LUX",
+      "iso2": "LU",
+      "name": "Luxembourg",
+      "arrivals": 1041000,
+      "year": 2019
+    },
+    {
+      "iso3": "MAC",
+      "iso2": "MO",
+      "name": "Macao SAR, China",
+      "arrivals": 39406000,
+      "year": 2019
+    },
+    {
+      "iso3": "MDG",
+      "iso2": "MG",
+      "name": "Madagascar",
+      "arrivals": 486000,
+      "year": 2019
+    },
+    {
+      "iso3": "MYS",
+      "iso2": "MY",
+      "name": "Malaysia",
+      "arrivals": 26101000,
+      "year": 2019
+    },
+    {
+      "iso3": "MDV",
+      "iso2": "MV",
+      "name": "Maldives",
+      "arrivals": 1703000,
+      "year": 2019
+    },
+    {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "name": "Mali",
+      "arrivals": 217000,
+      "year": 2019
+    },
+    {
+      "iso3": "MLT",
+      "iso2": "MT",
+      "name": "Malta",
+      "arrivals": 3519000,
+      "year": 2019
+    },
+    {
+      "iso3": "MHL",
+      "iso2": "MH",
+      "name": "Marshall Islands",
+      "arrivals": 6100,
+      "year": 2019
+    },
+    {
+      "iso3": "MUS",
+      "iso2": "MU",
+      "name": "Mauritius",
+      "arrivals": 1418000,
+      "year": 2019
+    },
+    {
+      "iso3": "MEX",
+      "iso2": "MX",
+      "name": "Mexico",
+      "arrivals": 97406000,
+      "year": 2019
+    },
+    {
+      "iso3": "FSM",
+      "iso2": "FM",
+      "name": "Micronesia, Fed. Sts.",
+      "arrivals": 18000,
+      "year": 2019
+    },
+    {
+      "iso3": "MDA",
+      "iso2": "MD",
+      "name": "Moldova",
+      "arrivals": 174000,
+      "year": 2019
+    },
+    {
+      "iso3": "MCO",
+      "iso2": "MC",
+      "name": "Monaco",
+      "arrivals": 363000,
+      "year": 2019
+    },
+    {
+      "iso3": "MNG",
+      "iso2": "MN",
+      "name": "Mongolia",
+      "arrivals": 637000,
+      "year": 2019
+    },
+    {
+      "iso3": "MNE",
+      "iso2": "ME",
+      "name": "Montenegro",
+      "arrivals": 2510000,
+      "year": 2019
+    },
+    {
+      "iso3": "MAR",
+      "iso2": "MA",
+      "name": "Morocco",
+      "arrivals": 13109000,
+      "year": 2019
+    },
+    {
+      "iso3": "MOZ",
+      "iso2": "MZ",
+      "name": "Mozambique",
+      "arrivals": 2033000,
+      "year": 2019
+    },
+    {
+      "iso3": "MMR",
+      "iso2": "MM",
+      "name": "Myanmar",
+      "arrivals": 4364000,
+      "year": 2019
+    },
+    {
+      "iso3": "NAM",
+      "iso2": "NA",
+      "name": "Namibia",
+      "arrivals": 1651000,
+      "year": 2019
+    },
+    {
+      "iso3": "NPL",
+      "iso2": "NP",
+      "name": "Nepal",
+      "arrivals": 1197000,
+      "year": 2019
+    },
+    {
+      "iso3": "NLD",
+      "iso2": "NL",
+      "name": "Netherlands",
+      "arrivals": 20129000,
+      "year": 2019
+    },
+    {
+      "iso3": "NCL",
+      "iso2": "NC",
+      "name": "New Caledonia",
+      "arrivals": 130000,
+      "year": 2019
+    },
+    {
+      "iso3": "NZL",
+      "iso2": "NZ",
+      "name": "New Zealand",
+      "arrivals": 3888000,
+      "year": 2019
+    },
+    {
+      "iso3": "NIC",
+      "iso2": "NI",
+      "name": "Nicaragua",
+      "arrivals": 1455000,
+      "year": 2019
+    },
+    {
+      "iso3": "NER",
+      "iso2": "NE",
+      "name": "Niger",
+      "arrivals": 192000,
+      "year": 2019
+    },
+    {
+      "iso3": "MKD",
+      "iso2": "MK",
+      "name": "North Macedonia",
+      "arrivals": 758000,
+      "year": 2019
+    },
+    {
+      "iso3": "MNP",
+      "iso2": "MP",
+      "name": "Northern Mariana Islands",
+      "arrivals": 487000,
+      "year": 2019
+    },
+    {
+      "iso3": "NOR",
+      "iso2": "NO",
+      "name": "Norway",
+      "arrivals": 5879000,
+      "year": 2019
+    },
+    {
+      "iso3": "OMN",
+      "iso2": "OM",
+      "name": "Oman",
+      "arrivals": 3506000,
+      "year": 2019
+    },
+    {
+      "iso3": "PLW",
+      "iso2": "PW",
+      "name": "Palau",
+      "arrivals": 94000,
+      "year": 2019
+    },
+    {
+      "iso3": "PAN",
+      "iso2": "PA",
+      "name": "Panama",
+      "arrivals": 2494000,
+      "year": 2019
+    },
+    {
+      "iso3": "PNG",
+      "iso2": "PG",
+      "name": "Papua New Guinea",
+      "arrivals": 211000,
+      "year": 2019
+    },
+    {
+      "iso3": "PRY",
+      "iso2": "PY",
+      "name": "Paraguay",
+      "arrivals": 4368000,
+      "year": 2019
+    },
+    {
+      "iso3": "PER",
+      "iso2": "PE",
+      "name": "Peru",
+      "arrivals": 5275000,
+      "year": 2019
+    },
+    {
+      "iso3": "PHL",
+      "iso2": "PH",
+      "name": "Philippines",
+      "arrivals": 8261000,
+      "year": 2019
+    },
+    {
+      "iso3": "POL",
+      "iso2": "PL",
+      "name": "Poland",
+      "arrivals": 88515000,
+      "year": 2019
+    },
+    {
+      "iso3": "PRT",
+      "iso2": "PT",
+      "name": "Portugal",
+      "arrivals": 17283000,
+      "year": 2019
+    },
+    {
+      "iso3": "PRI",
+      "iso2": "PR",
+      "name": "Puerto Rico (US)",
+      "arrivals": 4931000,
+      "year": 2019
+    },
+    {
+      "iso3": "QAT",
+      "iso2": "QA",
+      "name": "Qatar",
+      "arrivals": 2136500,
+      "year": 2019
+    },
+    {
+      "iso3": "ROU",
+      "iso2": "RO",
+      "name": "Romania",
+      "arrivals": 12815000,
+      "year": 2019
+    },
+    {
+      "iso3": "RUS",
+      "iso2": "RU",
+      "name": "Russian Federation",
+      "arrivals": 24419000,
+      "year": 2019
+    },
+    {
+      "iso3": "RWA",
+      "iso2": "RW",
+      "name": "Rwanda",
+      "arrivals": 1634000,
+      "year": 2019
+    },
+    {
+      "iso3": "WSM",
+      "iso2": "WS",
+      "name": "Samoa",
+      "arrivals": 181000,
+      "year": 2019
+    },
+    {
+      "iso3": "SMR",
+      "iso2": "SM",
+      "name": "San Marino",
+      "arrivals": 1904000,
+      "year": 2019
+    },
+    {
+      "iso3": "SAU",
+      "iso2": "SA",
+      "name": "Saudi Arabia",
+      "arrivals": 20292000,
+      "year": 2019
+    },
+    {
+      "iso3": "SRB",
+      "iso2": "RS",
+      "name": "Serbia",
+      "arrivals": 1847000,
+      "year": 2019
+    },
+    {
+      "iso3": "SYC",
+      "iso2": "SC",
+      "name": "Seychelles",
+      "arrivals": 428000,
+      "year": 2019
+    },
+    {
+      "iso3": "SLE",
+      "iso2": "SL",
+      "name": "Sierra Leone",
+      "arrivals": 71000,
+      "year": 2019
+    },
+    {
+      "iso3": "SGP",
+      "iso2": "SG",
+      "name": "Singapore",
+      "arrivals": 19116000,
+      "year": 2019
+    },
+    {
+      "iso3": "SXM",
+      "iso2": "SX",
+      "name": "Sint Maarten (Dutch part)",
+      "arrivals": 1952000,
+      "year": 2019
+    },
+    {
+      "iso3": "SVN",
+      "iso2": "SI",
+      "name": "Slovenia",
+      "arrivals": 4702000,
+      "year": 2019
+    },
+    {
+      "iso3": "SLB",
+      "iso2": "SB",
+      "name": "Solomon Islands",
+      "arrivals": 28900,
+      "year": 2019
+    },
+    {
+      "iso3": "ZAF",
+      "iso2": "ZA",
+      "name": "South Africa",
+      "arrivals": 14797000,
+      "year": 2019
+    },
+    {
+      "iso3": "ESP",
+      "iso2": "ES",
+      "name": "Spain",
+      "arrivals": 126170000,
+      "year": 2019
+    },
+    {
+      "iso3": "LKA",
+      "iso2": "LK",
+      "name": "Sri Lanka",
+      "arrivals": 2027000,
+      "year": 2019
+    },
+    {
+      "iso3": "KNA",
+      "iso2": "KN",
+      "name": "St. Kitts and Nevis",
+      "arrivals": 1107000,
+      "year": 2019
+    },
+    {
+      "iso3": "LCA",
+      "iso2": "LC",
+      "name": "St. Lucia",
+      "arrivals": 1220000,
+      "year": 2019
+    },
+    {
+      "iso3": "VCT",
+      "iso2": "VC",
+      "name": "St. Vincent and the Grenadines",
+      "arrivals": 392000,
+      "year": 2019
+    },
+    {
+      "iso3": "SWE",
+      "iso2": "SE",
+      "name": "Sweden",
+      "arrivals": 7616000,
+      "year": 2019
+    },
+    {
+      "iso3": "CHE",
+      "iso2": "CH",
+      "name": "Switzerland",
+      "arrivals": 11818000,
+      "year": 2019
+    },
+    {
+      "iso3": "SYR",
+      "iso2": "SY",
+      "name": "Syrian Arab Republic",
+      "arrivals": 2424000,
+      "year": 2019
+    },
+    {
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "name": "Tanzania",
+      "arrivals": 1527000,
+      "year": 2019
+    },
+    {
+      "iso3": "THA",
+      "iso2": "TH",
+      "name": "Thailand",
+      "arrivals": 39916000,
+      "year": 2019
+    },
+    {
+      "iso3": "TLS",
+      "iso2": "TL",
+      "name": "Timor-Leste",
+      "arrivals": 74800,
+      "year": 2019
+    },
+    {
+      "iso3": "TGO",
+      "iso2": "TG",
+      "name": "Togo",
+      "arrivals": 876000,
+      "year": 2019
+    },
+    {
+      "iso3": "TON",
+      "iso2": "TO",
+      "name": "Tonga",
+      "arrivals": 94000,
+      "year": 2019
+    },
+    {
+      "iso3": "TTO",
+      "iso2": "TT",
+      "name": "Trinidad and Tobago",
+      "arrivals": 480000,
+      "year": 2019
+    },
+    {
+      "iso3": "TUN",
+      "iso2": "TN",
+      "name": "Tunisia",
+      "arrivals": 9429000,
+      "year": 2019
+    },
+    {
+      "iso3": "TUR",
+      "iso2": "TR",
+      "name": "Turkiye",
+      "arrivals": 51747000,
+      "year": 2019
+    },
+    {
+      "iso3": "TCA",
+      "iso2": "TC",
+      "name": "Turks and Caicos Islands",
+      "arrivals": 1599000,
+      "year": 2019
+    },
+    {
+      "iso3": "TUV",
+      "iso2": "TV",
+      "name": "Tuvalu",
+      "arrivals": 3600,
+      "year": 2019
+    },
+    {
+      "iso3": "UGA",
+      "iso2": "UG",
+      "name": "Uganda",
+      "arrivals": 1543000,
+      "year": 2019
+    },
+    {
+      "iso3": "UKR",
+      "iso2": "UA",
+      "name": "Ukraine",
+      "arrivals": 13710000,
+      "year": 2019
+    },
+    {
+      "iso3": "ARE",
+      "iso2": "AE",
+      "name": "United Arab Emirates",
+      "arrivals": 25282000,
+      "year": 2019
+    },
+    {
+      "iso3": "GBR",
+      "iso2": "GB",
+      "name": "United Kingdom",
+      "arrivals": 40857000,
+      "year": 2019
+    },
+    {
+      "iso3": "USA",
+      "iso2": "US",
+      "name": "United States",
+      "arrivals": 165478000,
+      "year": 2019
+    },
+    {
+      "iso3": "URY",
+      "iso2": "UY",
+      "name": "Uruguay",
+      "arrivals": 3480000,
+      "year": 2019
+    },
+    {
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "name": "Uzbekistan",
+      "arrivals": 6749000,
+      "year": 2019
+    },
+    {
+      "iso3": "VUT",
+      "iso2": "VU",
+      "name": "Vanuatu",
+      "arrivals": 256000,
+      "year": 2019
+    },
+    {
+      "iso3": "VNM",
+      "iso2": "VN",
+      "name": "Viet Nam",
+      "arrivals": 18009000,
+      "year": 2019
+    },
+    {
+      "iso3": "VIR",
+      "iso2": "VI",
+      "name": "Virgin Islands (U.S.)",
+      "arrivals": 2074000,
+      "year": 2019
+    },
+    {
+      "iso3": "PSE",
+      "iso2": "PS",
+      "name": "West Bank and Gaza",
+      "arrivals": 688000,
+      "year": 2019
+    },
+    {
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "name": "Zambia",
+      "arrivals": 1266000,
+      "year": 2019
+    },
+    {
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "name": "Zimbabwe",
+      "arrivals": 2294000,
+      "year": 2019
+    }
+  ]
+}

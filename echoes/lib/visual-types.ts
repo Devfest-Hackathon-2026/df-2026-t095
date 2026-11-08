@@ -1,5 +1,5 @@
 export type CommonsPhoto={provider:'commons';pageId:number;title:string;sourcePage:string;originalUrl:string;thumbnailUrl:string;sha1:string;mime:string;author:string;license:string;licenseUrl:string;description:string;categories?:string;localImage?:string;changes:string;verification:string;verified:boolean};
 export type UploadPhoto={provider:'upload';name:string;mime:'image/jpeg';changes:string};
 export type AnalysisPhoto=CommonsPhoto|UploadPhoto;
-export type VisualEvidence={cosine:number;visualWeight:number;observations:string[];differences:string[];inferences:string[];explanation:'generated'|'unavailable';sourcePhoto:AnalysisPhoto;candidatePhoto:CommonsPhoto};
-export type VisualSearchSummary={mode:'visual'|'fallback';reason?:string;candidateCount:number;eligibleCount:number;comparedCount:number;model:string;visualWeight:number;scope:string};
+export type VisualEvidence={cosine:number;visualWeight:number;observations:string[];differences:string[];inferences:string[];explanation:'generated'|'unavailable';sourcePhoto:AnalysisPhoto;candidatePhoto:CommonsPhoto;landscapeMatch?:'strong'|'partial'|'weak';visionSignal?:number};
+export type VisualSearchSummary={mode:'visual'|'fallback';reason?:string;candidateCount:number;eligibleCount:number;comparedCount:number;model:string;visualWeight:number;scope:string;catalog?:'bigquery'|'local';visionCompared?:number;rerankedCount?:number};
