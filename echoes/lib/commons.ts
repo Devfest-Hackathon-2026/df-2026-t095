@@ -15,7 +15,7 @@ export function photoMatchesPlace(photo:Pick<CommonsPhoto,'title'|'description'|
  const identity=aliases.some(a=>{const n=normalize(a);return n.length>=2&&content.includes(n);});
  return identity&&Boolean(context.nearby||(context.city&&normalize(context.city).length>=2&&content.includes(normalize(context.city))));
 }
-async function wiki(url:string,params:Record<string,string>){const r=await fetch(`${url}?${new URLSearchParams({...params,format:'json'})}`,{headers:{'User-Agent':userAgent},signal:AbortSignal.timeout(15000),cache:'no-store'});if(!r.ok)throw new Error('Commons の写真を確認できませんでした。');return await r.json() as {search?:{id:string}[];entities?:Record<string,unknown>;query?:{pages?:Record<string,unknown>}};}
+async function wiki(url:string,params:Record<string,string>){const r=await fetch(`${url}?${new URLSearchParams({...params,format:'json'})}`,{headers:{'User-Agent':userAgent},signal:AbortSignal.timeout(15000),cache:'no-store'});if(!r.ok)throw new Error(`Commons の写真を確認できませんでした（HTTP ${r.status}）。`);return await r.json() as {search?:{id:string}[];entities?:Record<string,unknown>;query?:{pages?:Record<string,unknown>}};}
 export async function samplePhoto(place:Place):Promise<CommonsPhoto|null>{
  try{const manifest=JSON.parse(await readFile(resolvePath(process.cwd(),'data/commons-samples.json'),'utf8')) as {photos:Record<string,CommonsPhoto>};const p=manifest.photos[place.id];return p?.verified&&eligibleLicense(p)?p:null;}catch{return null;}
 }

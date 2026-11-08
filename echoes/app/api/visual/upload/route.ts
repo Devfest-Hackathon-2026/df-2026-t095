@@ -1,3 +1,4 @@
+import {parseSearchFilters} from '@/lib/climate-types';
 import {isQuality} from '@/lib/discovery';
 import {uploadedVisualDiscovery,hydrateVisualResults} from '@/lib/visual-discovery';
 import {InputError,maxUploadBytes,prepareUpload,readLimitedBody} from '@/lib/upload-image';
@@ -17,9 +18,10 @@ export async function POST(request:Request){
   let preferences:unknown;try{preferences=JSON.parse(String(form.get('preferences')||''));}catch{throw new InputError('好きな特徴を選んでください。');}
   const destination=form.get('destination'),weight=Number(form.get('visualWeight'));
   if(!Array.isArray(preferences)||!preferences.length||preferences.length>6||!preferences.every(isQuality)||typeof destination!=='string'||destination.length>100||form.get('visualWeight')===null||!Number.isFinite(weight)||weight<0||weight>1)throw new InputError('検索条件を確認してください。');
+  let filters;try{filters=parseSearchFilters(JSON.parse(String(form.get('filters')||'null')));}catch(e){throw new InputError(e instanceof Error?e.message:'絞り込み条件を確認してください。');}
   const prepared=await prepareUpload(Buffer.from(await file.arrayBuffer()),file.type);
-  const result=await uploadedVisualDiscovery(prepared.data,preferences as Quality[],destination,weight);
+  const result=await uploadedVisualDiscovery(prepared.data,preferences as Quality[],destination,weight,undefined,filters);
   const hydrated=result.visualSearch.mode==='visual'?await hydrateVisualResults(result):result;
   return Response.json(hydrated,{headers:{'Cache-Control':'no-store'}});
- }catch(e){return Response.json({error:e instanceof InputError?e.message:'写真の解析を完了できませんでした。もう一度お試しください。'},{status:e instanceof InputError?e.status:502,headers:{'Cache-Control':'no-store'}});}finally{active--;}
+ }catch(e){return Response.json({error:e instanceof InputError?e.message:e instanceof Error&&/気候区分/.test(e.message)?e.message:e instanceof Error&&/気候区分/.test(e.message)?e.message:'写真の解析を完了できませんでした。もう一度お試しください。'},{status:e instanceof InputError?e.status:e instanceof Error&&/気候区分/.test(e.message)?400:502,headers:{'Cache-Control':'no-store'}});}finally{active--;}
 }

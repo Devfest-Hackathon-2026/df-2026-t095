@@ -17,7 +17,7 @@ export function loadGoogle(key: string) {
     if (w.google?.maps) { resolve(w.google.maps); return; }
     w.elsewhereMapReady = () => w.google ? resolve(w.google.maps) : reject(new Error("Google Maps を表示できませんでした。"));
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=elsewhereMapReady&loading=async&language=ja&region=JP`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=elsewhereMapReady&loading=async&v=beta&language=ja&region=JP`;
     script.async = true; script.onerror = () => { googlePromise = null; reject(new Error("Google Maps を表示できませんでした。キーと参照元の設定を確認してください。")); };
     document.head.appendChild(script);
   });
