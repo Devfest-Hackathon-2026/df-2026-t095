@@ -9,6 +9,8 @@ const refKey=(ref:SavedRef)=>ref.placeId?`google-${ref.placeId}`:ref.sampleId;
 const toRef=(place:Place):SavedRef=>({placeId:place.placeId||'',sampleId:place.placeId?'':place.id});
 async function resolve(input:object,signal?:AbortSignal):Promise<Place>{const r=await fetch('/api/resolve',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),signal});const data=await r.json() as {place?:Place;error?:string};if(!r.ok||!data.place)throw new Error(data.error||'場所を確認できませんでした。');return data.place;}
 export function useDiscovery(){
+ const [uploadFile,setUploadFile]=useState<File|null>(null);const [uploadPreview,setUploadPreview]=useState('');const [uploadRights,setUploadRights]=useState(false);const beforeUpload=useRef<Place|null>(null);
+ useEffect(()=>()=>{if(uploadPreview)URL.revokeObjectURL(uploadPreview);},[uploadPreview]);
  const [source,setSource]=useState<Place>(places[0]);const [query,setQuery]=useState(places[0].name);
  const [preferences,setPreferences]=useState<Quality[]>(defaultPreferences);const [destination,setDestinationState]=useState('world');
  const [view,setView]=useState<'discover'|'saved'>('discover');const [layout,setLayout]=useState<'map'|'list'>('map');
@@ -71,16 +73,26 @@ export function useDiscovery(){
   catch{setSavedRefs(before);setToast('保存を変更できませんでした。接続を確認して、もう一度お試しください。');}
   finally{pendingSaves.current.delete(p.id);setSavingIds(ids=>ids.filter(id=>id!==p.id));}
  };
- const chooseSource=(p:Place)=>{setShareUrl('');request.current?.abort();setLoading(false);known.current.set(p.id,p);setSource(p);setQuery(p.name);setLivePlaces([]);setVisualSearch(null);setActiveId(null);setError('');setView('discover');setRoute(null);};
+ const selectUpload=(file:File|null)=>{
+  request.current?.abort();setLoading(false);setLivePlaces([]);setVisualSearch(null);setError('');setShareUrl('');setUploadRights(false);
+  if(!file){setUploadFile(null);setUploadPreview('');if(beforeUpload.current){setSource(beforeUpload.current);setQuery(beforeUpload.current.name);}beforeUpload.current=null;return;}
+  if(file.size>8*1024*1024||!['image/jpeg','image/png','image/webp'].includes(file.type)){setError('8 MB以内のJPEG・PNG・WebPを選んでください。');return;}
+  if(!source.uploadPhoto)beforeUpload.current=source;const preview=URL.createObjectURL(file);setUploadFile(file);setUploadPreview(preview);setSource({id:'uploaded-reference',name:'アップロードした写真',city:'場所は未指定',country:'',continent:'',lat:0,lng:0,locationUnknown:true,image:preview,uploadPhoto:{provider:'upload',name:'アップロードした写真',mime:'image/jpeg',changes:'解析時に位置情報を除去'},description:'写真の風景から候補を探します。場所の特定は行いません。',detail:'',difference:'',bestFor:'',features:{water:0,green:0,quiet:0,walk:0,cafes:0,history:0},profiled:false,sources:[]});
+ };
+ const chooseSource=(p:Place)=>{setUploadFile(null);setUploadPreview('');beforeUpload.current=null;setShareUrl('');request.current?.abort();setLoading(false);known.current.set(p.id,p);setSource(p);setQuery(p.name);setLivePlaces([]);setVisualSearch(null);setActiveId(null);setError('');setView('discover');setRoute(null);};
  const choosePlaceId=async(placeId:string,sessionToken?:string)=>{sourceRequest.current?.abort();const c=new AbortController();sourceRequest.current=c;setResolving(true);setError('');try{const p=await resolve({placeId,sessionToken},c.signal);if(!c.signal.aborted)chooseSource(p);}catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'場所を確認できませんでした。');}finally{if(sourceRequest.current===c)setResolving(false);}};
  const chooseLocation=async(location:{lat:number;lng:number})=>{sourceRequest.current?.abort();const c=new AbortController();sourceRequest.current=c;setResolving(true);setError('');try{const p=await resolve({location},c.signal);if(!c.signal.aborted){chooseSource(p);setToast('地図で選んだ場所を出発点にしました。');}}catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'この地点を確認できませんでした。');}finally{if(sourceRequest.current===c)setResolving(false);}};
  const search=async()=>{
   setError('');setShareUrl('');setVisualSearch(null);setView('discover');setActiveId(null);setRoute(null);userChanged.current=true;
   if(!liveMode){const p=places.find(p=>p.name===query.trim()||`${p.name} ${p.city}`===query.trim());if(!p){setError('サンプルから出発点を選んでください。Google 検索では好きな場所を入力できます。');return;}setSource(p);return;}
-  if(query.trim().length<2){setError('出発点の地名を入れてください。');return;}
+  if(!uploadFile&&query.trim().length<2){setError('出発点の地名を入れてください。');return;}
   if(searchKind==='terrain'){setResolving(true);try{chooseSource(await resolve({query:query.trim()}));}catch(e){setError(e instanceof Error?e.message:'出発点を確認できませんでした。');}finally{setResolving(false);}return;}
   request.current?.abort();const c=new AbortController();request.current=c;setLoading(true);setLivePlaces([]);
   if(searchKind==='visual'){
+   if(uploadFile){
+    if(!uploadRights){setLoading(false);setError('画像解析に利用できる写真であることを確認してください。');return;}
+    try{const form=new FormData();form.set('photo',uploadFile);form.set('rights','confirmed');form.set('preferences',JSON.stringify(preferences));form.set('destination',destination);form.set('visualWeight',String(visualWeight));const r=await fetch('/api/visual/upload',{method:'POST',body:form,signal:c.signal});const data=await r.json() as {source:Place;places:Place[];visualSearch:VisualSearchSummary;error?:string};if(!r.ok)throw new Error(data.error||'写真の解析を完了できませんでした。');if(c.signal.aborted)return;setSource({...data.source,image:uploadPreview});setLivePlaces(data.places);setVisualSearch(data.visualSearch);data.places.forEach(p=>known.current.set(p.id,p));}catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'写真の解析を完了できませんでした。');}finally{if(request.current===c)setLoading(false);}return;
+   }
    try{const sample=places.find(p=>p.name===query.trim());const current=sample||(query.trim()===source.name&&source.placeId?source:await resolve({query:query.trim()},c.signal));
     const r=await fetch('/api/visual',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sampleId:sample?.id,placeId:current.placeId,source:query.trim(),preferences,destination,visualWeight}),signal:c.signal});const data=await r.json() as {source:Place;places:Place[];visualSearch:VisualSearchSummary;error?:string};if(!r.ok)throw new Error(data.error||'写真の比較を完了できませんでした。');if(c.signal.aborted)return;setSource(data.source);setQuery(data.source.name);setLivePlaces(data.places);setVisualSearch(data.visualSearch);[data.source,...data.places].forEach(p=>known.current.set(p.id,p));
    }catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'写真の比較を完了できませんでした。');}finally{if(request.current===c)setLoading(false);}return;
@@ -92,9 +104,10 @@ export function useDiscovery(){
  const cancelSearch=()=>{request.current?.abort();setLoading(false);setToast('検索を中止しました。');};
  const togglePreference=(q:Quality)=>{setShareUrl('');userChanged.current=true;if(searchKind==='visual'){setLivePlaces([]);setVisualSearch(null);}setPreferences(prev=>prev.includes(q)?prev.length>1?prev.filter(x=>x!==q):prev:[...prev,q]);setActiveId(null);};
  const setDestination=(value:string)=>{setShareUrl('');userChanged.current=true;setDestinationState(value);setActiveId(null);setLivePlaces([]);};
- const setSearchKind=(kind:'atmosphere'|'visual'|'terrain')=>{setShareUrl('');request.current?.abort();setLoading(false);setSearchKindState(kind);setLivePlaces([]);setVisualSearch(null);setError('');};
+ const setSearchKind=(kind:'atmosphere'|'visual'|'terrain')=>{if(uploadFile&&kind!=='visual')selectUpload(null);setShareUrl('');request.current?.abort();setLoading(false);setSearchKindState(kind);setLivePlaces([]);setVisualSearch(null);setError('');};
  const setVisualWeight=(weight:number)=>{setShareUrl('');setVisualWeightState(weight);setLivePlaces([]);setVisualSearch(null);};
  const share=async()=>{
+  if(source.uploadPhoto){setToast('アップロード写真は共有リンクに含めません。地名で選んだ検索を共有してください。');return;}
   const url=new URL(window.location.origin+window.location.pathname);url.searchParams.set('method',searchKind);if(searchKind==='visual')url.searchParams.set('weight',String(visualWeight));
   try{if(session.current){const cloud=await import('./firebase-client');url.searchParams.set('share',await cloud.createShare(session.current,{sourcePlaceId:source.placeId||'',sourceSampleId:source.placeId?'':source.id,preferences,destination}));}else{url.searchParams.set(source.placeId?'placeId':'source',source.placeId||source.id);url.searchParams.set('qualities',preferences.join(','));url.searchParams.set('destination',destination);}setShareUrl(url.toString());try{await navigator.clipboard.writeText(url.toString());setToast('検索のリンクをコピーしました。');}catch{window.history.replaceState(null,'',url);setToast('アドレス欄の URL をコピーして共有できます。');}}
   catch{setToast('共有リンクを作れませんでした。接続を確認してお試しください。');}
@@ -105,5 +118,5 @@ export function useDiscovery(){
   try{const position=await new Promise<GeolocationPosition>((ok,ng)=>navigator.geolocation.getCurrentPosition(ok,ng,{enableHighAccuracy:false,timeout:15000,maximumAge:60000}));const origin={lat:position.coords.latitude,lng:position.coords.longitude};const mode=Math.abs(origin.lat-p.lat)+Math.abs(origin.lng-p.lng)<0.2?'WALK':'DRIVE';const r=await fetch('/api/route',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({origin,destination:{lat:p.lat,lng:p.lng},mode})});const data=await r.json() as {duration?:string;distanceMeters?:number;error?:string};if(!r.ok)throw new Error(data.error||'経路を確認できませんでした。');const minutes=Math.ceil(parseFloat(data.duration||'0')/60);const distance=(Number(data.distanceMeters||0)/1000).toLocaleString('ja-JP',{maximumFractionDigits:1});setRoute({loading:false,text:`${mode==='WALK'?'徒歩':'車'}で約 ${minutes} 分・${distance} km`});}
   catch(e){setRoute({loading:false,error:e&&typeof e==='object'&&'code' in e?'現在地を取得できませんでした。位置情報の許可を確認してください。':e instanceof Error?e.message:'経路を確認できませんでした。'});}
  };
- return {shareUrl,searchKind,setSearchKind,visualWeight,setVisualWeight,visualSearch,source,query,setQuery,preferences,togglePreference,destination,setDestination,view,setView,layout,setLayout,activeId,setActiveId,modal,setModal,detail,setDetail,toast,error,loading,resolving,mapsKey:config?.mapsKey||'',liveAvailable:Boolean(config?.liveSearch&&config?.places),placesReady:Boolean(config?.places),liveMode,setLiveMode,results,displayed,saved:savedPlaces,isSaved,toggleSaved,savingIds,chooseSource,choosePlaceId,chooseLocation,search,cancelSearch,share,storageStatus,route,getRoute,setRoute,config};
+ return {uploadFile,uploadPreview,uploadRights,setUploadRights,selectUpload,shareUrl,searchKind,setSearchKind,visualWeight,setVisualWeight,visualSearch,source,query,setQuery,preferences,togglePreference,destination,setDestination,view,setView,layout,setLayout,activeId,setActiveId,modal,setModal,detail,setDetail,toast,error,loading,resolving,mapsKey:config?.mapsKey||'',liveAvailable:Boolean(config?.liveSearch&&config?.places),placesReady:Boolean(config?.places),liveMode,setLiveMode,results,displayed,saved:savedPlaces,isSaved,toggleSaved,savingIds,chooseSource,choosePlaceId,chooseLocation,search,cancelSearch,share,storageStatus,route,getRoute,setRoute,config};
 }

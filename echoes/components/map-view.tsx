@@ -10,7 +10,7 @@ type GBounds = { extend: (p: {lat:number;lng:number}) => void };
 type GItem = { setMap: (m: GMap | null) => void; addListener?: (event: string, handler: () => void) => void };
 type GoogleApi = { Map: new (el: HTMLElement, options: object) => GMap; Marker: new (options: object) => GItem; Polyline: new (options: object) => GItem; LatLngBounds: new () => GBounds };
 let googlePromise: Promise<GoogleApi> | null = null;
-function loadGoogle(key: string) {
+export function loadGoogle(key: string) {
   if (googlePromise) return googlePromise;
   googlePromise = new Promise<GoogleApi>((resolve, reject) => {
     const w = window as unknown as {google?: {maps: GoogleApi}; elsewhereMapReady?: () => void};
@@ -65,29 +65,29 @@ export function MapView({ source, places, activeId, onSelect, mapsKey, live, onP
     return () => { cancelled = true; leaf.current?.map.remove(); leaf.current = null; google.current?.layers.forEach(l => l.setMap(null)); google.current = null; };
   }, [mapsKey, live]);
   useEffect(() => {
-    const points = [source, ...places];
+    const points = source.locationUnknown?[...places]:[source, ...places];
     if (leaf.current) {
       const { L, map, layers } = leaf.current; layers.forEach(l => l.remove()); layers.length = 0;
       for (const [index,p] of points.entries()) {
-        const isSource = index === 0, active = p.id === activeId;
-        const html = `<span class="place-pin ${isSource ? "source-pin" : ""} ${active ? "active-pin" : ""}"><span class="pin-dot">${isSource ? "" : index}</span><span class="pin-label">${escapeHtml(p.city)}</span></span>`;
+        const isSource = !source.locationUnknown&&index === 0, active = p.id === activeId;
+        const html = `<span class="place-pin ${isSource ? "source-pin" : ""} ${active ? "active-pin" : ""}"><span class="pin-dot">${isSource ? "" : index+(source.locationUnknown?1:0)}</span><span class="pin-label">${escapeHtml(p.city)}</span></span>`;
         const marker = L.marker([p.lat, p.lng], { title:p.name, keyboard:!isSource, interactive:!isSource, icon: L.divIcon({ className: "map-marker", html, iconSize: [120,40], iconAnchor:[16,20] }), zIndexOffset: active ? 1000 : isSource ? 500 : 100 });
         if (!isSource) marker.on("click", () => select.current(p.id));
         marker.addTo(map); marker.getElement()?.setAttribute("aria-label", `${isSource ? "出発点：" : "場所を選ぶ："}${p.name}`); layers.push(marker);
-        if (!isSource) { const line = L.polyline([[source.lat, source.lng], [p.lat,p.lng]], { color: active ? "#244f3c" : "#6a9582", weight: active ? 2 : 1.5, opacity: active ? 0.8 : 0.48, dashArray: "4 7", interactive: false }).addTo(map); layers.push(line); }
+        if (!isSource&&!source.locationUnknown) { const line = L.polyline([[source.lat, source.lng], [p.lat,p.lng]], { color: active ? "#244f3c" : "#6a9582", weight: active ? 2 : 1.5, opacity: active ? 0.8 : 0.48, dashArray: "4 7", interactive: false }).addTo(map); layers.push(line); }
       }
-      bounds.current = () => { if (points.length > 1) map.fitBounds(L.latLngBounds(points.map(p => [p.lat,p.lng] as [number,number])), { padding: [48,48], maxZoom: 11, animate: false }); else map.setView([source.lat,source.lng], 6, {animate:false}); };
+      bounds.current = () => { if (points.length > 1) map.fitBounds(L.latLngBounds(points.map(p => [p.lat,p.lng] as [number,number])), { padding: [48,48], maxZoom: 11, animate: false }); else if(points[0])map.setView([points[0].lat,points[0].lng], 10, {animate:false});else map.setView([39,65],2,{animate:false}); };
       const geometry=JSON.stringify(points.map(p=>[p.id,p.lat,p.lng]));
       if(fittedGeometry.current!==geometry){bounds.current();fittedGeometry.current=geometry;}
     }
     if (google.current) {
       const { api,map,layers } = google.current; layers.forEach(l => l.setMap(null)); layers.length=0;
       points.forEach((p,index) => {
-        const marker = new api.Marker({ map, position: {lat:p.lat,lng:p.lng}, title: p.name, label: {text: index === 0 ? "出" : String(index), color: "white",fontWeight:"600"}, icon: {path: "M 0 0 m -14 0 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0", fillColor: index === 0 ? "#748f75" : "#285c46", fillOpacity:1, strokeColor: "#ffffff", strokeWeight:3, scale:1}, zIndex: p.id === activeId ? 100 : 10 });
-        if (index > 0) marker.addListener?.("click", () => select.current(p.id)); layers.push(marker);
-        if (index > 0) layers.push(new api.Polyline({ map, path:[{lat:source.lat,lng:source.lng},{lat:p.lat,lng:p.lng}], geodesic:true, strokeColor: "#477f64", strokeOpacity:0.5, strokeWeight:1.5 }));
+        const marker = new api.Marker({ map, position: {lat:p.lat,lng:p.lng}, title: p.name, label: {text: index === 0&&!source.locationUnknown ? "出" : String(index+(source.locationUnknown?1:0)), color: "white",fontWeight:"600"}, icon: {path: "M 0 0 m -14 0 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0", fillColor: index === 0&&!source.locationUnknown ? "#748f75" : "#285c46", fillOpacity:1, strokeColor: "#ffffff", strokeWeight:3, scale:1}, zIndex: p.id === activeId ? 100 : 10 });
+        if (index > 0||source.locationUnknown) marker.addListener?.("click", () => select.current(p.id)); layers.push(marker);
+        if (index > 0&&!source.locationUnknown) layers.push(new api.Polyline({ map, path:[{lat:source.lat,lng:source.lng},{lat:p.lat,lng:p.lng}], geodesic:true, strokeColor: "#477f64", strokeOpacity:0.5, strokeWeight:1.5 }));
       });
-      bounds.current = () => { if(points.length===1){map.setCenter({lat:source.lat,lng:source.lng});map.setZoom(12);return;} const b = new api.LatLngBounds(); points.forEach(p => b.extend({lat:p.lat,lng:p.lng})); map.fitBounds(b,48); }; const geometry=JSON.stringify(points.map(p=>[p.id,p.lat,p.lng]));if(fittedGeometry.current!==geometry){bounds.current();fittedGeometry.current=geometry;}
+      bounds.current = () => { if(!points.length){map.setCenter({lat:39,lng:65});map.setZoom(2);return;}if(points.length===1){map.setCenter({lat:points[0].lat,lng:points[0].lng});map.setZoom(12);return;} const b = new api.LatLngBounds(); points.forEach(p => b.extend({lat:p.lat,lng:p.lng})); map.fitBounds(b,48); }; const geometry=JSON.stringify(points.map(p=>[p.id,p.lat,p.lng]));if(fittedGeometry.current!==geometry){bounds.current();fittedGeometry.current=geometry;}
     }
   }, [source, places, activeId, ready]);
   useEffect(() => {
@@ -101,5 +101,5 @@ export function MapView({ source, places, activeId, onSelect, mapsKey, live, onP
   }, [ready]);
   useEffect(()=>{google.current?.map.setMapTypeId(satellite?'satellite':'roadmap');},[satellite,ready]);
   const zoom = (delta:number) => { if(leaf.current) leaf.current.map.setZoom(leaf.current.map.getZoom()+delta); if(google.current) google.current.map.setZoom((google.current.map.getZoom() || 2)+delta); };
-  return <section className="map-shell" aria-label="出発点と候補の場所"><div ref={container} className="map-canvas" role="region" aria-label={mapsKey ? "Google Maps" : "サンプルの地図"} /><div className="map-label"><span className="status-dot" /> 地図を押して出発点を選ぶ</div><div className="map-buttons">{mapsKey&&<button className="map-type-button" type="button" aria-pressed={satellite} onClick={()=>setSatellite(x=>!x)}>{satellite?"地図":"航空写真"}</button>}<button className="icon-button" aria-label="すべての場所が見えるようにする" onClick={() => bounds.current()}><Icon name="Crosshair" /></button><div className="zoom-group"><button className="icon-button" aria-label="地図を拡大" onClick={() => zoom(1)}><Icon name="Plus" /></button><button className="icon-button" aria-label="地図を縮小" onClick={() => zoom(-1)}><Icon name="Minus" /></button></div></div>{busy&&<div className="map-busy" role="status">この場所を確認しています…</div>}<div className="map-key"><span className="key-source" /> 出発点 <span className="key-result" /> 候補の場所</div>{(!ready && !error && !(live && !mapsKey)) && <div className="map-loading">地図を読み込んでいます…</div>}{(error || (live && !mapsKey)) && <div className="map-message"><Icon name="MapTrifold" size={30} /><p>{error || "Google Maps の接続を確認してください。各候補のリンクからも場所を開けます。"}</p></div>}</section>;
+  return <section className="map-shell" aria-label="出発点と候補の場所"><div ref={container} className="map-canvas" role="region" aria-label={mapsKey ? "Google Maps" : "サンプルの地図"} /><div className="map-label"><span className="status-dot" /> 地図を押して出発点を選ぶ</div><div className="map-buttons">{mapsKey&&<button className="map-type-button" type="button" aria-pressed={satellite} onClick={()=>setSatellite(x=>!x)}>{satellite?"地図":"航空写真"}</button>}<button className="icon-button" aria-label="すべての場所が見えるようにする" onClick={() => bounds.current()}><Icon name="Crosshair" /></button><div className="zoom-group"><button className="icon-button" aria-label="地図を拡大" onClick={() => zoom(1)}><Icon name="Plus" /></button><button className="icon-button" aria-label="地図を縮小" onClick={() => zoom(-1)}><Icon name="Minus" /></button></div></div>{busy&&<div className="map-busy" role="status">この場所を確認しています…</div>}<div className="map-key">{!source.locationUnknown&&<><span className="key-source" /> 出発点</>} <span className="key-result" /> 候補の場所</div>{(!ready && !error && !(live && !mapsKey)) && <div className="map-loading">地図を読み込んでいます…</div>}{(error || (live && !mapsKey)) && <div className="map-message"><Icon name="MapTrifold" size={30} /><p>{error || "Google Maps の接続を確認してください。各候補のリンクからも場所を開けます。"}</p></div>}</section>;
 }
