@@ -1,3 +1,38 @@
+# Elsewhere｜好きな場所から、次の行き先へ
+
+好きな場所の雰囲気、写真の風景、衛星データで見た地形から、似た行き先を探すウェブアプリです。日本語で、スマートフォンとPCの両方から使えます。
+
+## 動かす
+
+Node.js 22.13以降を使います。
+
+```bash
+cd echoes
+npm ci
+# Googleとの接続は .env.example と README.md を参照
+npm run dev
+```
+
+ローカルの http://127.0.0.1:5173/ を開きます。認証情報は各自の環境で設定します。このリポジトリには含めません。
+
+## できること
+
+- Google Maps / Places と Gemini による、場所の雰囲気を比べる検索
+- Wikimedia Commons の写真と Gemini Embedding 2、Cloud Vision による写真の比較。手持ちの写真も選択・ドロップできます
+- Earth Engine の衛星特徴による、登録した別の地形との比較
+- 気候区分、観光客数、目的地の条件で絞り込む検索、Google の3D地球儀
+- Firebase による保存・共有と、BigQuery の地点カタログ
+
+写真・地形検索は登録済みの候補との比較です。世界中の全地点を検索するものではありません。写真の出典と利用条件はアプリ内と同梱のメタデータに記録しています。写真のライセンスは、ソースコードのMITライセンスとは別です。
+
+[詳しい構成・接続・出典](echoes/README.md) · [検証記録](echoes/VERIFICATION.md) · [公開前の残作業](echoes/PRODUCTION_READINESS.md) · [変更履歴](CHANGELOG.md)
+
+現時点ではローカル用の試作です。公開先はまだありません。
+
+---
+
+以下は運営が用意した提出案内です。
+
 # DevFest Hackathon 2026 提出用リポジトリ
 
   DevFest Hackathon 2026 のチームの **最終提出用** リポジトリです。提出期限までに、作品のコードと資料をこのリポジトリに置いてください。

@@ -32,3 +32,17 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 *.log
+
+# ローカルの作業記録・キャッシュ・内部プレビュー
+.cache/
+.vinext/
+.sites-runtime/
+.openai/
+.impeccable/
+.agents/
+outputs/
+work/
+coverage/
+next-env.d.ts
+*.tsbuildinfo
+history-dry-run/
