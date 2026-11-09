@@ -10,23 +10,37 @@ import {analyzeImage,commonsVision,visionOverlap,type VisionEvidence} from './vi
 import {environmentFilter} from './search-filters.ts';
 import {defaultSearchFilters,type SearchFilters} from './climate-types.ts';
 import type {CommonsPhoto,AnalysisPhoto,VisualSearchSummary} from './visual-types.ts';
+import {discoverPhotoCandidates,type ReferenceImage} from './live-photo-candidates.ts';
 export type VisualSearchResult={source:Place;places:Place[];visualSearch:VisualSearchSummary};
 type Collection=()=>ReturnType<typeof candidateCatalog>;
-type Dependencies={collection?:Collection;vision?:typeof commonsVision;photo:(p:Place)=>Promise<CommonsPhoto|null>;embed:(p:CommonsPhoto)=>Promise<number[]>;explain?:(source:Place,candidate:Place,a:CommonsPhoto,b:CommonsPhoto)=>Promise<Place['visual']>};
-const defaultDeps:Dependencies={collection:candidateCatalog,vision:commonsVision,photo:lookupCommonsPhoto,embed:imageEmbedding,explain:explainPhotoPair};
+type Dependencies={collection?:Collection;discover?:typeof discoverPhotoCandidates;vision?:typeof commonsVision;photo:(p:Place)=>Promise<CommonsPhoto|null>;embed:(p:CommonsPhoto)=>Promise<number[]>;explain?:(source:Place,candidate:Place,a:CommonsPhoto,b:CommonsPhoto)=>Promise<Place['visual']>};
+const defaultDeps:Dependencies={collection:candidateCatalog,discover:discoverPhotoCandidates,vision:commonsVision,photo:lookupCommonsPhoto,embed:imageEmbedding,explain:explainPhotoPair};
+async function expandCandidates(source:Place,pool:Place[],preferences:Quality[],destination:string,filters:SearchFilters,summary:VisualSearchSummary,discover:Dependencies['discover'],image:()=>Promise<ReferenceImage>){
+ if(!discover)return pool;
+ try{
+  const found=(await discover(source,preferences,destination,filters,await image())).slice(0,8);
+  const filtered=(await environmentFilter(source,found,filters)).places.filter(p=>!samePlace(source,p)&&matchesDestination(p,destination));
+  const merged=[...pool];for(const p of filtered)if(!merged.some(existing=>samePlace(existing,p)))merged.push(p);
+  summary.discoveredCount=merged.length-pool.length;summary.candidateCount+=summary.discoveredCount;summary.eligibleCount=merged.length;
+  summary.scope=`登録写真と、今回の検索で見つけた${summary.discoveredCount}地点の候補から、場所と利用条件を確認できた Commons 写真を比較します。世界全域の写真を網羅する検索ではありません。`;
+  return merged;
+ }catch{summary.discoveredCount=0;summary.discoveryNote='新しい候補を検索できなかったため、登録写真の範囲で比較しました。';return pool;}
+}
 export async function visualDiscovery(source:Place,preferences:Quality[],destination:string,weight=.6,deps=defaultDeps,filters:SearchFilters=defaultSearchFilters):Promise<VisualSearchResult>{
  const collection=deps.collection?await deps.collection():{places,provider:'local' as const};const environment=await environmentFilter(source,collection.places,filters);source=environment.source;
- const pool=environment.places.filter(p=>Boolean(p.image)&&!samePlace(source,p)&&matchesDestination(p,destination));
- const summary:VisualSearchSummary={mode:'fallback',candidateCount:collection.places.length,eligibleCount:pool.length,comparedCount:0,model:embeddingModel(),visualWeight:weight,catalog:collection.provider,scope:`登録した${collection.places.length}地点の写真を比較します。世界全域の写真を自動で探す機能ではありません。`};
+ let pool=environment.places.filter(p=>Boolean(p.image)&&!samePlace(source,p)&&matchesDestination(p,destination));
+ const summary:VisualSearchSummary={mode:'fallback',candidateCount:collection.places.length,eligibleCount:pool.length,comparedCount:0,model:embeddingModel(),visualWeight:weight,catalog:collection.provider,scope:`登録写真${collection.places.filter(p=>p.image).length}地点を比較します。世界全域の写真を自動で探す機能ではありません。`};
  const fallback=(reason:string)=>({source,places:pool.map(p=>({...p,score:qualitySignal(source,p,preferences)})).sort((a,b)=>b.score-a.score).slice(0,3),visualSearch:{...summary,reason}});
- if(!pool.length)return fallback('指定した地域に、写真の比較対象がありません。地域を広げるか、「雰囲気から」で検索してください。');
+ if(!pool.length&&!deps.discover)return fallback('指定した地域に、写真の比較対象がありません。地域を広げるか、「雰囲気から」で検索してください。');
  let sourcePhoto:CommonsPhoto|null;try{sourcePhoto=await deps.photo(source);}catch{return fallback('Commons の写真を取得できなかったため、場所の特徴で並べています。');}if(!sourcePhoto)return fallback('出発点を写した、利用条件を確認できる写真が見つかりませんでした。場所の特徴で並べています。');
  source=withCommonsPhoto(source,sourcePhoto);
  let sourceVector:number[];try{sourceVector=await deps.embed(sourcePhoto);}catch(error){console.error('Commons source embedding',error instanceof Error?error.message:'unavailable');return fallback('画像埋め込みを利用できなかったため、場所の特徴で並べています。');}
+ const registeredIds=new Set(pool.map(p=>p.id));
+ pool=await expandCandidates(source,pool,preferences,destination,filters,summary,deps.discover,async()=>({mime:sourcePhoto!.mime,data:await commonsImageBytes(sourcePhoto!)}));
  source=withCommonsPhoto(source,sourcePhoto);const vectors=new Map<string,number[]>();const photos=new Map<string,CommonsPhoto>();
  // 少量のコレクションを2件ずつ処理し、無制限の並列呼び出しを避ける。
  for(let i=0;i<pool.length;i+=2)await Promise.all(pool.slice(i,i+2).map(async p=>{try{const photo=await deps.photo(p);if(!photo||photo.pageId===sourcePhoto!.pageId||photo.sha1===sourcePhoto!.sha1)return;const vector=await deps.embed(photo);photos.set(p.id,photo);vectors.set(p.id,vector);}catch{}}));
- summary.comparedCount=vectors.size;if(!vectors.size)return fallback('比較できる写真がそろわなかったため、場所の特徴で並べています。');
+ summary.comparedCount=vectors.size;summary.discoveredComparedCount=[...vectors.keys()].filter(id=>!registeredIds.has(id)).length;if(!vectors.size)return fallback('比較できる写真がそろわなかったため、場所の特徴で並べています。');
  const ranked=rankVisualPlaces(source,pool,vectors,sourceVector,preferences,destination,weight).slice(0,deps.explain?6:3);
  let sourceVision:VisionEvidence|null=null;if(deps.vision)try{sourceVision=await deps.vision(sourcePhoto);}catch{}
  const result=await Promise.all(ranked.map(async p=>{const photo=photos.get(p.id)!;const next=withCommonsPhoto(p,photo);let evidence:Place['visual'];if(deps.explain)try{evidence=await deps.explain(source,next,sourcePhoto!,photo);}catch{};evidence=evidence||{cosine:p.cosine,visualWeight:weight,observations:[],differences:[],inferences:[],explanation:'unavailable',sourcePhoto:sourcePhoto!,candidatePhoto:photo};let signal:number|null=null;if(sourceVision?.labels.length&&deps.vision)try{signal=visionOverlap(sourceVision,await deps.vision(photo));}catch{};return {...next,score:evidenceScore(p.cosine,qualitySignal(source,p,preferences),weight,signal,evidence.landscapeMatch),visual:{...evidence,cosine:p.cosine,visualWeight:weight,...(signal!==null?{visionSignal:signal}:{})}};}));
@@ -46,24 +60,26 @@ export async function hydrateVisualResults(result:VisualSearchResult):Promise<Vi
 export async function applyMapsFallback(result:VisualSearchResult,preferences:Quality[],destination:string,discover=googleDiscover):Promise<VisualSearchResult>{
  if(result.visualSearch.mode!=='fallback'||result.source.locationUnknown)return result;
  try{const candidates=await discover(result.source,preferences,destination);const verified=candidates.filter(p=>!samePlace(result.source,p)&&matchesDestination(p,destination));
- if(verified.length)return{...result,places:verified.sort((a,b)=>qualitySignal(result.source,b,preferences)-qualitySignal(result.source,a,preferences)).slice(0,3),visualSearch:{...result.visualSearch,reason:`${result.visualSearch.reason} Google Maps の情報から候補を探しました。写真の比較は行っていません。`,scope:'今回の候補は Google Maps の情報に基づく検索結果です。写真の比較対象となる12地点の範囲とは異なります。'}};
+ if(verified.length)return{...result,places:verified.sort((a,b)=>qualitySignal(result.source,b,preferences)-qualitySignal(result.source,a,preferences)).slice(0,3),visualSearch:{...result.visualSearch,reason:`${result.visualSearch.reason} Google Maps の情報から候補を探しました。写真の比較は行っていません。`,scope:'今回の候補は Google Maps の情報に基づく検索結果です。写真の比較を行った結果ではありません。'}};
  }catch{}
  return{...result,visualSearch:{...result.visualSearch,reason:result.visualSearch.reason+' 地図の検索で候補を確認できなかったため、既存の紹介用データを表示しています。'}};
 }
 
 /** アップロードした参照画像と、利用条件を確認した Commons 候補だけを比べる。 */
-type UploadDependencies={collection?:Collection;vision?:typeof analyzeImage;candidateVision?:typeof commonsVision;embed:typeof embedImageBytes;photo:Dependencies['photo'];candidateEmbed:Dependencies['embed'];explain:typeof explainPhotoPair};
-const uploadDeps:UploadDependencies={collection:candidateCatalog,vision:analyzeImage,candidateVision:commonsVision,embed:embedImageBytes,photo:lookupCommonsPhoto,candidateEmbed:imageEmbedding,explain:explainPhotoPair};
+type UploadDependencies={collection?:Collection;discover?:typeof discoverPhotoCandidates;vision?:typeof analyzeImage;candidateVision?:typeof commonsVision;embed:typeof embedImageBytes;photo:Dependencies['photo'];candidateEmbed:Dependencies['embed'];explain:typeof explainPhotoPair};
+const uploadDeps:UploadDependencies={collection:candidateCatalog,discover:discoverPhotoCandidates,vision:analyzeImage,candidateVision:commonsVision,embed:embedImageBytes,photo:lookupCommonsPhoto,candidateEmbed:imageEmbedding,explain:explainPhotoPair};
 export async function uploadedVisualDiscovery(data:Buffer,preferences:Quality[],destination:string,weight:number,deps:UploadDependencies=uploadDeps,filters:SearchFilters=defaultSearchFilters):Promise<VisualSearchResult>{
  const photo:AnalysisPhoto={provider:'upload',name:'アップロードした写真',mime:'image/jpeg',changes:'位置情報を除去し、解析用に縮小'};
  let source:Place={id:'uploaded-reference',name:photo.name,city:'場所は未指定',country:'',continent:'',lat:0,lng:0,locationUnknown:true,uploadPhoto:photo,image:'',description:'写真の風景を手がかりに候補を探します。撮影場所や静かさは写真から断定しません。',detail:'',difference:'',bestFor:'',features:{water:0,green:0,quiet:0,walk:0,cafes:0,history:0},profiled:false,sources:[]};
- const collection=deps.collection?await deps.collection():{places,provider:'local' as const};const environment=await environmentFilter(source,collection.places,filters);source=environment.source;const pool=environment.places.filter(p=>Boolean(p.image)&&matchesDestination(p,destination));const summary:VisualSearchSummary={mode:'fallback',candidateCount:collection.places.length,eligibleCount:pool.length,comparedCount:0,model:embeddingModel(),visualWeight:weight,catalog:collection.provider,scope:`アップロード写真を、登録した${collection.places.length}地点の Commons 写真と比較します。撮影場所の特定や世界全域の画像検索は行いません。`};
+ const collection=deps.collection?await deps.collection():{places,provider:'local' as const};const environment=await environmentFilter(source,collection.places,filters);source=environment.source;let pool=environment.places.filter(p=>Boolean(p.image)&&matchesDestination(p,destination));const summary:VisualSearchSummary={mode:'fallback',candidateCount:collection.places.length,eligibleCount:pool.length,comparedCount:0,model:embeddingModel(),visualWeight:weight,catalog:collection.provider,scope:`アップロード写真を、登録した${collection.places.filter(p=>p.image).length}地点の Commons 写真と比較します。撮影場所の特定や世界全域の画像検索は行いません。`};
  const fallback=(reason:string)=>({source,places:pool.map(p=>({...p,score:qualitySignal(source,p,preferences)})).sort((a,b)=>b.score-a.score).slice(0,3),visualSearch:{...summary,reason}});
- if(!pool.length)return fallback('この地域には写真の比較候補がありません。地域を広げてください。');
+ if(!pool.length&&!deps.discover)return fallback('この地域には写真の比較候補がありません。地域を広げてください。');
  let vector:number[];try{vector=await deps.embed(data,'image/jpeg');}catch{return fallback('画像比較を利用できませんでした。選んだ特徴だけで紹介用の候補を並べています。');}
+ const registeredIds=new Set(pool.map(p=>p.id));
+ pool=await expandCandidates(source,pool,preferences,destination,filters,summary,deps.discover,async()=>({mime:'image/jpeg',data}));
  const vectors=new Map<string,number[]>(),photos=new Map<string,CommonsPhoto>();
  for(let i=0;i<pool.length;i+=2)await Promise.all(pool.slice(i,i+2).map(async p=>{try{const image=await deps.photo(p);if(image){vectors.set(p.id,await deps.candidateEmbed(image));photos.set(p.id,image);}}catch{}}));
- summary.comparedCount=vectors.size;if(!vectors.size)return fallback('比較できる候補写真がそろいませんでした。選んだ特徴だけで並べています。');
+ summary.comparedCount=vectors.size;summary.discoveredComparedCount=[...vectors.keys()].filter(id=>!registeredIds.has(id)).length;if(!vectors.size)return fallback('比較できる候補写真がそろいませんでした。選んだ特徴だけで並べています。');
  const ranked=rankVisualPlaces(source,pool,vectors,vector,preferences,destination,weight).slice(0,6);
  let sourceVision:VisionEvidence|null=null;if(deps.vision)try{sourceVision=await deps.vision(data);}catch{}
  const candidates=await Promise.all(ranked.map(async p=>{const candidatePhoto=photos.get(p.id)!;let evidence:Place['visual'];try{evidence=await deps.explain(source,p,photo,candidatePhoto,data);}catch{}let signal:number|null=null;if(sourceVision?.labels.length&&deps.candidateVision)try{signal=visionOverlap(sourceVision,await deps.candidateVision(candidatePhoto));}catch{};return {...withCommonsPhoto(p,candidatePhoto),score:evidenceScore(p.cosine,qualitySignal(source,p,preferences),weight,signal,evidence?.landscapeMatch),visual:evidence?{...evidence,cosine:p.cosine,visualWeight:weight,...(signal!==null?{visionSignal:signal}:{})}:{cosine:p.cosine,visualWeight:weight,sourcePhoto:photo,candidatePhoto,observations:[],differences:[],inferences:[],explanation:'unavailable' as const}};}));

@@ -1205,5 +1205,2663 @@
       "verification": "公開地点ページの代表写真と Commons の説明・画像を照合：ドミニカ国にあるボイリング湖（Boiling Lake）の沸騰する湖面と湯気が上がる火口状の風景が中心に捉えられています。",
       "verified": true
     }
+  },
+  {
+    "id": "seed-rangiroa",
+    "name": "Rangiroa",
+    "aliases": [
+      "Rangiroa",
+      "Rangiroa"
+    ],
+    "city": "Rangiroa",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -15.12527778,
+    "lng": -147.64527778,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Rangiroa",
+        "url": "https://en.wikipedia.org/wiki/Rangiroa"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 12,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q757399",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.103Z",
+      "representativeImage": "Rangiroa_STS51I-31-25.jpg"
+    },
+    "commonsTitle": "Rangiroa_STS51I-31-25.jpg"
+  },
+  {
+    "id": "seed-mataiva",
+    "name": "Mataiva",
+    "aliases": [
+      "Mataiva",
+      "Mataiva"
+    ],
+    "city": "Mataiva",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -14.88333333,
+    "lng": -148.71666667,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Mataiva",
+        "url": "https://en.wikipedia.org/wiki/Mataiva"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 5,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1423724",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Mataiva_Atoll,_Tuamotu_Archipelago,_South_Pacific_Ocean.JPG"
+    },
+    "commonsTitle": "Mataiva_Atoll,_Tuamotu_Archipelago,_South_Pacific_Ocean.JPG"
+  },
+  {
+    "id": "seed-manihi",
+    "name": "Manihi",
+    "aliases": [
+      "Manihi",
+      "Manihi"
+    ],
+    "city": "Manihi",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -14.442,
+    "lng": -146.072,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Manihi",
+        "url": "https://en.wikipedia.org/wiki/Manihi"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 6,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1753453",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Manihi_Atoll_(ISS006-E-37110).jpg"
+    },
+    "commonsTitle": "Manihi_Atoll_(ISS006-E-37110).jpg"
+  },
+  {
+    "id": "seed-apataki",
+    "name": "Apataki",
+    "aliases": [
+      "Apataki",
+      "Apataki"
+    ],
+    "city": "Apataki",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -15.44916667,
+    "lng": -146.32916667,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Apataki",
+        "url": "https://en.wikipedia.org/wiki/Apataki"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q617923",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Apataki.jpg"
+    },
+    "commonsTitle": "Apataki.jpg"
+  },
+  {
+    "id": "seed-ahe",
+    "name": "Ahe",
+    "aliases": [
+      "Ahe",
+      "Ahe"
+    ],
+    "city": "Ahe",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -14.48333333,
+    "lng": -146.31666667,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Ahe",
+        "url": "https://en.wikipedia.org/wiki/Ahe"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 6,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q400184",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Ahe_Atoll_-_ISS007-E-16671.JPG"
+    },
+    "commonsTitle": "Ahe_Atoll_-_ISS007-E-16671.JPG"
+  },
+  {
+    "id": "seed-tetiaroa",
+    "name": "Tetiʻaroa",
+    "aliases": [
+      "Tetiʻaroa",
+      "Tetiaroa"
+    ],
+    "city": "Tetiʻaroa",
+    "country": "仏領ポリネシア",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "lat": -17,
+    "lng": -149.55,
+    "image": "",
+    "description": "仏領ポリネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Tetiʻaroa",
+        "url": "https://en.wikipedia.org/wiki/Teti%CA%BBaroa"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 3,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1135240",
+      "description": "Atoll in French Polynesia",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Tetiaroa_from_sky.JPG"
+    },
+    "commonsTitle": "Tetiaroa_from_sky.JPG"
+  },
+  {
+    "id": "seed-nukunonu",
+    "name": "Nukunonu",
+    "aliases": [
+      "Nukunonu",
+      "Nukunonu"
+    ],
+    "city": "Nukunonu",
+    "country": "トケラウ",
+    "countryCode": "TK",
+    "continent": "Oceania",
+    "lat": -9.16833333,
+    "lng": -171.80972222,
+    "image": "",
+    "description": "トケラウにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Nukunonu",
+        "url": "https://en.wikipedia.org/wiki/Nukunonu"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 5,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q656709",
+      "description": "Atoll in Tokelau",
+      "checkedAt": "2026-11-09T06:35:54.110Z",
+      "representativeImage": "Nukunonu.jpg"
+    },
+    "commonsTitle": "Nukunonu.jpg"
+  },
+  {
+    "id": "seed-atafu",
+    "name": "Atafu",
+    "aliases": [
+      "Atafu",
+      "Atafu"
+    ],
+    "city": "Atafu",
+    "country": "トケラウ",
+    "countryCode": "TK",
+    "continent": "Oceania",
+    "lat": -8.55722222,
+    "lng": -172.47083333,
+    "image": "",
+    "description": "トケラウにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Atafu",
+        "url": "https://en.wikipedia.org/wiki/Atafu"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 2,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q642787",
+      "description": "Atoll in Tokelau",
+      "checkedAt": "2026-11-09T06:35:54.111Z",
+      "representativeImage": "Atafu.jpg"
+    },
+    "commonsTitle": "Atafu.jpg"
+  },
+  {
+    "id": "seed-penrhyn-atoll",
+    "name": "Penrhyn atoll",
+    "aliases": [
+      "Penrhyn atoll",
+      "Penrhyn atoll"
+    ],
+    "city": "Penrhyn atoll",
+    "country": "クック諸島",
+    "countryCode": "CK",
+    "continent": "Oceania",
+    "lat": -9.00555556,
+    "lng": -157.96944444,
+    "image": "",
+    "description": "クック諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Penrhyn atoll",
+        "url": "https://en.wikipedia.org/wiki/Penrhyn_atoll"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q950725",
+      "description": "Atoll in Cook Islands",
+      "checkedAt": "2026-11-09T06:35:54.111Z",
+      "representativeImage": "Penrhyn_Aerial_EFS_1280.jpg"
+    },
+    "commonsTitle": "Penrhyn_Aerial_EFS_1280.jpg"
+  },
+  {
+    "id": "seed-suwarrow",
+    "name": "Suwarrow",
+    "aliases": [
+      "Suwarrow",
+      "Suwarrow"
+    ],
+    "city": "Suwarrow",
+    "country": "クック諸島",
+    "countryCode": "CK",
+    "continent": "Oceania",
+    "lat": -13.26916667,
+    "lng": -163.11138889,
+    "image": "",
+    "description": "クック諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Suwarrow",
+        "url": "https://en.wikipedia.org/wiki/Suwarrow"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 7,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q180547",
+      "description": "Atoll in the south Pacific Ocean",
+      "checkedAt": "2026-11-09T06:35:54.111Z",
+      "representativeImage": "Suwarrow-WorldWind.png"
+    },
+    "commonsTitle": "Suwarrow-WorldWind.png"
+  },
+  {
+    "id": "seed-kiritimati",
+    "name": "Kiritimati",
+    "aliases": [
+      "Kiritimati",
+      "Kiritimati"
+    ],
+    "city": "Kiritimati",
+    "country": "キリバス",
+    "countryCode": "KI",
+    "continent": "Oceania",
+    "lat": 1.85,
+    "lng": -157.4,
+    "image": "",
+    "description": "キリバスにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kiritimati",
+        "url": "https://en.wikipedia.org/wiki/Kiritimati"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q193331",
+      "description": "Coral atoll in the northern Line Islands, Kiribati",
+      "checkedAt": "2026-11-09T06:35:54.440Z",
+      "representativeImage": "Kiritimati-EO.jpg"
+    },
+    "commonsTitle": "Kiritimati-EO.jpg"
+  },
+  {
+    "id": "seed-majuro",
+    "name": "Majuro",
+    "aliases": [
+      "Majuro",
+      "Majuro"
+    ],
+    "city": "Majuro",
+    "country": "マーシャル諸島",
+    "countryCode": "MH",
+    "continent": "Oceania",
+    "lat": 7.08333333,
+    "lng": 171.38333333,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Eneko_Islet_02.JPG/960px-Eneko_Islet_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "マーシャル諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Majuro",
+        "url": "https://en.wikipedia.org/wiki/Majuro"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q12919",
+      "description": "Capital of the Marshall Islands",
+      "checkedAt": "2026-11-09T06:35:54.440Z",
+      "representativeImage": "Eneko_Islet_02.JPG"
+    },
+    "commonsTitle": "Eneko_Islet_02.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Eneko_Islet_02.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 41660437,
+      "title": "File:Eneko Islet 02.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eneko_Islet_02.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Eneko_Islet_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Eneko_Islet_02.JPG/960px-Eneko_Islet_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "baecba0db67e21453de6b4b593fa9cb1c6cd4a15",
+      "mime": "image/jpeg",
+      "author": "Cliff Hansen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Images from a trip to the islet of Eneko in Majuro Atoll, Republic of the Marshall Islands.",
+      "categories": "Self-published work|Incorrect date|Files with coordinates missing SDC location of creation|Eneko Islet",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：マジュロ環礁にあるエネコ島のビーチと海の風景が写されており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-kwajalein-atoll",
+    "name": "Kwajalein Atoll",
+    "aliases": [
+      "Kwajalein Atoll",
+      "Kwajalein Atoll"
+    ],
+    "city": "Kwajalein Atoll",
+    "country": "マーシャル諸島",
+    "countryCode": "MH",
+    "continent": "Oceania",
+    "lat": 8.71666667,
+    "lng": 167.73333333,
+    "image": "",
+    "description": "マーシャル諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kwajalein Atoll",
+        "url": "https://en.wikipedia.org/wiki/Kwajalein_Atoll"
+      }
+    ],
+    "landform": "atoll",
+    "referenceHalfKm": 12,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q309172",
+      "description": "Atoll in the Marshall Islands",
+      "checkedAt": "2026-11-09T06:35:54.440Z",
+      "representativeImage": "Kwajalein_Atoll_2003-02-07_-_Landsat_7_-_30m.png"
+    },
+    "commonsTitle": "Kwajalein_Atoll_2003-02-07_-_Landsat_7_-_30m.png"
+  },
+  {
+    "id": "seed-mar-menor",
+    "name": "Mar Menor",
+    "aliases": [
+      "Mar Menor",
+      "Mar Menor"
+    ],
+    "city": "Mar Menor",
+    "country": "スペイン",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "lat": 37.76666667,
+    "lng": -0.83333333,
+    "image": "",
+    "description": "スペインにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Mar Menor",
+        "url": "https://en.wikipedia.org/wiki/Mar_Menor"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1553876",
+      "description": "Coastal saltwater lagoon in Spain",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Cartagena,_Mar_Menor,_i_Cap_de_Pals_(foto_satèl·lit).jpg"
+    },
+    "commonsTitle": "Cartagena,_Mar_Menor,_i_Cap_de_Pals_(foto_satèl·lit).jpg"
+  },
+  {
+    "id": "seed-venetian-lagoon",
+    "name": "Venetian Lagoon",
+    "aliases": [
+      "Venetian Lagoon",
+      "Venetian Lagoon"
+    ],
+    "city": "Venetian Lagoon",
+    "country": "イタリア",
+    "countryCode": "IT",
+    "continent": "Europe",
+    "lat": 45.41305556,
+    "lng": 12.29722222,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Porto_di_Lido-San_Nicol%C3%B2.jpg/960px-Porto_di_Lido-San_Nicol%C3%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "イタリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Venetian Lagoon",
+        "url": "https://en.wikipedia.org/wiki/Venetian_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q76925",
+      "description": "Enclosed bay in which the city of Venice is situated",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Porto_di_Lido-San_Nicolò.jpg"
+    },
+    "commonsTitle": "Porto_di_Lido-San_Nicolò.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Porto_di_Lido-San_Nicol%C3%B2.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 83863498,
+      "title": "File:Porto di Lido-San Nicolò.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Porto_di_Lido-San_Nicol%C3%B2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Porto_di_Lido-San_Nicol%C3%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Porto_di_Lido-San_Nicol%C3%B2.jpg/960px-Porto_di_Lido-San_Nicol%C3%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "fdcedcfe54c34dd1e2175654bb8ad7d9998313f1",
+      "mime": "image/jpeg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "The Porto di Lido-San Nicolò and the Lagoon of Venice .",
+      "categories": "Images with annotations|Sacca Sessola (Venice)|Bocca San Nicolò (Lido di Venezia)|Self-published work|Images with 10+ annotations|Images by Archaeodontosaurus Venice|Files with coordinates missing SDC location of creation|Italy photographs taken on 2019-05-06|2019 aerial photographs of Italy|May 2019 in Venice|Aerial photographs of Lido di Venezia|Aerial photographs of San Michele (Venice)|Aerial photographs of Venetian lagoon",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にヴェネツィアの潟（Lagoon of Venice）と記載されており、写真にも潟と周辺の島々の上空からの景観が収められています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-szczecin-lagoon",
+    "name": "Szczecin Lagoon",
+    "aliases": [
+      "Szczecin Lagoon",
+      "Szczecin Lagoon"
+    ],
+    "city": "Szczecin Lagoon",
+    "country": "ポーランド",
+    "countryCode": "PL",
+    "continent": "Europe",
+    "lat": 53.80444444,
+    "lng": 14.14027778,
+    "image": "",
+    "description": "ポーランドにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Szczecin Lagoon",
+        "url": "https://en.wikipedia.org/wiki/Szczecin_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q161385",
+      "description": "Estuary on the Polish-German border",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Zalewszczecinski.jpeg"
+    },
+    "commonsTitle": "Zalewszczecinski.jpeg"
+  },
+  {
+    "id": "seed-curonian-lagoon",
+    "name": "Curonian Lagoon",
+    "aliases": [
+      "Curonian Lagoon",
+      "Curonian Lagoon"
+    ],
+    "city": "Curonian Lagoon",
+    "country": "リトアニア",
+    "countryCode": "LT",
+    "continent": "Europe",
+    "lat": 55.09277778,
+    "lng": 20.91638889,
+    "image": "",
+    "description": "リトアニアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Curonian Lagoon",
+        "url": "https://en.wikipedia.org/wiki/Curonian_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q5596",
+      "description": "Freshwater lagoon separated from the Baltic Sea by the Curonian Spit",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Curonian_Spit_and_Lagoon.png"
+    },
+    "commonsTitle": "Curonian_Spit_and_Lagoon.png"
+  },
+  {
+    "id": "seed-bri-lagoon",
+    "name": "Ébrié Lagoon",
+    "aliases": [
+      "Ébrié Lagoon",
+      "Ébrié Lagoon"
+    ],
+    "city": "Ébrié Lagoon",
+    "country": "コートジボワール",
+    "countryCode": "CI",
+    "continent": "Africa",
+    "lat": 5.27194444,
+    "lng": -4.33916667,
+    "image": "",
+    "description": "コートジボワールにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Ébrié Lagoon",
+        "url": "https://en.wikipedia.org/wiki/%C3%89bri%C3%A9_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 6,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q273288",
+      "description": "Lagoon in Ivory Coast",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Laguneébrié.png"
+    },
+    "commonsTitle": "Laguneébrié.png"
+  },
+  {
+    "id": "seed-lagos-lagoon",
+    "name": "Lagos Lagoon",
+    "aliases": [
+      "Lagos Lagoon",
+      "Lagos Lagoon"
+    ],
+    "city": "Lagos Lagoon",
+    "country": "ナイジェリア",
+    "countryCode": "NG",
+    "continent": "Africa",
+    "lat": 6.5015814,
+    "lng": 3.5224915,
+    "image": "",
+    "description": "ナイジェリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Lagos Lagoon",
+        "url": "https://en.wikipedia.org/wiki/Lagos_Lagoon"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 6,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q499414",
+      "description": "Lagoon in Lagos State, Nigeria",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Lagos_Lagoon_-_Brothers_at_Dusk.jpg"
+    },
+    "commonsTitle": "Lagos_Lagoon_-_Brothers_at_Dusk.jpg"
+  },
+  {
+    "id": "seed-laguna-de-t-rminos",
+    "name": "Laguna de Términos",
+    "aliases": [
+      "Laguna de Términos",
+      "Laguna de Términos"
+    ],
+    "city": "Laguna de Términos",
+    "country": "メキシコ",
+    "countryCode": "MX",
+    "continent": "North America",
+    "lat": 18.61666667,
+    "lng": -91.55,
+    "image": "",
+    "description": "メキシコにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Laguna de Términos",
+        "url": "https://en.wikipedia.org/wiki/Laguna_de_T%C3%A9rminos"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1650280",
+      "description": "Lagoon on the Gulf coast of Mexico",
+      "checkedAt": "2026-11-09T06:35:54.441Z",
+      "representativeImage": "Laguna_de_Términos.jpeg"
+    },
+    "commonsTitle": "Laguna_de_Términos.jpeg"
+  },
+  {
+    "id": "seed-laguna-madre",
+    "name": "Laguna Madre (United States)",
+    "aliases": [
+      "Laguna Madre (United States)",
+      "Laguna Madre"
+    ],
+    "city": "Laguna Madre (United States)",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 26.75,
+    "lng": -97.41666667,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Laguna Madre (United States)",
+        "url": "https://en.wikipedia.org/wiki/Laguna_Madre_(United_States)"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 8,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1508636",
+      "description": "Hypersaline lagoon in Texas, US",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Queen_Isabella_Causeway.jpg"
+    },
+    "commonsTitle": "Queen_Isabella_Causeway.jpg"
+  },
+  {
+    "id": "seed-albufera",
+    "name": "Albufera de València",
+    "aliases": [
+      "Albufera de València",
+      "Albufera"
+    ],
+    "city": "Albufera de València",
+    "country": "スペイン",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "lat": 39.33166667,
+    "lng": -0.35222222,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Albuf.JPG/960px-Albuf.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "スペインにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Albufera de València",
+        "url": "https://en.wikipedia.org/wiki/Albufera_de_Val%C3%A8ncia"
+      }
+    ],
+    "landform": "lagoon",
+    "referenceHalfKm": 4,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q84165268",
+      "description": "Waterbody in Spain",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Albuf.JPG"
+    },
+    "commonsTitle": "Albuf.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Albuf.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 292154,
+      "title": "File:Albuf.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Albuf.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Albuf.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Albuf.JPG/960px-Albuf.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "4fea61882d5772d8f1b51f004373fcbc25670e26",
+      "mime": "image/jpeg",
+      "author": "Joseaperez",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Lago de la La ALbufera-Valencia",
+      "categories": "GFDL|Albufera de València|License migration completed|Twilights of the Land of Valencia|August 2005 in the Land of Valencia|Spain photographs taken on 2005-08-25",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にバレンシアのアルブフェラ湖と記載されており、湖面や水辺の草、夕暮れの風景が主体として写し出されています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-thousand-islands",
+    "name": "Thousand Islands",
+    "aliases": [
+      "Thousand Islands",
+      "Thousand Islands"
+    ],
+    "city": "Thousand Islands",
+    "country": "カナダ",
+    "countryCode": "CA",
+    "continent": "North America",
+    "lat": 44.33333333,
+    "lng": -76,
+    "image": "",
+    "description": "カナダにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Thousand Islands",
+        "url": "https://en.wikipedia.org/wiki/Thousand_Islands"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 6,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1050549",
+      "description": "Archipelago in the Saint Lawrence River",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Thousand_Islands_1898_map.jpg"
+    },
+    "commonsTitle": "Thousand_Islands_1898_map.jpg"
+  },
+  {
+    "id": "seed-land",
+    "name": "Åland",
+    "aliases": [
+      "Åland",
+      "Åland"
+    ],
+    "city": "Åland",
+    "country": "オーランド諸島",
+    "countryCode": "AX",
+    "continent": "Europe",
+    "lat": 60.25,
+    "lng": 20.36666667,
+    "image": "",
+    "description": "オーランド諸島にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Åland",
+        "url": "https://en.wikipedia.org/wiki/%C3%85land"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q5689",
+      "description": "Autonomous region of Finland",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Flag_of_Åland.svg"
+    },
+    "commonsTitle": "Flag_of_Åland.svg"
+  },
+  {
+    "id": "seed-raja-ampat-islands",
+    "name": "Raja Ampat Islands",
+    "aliases": [
+      "Raja Ampat Islands",
+      "Raja Ampat Islands"
+    ],
+    "city": "Raja Ampat Islands",
+    "country": "インドネシア",
+    "countryCode": "ID",
+    "continent": "Asia",
+    "lat": -0.2333115,
+    "lng": 130.5078908,
+    "image": "",
+    "description": "インドネシアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Raja Ampat Islands",
+        "url": "https://en.wikipedia.org/wiki/Raja_Ampat_Islands"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q15088317",
+      "description": "Archipelago in Southwest Papua, Indonesia",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Raja_Ampat_Islands_-_journal.pbio.1001457.g001.png"
+    },
+    "commonsTitle": "Raja_Ampat_Islands_-_journal.pbio.1001457.g001.png"
+  },
+  {
+    "id": "seed-andaman-islands",
+    "name": "Andaman Islands",
+    "aliases": [
+      "Andaman Islands",
+      "Andaman Islands"
+    ],
+    "city": "Andaman Islands",
+    "country": "インド",
+    "countryCode": "IN",
+    "continent": "Asia",
+    "lat": 12.5,
+    "lng": 92.75,
+    "image": "",
+    "description": "インドにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Andaman Islands",
+        "url": "https://en.wikipedia.org/wiki/Andaman_Islands"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q186233",
+      "description": "Indian archipelago in the Bay of Bengal",
+      "checkedAt": "2026-11-09T06:35:54.763Z",
+      "representativeImage": "Andaman_Islands.PNG"
+    },
+    "commonsTitle": "Andaman_Islands.PNG"
+  },
+  {
+    "id": "seed-gal-pagos-islands",
+    "name": "Galápagos Islands",
+    "aliases": [
+      "Galápagos Islands",
+      "Galápagos Islands"
+    ],
+    "city": "Galápagos Islands",
+    "country": "エクアドル",
+    "countryCode": "EC",
+    "continent": "South America",
+    "lat": -0.5,
+    "lng": -90.5,
+    "image": "",
+    "description": "エクアドルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Galápagos Islands",
+        "url": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q38095",
+      "description": "Ecuadorian volcanic archipelago",
+      "checkedAt": "2026-11-09T06:35:54.764Z",
+      "representativeImage": "Lobo_marino_(Zalophus_californianus_wollebaeki),_Punta_Pitt,_isla_de_San_Cristóbal,_islas_Galápagos,_Ecuador,_2015-07-24,_DD_11.JPG"
+    }
+  },
+  {
+    "id": "seed-isles-of-scilly",
+    "name": "Isles of Scilly",
+    "aliases": [
+      "Isles of Scilly",
+      "Isles of Scilly"
+    ],
+    "city": "Isles of Scilly",
+    "country": "イギリス",
+    "countryCode": "GB",
+    "continent": "Europe",
+    "lat": 49.92,
+    "lng": -6.3,
+    "image": "",
+    "description": "イギリスにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Isles of Scilly",
+        "url": "https://en.wikipedia.org/wiki/Isles_of_Scilly"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 5,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q180209",
+      "description": "Group of islands in Cornwall, England",
+      "checkedAt": "2026-11-09T06:35:54.764Z",
+      "representativeImage": "Baner_ynysek_Syllan.svg"
+    },
+    "commonsTitle": "Baner_ynysek_Syllan.svg"
+  },
+  {
+    "id": "seed-orkney",
+    "name": "Orkney",
+    "aliases": [
+      "Orkney",
+      "Orkney"
+    ],
+    "city": "Orkney",
+    "country": "イギリス",
+    "countryCode": "GB",
+    "continent": "Europe",
+    "lat": 59,
+    "lng": -3,
+    "image": "",
+    "description": "イギリスにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Orkney",
+        "url": "https://en.wikipedia.org/wiki/Orkney"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q100166",
+      "description": "Archipelago, county and council area in northern Scotland",
+      "checkedAt": "2026-11-09T06:35:54.764Z",
+      "representativeImage": "2007_Flag_of_Orkney.svg"
+    },
+    "commonsTitle": "2007_Flag_of_Orkney.svg"
+  },
+  {
+    "id": "seed-archipelago-sea",
+    "name": "Archipelago Sea",
+    "aliases": [
+      "Archipelago Sea",
+      "Archipelago Sea"
+    ],
+    "city": "Archipelago Sea",
+    "country": "フィンランド",
+    "countryCode": "FI",
+    "continent": "Europe",
+    "lat": 60.3,
+    "lng": 21,
+    "image": "",
+    "description": "フィンランドにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Archipelago Sea",
+        "url": "https://en.wikipedia.org/wiki/Archipelago_Sea"
+      }
+    ],
+    "landform": "archipelago",
+    "referenceHalfKm": 10,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q650654",
+      "description": "Part of the Baltic Sea",
+      "checkedAt": "2026-11-09T06:35:54.764Z",
+      "representativeImage": "Skärgårdshavet.png"
+    },
+    "commonsTitle": "Skärgårdshavet.png"
+  },
+  {
+    "id": "seed-auy-n-tepui",
+    "name": "Auyán-tepui",
+    "aliases": [
+      "Auyán-tepui",
+      "Auyán-tepui"
+    ],
+    "city": "Auyán-tepui",
+    "country": "ベネズエラ",
+    "countryCode": "VE",
+    "continent": "South America",
+    "lat": 5.90036,
+    "lng": -62.54156,
+    "image": "",
+    "description": "ベネズエラにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Auyán-tepui",
+        "url": "https://en.wikipedia.org/wiki/Auy%C3%A1n-tepui"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 3,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q126063",
+      "description": "Tepui in Venezuela",
+      "checkedAt": "2026-11-09T06:35:55.093Z",
+      "representativeImage": "Auyan_Tepui_01.JPG"
+    },
+    "commonsTitle": "Auyan_Tepui_01.JPG"
+  },
+  {
+    "id": "seed-kuken-n-tepui",
+    "name": "Kukenán-tepui",
+    "aliases": [
+      "Kukenán-tepui",
+      "Kukenán-tepui"
+    ],
+    "city": "Kukenán-tepui",
+    "country": "ベネズエラ",
+    "countryCode": "VE",
+    "continent": "South America",
+    "lat": 5.21010556,
+    "lng": -60.83116111,
+    "image": "",
+    "description": "ベネズエラにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kukenán-tepui",
+        "url": "https://en.wikipedia.org/wiki/Kuken%C3%A1n-tepui"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 3,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q2333134",
+      "description": "Mountain in Venezuela",
+      "checkedAt": "2026-11-09T06:35:55.093Z",
+      "representativeImage": "Kukenan_Tepuy_at_Sunset.jpg"
+    },
+    "commonsTitle": "Kukenan_Tepuy_at_Sunset.jpg"
+  },
+  {
+    "id": "seed-table-mountain",
+    "name": "Table Mountain",
+    "aliases": [
+      "Table Mountain",
+      "Table Mountain"
+    ],
+    "city": "Table Mountain",
+    "country": "南アフリカ",
+    "countryCode": "ZA",
+    "continent": "Africa",
+    "lat": -33.96218,
+    "lng": 18.409883,
+    "image": "",
+    "description": "南アフリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Table Mountain",
+        "url": "https://en.wikipedia.org/wiki/Table_Mountain"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 3,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q213360",
+      "description": "Mountain overlooking Cape Town, South Africa",
+      "checkedAt": "2026-11-09T06:35:55.093Z",
+      "representativeImage": "Table_Mountain_DanieVDM.jpg"
+    },
+    "commonsTitle": "Table_Mountain_DanieVDM.jpg"
+  },
+  {
+    "id": "seed-black-mesa-oklahoma",
+    "name": "Black Mesa (Oklahoma, Colorado, New Mexico)",
+    "aliases": [
+      "Black Mesa (Oklahoma, Colorado, New Mexico)",
+      "Black Mesa (Oklahoma)"
+    ],
+    "city": "Black Mesa (Oklahoma, Colorado, New Mexico)",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 36.93188,
+    "lng": -102.99785,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Black Mesa (Oklahoma, Colorado, New Mexico)",
+        "url": "https://en.wikipedia.org/wiki/Black_Mesa_(Oklahoma%2C_Colorado%2C_New_Mexico)"
+      }
+    ],
+    "landform": "mesa",
+    "referenceHalfKm": 3,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q880398",
+      "description": "Mesa in the U.S. States of Colorado, New Mexico, and Oklahoma",
+      "checkedAt": "2026-11-09T06:35:55.093Z",
+      "representativeImage": "Black_Mesa_summit,_Oklahoma.jpg"
+    },
+    "commonsTitle": "Black_Mesa_summit,_Oklahoma.jpg"
+  },
+  {
+    "id": "seed-merrick-butte",
+    "name": "Merrick Butte",
+    "aliases": [
+      "Merrick Butte",
+      "Merrick Butte"
+    ],
+    "city": "Merrick Butte",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 36.9805572,
+    "lng": -110.0859588,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Merrick Butte",
+        "url": "https://en.wikipedia.org/wiki/Merrick_Butte"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 1,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q6820071",
+      "description": "Butte in Navajo County, Arizona",
+      "checkedAt": "2026-11-09T06:35:55.093Z",
+      "representativeImage": "Monument_Valley_Merrick_Butte.jpg"
+    },
+    "commonsTitle": "Monument_Valley_Merrick_Butte.jpg"
+  },
+  {
+    "id": "seed-west-and-east-mitten-buttes",
+    "name": "West and East Mitten Buttes",
+    "aliases": [
+      "West and East Mitten Buttes",
+      "West and East Mitten Buttes"
+    ],
+    "city": "West and East Mitten Buttes",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 36.988335,
+    "lng": -110.069847,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "West and East Mitten Buttes",
+        "url": "https://en.wikipedia.org/wiki/West_and_East_Mitten_Buttes"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 1,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q7987055",
+      "description": "Buttes in Arizona, United States",
+      "checkedAt": "2026-11-09T06:35:55.094Z",
+      "representativeImage": "Two_Mittens_Predawn.jpg"
+    },
+    "commonsTitle": "Two_Mittens_Predawn.jpg"
+  },
+  {
+    "id": "seed-pawnee-buttes",
+    "name": "Pawnee Buttes",
+    "aliases": [
+      "Pawnee Buttes",
+      "Pawnee Buttes"
+    ],
+    "city": "Pawnee Buttes",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 40.82333333,
+    "lng": -103.96944444,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Pawnee Buttes",
+        "url": "https://en.wikipedia.org/wiki/Pawnee_Buttes"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 1,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q7156288",
+      "description": "Buttes in Colorado, United States",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Pawnee_Buttes2010.jpg"
+    },
+    "commonsTitle": "Pawnee_Buttes2010.jpg"
+  },
+  {
+    "id": "seed-fajada-butte",
+    "name": "Fajada Butte",
+    "aliases": [
+      "Fajada Butte",
+      "Fajada Butte"
+    ],
+    "city": "Fajada Butte",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 36.0189052,
+    "lng": -107.9097837,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 0,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Fajada Butte",
+        "url": "https://en.wikipedia.org/wiki/Fajada_Butte"
+      }
+    ],
+    "landform": "butte",
+    "referenceHalfKm": 1,
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q5431375",
+      "description": "Butte in New Mexico, United States",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Fajada_Butte_by_RO.JPG"
+    },
+    "commonsTitle": "Fajada_Butte_by_RO.JPG"
+  },
+  {
+    "id": "seed-central-park",
+    "name": "Central Park",
+    "aliases": [
+      "Central Park",
+      "Central Park"
+    ],
+    "city": "ニューヨーク",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 40.78222222,
+    "lng": -73.96527778,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg/960px-Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Central Park",
+        "url": "https://en.wikipedia.org/wiki/Central_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q160409",
+      "description": "Public park in Manhattan, New York",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpg"
+    },
+    "commonsTitle": "Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 45198242,
+      "title": "File:Global Citizen Festival Central Park New York City from NYonAir (15351915006).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg/960px-Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "375e18788c48fdde3d1a811e9685607382914360",
+      "mime": "image/jpeg",
+      "author": "Anthony Quintano from Hillsborough, NJ, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Global Citizen Festival Central Park New York City from NYonAir",
+      "categories": "Flickr images reviewed by FlickreviewR|National Register of Historic Places with known IDs|Aerial photographs of Central Park|United States photographs taken on 2014-09-27|National Register of Historic Places missing SDC location of creation|National Register of Historic Places missing SDC depicts|Photographs by Anthony Quintano|September 2014 in Manhattan, New York City",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明と写真の両方から、ニューヨークのセントラル・パーク全景を空撮した景観であることが確認できます。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-stanley-park",
+    "name": "Stanley Park",
+    "aliases": [
+      "Stanley Park",
+      "Stanley Park"
+    ],
+    "city": "バンクーバー",
+    "country": "カナダ",
+    "countryCode": "CA",
+    "continent": "North America",
+    "lat": 49.3,
+    "lng": -123.14,
+    "image": "",
+    "description": "カナダにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 4,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Stanley Park",
+        "url": "https://en.wikipedia.org/wiki/Stanley_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1126258",
+      "description": "Public park in Vancouver, Canada",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Stanley_Park_Labeled_Aerial_Map.png"
+    }
+  },
+  {
+    "id": "seed-high-park",
+    "name": "High Park",
+    "aliases": [
+      "High Park",
+      "High Park"
+    ],
+    "city": "トロント",
+    "country": "カナダ",
+    "countryCode": "CA",
+    "continent": "North America",
+    "lat": 43.646821,
+    "lng": -79.462996,
+    "image": "",
+    "description": "カナダにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "High Park",
+        "url": "https://en.wikipedia.org/wiki/High_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1617812",
+      "description": "Urban park in Toronto, Canada",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Hillside_Gardens_(24677009128).jpg"
+    },
+    "commonsTitle": "Hillside_Gardens_(24677009128).jpg"
+  },
+  {
+    "id": "seed-englischer-garten",
+    "name": "Englischer Garten",
+    "aliases": [
+      "Englischer Garten",
+      "Englischer Garten"
+    ],
+    "city": "ミュンヘン",
+    "country": "ドイツ",
+    "countryCode": "DE",
+    "continent": "Europe",
+    "lat": 48.15277778,
+    "lng": 11.59194444,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg/960px-Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "ドイツにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Englischer Garten",
+        "url": "https://en.wikipedia.org/wiki/Englischer_Garten"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q260223",
+      "description": "Public park in Munich",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Aerial_image_of_Englischer_Garten_in_Munich_(view_from_the_southwest).jpg"
+    },
+    "commonsTitle": "Aerial_image_of_Englischer_Garten_in_Munich_(view_from_the_southwest).jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Englischer_Garten_in_Munich_(view_from_the_southwest).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 136746486,
+      "title": "File:Aerial image of Englischer Garten in Munich (view from the southwest).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Englischer_Garten_in_Munich_(view_from_the_southwest).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg/960px-Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "38e9d3435239f7a9005725f4416f44a3e71c96a5",
+      "mime": "image/jpeg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Aerial image of Englischer Garten in Munich (view from the southwest)",
+      "categories": "Aerial photographs of parks in Germany|Images with annotations|Images from Wiki Loves Monuments 2023 in Germany|Self-published work|Unassessed QI candidates|Aerial photographs of Munich|Images from Wiki Loves Monuments 2023|Uploaded via Campaign:wlm-de-by|Images from Wiki Loves Monuments missing SDC location of creation|Files with coordinates missing SDC location of creation (48° N, 11° E)|Englischer Garten (München)|Images from Wiki Loves Monuments 2023, DE-BY",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文の通り、ミュンヘンのイギリス庭園（Englischer Garten）を南西上空から撮影した航空写真であり、広大な公園の景観が主な被写体となっています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-vondelpark",
+    "name": "Vondelpark",
+    "aliases": [
+      "Vondelpark",
+      "Vondelpark"
+    ],
+    "city": "アムステルダム",
+    "country": "オランダ",
+    "countryCode": "NL",
+    "continent": "Europe",
+    "lat": 52.358,
+    "lng": 4.868,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg/960px-Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "オランダにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 2,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Vondelpark",
+        "url": "https://en.wikipedia.org/wiki/Vondelpark"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1419691",
+      "description": "Park in Amsterdam, Netherlands",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Amsterdam,_Vondelpark,_at_the_pond-2.jpg"
+    },
+    "commonsTitle": "Amsterdam,_Vondelpark,_at_the_pond-2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 67519994,
+      "title": "File:Amsterdam, Vondelpark, at the pond-2.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg/960px-Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "e83b0762f566bdb945a047cd4749ab630ec301a0",
+      "mime": "image/jpeg",
+      "author": "Dguendel",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Amsterdam, Vondelpark, at the pond",
+      "categories": "Vondelpark|Self-published work|2005 in Amsterdam|Rijksmonumenten with known IDs|Ponds in Amsterdam",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にアムステルダムのフォンデル公園の池と記載されており、写真も公園内の池や木々の景観を主たる被写体として捉えているためです。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-retiro-park",
+    "name": "Parque del Buen Retiro",
+    "aliases": [
+      "Parque del Buen Retiro",
+      "Retiro Park"
+    ],
+    "city": "マドリード",
+    "country": "スペイン",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "lat": 40.415,
+    "lng": -3.68388889,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/MADRID_051116_MXALX_041.jpg/960px-MADRID_051116_MXALX_041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "スペインにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Parque del Buen Retiro",
+        "url": "https://en.wikipedia.org/wiki/Parque_del_Buen_Retiro"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q1131807",
+      "description": "Urban park in Madrid, Spain",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "MADRID_051116_MXALX_041.jpg"
+    },
+    "commonsTitle": "MADRID_051116_MXALX_041.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MADRID_051116_MXALX_041.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 25274232,
+      "title": "File:MADRID 051116 MXALX 041.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:MADRID_051116_MXALX_041.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/MADRID_051116_MXALX_041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/MADRID_051116_MXALX_041.jpg/960px-MADRID_051116_MXALX_041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "e9a429c9c58ee3689c5ffc34168dc5c210ae7365",
+      "mime": "image/jpeg",
+      "author": "Max Alexander / PromoMadrid",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Madrid Retiro Park es.wikipedia.org/wiki/Parque_del_Retiro This photograph can be used for publications, including this copyright statement: “©PromoMadrid, author Max Alexander”. Esta fotografía puede usarse en publicaciones, incluyendo la declaración “©PromoMadrid, autor Max Alexander”.",
+      "categories": "Taken with Nikon D2X|Cityscapes of Madrid|Flickr images reviewed by File Upload Bot (Magnus Manske)|Flickr images missing SDC creator|November 2005 in Spain|Files with coordinates missing SDC location of creation|Files uploaded by Ecemaml|Landscapes of the Parque del Buen Retiro|Images from PromoMadrid",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にマドリードのレティーロ公園であることが明記されており、写真でも公園全体の広大な景観が上空から捉えられています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-villa-borghese-gardens",
+    "name": "Villa Borghese gardens",
+    "aliases": [
+      "Villa Borghese gardens",
+      "Villa Borghese gardens"
+    ],
+    "city": "ローマ",
+    "country": "イタリア",
+    "countryCode": "IT",
+    "continent": "Europe",
+    "lat": 41.91416667,
+    "lng": 12.49222222,
+    "image": "",
+    "description": "イタリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 2,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Villa Borghese gardens",
+        "url": "https://en.wikipedia.org/wiki/Villa_Borghese_gardens"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q678313",
+      "description": "Landscape garden in Rome, Italy",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg"
+    },
+    "commonsTitle": "Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg"
+  },
+  {
+    "id": "seed-margaret-island",
+    "name": "Margaret Island",
+    "aliases": [
+      "Margaret Island",
+      "Margaret Island"
+    ],
+    "city": "ブダペスト",
+    "country": "ハンガリー",
+    "countryCode": "HU",
+    "continent": "Europe",
+    "lat": 47.5275,
+    "lng": 19.0475,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Budapest_Donauinsel_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "description": "ハンガリーにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Margaret Island",
+        "url": "https://en.wikipedia.org/wiki/Margaret_Island"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q18816",
+      "description": "Island in the Danube river in Budapest, Hungary",
+      "checkedAt": "2026-11-09T06:35:55.467Z",
+      "representativeImage": "Budapest_Donauinsel_2.jpg"
+    },
+    "commonsTitle": "Budapest_Donauinsel_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Budapest_Donauinsel_2.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27853,
+      "title": "File:Budapest Donauinsel 2.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Budapest_Donauinsel_2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Budapest_Donauinsel_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Budapest_Donauinsel_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "418ada2b3ca6a60b3207bbaf847c28749ca25c0c",
+      "mime": "image/jpeg",
+      "author": "Darkone ( talk · contribs )",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Water tower",
+      "categories": "Water tower (Margaret Island)|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名や説明から、ブダペストのマルギット島にある給水塔と周囲の公園を捉えた景観写真であることが確認できます。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-stadtpark-vienna",
+    "name": "Stadtpark, Vienna",
+    "aliases": [
+      "Stadtpark, Vienna",
+      "Stadtpark, Vienna"
+    ],
+    "city": "ウィーン",
+    "country": "オーストリア",
+    "countryCode": "AT",
+    "continent": "Europe",
+    "lat": 48.20472222,
+    "lng": 16.38055556,
+    "image": "",
+    "description": "オーストリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Stadtpark, Vienna",
+        "url": "https://en.wikipedia.org/wiki/Stadtpark%2C_Vienna"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q688588",
+      "description": "Park in Vienna",
+      "checkedAt": "2026-11-09T06:35:55.854Z",
+      "representativeImage": "Stadtpark_station.JPG"
+    },
+    "commonsTitle": "Stadtpark_station.JPG"
+  },
+  {
+    "id": "seed-lumphini-park",
+    "name": "Lumphini Park",
+    "aliases": [
+      "Lumphini Park",
+      "Lumphini Park"
+    ],
+    "city": "バンコク",
+    "country": "タイ",
+    "countryCode": "TH",
+    "continent": "Asia",
+    "lat": 13.73055556,
+    "lng": 100.54166667,
+    "image": "",
+    "description": "タイにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Lumphini Park",
+        "url": "https://en.wikipedia.org/wiki/Lumphini_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q977437",
+      "description": "Public park in Bangkok, Thailand",
+      "checkedAt": "2026-11-09T06:35:55.854Z",
+      "representativeImage": "Aerial_view_of_Lumphini_Park.jpg"
+    },
+    "commonsTitle": "Aerial_view_of_Lumphini_Park.jpg"
+  },
+  {
+    "id": "seed-namsan-seoul",
+    "name": "Namsan",
+    "aliases": [
+      "Namsan",
+      "Namsan (Seoul)"
+    ],
+    "city": "ソウル",
+    "country": "韓国",
+    "countryCode": "KR",
+    "continent": "Asia",
+    "lat": 37.54972222,
+    "lng": 126.99194444,
+    "image": "",
+    "description": "韓国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Namsan",
+        "url": "https://en.wikipedia.org/wiki/Namsan"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q484448",
+      "description": "Mountain in Seoul, South Korea",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "Namsan_and_Namsan_Tour_at_Dusk.jpg"
+    },
+    "commonsTitle": "Namsan_and_Namsan_Tour_at_Dusk.jpg"
+  },
+  {
+    "id": "seed-west-lake",
+    "name": "West Lake",
+    "aliases": [
+      "West Lake",
+      "West Lake"
+    ],
+    "city": "杭州",
+    "country": "中国",
+    "countryCode": "CN",
+    "continent": "Asia",
+    "lat": 30.24694444,
+    "lng": 120.14416667,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/960px-West_Lake%2C_Hangzhou_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "中国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "West Lake",
+        "url": "https://en.wikipedia.org/wiki/West_Lake"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q502371",
+      "description": "Lake in Hangzhou, China",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "West_Lake,_Hangzhou_2025.jpg"
+    },
+    "commonsTitle": "West_Lake,_Hangzhou_2025.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:West_Lake,_Hangzhou_2025.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 184763887,
+      "title": "File:West Lake, Hangzhou 2025.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:West_Lake,_Hangzhou_2025.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/West_Lake%2C_Hangzhou_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/960px-West_Lake%2C_Hangzhou_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "d8e32572d3b10d9989338eb59fb6a4a539b2f03a",
+      "mime": "image/jpeg",
+      "author": "Takashishin",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "​西湖三潭印月与雷峰塔",
+      "categories": "Leifeng Pagoda|Self-published work|Files with coordinates missing SDC location of creation|July 2025 in Hangzhou|Watercraft on West Lake",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明に「西湖三潭印月与雷峰塔」とあり、西湖の水上にある石塔や遠景の雷峰塔を含む湖の風景が写っています。",
+      "verified": true
+    }
+  },
+  {
+    "id": "seed-kenroku-en",
+    "name": "Kenroku-en",
+    "aliases": [
+      "Kenroku-en",
+      "Kenroku-en"
+    ],
+    "city": "金沢",
+    "country": "日本",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "lat": 36.561944,
+    "lng": 136.6625,
+    "image": "",
+    "description": "日本にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kenroku-en",
+        "url": "https://en.wikipedia.org/wiki/Kenroku-en"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q998239",
+      "description": "Park in Kanazawa, Ishikawa, Japan",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "Stone_lantern_Kenrokuen.jpg"
+    },
+    "commonsTitle": "Stone_lantern_Kenrokuen.jpg"
+  },
+  {
+    "id": "seed-hori-park",
+    "name": "Ōhori Park",
+    "aliases": [
+      "Ōhori Park",
+      "Ōhori Park"
+    ],
+    "city": "福岡",
+    "country": "日本",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "lat": 33.58586111,
+    "lng": 130.37625,
+    "image": "",
+    "description": "日本にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Ōhori Park",
+        "url": "https://en.wikipedia.org/wiki/%C5%8Chori_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q846710",
+      "description": "Park in Fukuoka, Japan",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "大濠公園_(3360365578).jpg"
+    },
+    "commonsTitle": "大濠公園_(3360365578).jpg"
+  },
+  {
+    "id": "seed-sumida-park",
+    "name": "Sumida Park",
+    "aliases": [
+      "Sumida Park",
+      "Sumida Park"
+    ],
+    "city": "東京",
+    "country": "日本",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "lat": 35.7109726,
+    "lng": 139.7986808,
+    "image": "",
+    "description": "日本にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 5,
+      "green": 4,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Sumida Park",
+        "url": "https://en.wikipedia.org/wiki/Sumida_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q6630114",
+      "description": "Public park in Tokyo, Japan",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "Sumida_Park.jpg"
+    },
+    "commonsTitle": "Sumida_Park.jpg"
+  },
+  {
+    "id": "seed-washington-park-portland-oregon",
+    "name": "Washington Park (Portland, Oregon)",
+    "aliases": [
+      "Washington Park (Portland, Oregon)",
+      "Washington Park (Portland, Oregon)"
+    ],
+    "city": "ポートランド",
+    "country": "アメリカ合衆国",
+    "countryCode": "US",
+    "continent": "North America",
+    "lat": 45.51583333,
+    "lng": -122.7075,
+    "image": "",
+    "description": "アメリカ合衆国にある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Washington Park (Portland, Oregon)",
+        "url": "https://en.wikipedia.org/wiki/Washington_Park_(Portland%2C_Oregon)"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q2201163",
+      "description": "Public urban park in Portland, Oregon",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "Pdx_wash_mainentrance_sse.jpeg"
+    },
+    "commonsTitle": "Pdx_wash_mainentrance_sse.jpeg"
+  },
+  {
+    "id": "seed-ibirapuera-park",
+    "name": "Ibirapuera Park",
+    "aliases": [
+      "Ibirapuera Park",
+      "Ibirapuera Park"
+    ],
+    "city": "サンパウロ",
+    "country": "ブラジル",
+    "countryCode": "BR",
+    "continent": "South America",
+    "lat": -23.58833333,
+    "lng": -46.65888889,
+    "image": "",
+    "description": "ブラジルにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 3,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Ibirapuera Park",
+        "url": "https://en.wikipedia.org/wiki/Ibirapuera_Park"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q212248",
+      "description": "Urban park in São Paulo",
+      "checkedAt": "2026-11-09T06:35:55.855Z",
+      "representativeImage": "Parque_do_ibirapuera_visto_do_céu.jpg"
+    },
+    "commonsTitle": "Parque_do_ibirapuera_visto_do_céu.jpg"
+  },
+  {
+    "id": "seed-royal-botanic-garden-sydney",
+    "name": "Royal Botanic Garden, Sydney",
+    "aliases": [
+      "Royal Botanic Garden, Sydney",
+      "Royal Botanic Garden, Sydney"
+    ],
+    "city": "シドニー",
+    "country": "オーストラリア",
+    "countryCode": "AU",
+    "continent": "Oceania",
+    "lat": -33.86388889,
+    "lng": 151.21694444,
+    "image": "",
+    "description": "オーストラリアにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 4,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Royal Botanic Garden, Sydney",
+        "url": "https://en.wikipedia.org/wiki/Royal_Botanic_Garden%2C_Sydney"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q54489",
+      "description": "Botanic gardens in New South Wales, Australia",
+      "checkedAt": "2026-11-09T06:35:56.260Z",
+      "representativeImage": "Gates_at_Royal_Botanic_Gardens_viewed_from_Art_Gallery_Road.jpg"
+    },
+    "commonsTitle": "Gates_at_Royal_Botanic_Gardens_viewed_from_Art_Gallery_Road.jpg"
+  },
+  {
+    "id": "seed-kirstenbosch-national-botanical-garden",
+    "name": "Kirstenbosch National Botanical Garden",
+    "aliases": [
+      "Kirstenbosch National Botanical Garden",
+      "Kirstenbosch National Botanical Garden"
+    ],
+    "city": "ケープタウン",
+    "country": "南アフリカ",
+    "countryCode": "ZA",
+    "continent": "Africa",
+    "lat": -33.9875,
+    "lng": 18.4325,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg/960px-Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "description": "南アフリカにある、風景を比べるための参照地点です。",
+    "detail": "地図と出典で場所の情報を確認できます。",
+    "difference": "",
+    "bestFor": "",
+    "profiled": false,
+    "features": {
+      "water": 0,
+      "green": 5,
+      "quiet": 0,
+      "walk": 0,
+      "cafes": 0,
+      "history": 0
+    },
+    "sources": [
+      {
+        "title": "Kirstenbosch National Botanical Garden",
+        "url": "https://en.wikipedia.org/wiki/Kirstenbosch_National_Botanical_Garden"
+      }
+    ],
+    "provenance": {
+      "provider": "Wikipedia / Wikidata",
+      "wikidataId": "Q289277",
+      "description": "Botanical garden at the foot of Table Mountain in Cape Town",
+      "checkedAt": "2026-11-09T06:35:56.260Z",
+      "representativeImage": "Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg"
+    },
+    "commonsTitle": "Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 154073961,
+      "title": "File:Kirstenbosch National Botanical Garden 2024 7th batch 09.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg/960px-Kirstenbosch_National_Botanical_Garden_2024_7th_batch_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "7cc52a27ec3610cc0b05a1c473973daa9fe4bf6e",
+      "mime": "image/jpeg",
+      "author": "Discott",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Kirstenbosch National Botanical Garden in October 2024",
+      "categories": "Kirstenbosch National Botanical Garden|Self-published work|Images with extracted images|Files with coordinates missing SDC location of creation|Foreground flowers in Africa",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明とファイル名にカーステンボッシュ国立植物園と記載されており、写真には園内の芝生や植物、背後の山並みをとらえた景観が主たる被写体として写っています。",
+      "verified": true
+    }
   }
 ]

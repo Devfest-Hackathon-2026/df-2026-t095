@@ -25,7 +25,7 @@ export async function placeDetails(placeId:string,sessionToken?:string){
 export async function reverseGeocode(lat:number,lng:number){
  const key=serverKey();if(!key)throw new Error('地図からの場所検索がまだ設定されていません。');
  const u=new URL('https://maps.googleapis.com/maps/api/geocode/json');u.searchParams.set('latlng',`${lat},${lng}`);u.searchParams.set('language','ja');u.searchParams.set('key',key);
- const r=await fetch(u,{signal:AbortSignal.timeout(15000),cache:'no-store'});const data=await r.json() as {status:string;results?:{place_id:string;formatted_address:string}[]};
+ const r=await fetch(u,{signal:AbortSignal.timeout(15000),cache:'no-store'});const data=await r.json() as {status:string;results?:{place_id:string;formatted_address:string;address_components?:{long_name:string;short_name:string;types:string[]}[]}[]};
  if(data.status!=='OK'||!data.results?.length)throw new Error('この地点の情報が見つかりません。近くの公園や街の中を選んでみてください。');
  return data.results[0];
 }

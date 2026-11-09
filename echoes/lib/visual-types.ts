@@ -2,4 +2,4 @@ export type CommonsPhoto={provider:'commons';pageId:number;title:string;sourcePa
 export type UploadPhoto={provider:'upload';name:string;mime:'image/jpeg';changes:string};
 export type AnalysisPhoto=CommonsPhoto|UploadPhoto;
 export type VisualEvidence={cosine:number;visualWeight:number;observations:string[];differences:string[];inferences:string[];explanation:'generated'|'unavailable';sourcePhoto:AnalysisPhoto;candidatePhoto:CommonsPhoto;landscapeMatch?:'strong'|'partial'|'weak';visionSignal?:number;sourceScene?:string;candidateScene?:string};
-export type VisualSearchSummary={mode:'visual'|'fallback';reason?:string;candidateCount:number;eligibleCount:number;comparedCount:number;model:string;visualWeight:number;scope:string;catalog?:'bigquery'|'local';visionCompared?:number;rerankedCount?:number};
+export type VisualSearchSummary={mode:'visual'|'fallback';reason?:string;candidateCount:number;eligibleCount:number;comparedCount:number;model:string;visualWeight:number;scope:string;catalog?:'bigquery'|'local';visionCompared?:number;rerankedCount?:number;discoveredCount?:number;discoveredComparedCount?:number;discoveryNote?:string};

@@ -11,13 +11,14 @@ export type Quality = (typeof qualities)[number]["id"];
 export type SourceLink = { title: string; url: string };
 export type Place = {
   id: string; name: string; city: string; country: string; continent: string;
-  lat: number; lng: number; image: string; imagePage?: string;
+  lat: number; lng: number; image: string; imagePage?: string; commonsTitle?:string;
   description: string; detail: string; difference: string; bestFor: string;
   features: Record<Quality, number>; sources: SourceLink[]; placeId?: string;
   photoAuthors?: {name:string;url:string}[]; googleMapsUri?:string; websiteUri?:string;
   address?:string; profiled?:boolean;
   locationUnknown?:boolean;uploadPhoto?:UploadPhoto;commonsPhoto?:CommonsPhoto; visual?:VisualEvidence;
   viewRange?:number;viewExtent?:{widthKm:number;heightKm:number};aliases?:string[];countryCode?:string;landform?:string|null;referenceHalfKm?:number;
+  referenceRegion?:{north:number;south:number;east:number;west:number};
   climate?:{code:string;label:string;period:string;source:string;nearby:boolean}|null;
   tourism?:{arrivals:number;year:number;source:string}|null;
 };

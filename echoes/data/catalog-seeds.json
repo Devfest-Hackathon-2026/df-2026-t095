@@ -1,0 +1,602 @@
+[
+  {
+    "id": "seed-rangiroa",
+    "title": "Rangiroa",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 12,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-mataiva",
+    "title": "Mataiva",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 5,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-manihi",
+    "title": "Manihi",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 6,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-apataki",
+    "title": "Apataki",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-ahe",
+    "title": "Ahe",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 6,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-tetiaroa",
+    "title": "Tetiaroa",
+    "countryCode": "PF",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 3,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-nukunonu",
+    "title": "Nukunonu",
+    "countryCode": "TK",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 5,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-atafu",
+    "title": "Atafu",
+    "countryCode": "TK",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 2,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-penrhyn-atoll",
+    "title": "Penrhyn atoll",
+    "countryCode": "CK",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-suwarrow",
+    "title": "Suwarrow",
+    "countryCode": "CK",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 7,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-kiritimati",
+    "title": "Kiritimati",
+    "countryCode": "KI",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-majuro",
+    "title": "Majuro",
+    "countryCode": "MH",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-kwajalein-atoll",
+    "title": "Kwajalein Atoll",
+    "countryCode": "MH",
+    "continent": "Oceania",
+    "landform": "atoll",
+    "halfKm": 12,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-mar-menor",
+    "title": "Mar Menor",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "landform": "lagoon",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-venetian-lagoon",
+    "title": "Venetian Lagoon",
+    "countryCode": "IT",
+    "continent": "Europe",
+    "landform": "lagoon",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-szczecin-lagoon",
+    "title": "Szczecin Lagoon",
+    "countryCode": "PL",
+    "continent": "Europe",
+    "landform": "lagoon",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-curonian-lagoon",
+    "title": "Curonian Lagoon",
+    "countryCode": "LT",
+    "continent": "Europe",
+    "landform": "lagoon",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-bri-lagoon",
+    "title": "Ébrié Lagoon",
+    "countryCode": "CI",
+    "continent": "Africa",
+    "landform": "lagoon",
+    "halfKm": 6,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-lagos-lagoon",
+    "title": "Lagos Lagoon",
+    "countryCode": "NG",
+    "continent": "Africa",
+    "landform": "lagoon",
+    "halfKm": 6,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-laguna-de-t-rminos",
+    "title": "Laguna de Términos",
+    "countryCode": "MX",
+    "continent": "North America",
+    "landform": "lagoon",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-laguna-madre",
+    "title": "Laguna Madre",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "lagoon",
+    "halfKm": 8,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-albufera",
+    "title": "Albufera",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "landform": "lagoon",
+    "halfKm": 4,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-thousand-islands",
+    "title": "Thousand Islands",
+    "countryCode": "CA",
+    "continent": "North America",
+    "landform": "archipelago",
+    "halfKm": 6,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-land",
+    "title": "Åland",
+    "countryCode": "AX",
+    "continent": "Europe",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-raja-ampat-islands",
+    "title": "Raja Ampat Islands",
+    "countryCode": "ID",
+    "continent": "Asia",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-andaman-islands",
+    "title": "Andaman Islands",
+    "countryCode": "IN",
+    "continent": "Asia",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-gal-pagos-islands",
+    "title": "Galápagos Islands",
+    "countryCode": "EC",
+    "continent": "South America",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-isles-of-scilly",
+    "title": "Isles of Scilly",
+    "countryCode": "GB",
+    "continent": "Europe",
+    "landform": "archipelago",
+    "halfKm": 5,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-orkney",
+    "title": "Orkney",
+    "countryCode": "GB",
+    "continent": "Europe",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-archipelago-sea",
+    "title": "Archipelago Sea",
+    "countryCode": "FI",
+    "continent": "Europe",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-whitsunday-islands",
+    "title": "Whitsunday Islands",
+    "countryCode": "AU",
+    "continent": "Oceania",
+    "landform": "archipelago",
+    "halfKm": 10,
+    "water": 5,
+    "green": 0
+  },
+  {
+    "id": "seed-auy-n-tepui",
+    "title": "Auyán-tepui",
+    "countryCode": "VE",
+    "continent": "South America",
+    "landform": "mesa",
+    "halfKm": 3,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-kuken-n-tepui",
+    "title": "Kukenán-tepui",
+    "countryCode": "VE",
+    "continent": "South America",
+    "landform": "mesa",
+    "halfKm": 3,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-table-mountain",
+    "title": "Table Mountain",
+    "countryCode": "ZA",
+    "continent": "Africa",
+    "landform": "mesa",
+    "halfKm": 3,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-black-mesa-oklahoma",
+    "title": "Black Mesa (Oklahoma)",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "mesa",
+    "halfKm": 3,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-mesa-de-los-santos",
+    "title": "Mesa de los Santos",
+    "countryCode": "CO",
+    "continent": "South America",
+    "landform": "mesa",
+    "halfKm": 3,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-merrick-butte",
+    "title": "Merrick Butte",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-west-and-east-mitten-buttes",
+    "title": "West and East Mitten Buttes",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-steamboat-rock-washington",
+    "title": "Steamboat Rock (Washington)",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-castle-butte",
+    "title": "Castle Butte",
+    "countryCode": "CA",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-pawnee-buttes",
+    "title": "Pawnee Buttes",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-fajada-butte",
+    "title": "Fajada Butte",
+    "countryCode": "US",
+    "continent": "North America",
+    "landform": "butte",
+    "halfKm": 1,
+    "water": 0,
+    "green": 0
+  },
+  {
+    "id": "seed-central-park",
+    "title": "Central Park",
+    "countryCode": "US",
+    "continent": "North America",
+    "city": "ニューヨーク",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-stanley-park",
+    "title": "Stanley Park",
+    "countryCode": "CA",
+    "continent": "North America",
+    "city": "バンクーバー",
+    "water": 4,
+    "green": 5
+  },
+  {
+    "id": "seed-high-park",
+    "title": "High Park",
+    "countryCode": "CA",
+    "continent": "North America",
+    "city": "トロント",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-englischer-garten",
+    "title": "Englischer Garten",
+    "countryCode": "DE",
+    "continent": "Europe",
+    "city": "ミュンヘン",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-vondelpark",
+    "title": "Vondelpark",
+    "countryCode": "NL",
+    "continent": "Europe",
+    "city": "アムステルダム",
+    "water": 2,
+    "green": 5
+  },
+  {
+    "id": "seed-retiro-park",
+    "title": "Retiro Park",
+    "countryCode": "ES",
+    "continent": "Europe",
+    "city": "マドリード",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-villa-borghese-gardens",
+    "title": "Villa Borghese gardens",
+    "countryCode": "IT",
+    "continent": "Europe",
+    "city": "ローマ",
+    "water": 2,
+    "green": 5
+  },
+  {
+    "id": "seed-margaret-island",
+    "title": "Margaret Island",
+    "countryCode": "HU",
+    "continent": "Europe",
+    "city": "ブダペスト",
+    "water": 5,
+    "green": 5
+  },
+  {
+    "id": "seed-stadtpark-vienna",
+    "title": "Stadtpark, Vienna",
+    "countryCode": "AT",
+    "continent": "Europe",
+    "city": "ウィーン",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-lumphini-park",
+    "title": "Lumphini Park",
+    "countryCode": "TH",
+    "continent": "Asia",
+    "city": "バンコク",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-bishan-ang-mo-kio-park",
+    "title": "Bishan–Ang Mo Kio Park",
+    "countryCode": "SG",
+    "continent": "Asia",
+    "city": "シンガポール",
+    "water": 4,
+    "green": 5
+  },
+  {
+    "id": "seed-namsan-seoul",
+    "title": "Namsan (Seoul)",
+    "countryCode": "KR",
+    "continent": "Asia",
+    "city": "ソウル",
+    "water": 0,
+    "green": 5
+  },
+  {
+    "id": "seed-west-lake",
+    "title": "West Lake",
+    "countryCode": "CN",
+    "continent": "Asia",
+    "city": "杭州",
+    "water": 5,
+    "green": 4
+  },
+  {
+    "id": "seed-kenroku-en",
+    "title": "Kenroku-en",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "city": "金沢",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-hori-park",
+    "title": "Ōhori Park",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "city": "福岡",
+    "water": 5,
+    "green": 4
+  },
+  {
+    "id": "seed-sumida-park",
+    "title": "Sumida Park",
+    "countryCode": "JP",
+    "continent": "Asia",
+    "city": "東京",
+    "water": 5,
+    "green": 4
+  },
+  {
+    "id": "seed-washington-park-portland-oregon",
+    "title": "Washington Park (Portland, Oregon)",
+    "countryCode": "US",
+    "continent": "North America",
+    "city": "ポートランド",
+    "water": 0,
+    "green": 5
+  },
+  {
+    "id": "seed-ibirapuera-park",
+    "title": "Ibirapuera Park",
+    "countryCode": "BR",
+    "continent": "South America",
+    "city": "サンパウロ",
+    "water": 3,
+    "green": 5
+  },
+  {
+    "id": "seed-royal-botanic-garden-sydney",
+    "title": "Royal Botanic Garden, Sydney",
+    "countryCode": "AU",
+    "continent": "Oceania",
+    "city": "シドニー",
+    "water": 4,
+    "green": 5
+  },
+  {
+    "id": "seed-kirstenbosch-national-botanical-garden",
+    "title": "Kirstenbosch National Botanical Garden",
+    "countryCode": "ZA",
+    "continent": "Africa",
+    "city": "ケープタウン",
+    "water": 0,
+    "green": 5
+  }
+]
