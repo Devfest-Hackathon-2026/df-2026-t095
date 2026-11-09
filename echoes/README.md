@@ -15,7 +15,7 @@ npm run dev
 
 [ローカル版](http://127.0.0.1:5173/)を開いてください。認証は既存の `.env.local` と `gcloud` のログイン状態を使います。サーバー用のキーやアクセストークンはブラウザーへ渡しません。
 
-別の環境で接続を作る場合は `.env.example` を参照してください。`npm run google:setup` は、指定プロジェクトの Firebase アプリ、用途を制限したキー、Firestore、匿名認証、ローカル設定を用意します。Firestore のルールは `npm run google:rules` で反映します。既存の設定がある環境では、内容を確認してから実行してください。
+別の環境で接続を作る場合は `.env.example` を参照してください。`npm run google:setup` は、指定プロジェクトの Firebase アプリ、用途を制限したキー、Firestore、匿名認証、ローカル設定を用意します。Firestore のルールは `npm run google:rules` で反映します。既存の設定がある環境では、内容を確認してから実行してください。Google ログインを使うには、Firebase コンソールの「Authentication」→「ログイン方法」で Google を有効にし、`.env.local` に `FIREBASE_GOOGLE_SIGN_IN="true"` を設定します。
 
 ## 場所の探し方
 
@@ -87,12 +87,12 @@ BigQuery のデータセットは `elsewhere`、リージョンは `asia-northea
 | BigQuery | 公開地点カタログ、Commons 埋め込み、登録地形の比較データ |
 | Gemini Embedding 2 | Commons 写真とアップロード写真の画像埋め込み |
 | Cloud Translation | 説明が英語で返った場合の日本語訳 |
-| Firebase Authentication | 匿名ユーザーの認証 |
+| Firebase Authentication | 匿名ユーザーの認証と Google ログイン |
 | Cloud Firestore | 保存した場所のID、検索条件、共有用の条件 |
 | Secret Manager | サーバー用 Maps キーの保管 |
 | Earth Engine | 範囲を限定した衛星・標高・水域の解析 |
 
-保存情報は、このブラウザーの匿名ユーザーにひもづきます。Google アカウントでのログインや、複数端末間の同期は未実装です。共有リンクは条件を共有し、同じ画像結果を固定して保存するものではありません。Google の写真や場所の説明を Firestore に複製しません。現在地は「現在地から調べる」を押して許可したときだけ使い、保存しません。
+保存情報は、最初はこのブラウザーの匿名ユーザーにひもづきます。Google でログインすると、それまでの保存を引き継いでアカウントにひもづけ、別の端末でも使えるようになります。ログアウトすると、このブラウザーの保存情報は消去し、新しい匿名ユーザーに戻ります。共有リンクは条件を共有し、同じ画像結果を固定して保存するものではありません。Google の写真や場所の説明を Firestore に複製しません。現在地は「現在地から調べる」を押して許可したときだけ使い、保存しません。
 
 ## 検証と今後の公開
 

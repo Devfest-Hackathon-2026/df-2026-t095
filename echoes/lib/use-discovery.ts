@@ -8,7 +8,8 @@ import {defaultPreferences,places,type Place,type Quality} from './places';
 import {diverseResults,isQuality,rankPlaces} from './discovery';
 import type {VisualSearchSummary} from './visual-types';
 import type {AppConfig} from './app-config';
-import type {FirebaseSession,SavedRef} from './firebase-client';
+import type {Account,FirebaseSession,SavedRef} from './firebase-client';
+import {signInErrorMessage} from './auth-messages';
 const refKey=(ref:SavedRef)=>ref.placeId?`google-${ref.placeId}`:ref.sampleId;
 const toRef=(place:Place):SavedRef=>({placeId:place.placeId||'',sampleId:place.placeId?'':place.id});
 async function resolve(input:object,signal?:AbortSignal):Promise<Place>{const r=await fetch('/api/resolve',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),signal});const data=await r.json() as {place?:Place;error?:string};if(!r.ok||!data.place)throw new Error(data.error||'場所を確認できませんでした。');return data.place;}
@@ -21,7 +22,7 @@ export function useDiscovery(){
  const [filters,setFiltersState]=useState<SearchFilters>(defaultSearchFilters);const [climateResult,setClimateResult]=useState<{key:string;value:Place['climate']}|null>(null);const climateKey=`${source.id}:${source.lat}:${source.lng}`;const sourceClimate=source.locationUnknown?null:source.climate!==undefined?source.climate:climateResult?.key===climateKey?climateResult.value:null;
  const [view,setView]=useState<'discover'|'saved'>('discover');const [layout,setLayout]=useState<'map'|'list'|'globe'>('globe');
  const [activeId,setActiveId]=useState<string|null>(null);const [detail,setDetail]=useState<Place|null>(null);
- const [modal,setModal]=useState<'how'|'privacy'|'terms'|'credits'|null>(null);
+ const [modal,setModal]=useState<'how'|'privacy'|'terms'|'credits'|'account'|null>(null);
  const [shareUrl,setShareUrl]=useState('');const [toast,setToast]=useState('');const [error,setError]=useState('');const [loading,setLoading]=useState(false);const [resolving,setResolving]=useState(false);
  const [config,setConfig]=useState<AppConfig|null>(null);const [liveMode,setLiveMode]=useState(false);const [livePlaces,setLivePlaces]=useState<Place[]>([]);
  const [savedRefs,setSavedRefs]=useState<SavedRef[]>([]);const [savedPlaces,setSavedPlaces]=useState<Place[]>([]);const [savingIds,setSavingIds]=useState<string[]>([]);
@@ -33,8 +34,11 @@ export function useDiscovery(){
  const session=useRef<FirebaseSession|null>(null);const cloudReady=useRef(false);const restored=useRef(false);const known=useRef(new Map(places.map(p=>[p.id,p])));
  const localRefs=useRef<SavedRef[]>([]);
  const pendingSaves=useRef(new Set<string>());const userChanged=useRef(false);
+ const [account,setAccount]=useState<Account|null>(null);const [authBusy,setAuthBusy]=useState(false);
+ const cloudApi=useRef<typeof import('./firebase-client')|null>(null);const stopFavorites=useRef<(()=>void)|null>(null);
+ const watchFavorites=useCallback((cloud:typeof import('./firebase-client'),s:FirebaseSession)=>{stopFavorites.current?.();stopFavorites.current=cloud.listenFavorites(s,refs=>{setSavedRefs(refs);setStorageStatus('cloud');},()=>{setStorageStatus('error');setToast('保存した場所を読み込めませんでした。接続を確認してください。');});},[]);
  useEffect(()=>{
-  let cancelled=false;let unsubscribe:(()=>void)|undefined;
+  let cancelled=false;
   void Promise.resolve().then(()=>{if(cancelled)return;
   const params=new URLSearchParams(window.location.search);const initial=places.find(p=>p.id===params.get('source'));const method=params.get('method');if(method==='visual'||method==='terrain')setSearchKindState(method);const weight=Number(params.get('weight'));if(params.has('weight')&&Number.isFinite(weight)&&weight>=0&&weight<=1)setVisualWeightState(weight);
   if(initial){setSource(initial);setQuery(initial.name);}
@@ -48,20 +52,20 @@ export function useDiscovery(){
    const response=await fetch('/api/config');if(!response.ok)throw new Error('接続設定を確認できませんでした。');const c=await response.json() as AppConfig;if(cancelled)return;setConfig(c);setLiveMode(c.liveSearch&&c.places);
    if(c.firebase){
     try{
-     const cloud=await import('./firebase-client');const s=await cloud.connectFirebase(c.firebase);if(cancelled)return;session.current=s;
+     const cloud=await import('./firebase-client');const s=await cloud.connectFirebase(c.firebase);if(cancelled)return;session.current=s;cloudApi.current=cloud;setAccount(cloud.accountOf(s));
      const migrationKey=`elsewhere:migrated:${s.uid}`;if(!localStorage.getItem(migrationKey)){await Promise.all(localRefs.current.map(ref=>cloud.saveFavorite(s,ref,true)));localStorage.setItem(migrationKey,'1');}
      const settings=await cloud.loadSettings(s);
      if(settings&&!params.has('qualities')&&!params.has('share')&&!userChanged.current){const valid=settings.preferences?.filter(isQuality);if(valid?.length)setPreferences(valid);if(typeof settings.destination==='string')setDestinationState(settings.destination);}
      if(cancelled)return;cloudReady.current=true;setStorageStatus('cloud');
-     unsubscribe=cloud.listenFavorites(s,refs=>{if(!cancelled){setSavedRefs(refs);setStorageStatus('cloud');}},()=>{if(!cancelled){setStorageStatus('error');setToast('保存した場所を読み込めませんでした。接続を確認してください。');}});
+     watchFavorites(cloud,s);
      const shareId=params.get('share');if(shareId){const shared=await cloud.loadShare(s,shareId);if(!shared)throw new Error('共有された検索が見つかりませんでした。');if(!cancelled){setPreferences(shared.preferences.filter(isQuality));setDestinationState(shared.destination);if(shared.sourcePlaceId){const p=await resolve({placeId:shared.sourcePlaceId});if(!cancelled){known.current.set(p.id,p);setSource(p);setQuery(p.name);}}else{const p=places.find(p=>p.id===shared.sourceSampleId);if(p){setSource(p);setQuery(p.name);}}setToast('共有された検索条件を開きました。検索ボタンで候補を探せます。');}}
     }catch(e){if(!cancelled){setStorageStatus('error');setError(e instanceof Error?e.message:'Google への保存を開始できませんでした。');}}
    }else setStorageStatus('local');
    const placeId=params.get('placeId');if(placeId&&c.places){const p=await resolve({placeId});if(!cancelled){known.current.set(p.id,p);setSource(p);setQuery(p.name);}}
   })().catch(e=>{if(!cancelled){setStorageStatus('local');setError(e instanceof Error?e.message:'Google への接続を確認できませんでした。');}});
   });
-  return()=>{cancelled=true;unsubscribe?.();request.current?.abort();sourceRequest.current?.abort();};
- },[]);
+  return()=>{cancelled=true;stopFavorites.current?.();request.current?.abort();sourceRequest.current?.abort();};
+ },[watchFavorites]);
  useEffect(()=>{if(!restored.current)return;try{localStorage.setItem('elsewhere:saved-v2',JSON.stringify(savedRefs));}catch{queueMicrotask(()=>setToast('このブラウザーでは保存情報を保持できません。'));}},[savedRefs]);
  useEffect(()=>{
   let cancelled=false;
@@ -80,6 +84,35 @@ export function useDiscovery(){
   try{if(session.current){const cloud=await import('./firebase-client');await cloud.saveFavorite(session.current,ref,!wasSaved);}setToast(wasSaved?'保存した場所から削除しました。':storageStatus==='cloud'?'気になる場所を保存しました。':'このブラウザーに保存しました。');}
   catch{setSavedRefs(before);setToast('保存を変更できませんでした。接続を確認して、もう一度お試しください。');}
   finally{pendingSaves.current.delete(p.id);setSavingIds(ids=>ids.filter(id=>id!==p.id));}
+ };
+ /** ポップアップを止められないよう、クリックから同じ流れで呼び出す。閉じたときの focus で取得が走らないよう監視は止めておく。 */
+ const signIn=async()=>{
+  if(authBusy)return;const cloud=cloudApi.current,s=session.current;
+  if(!cloud||!s){setError('Google への接続を確認できませんでした。ページを読み直してください。');return;}
+  setAuthBusy(true);setError('');setStorageStatus('connecting');stopFavorites.current?.();stopFavorites.current=null;
+  try{
+   const result=await cloud.signInWithGoogle(s);session.current=result.session;
+   if(result.switched){
+    try{localStorage.setItem(`elsewhere:migrated:${result.session.uid}`,'1');}catch{}
+    const settings=await cloud.loadSettings(result.session).catch(()=>null);
+    const valid=settings?.preferences?.filter(isQuality);if(valid?.length)setPreferences(valid);if(typeof settings?.destination==='string')setDestinationState(settings.destination);
+   }
+   setAccount(cloud.accountOf(result.session));
+   setToast(result.carryFailed?'ログインしました。このブラウザーの保存の一部を移せませんでした。':'Google アカウントでログインしました。');
+  }catch(e){const message=signInErrorMessage((e as {code?:string}).code||'');if(message)setError(message);}
+  finally{watchFavorites(cloud,session.current||s);setAuthBusy(false);}
+ };
+ /** 共有端末に前の人の保存が残らないよう、画面とブラウザー内の保存情報も消す。 */
+ const signOutAccount=async()=>{
+  if(authBusy)return;const cloud=cloudApi.current,s=session.current;if(!cloud||!s)return;
+  setAuthBusy(true);setStorageStatus('connecting');stopFavorites.current?.();stopFavorites.current=null;
+  setAccount(null);setSavedRefs([]);localRefs.current=[];setPreferences(defaultPreferences);setDestinationState('world');setModal(null);
+  try{
+   const next=await cloud.signOutToAnonymous(s);session.current=next;
+   try{localStorage.setItem(`elsewhere:migrated:${next.uid}`,'1');}catch{}
+   watchFavorites(cloud,next);setToast('ログアウトしました。保存した場所は Google アカウントに残っています。');
+  }catch{setStorageStatus('error');setError('ログアウトしましたが、保存先に接続できません。ページを読み直してください。');}
+  finally{setAuthBusy(false);}
  };
  const selectUpload=(file:File|null)=>{
   request.current?.abort();setLoading(false);setLivePlaces([]);setVisualSearch(null);setError('');setShareUrl('');setUploadRights(false);
@@ -127,5 +160,5 @@ export function useDiscovery(){
   try{const position=await new Promise<GeolocationPosition>((ok,ng)=>navigator.geolocation.getCurrentPosition(ok,ng,{enableHighAccuracy:false,timeout:15000,maximumAge:60000}));const origin={lat:position.coords.latitude,lng:position.coords.longitude};const mode=Math.abs(origin.lat-p.lat)+Math.abs(origin.lng-p.lng)<0.2?'WALK':'DRIVE';const r=await fetch('/api/route',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({origin,destination:{lat:p.lat,lng:p.lng},mode})});const data=await r.json() as {duration?:string;distanceMeters?:number;error?:string};if(!r.ok)throw new Error(data.error||'経路を確認できませんでした。');const minutes=Math.ceil(parseFloat(data.duration||'0')/60);const distance=(Number(data.distanceMeters||0)/1000).toLocaleString('ja-JP',{maximumFractionDigits:1});setRoute({loading:false,text:`${mode==='WALK'?'徒歩':'車'}で約 ${minutes} 分・${distance} km`});}
   catch(e){setRoute({loading:false,error:e&&typeof e==='object'&&'code' in e?'現在地を取得できませんでした。位置情報の許可を確認してください。':e instanceof Error?e.message:'経路を確認できませんでした。'});}
  };
- return {filters,setFilters,sourceClimate,uploadFile,uploadPreview,uploadRights,setUploadRights,selectUpload,shareUrl,searchKind,setSearchKind,visualWeight,setVisualWeight,visualSearch,source,query,setQuery,preferences,togglePreference,destination,setDestination,view,setView,layout,setLayout,activeId,setActiveId,modal,setModal,detail,setDetail,toast,error,loading,resolving,mapsKey:config?.mapsKey||'',liveAvailable:Boolean(config?.liveSearch&&config?.places),placesReady:Boolean(config?.places),liveMode,setLiveMode,results,displayed,saved:savedPlaces,isSaved,toggleSaved,savingIds,chooseSource,choosePlaceId,chooseLocation,search,cancelSearch,share,storageStatus,route,getRoute,setRoute,config};
+ return {account,authBusy,signIn,signOutAccount,filters,setFilters,sourceClimate,uploadFile,uploadPreview,uploadRights,setUploadRights,selectUpload,shareUrl,searchKind,setSearchKind,visualWeight,setVisualWeight,visualSearch,source,query,setQuery,preferences,togglePreference,destination,setDestination,view,setView,layout,setLayout,activeId,setActiveId,modal,setModal,detail,setDetail,toast,error,loading,resolving,mapsKey:config?.mapsKey||'',liveAvailable:Boolean(config?.liveSearch&&config?.places),placesReady:Boolean(config?.places),liveMode,setLiveMode,results,displayed,saved:savedPlaces,isSaved,toggleSaved,savingIds,chooseSource,choosePlaceId,chooseLocation,search,cancelSearch,share,storageStatus,route,getRoute,setRoute,config};
 }
