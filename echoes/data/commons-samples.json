@@ -733,5 +733,46 @@
       "verification": "場所名・所在地・画像を照合：説明文にバレンシアのアルブフェラ湖と記載されており、湖面や水辺の草、夕暮れの風景が主体として写し出されています。",
       "verified": true
     }
+  },
+  "photoSets": {
+    "kamo": [
+      {
+        "provider": "commons",
+        "pageId": 102042,
+        "title": "File:Kamogawa sakura.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kamogawa_sakura.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Kamogawa_sakura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kamogawa_sakura.jpg/960px-Kamogawa_sakura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sha1": "8e34d7f295dcbdff753b8954e7c28e23e59bb793",
+        "mime": "image/jpeg",
+        "author": "Moja",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "description": "Sakura (Cherry Blossoms) at Kamogawa river, Kyoto, Japan. 京都市の賀茂川左岸の桜",
+        "categories": "GFDL|Kamo River|License migration completed|Hanami in Japan|April 2005 in Kyoto|Sakura in Kyoto",
+        "localImage": "/images/kamo.jpg",
+        "changes": "表示に合わせて縮小・トリミング",
+        "verification": "既存地点とファイルの説明・被写体を照合",
+        "verified": true
+      },
+      {
+        "provider": "commons",
+        "pageId": 149637818,
+        "title": "File:Kamo-gawa 2023-08-30.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kamo-gawa_2023-08-30.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Kamo-gawa_2023-08-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Kamo-gawa_2023-08-30.jpg/960px-Kamo-gawa_2023-08-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sha1": "195726ed8414ba61e1aa18186125f10e7aaf9718",
+        "mime": "image/jpeg",
+        "author": "Mauricio V. Genta",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Vista del rio Kamo",
+        "categories": "Kamo River|Self-published work|Files with coordinates missing SDC location of creation",
+        "changes": "表示に合わせて縮小・トリミング",
+        "verification": "場所名・所在地・画像を照合：説明文とタイトルに鴨川（Kamo-gawa）と明記されており、写真にも鴨川の流れや河川敷の景観が主たる被写体として写っています。",
+        "verified": true
+      }
+    ]
   }
 }

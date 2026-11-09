@@ -20,6 +20,7 @@
     "data:tourism": "node scripts/data-tourism.mjs",
     "google:catalog": "node --env-file=.env.local scripts/google/setup-catalog.mjs",
     "google:terrain": "node --env-file=.env.local scripts/google/warm-terrain.mjs",
+    "data:discover": "node scripts/data/discover-catalog.mjs",
     "data:catalog": "node scripts/data/expand-catalog.mjs",
     "catalog:index": "node --env-file=.env.local scripts/visual/build-index.mjs",
     "data:photos": "node --env-file=.env.local scripts/visual/prepare-catalog.mjs"

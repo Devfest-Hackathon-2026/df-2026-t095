@@ -19,7 +19,8 @@ for(const name of await readdir('.cache/commons-embeddings').catch(()=>[]))try{
  const entry=JSON.parse(await readFile(resolve('.cache/commons-embeddings',name),'utf8'));
  if(entry.schema===1&&entry.model===embeddingModel()&&entry.project===googleProject()&&entry.dimensions===768&&entry.values?.length===768&&entry.values.every(Number.isFinite)&&entry.photo?.verified&&eligibleLicense(entry.photo))entries.push(entry);
 }catch{}
-const places={};
+let places={};
+try{const previous=JSON.parse(await readFile('.cache/photo-index-v1.json','utf8'));if(previous.schema===1&&previous.project===googleProject()&&previous.model===embeddingModel())places={...previous.places};}catch{}
 for(const place of catalog){
  const photos=[manifest.photos[place.id],...(manifest.photoSets[place.id]||[])].filter(Boolean),seen=new Set();
  places[place.id]=photos.flatMap(photo=>{

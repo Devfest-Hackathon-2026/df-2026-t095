@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {places,type Place} from '../lib/places.ts';
+import {places} from '../lib/places.ts';
 import {visualDiscovery,uploadedVisualDiscovery} from '../lib/visual-discovery.ts';
 import {samplePhoto} from '../lib/commons.ts';
 import {matchesDestination} from '../lib/visual-ranking.ts';
