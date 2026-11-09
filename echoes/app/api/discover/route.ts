@@ -1,3 +1,4 @@
+import {applyAtmosphereScenery} from '@/lib/photo-scenery';
 import {parseSearchFilters} from '@/lib/climate-types';
 import {enrichPlaceEnvironment,environmentFilter,lessVisitedCountryNames} from '@/lib/search-filters';
 import {googleDiscover,profilePlace} from '@/lib/google';
@@ -14,8 +15,9 @@ export async function POST(request:Request){
   if(typeof body.placeId!=='string'&&typeof body.source!=='string')return Response.json({error:'出発点を選んでください。'},{status:400});
   const resolved=await resolveGooglePlace({placeId:typeof body.placeId==='string'?body.placeId:undefined,query:typeof body.source==='string'?body.source.slice(0,200):undefined});
   const filters=parseSearchFilters(body.filters);const enriched=await enrichPlaceEnvironment(resolved);if(filters.climate==='same'&&!enriched.climate)throw new Error('出発点の気候区分を確認できません。条件を外すか、直接選んでください。');
-  const [source,candidates]=await Promise.all([profilePlace(resolved),googleDiscover(resolved,[...new Set(body.preferences)] as typeof body.preferences,body.destination,{climate:filters.climate==='same'?enriched.climate?.code:filters.climate,countries:filters.lessVisited?await lessVisitedCountryNames():[]})]);
-  const filtered=await environmentFilter(source,candidates,filters);
+  const [source,candidates]=await Promise.all([profilePlace(resolved),googleDiscover(resolved,[...new Set(body.preferences)] as typeof body.preferences,body.destination,{seaColor:filters.seaColor,climate:filters.climate==='same'?enriched.climate?.code:filters.climate,countries:filters.lessVisited?await lessVisitedCountryNames():[]})]);
+  const scenery=await applyAtmosphereScenery(source,candidates,filters);
+  const filtered=await environmentFilter(scenery.source,scenery.places,filters);
   const translated=await translatePlacesIfNeeded([filtered.source,...filtered.places]);
   return Response.json({source:translated[0],places:translated.slice(1),mode:'live',note:'Google Maps の情報をもとに、AI が共通点と違いを整理しています。'},{headers:{'Cache-Control':'no-store'}});
  }catch(e){return Response.json({error:e instanceof SyntaxError?'検索結果を読み取れませんでした。もう一度お試しください。':e instanceof Error?e.message:'検索を完了できませんでした。'},{status:e instanceof SyntaxError||e instanceof Error&&/気候|区分|条件/.test(e.message)?400:502});}

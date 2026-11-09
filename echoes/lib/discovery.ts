@@ -1,5 +1,5 @@
 import {qualitySignal} from './quality-score.ts';
-import {compareFactorEvidence} from './factor-types.ts';
+import {compareFactorEvidence,unknownEvidenceCount} from './factor-types.ts';
 import { places, qualities, type Place, type Quality } from "./places.ts";
 
 export type RankedPlace = Place & { shared: Quality[]; score: number };
@@ -23,9 +23,9 @@ export function diverseResults(ranked: RankedPlace[], limit = 3): RankedPlace[] 
   const result: RankedPlace[] = [];
   const countries = new Set<string>();
   const continents = new Map<string, number>();
-  const priorities=[...new Set(ranked.map(p=>p.factorMatch?.unknown.length||0))].sort((a,b)=>a-b);
+  const priorities=[...new Set(ranked.map(unknownEvidenceCount))].sort((a,b)=>a-b);
   for(const priority of priorities){
-    const group=ranked.filter(p=>(p.factorMatch?.unknown.length||0)===priority);
+    const group=ranked.filter(p=>unknownEvidenceCount(p)===priority);
     for(const p of group){
       if(!countries.has(p.country)&&(continents.get(p.continent)||0)<2){result.push(p);countries.add(p.country);continents.set(p.continent,(continents.get(p.continent)||0)+1);}
       if(result.length===limit)return result;

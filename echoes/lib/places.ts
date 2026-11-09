@@ -1,5 +1,6 @@
 import type {CommonsPhoto,VisualEvidence,UploadPhoto} from './visual-types.ts';
 import type {PlaceFactors,FactorMatch} from './factor-types.ts';
+import type {Scenery,SceneryMatch} from './scenery.ts';
 export const qualities = [
   { id: "water", label: "水辺を歩きたい", description: "川や運河に沿って歩けること", icon: "Waves" },
   { id: "green", label: "緑に囲まれたい", description: "木々や庭園など、緑が身近にあること", icon: "Tree" },
@@ -24,6 +25,7 @@ export type Place = {
   tourism?:{arrivals:number;year:number;source:string}|null;
   factors?:PlaceFactors;factorMatch?:FactorMatch;
   featureEvidence?:Partial<Record<Quality,{status:'known'|'unknown';source?:SourceLink}>>;
+  scenery?:Scenery;sceneryMatch?:SceneryMatch;
 };
 export const defaultPreferences: Quality[] = ["water", "green", "quiet"];
 export const places: Place[] = [
