@@ -11,12 +11,14 @@ import {environmentFilter} from './search-filters.ts';
 import {defaultSearchFilters,type SearchFilters} from './climate-types.ts';
 import type {CommonsPhoto,AnalysisPhoto,VisualSearchSummary} from './visual-types.ts';
 import {discoverPhotoCandidates,type ReferenceImage} from './live-photo-candidates.ts';
+import {searchPolicy} from './search-policy.ts';
 export type VisualSearchResult={source:Place;places:Place[];visualSearch:VisualSearchSummary};
 type Collection=()=>ReturnType<typeof candidateCatalog>;
 type Dependencies={collection?:Collection;discover?:typeof discoverPhotoCandidates;vision?:typeof commonsVision;photo:(p:Place)=>Promise<CommonsPhoto|null>;embed:(p:CommonsPhoto)=>Promise<number[]>;explain?:(source:Place,candidate:Place,a:CommonsPhoto,b:CommonsPhoto)=>Promise<Place['visual']>};
 const defaultDeps:Dependencies={collection:candidateCatalog,discover:discoverPhotoCandidates,vision:commonsVision,photo:lookupCommonsPhoto,embed:imageEmbedding,explain:explainPhotoPair};
 async function expandCandidates(source:Place,pool:Place[],preferences:Quality[],destination:string,filters:SearchFilters,summary:VisualSearchSummary,discover:Dependencies['discover'],image:()=>Promise<ReferenceImage>){
  if(!discover)return pool;
+ if(discover===discoverPhotoCandidates&&!searchPolicy().liveDiscovery){summary.discoveryNote='節約モードのため、新しい候補の探索を省き、登録写真を比較します。';return pool;}
  try{
   const found=(await discover(source,preferences,destination,filters,await image())).slice(0,8);
   const filtered=(await environmentFilter(source,found,filters)).places.filter(p=>!samePlace(source,p)&&matchesDestination(p,destination));
@@ -42,7 +44,7 @@ export async function visualDiscovery(source:Place,preferences:Quality[],destina
  for(let i=0;i<pool.length;i+=2)await Promise.all(pool.slice(i,i+2).map(async p=>{try{const photo=await deps.photo(p);if(!photo||photo.pageId===sourcePhoto!.pageId||photo.sha1===sourcePhoto!.sha1)return;const vector=await deps.embed(photo);photos.set(p.id,photo);vectors.set(p.id,vector);}catch{}}));
  summary.comparedCount=vectors.size;summary.discoveredComparedCount=[...vectors.keys()].filter(id=>!registeredIds.has(id)).length;if(!vectors.size)return fallback('比較できる写真がそろわなかったため、場所の特徴で並べています。');
  const ranked=rankVisualPlaces(source,pool,vectors,sourceVector,preferences,destination,weight).slice(0,deps.explain?6:3);
- let sourceVision:VisionEvidence|null=null;if(deps.vision)try{sourceVision=await deps.vision(sourcePhoto);}catch{}
+ let sourceVision:VisionEvidence|null=null;if(deps.vision&&(deps!==defaultDeps||searchPolicy().useVision))try{sourceVision=await deps.vision(sourcePhoto);}catch{}
  const result=await Promise.all(ranked.map(async p=>{const photo=photos.get(p.id)!;const next=withCommonsPhoto(p,photo);let evidence:Place['visual'];if(deps.explain)try{evidence=await deps.explain(source,next,sourcePhoto!,photo);}catch{};evidence=evidence||{cosine:p.cosine,visualWeight:weight,observations:[],differences:[],inferences:[],explanation:'unavailable',sourcePhoto:sourcePhoto!,candidatePhoto:photo};let signal:number|null=null;if(sourceVision?.labels.length&&deps.vision)try{signal=visionOverlap(sourceVision,await deps.vision(photo));}catch{};return {...next,score:evidenceScore(p.cosine,qualitySignal(source,p,preferences),weight,signal,evidence.landscapeMatch),visual:{...evidence,cosine:p.cosine,visualWeight:weight,...(signal!==null?{visionSignal:signal}:{})}};}));
  const usable=result.filter(p=>p.visual?.landscapeMatch!=='weak');
  return {source,places:usable.sort((a,b)=>b.score-a.score).slice(0,3),visualSearch:{...summary,mode:'visual',visionCompared:result.filter(p=>typeof p.visual?.visionSignal==='number').length,rerankedCount:result.filter(p=>p.visual?.landscapeMatch).length,...(result.length>0&&!usable.length?{reason:'現在の登録候補には、十分に近い地形や構図の写真がありませんでした。条件を減らすか、別の写真や場所を試してください。'}:{})}};
@@ -81,7 +83,7 @@ export async function uploadedVisualDiscovery(data:Buffer,preferences:Quality[],
  for(let i=0;i<pool.length;i+=2)await Promise.all(pool.slice(i,i+2).map(async p=>{try{const image=await deps.photo(p);if(image){vectors.set(p.id,await deps.candidateEmbed(image));photos.set(p.id,image);}}catch{}}));
  summary.comparedCount=vectors.size;summary.discoveredComparedCount=[...vectors.keys()].filter(id=>!registeredIds.has(id)).length;if(!vectors.size)return fallback('比較できる候補写真がそろいませんでした。選んだ特徴だけで並べています。');
  const ranked=rankVisualPlaces(source,pool,vectors,vector,preferences,destination,weight).slice(0,6);
- let sourceVision:VisionEvidence|null=null;if(deps.vision)try{sourceVision=await deps.vision(data);}catch{}
+ let sourceVision:VisionEvidence|null=null;if(deps.vision&&(deps!==uploadDeps||searchPolicy().useVision))try{sourceVision=await deps.vision(data);}catch{}
  const candidates=await Promise.all(ranked.map(async p=>{const candidatePhoto=photos.get(p.id)!;let evidence:Place['visual'];try{evidence=await deps.explain(source,p,photo,candidatePhoto,data);}catch{}let signal:number|null=null;if(sourceVision?.labels.length&&deps.candidateVision)try{signal=visionOverlap(sourceVision,await deps.candidateVision(candidatePhoto));}catch{};return {...withCommonsPhoto(p,candidatePhoto),score:evidenceScore(p.cosine,qualitySignal(source,p,preferences),weight,signal,evidence?.landscapeMatch),visual:evidence?{...evidence,cosine:p.cosine,visualWeight:weight,...(signal!==null?{visionSignal:signal}:{})}:{cosine:p.cosine,visualWeight:weight,sourcePhoto:photo,candidatePhoto,observations:[],differences:[],inferences:[],explanation:'unavailable' as const}};}));
  const usable=candidates.filter(p=>p.visual.landscapeMatch!=='weak');return{source,places:usable.sort((a,b)=>b.score-a.score).slice(0,3),visualSearch:{...summary,mode:'visual',visionCompared:candidates.filter(p=>typeof p.visual.visionSignal==='number').length,rerankedCount:candidates.filter(p=>p.visual.landscapeMatch).length,...(candidates.length>0&&!usable.length?{reason:'現在の登録候補には、十分に近い地形や構図の写真がありませんでした。条件を減らすか、別の写真や場所を試してください。'}:{})}};
 }

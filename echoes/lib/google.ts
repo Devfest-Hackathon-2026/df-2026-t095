@@ -2,6 +2,7 @@ import {isQuality,safeUrl} from './discovery.ts';
 import {type Place,type Quality,type SourceLink,qualities} from './places.ts';
 import {cloudHeaders,googleProject} from './google-auth.ts';
 import {hasPlaces,placeDetails,textSearch,toPlace} from './google-maps.ts';
+import {searchPolicy} from './search-policy.ts';
 type Grounding={maps?:{uri?:string;title?:string;placeId?:string}};
 export type GeminiResult={candidates?:{content?:{parts?:{text?:string;thought?:boolean}[]};groundingMetadata?:{groundingChunks?:Grounding[]}}[]};
 const text=(x:unknown,max=1200)=>typeof x==='string'?x.trim().slice(0,max):'';
@@ -34,7 +35,7 @@ export async function generateGoogle(prompt:string,grounded=false,location?:{lat
  const url=project?`https://aiplatform.googleapis.com/v1/projects/${googleProject()}/locations/${process.env.GOOGLE_CLOUD_LOCATION||'global'}/publishers/google/models/${model}:generateContent`:`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
  if(!project&&!key)throw new Error('Google の AI 接続が未設定です。');
  const headers=project?await cloudHeaders():{'Content-Type':'application/json','x-goog-api-key':key!};
- const body={contents:[{role:'user',parts:[{text:prompt},...media.map(inlineData=>({inlineData}))]}],...(grounded?{tools:[{googleMaps:{}}],...(location?{toolConfig:{retrievalConfig:{latLng:{latitude:location.lat,longitude:location.lng}}}}:{})}:{}),generationConfig:{temperature:0.2,maxOutputTokens:12000,...(!grounded?{responseMimeType:'application/json'}:{})}};
+ const body={contents:[{role:'user',parts:[{text:prompt},...media.map(inlineData=>({inlineData}))]}],...(grounded?{tools:[{googleMaps:{}}],...(location?{toolConfig:{retrievalConfig:{latLng:{latitude:location.lat,longitude:location.lng}}}}:{})}:{}),generationConfig:{temperature:0.2,maxOutputTokens:searchPolicy().maxOutputTokens,...(!grounded?{responseMimeType:'application/json'}:{})}};
  const r=await fetch(url,{method:'POST',headers,body:JSON.stringify(body),signal:AbortSignal.timeout(90000),cache:'no-store'});
  if(!r.ok){const error=await r.json().catch(()=>({})) as {error?:{message?:string}};console.error('Gemini',r.status,error.error?.message?.slice(0,200));throw new Error(r.status===429?'AI の検索が混み合っています。少し待ってからお試しください。':'AI の検索を完了できませんでした。もう一度お試しください。');}
  return await r.json() as GeminiResult;
