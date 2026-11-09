@@ -39,6 +39,20 @@ export async function lookupCommonsPhoto(place:Place):Promise<CommonsPhoto|null>
  const existing=await samplePhoto(place);if(existing)return existing;
  return cachedPublicData<CommonsPhoto|null>('commons-lookups',JSON.stringify([2,place.name,place.city,place.country,place.lat,place.lng,place.aliases]),()=>findCommonsPhoto(place),(value):value is CommonsPhoto=>Boolean(value&&typeof value==='object'&&(value as CommonsPhoto).verified&&!/\b(map|diagram)\b/i.test((value as CommonsPhoto).title)&&eligibleLicense(value as CommonsPhoto)));
 }
+/** Additional verified views are prepared offline, never discovered for every candidate at query time. */
+export async function lookupCommonsPhotos(place:Place,limit=3):Promise<CommonsPhoto[]>{
+ const count=Math.max(1,Math.min(5,Math.floor(limit))),first=await lookupCommonsPhoto(place),result=first?[first]:[];
+ if(count===1)return result;
+ const aliases=await resolvePhotoAliases(place),query=aliases.find(s=>/^[\x20-\x7e]+$/.test(s))||place.name;
+ const data=await wiki(api,{action:'query',generator:'search',gsrsearch:`filetype:bitmap "${query.replace(/["|]/g,'')}"`,gsrnamespace:'6',gsrlimit:'8',prop:'imageinfo|coordinates',iiprop:'url|extmetadata|sha1|mime',iiurlwidth:'960',colimit:'1'});
+ for(const page of Object.values(data.query?.pages||{}) as CommonsPage[]){
+  if(result.some(p=>p.pageId===page.pageid))continue;
+  const photo=await verifyCommonsPages(place,[page],aliases);
+  if(photo&&!result.some(p=>p.sha1===photo.sha1))result.push(photo);
+  if(result.length>=count)break;
+ }
+ return result;
+}
 async function findCommonsPhoto(place:Place):Promise<CommonsPhoto|null>{
  const aliases=await resolvePhotoAliases(place);const contextNames=[place.city,place.country];if(place.countryCode)try{contextNames.push(new Intl.DisplayNames(['en'],{type:'region'}).of(place.countryCode)||'');}catch{}
  const prefecture=place.address?.match(/東京都|大阪府|京都府|北海道|[^\s、,]{2,3}県/)?.[0];
