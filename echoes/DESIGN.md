@@ -1,174 +1,167 @@
 ---
-{
-  "name": "Elsewhere",
-  "description": "A modern park field guide for familiar feelings in new places.",
-  "colors": {
-    "green": "#2d6048",
-    "green-dark": "#224c39",
-    "mint": "#e8efe6",
-    "paper": "#f7f9f6",
-    "white": "#fff",
-    "ink": "#233d32",
-    "muted": "#64746a",
-    "line": "#dfe5dc",
-    "water": "#d6e5e5",
-    "supporting-copy": "#586b54",
-    "map-key-ink": "#566f54",
-    "quality-fill": "#e6eee0",
-    "quality-ink": "#385733",
-    "chip-fill": "#f0f4eb",
-    "chip-ink": "#637b55",
-    "secondary-fill": "#edf2e6",
-    "secondary-ink": "#4b6a3d",
-    "dialog-surface": "#fbfcf8",
-    "focus": "#789e77"
-  },
-  "typography": {
-    "display": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "48px",
-      "fontWeight": 500,
-      "lineHeight": "1",
-      "letterSpacing": "-0.04em"
-    },
-    "headline": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "30px",
-      "fontWeight": 550,
-      "lineHeight": "36px",
-      "letterSpacing": "-0.03em"
-    },
-    "title": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "20px",
-      "fontWeight": 600,
-      "lineHeight": "28px",
-      "letterSpacing": "-0.03em"
-    },
-    "section": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "16px",
-      "fontWeight": 650,
-      "lineHeight": "24px",
-      "letterSpacing": "-0.02em"
-    },
-    "body": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "14px",
-      "fontWeight": 400,
-      "lineHeight": "20px"
-    },
-    "body-large": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "16px",
-      "fontWeight": 400,
-      "lineHeight": "24px"
-    },
-    "label": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "12px",
-      "fontWeight": 500,
-      "lineHeight": "16px"
-    },
-    "note": {
-      "fontFamily": "Manrope, sans-serif",
-      "fontSize": "12px",
-      "fontWeight": 400,
-      "lineHeight": "20px"
-    }
-  },
-  "rounded": {
-    "small": "4px",
-    "control": "8px",
-    "surface": "12px",
-    "dialog": "16px",
-    "circle": "50%"
-  },
-  "spacing": {
-    "4": "4px",
-    "8": "8px",
-    "12": "12px",
-    "16": "16px",
-    "24": "24px",
-    "32": "32px",
-    "40": "40px",
-    "48": "48px"
-  },
-  "components": {
-    "button-primary": {
-      "backgroundColor": "{colors.green}",
-      "textColor": "{colors.white}",
-      "rounded": "{rounded.control}",
-      "padding": "12px 24px",
-      "height": "48px"
-    },
-    "button-primary-hover": {
-      "backgroundColor": "{colors.green-dark}",
-      "textColor": "{colors.white}"
-    },
-    "button-secondary": {
-      "backgroundColor": "{colors.secondary-fill}",
-      "textColor": "{colors.secondary-ink}",
-      "rounded": "{rounded.control}",
-      "padding": "12px 16px",
-      "height": "48px"
-    },
-    "button-text": {
-      "textColor": "{colors.green}",
-      "padding": "4px 0"
-    },
-    "button-icon": {
-      "backgroundColor": "{colors.white}",
-      "textColor": "#61795e",
-      "rounded": "{rounded.control}",
-      "height": "40px",
-      "width": "40px"
-    },
-    "field": {
-      "textColor": "#263d2f",
-      "padding": "0",
-      "typography": "{typography.body-large}"
-    },
-    "nav-item": {
-      "textColor": "#6a776e",
-      "rounded": "{rounded.control}",
-      "padding": "8px 16px",
-      "height": "40px"
-    },
-    "nav-item-selected": {
-      "backgroundColor": "{colors.mint}",
-      "textColor": "{colors.green-dark}"
-    },
-    "quality": {
-      "backgroundColor": "#f9fbf7",
-      "textColor": "#61735e",
-      "rounded": "{rounded.control}",
-      "padding": "12px 16px",
-      "height": "48px"
-    },
-    "quality-selected": {
-      "backgroundColor": "{colors.quality-fill}",
-      "textColor": "{colors.quality-ink}"
-    },
-    "quality-chip": {
-      "backgroundColor": "{colors.chip-fill}",
-      "textColor": "{colors.chip-ink}",
-      "rounded": "{rounded.small}",
-      "padding": "4px 8px"
-    },
-    "result-card": {
-      "backgroundColor": "{colors.white}",
-      "textColor": "{colors.ink}",
-      "rounded": "{rounded.surface}"
-    },
-    "dialog": {
-      "backgroundColor": "{colors.dialog-surface}",
-      "textColor": "{colors.ink}",
-      "rounded": "{rounded.dialog}",
-      "width": "min(560px, calc(100% - 32px))"
-    }
-  }
-}
+name: Elsewhere
+description: '公園の案内のように、写真と地図を見ながら次の行き先を探せる画面。'
+colors:
+  green: '#2d6048'
+  green-dark: '#224c39'
+  mint: '#e8efe6'
+  paper: '#f7f9f6'
+  white: '#fff'
+  ink: '#233d32'
+  muted: '#64746a'
+  line: '#dfe5dc'
+  water: '#d6e5e5'
+  supporting-copy: '#586b54'
+  map-key-ink: '#566f54'
+  quality-fill: '#e6eee0'
+  quality-ink: '#385733'
+  chip-fill: '#f0f4eb'
+  chip-ink: '#637b55'
+  secondary-fill: '#edf2e6'
+  secondary-ink: '#4b6a3d'
+  dialog-surface: '#fbfcf8'
+  focus: '#789e77'
+typography:
+  display:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 48px
+    fontWeight: 600
+    lineHeight: '1.35'
+    letterSpacing: -0.03em
+  display-mobile:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 30px
+    fontWeight: 600
+    lineHeight: '1.5'
+    letterSpacing: -0.04em
+  headline:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 30px
+    fontWeight: 550
+    lineHeight: '1.6'
+    letterSpacing: -0.03em
+  title:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 28px
+    letterSpacing: -0.03em
+  section:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 16px
+    fontWeight: 650
+    lineHeight: 24px
+    letterSpacing: -0.02em
+  body:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: '1.75'
+  body-large:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 28px
+  body-large-mobile:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 24px
+  label:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20px
+  note:
+    fontFamily: Manrope, "Noto Sans JP", sans-serif
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 24px
+rounded:
+  small: 4px
+  control: 8px
+  surface: 12px
+  dialog: 16px
+  circle: 50%
+spacing:
+  '4': 4px
+  '8': 8px
+  '12': 12px
+  '16': 16px
+  '24': 24px
+  '32': 32px
+  '40': 40px
+  '48': 48px
+components:
+  button-primary:
+    backgroundColor: '{colors.green}'
+    textColor: '{colors.white}'
+    rounded: '{rounded.control}'
+    padding: 12px 24px
+    height: 48px
+  button-primary-hover:
+    backgroundColor: '{colors.green-dark}'
+    textColor: '{colors.white}'
+  button-secondary:
+    backgroundColor: '{colors.secondary-fill}'
+    textColor: '{colors.secondary-ink}'
+    rounded: '{rounded.control}'
+    padding: 12px 16px
+    height: 48px
+  button-text:
+    textColor: '{colors.green}'
+    padding: 4px 0
+  button-icon:
+    backgroundColor: '{colors.white}'
+    textColor: '#61795e'
+    rounded: '{rounded.control}'
+    height: 40px
+    width: 40px
+  button-icon-mobile:
+    backgroundColor: '{colors.white}'
+    textColor: '#61795e'
+    rounded: '{rounded.control}'
+    height: 44px
+    width: 44px
+  field:
+    textColor: '#263d2f'
+    padding: '0'
+    typography: '{typography.body-large}'
+  field-mobile:
+    textColor: '#263d2f'
+    padding: '0'
+    typography: '{typography.body-large-mobile}'
+  nav-item:
+    textColor: '#6a776e'
+    rounded: '{rounded.control}'
+    padding: 8px 16px
+    height: 44px
+  nav-item-selected:
+    backgroundColor: '{colors.mint}'
+    textColor: '{colors.green-dark}'
+  quality:
+    backgroundColor: '#f9fbf7'
+    textColor: '#61735e'
+    rounded: '{rounded.control}'
+    padding: 12px 16px
+    height: 46px
+  quality-selected:
+    backgroundColor: '{colors.quality-fill}'
+    textColor: '{colors.quality-ink}'
+  quality-chip:
+    backgroundColor: '{colors.chip-fill}'
+    textColor: '{colors.chip-ink}'
+    rounded: '{rounded.small}'
+    padding: 4px 8px
+  result-card:
+    backgroundColor: '{colors.white}'
+    textColor: '{colors.ink}'
+    rounded: '{rounded.surface}'
+  dialog:
+    backgroundColor: '{colors.dialog-surface}'
+    textColor: '{colors.ink}'
+    rounded: '{rounded.dialog}'
+    width: min(560px, calc(100% - 32px))
 ---
 
 # Elsewhere のデザイン
