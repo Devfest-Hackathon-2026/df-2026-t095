@@ -1,4 +1,6 @@
 "use client";
+import {useResultFeedback} from './use-result-feedback';
+import {applyFeedback} from './relevance-feedback';
 import {filtersFromParams,filtersToParams} from './search-params.ts';
 import {defaultSearchFilters,parseSearchFilters,type SearchFilters} from './climate-types';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
@@ -15,6 +17,7 @@ export function useDiscovery(){
  useEffect(()=>()=>{if(uploadPreview)URL.revokeObjectURL(uploadPreview);},[uploadPreview]);
  const [source,setSource]=useState<Place>(places[0]);const [query,setQuery]=useState(places[0].name);
  const [preferences,setPreferences]=useState<Quality[]>(defaultPreferences);const [destination,setDestinationState]=useState('world');
+ const {feedback}=useResultFeedback(source.id,preferences);
  const [filters,setFiltersState]=useState<SearchFilters>(defaultSearchFilters);const [climateResult,setClimateResult]=useState<{key:string;value:Place['climate']}|null>(null);const climateKey=`${source.id}:${source.lat}:${source.lng}`;const sourceClimate=source.locationUnknown?null:source.climate!==undefined?source.climate:climateResult?.key===climateKey?climateResult.value:null;
  const [view,setView]=useState<'discover'|'saved'>('discover');const [layout,setLayout]=useState<'map'|'list'|'globe'>('globe');
  const [activeId,setActiveId]=useState<string|null>(null);const [detail,setDetail]=useState<Place|null>(null);
@@ -67,8 +70,8 @@ export function useDiscovery(){
  },[savedRefs]);
  useEffect(()=>{if(!cloudReady.current||!session.current||storageStatus!=='cloud')return;const timer=setTimeout(()=>{import('./firebase-client').then(c=>c.saveSettings(session.current!,{preferences,destination})).catch(()=>setToast('検索条件を保存できませんでした。'));},700);return()=>clearTimeout(timer);},[preferences,destination,storageStatus]);
  useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),4200);return()=>clearTimeout(t);},[toast]);
- const textResults=useMemo(()=>diverseResults(rankPlaces(source,preferences,liveMode?'world':destination,liveMode?livePlaces:places)),[source,preferences,destination,liveMode,livePlaces]);
- const results=liveMode&&searchKind==='visual'?livePlaces:textResults;
+ const textResults=useMemo(()=>diverseResults(applyFeedback(rankPlaces(source,preferences,liveMode?'world':destination,liveMode?livePlaces:places),feedback,source.id,preferences)),[source,preferences,destination,liveMode,livePlaces,feedback]);
+ const results=useMemo(()=>liveMode&&searchKind==='visual'?applyFeedback(livePlaces,feedback,source.id,preferences):textResults,[liveMode,searchKind,livePlaces,feedback,source.id,preferences,textResults]);
  const displayed=view==='saved'?savedPlaces:results;
  const isSaved=useCallback((p:Place)=>savedRefs.some(r=>refKey(r)===p.id||(r.placeId&&r.placeId===p.placeId)),[savedRefs]);
  const toggleSaved=async(p:Place)=>{

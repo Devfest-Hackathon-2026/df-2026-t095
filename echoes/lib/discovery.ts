@@ -1,3 +1,4 @@
+import {qualitySignal} from './quality-score.ts';
 import {compareFactorEvidence} from './factor-types.ts';
 import { places, qualities, type Place, type Quality } from "./places.ts";
 
@@ -12,7 +13,7 @@ export function rankPlaces(source: Place, preferences: Quality[], destination = 
   return pool
     .filter(p => p.id !== source.id && (destination === "world" || p.continent === destination || p.city === destination))
     .map(p => {
-      const score = selected.reduce((sum, q) => sum + (5 - Math.abs(source.features[q] - p.features[q])) + p.features[q] * 0.25, 0) / selected.length;
+      const score = qualitySignal(source,p,selected)*6.25;
       const shared = selected.filter(q => source.features[q] >= 3 && p.features[q] >= 3);
       return { ...p, score, shared };
     })

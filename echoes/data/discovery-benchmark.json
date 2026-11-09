@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "kamo-1",
+    "sourceId": "kamo",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "munich": 2,
+      "singapore": 2,
+      "ljubljana": 2,
+      "seoul": 1,
+      "philosopher": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "kamo-2",
+    "sourceId": "kamo",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "munich": 2,
+      "singapore": 2,
+      "ljubljana": 2,
+      "seoul": 1,
+      "philosopher": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "kamo-3",
+    "sourceId": "kamo",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "munich": 2,
+      "singapore": 2,
+      "ljubljana": 2,
+      "seoul": 1,
+      "philosopher": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "kamo-4",
+    "sourceId": "kamo",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "munich": 2,
+      "singapore": 2,
+      "ljubljana": 2,
+      "seoul": 1,
+      "philosopher": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "kamo-5",
+    "sourceId": "kamo",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "munich": 2,
+      "singapore": 2,
+      "ljubljana": 2,
+      "seoul": 1,
+      "philosopher": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ljubljana-1",
+    "sourceId": "ljubljana",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "london": 2,
+      "paris": 1,
+      "copenhagen": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ljubljana-2",
+    "sourceId": "ljubljana",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "london": 2,
+      "paris": 1,
+      "copenhagen": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ljubljana-3",
+    "sourceId": "ljubljana",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "london": 2,
+      "paris": 1,
+      "copenhagen": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ljubljana-4",
+    "sourceId": "ljubljana",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "london": 2,
+      "paris": 1,
+      "copenhagen": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ljubljana-5",
+    "sourceId": "ljubljana",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "london": 2,
+      "paris": 1,
+      "copenhagen": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "seoul-1",
+    "sourceId": "seoul",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "osaka": 2,
+      "ljubljana": 1,
+      "london": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "seoul-2",
+    "sourceId": "seoul",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "osaka": 2,
+      "ljubljana": 1,
+      "london": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "seoul-3",
+    "sourceId": "seoul",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "osaka": 2,
+      "ljubljana": 1,
+      "london": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "seoul-4",
+    "sourceId": "seoul",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "osaka": 2,
+      "ljubljana": 1,
+      "london": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "seoul-5",
+    "sourceId": "seoul",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "osaka": 2,
+      "ljubljana": 1,
+      "london": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "paris-1",
+    "sourceId": "paris",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "london": 2,
+      "copenhagen": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "paris-2",
+    "sourceId": "paris",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "london": 2,
+      "copenhagen": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "paris-3",
+    "sourceId": "paris",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "london": 2,
+      "copenhagen": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "paris-4",
+    "sourceId": "paris",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "london": 2,
+      "copenhagen": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "paris-5",
+    "sourceId": "paris",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "london": 2,
+      "copenhagen": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "munich-1",
+    "sourceId": "munich",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "singapore": 2,
+      "amsterdam": 1,
+      "seoul": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "munich-2",
+    "sourceId": "munich",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "singapore": 2,
+      "amsterdam": 1,
+      "seoul": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "munich-3",
+    "sourceId": "munich",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "singapore": 2,
+      "amsterdam": 1,
+      "seoul": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "munich-4",
+    "sourceId": "munich",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "singapore": 2,
+      "amsterdam": 1,
+      "seoul": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "munich-5",
+    "sourceId": "munich",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "singapore": 2,
+      "amsterdam": 1,
+      "seoul": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "amsterdam-1",
+    "sourceId": "amsterdam",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ueno": 2,
+      "singapore": 2,
+      "philosopher": 1,
+      "munich": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "amsterdam-2",
+    "sourceId": "amsterdam",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ueno": 2,
+      "singapore": 2,
+      "philosopher": 1,
+      "munich": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "amsterdam-3",
+    "sourceId": "amsterdam",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ueno": 2,
+      "singapore": 2,
+      "philosopher": 1,
+      "munich": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "amsterdam-4",
+    "sourceId": "amsterdam",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ueno": 2,
+      "singapore": 2,
+      "philosopher": 1,
+      "munich": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "amsterdam-5",
+    "sourceId": "amsterdam",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ueno": 2,
+      "singapore": 2,
+      "philosopher": 1,
+      "munich": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ueno-1",
+    "sourceId": "ueno",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "amsterdam": 2,
+      "philosopher": 2,
+      "osaka": 1,
+      "singapore": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ueno-2",
+    "sourceId": "ueno",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "amsterdam": 2,
+      "philosopher": 2,
+      "osaka": 1,
+      "singapore": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ueno-3",
+    "sourceId": "ueno",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "amsterdam": 2,
+      "philosopher": 2,
+      "osaka": 1,
+      "singapore": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ueno-4",
+    "sourceId": "ueno",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "amsterdam": 2,
+      "philosopher": 2,
+      "osaka": 1,
+      "singapore": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "ueno-5",
+    "sourceId": "ueno",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "amsterdam": 2,
+      "philosopher": 2,
+      "osaka": 1,
+      "singapore": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "philosopher-1",
+    "sourceId": "philosopher",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "ueno": 1,
+      "london": 1,
+      "ljubljana": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "philosopher-2",
+    "sourceId": "philosopher",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "ueno": 1,
+      "london": 1,
+      "ljubljana": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "philosopher-3",
+    "sourceId": "philosopher",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "ueno": 1,
+      "london": 1,
+      "ljubljana": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "philosopher-4",
+    "sourceId": "philosopher",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "ueno": 1,
+      "london": 1,
+      "ljubljana": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "philosopher-5",
+    "sourceId": "philosopher",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "kamo": 2,
+      "ueno": 1,
+      "london": 1,
+      "ljubljana": 1,
+      "copenhagen": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "copenhagen-1",
+    "sourceId": "copenhagen",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "paris": 2,
+      "london": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "copenhagen-2",
+    "sourceId": "copenhagen",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "paris": 2,
+      "london": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "copenhagen-3",
+    "sourceId": "copenhagen",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "paris": 2,
+      "london": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "copenhagen-4",
+    "sourceId": "copenhagen",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "paris": 2,
+      "london": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "copenhagen-5",
+    "sourceId": "copenhagen",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "paris": 2,
+      "london": 1,
+      "osaka": 1,
+      "munich": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "london-1",
+    "sourceId": "london",
+    "preferences": [
+      "water"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "kamo": 2,
+      "paris": 1,
+      "philosopher": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "london-2",
+    "sourceId": "london",
+    "preferences": [
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "kamo": 2,
+      "paris": 1,
+      "philosopher": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "london-3",
+    "sourceId": "london",
+    "preferences": [
+      "water",
+      "green"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "kamo": 2,
+      "paris": 1,
+      "philosopher": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "water",
+      "green"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "london-4",
+    "sourceId": "london",
+    "preferences": [
+      "walk",
+      "cafes"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "kamo": 2,
+      "paris": 1,
+      "philosopher": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "walk",
+      "cafes"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  },
+  {
+    "id": "london-5",
+    "sourceId": "london",
+    "preferences": [
+      "quiet",
+      "history"
+    ],
+    "destination": "world",
+    "judgements": {
+      "ljubljana": 2,
+      "kamo": 2,
+      "paris": 1,
+      "philosopher": 1,
+      "amsterdam": 0
+    },
+    "reviewed": false,
+    "tags": [
+      "provisional",
+      "quiet",
+      "history"
+    ],
+    "reviewNote": "Starter judgements for human review. Confirm relevance for these particular preferences before setting reviewed=true."
+  }
+]

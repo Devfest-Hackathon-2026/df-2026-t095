@@ -23,6 +23,7 @@ export type Place = {
   climate?:{code:string;label:string;period:string;source:string;nearby:boolean}|null;
   tourism?:{arrivals:number;year:number;source:string}|null;
   factors?:PlaceFactors;factorMatch?:FactorMatch;
+  featureEvidence?:Partial<Record<Quality,{status:'known'|'unknown';source?:SourceLink}>>;
 };
 export const defaultPreferences: Quality[] = ["water", "green", "quiet"];
 export const places: Place[] = [

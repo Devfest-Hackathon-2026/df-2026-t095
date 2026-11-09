@@ -9,5 +9,5 @@ export function validClimate(value:unknown):value is string{return value==='any'
 export function parseSearchFilters(value:unknown):SearchFilters{
  if(value===undefined||value===null)return{...defaultSearchFilters};if(typeof value!=='object'||Array.isArray(value))throw new Error('絞り込み条件を確認してください。');const x=value as SearchFilters;
  if(!validClimate(x.climate)||typeof x.lessVisited!=='boolean'||x.population!==undefined&&!['any','low','high'].includes(x.population)||x.waterQuality!==undefined&&typeof x.waterQuality!=='boolean'||x.lowHomicide!==undefined&&typeof x.lowHomicide!=='boolean'||x.unknownData!==undefined&&!['include','exclude'].includes(x.unknownData))throw new Error('気候区分と国の条件を確認してください。');
- return{...defaultSearchFilters,...Object.fromEntries(Object.entries(x).filter(([key])=>key in defaultSearchFilters))};
+ return{...defaultSearchFilters,...Object.fromEntries(Object.entries(x).filter(([key])=>Object.hasOwn(defaultSearchFilters,key)))};
 }

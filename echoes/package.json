@@ -22,6 +22,7 @@
     "google:terrain": "node --env-file=.env.local scripts/google/warm-terrain.mjs",
     "data:discover": "node scripts/data/discover-catalog.mjs",
     "data:catalog": "node scripts/data/expand-catalog.mjs",
+    "eval:discovery": "node scripts/evaluate-discovery.mjs",
     "catalog:index": "node --env-file=.env.local scripts/visual/build-index.mjs",
     "data:photos": "node --env-file=.env.local scripts/visual/prepare-catalog.mjs"
   },
