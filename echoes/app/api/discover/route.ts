@@ -15,7 +15,7 @@ export async function POST(request:Request){
   if(typeof body.placeId!=='string'&&typeof body.source!=='string')return Response.json({error:'出発点を選んでください。'},{status:400});
   const resolved=await resolveGooglePlace({placeId:typeof body.placeId==='string'?body.placeId:undefined,query:typeof body.source==='string'?body.source.slice(0,200):undefined});
   const filters=parseSearchFilters(body.filters);const enriched=await enrichPlaceEnvironment(resolved);if(filters.climate==='same'&&!enriched.climate)throw new Error('出発点の気候区分を確認できません。条件を外すか、直接選んでください。');
-  const [source,candidates]=await Promise.all([profilePlace(resolved),googleDiscover(resolved,[...new Set(body.preferences)] as typeof body.preferences,body.destination,{seaColor:filters.seaColor,climate:filters.climate==='same'?enriched.climate?.code:filters.climate,countries:filters.lessVisited?await lessVisitedCountryNames():[]})]);
+  const [source,candidates]=await Promise.all([profilePlace(resolved),googleDiscover(resolved,[...new Set(body.preferences)] as typeof body.preferences,body.destination,{townscape:filters.townscape,seaColor:filters.seaColor,climate:filters.climate==='same'?enriched.climate?.code:filters.climate,countries:filters.lessVisited?await lessVisitedCountryNames():[]})]);
   const scenery=await applyAtmosphereScenery(source,candidates,filters);
   const filtered=await environmentFilter(scenery.source,scenery.places,filters);
   const translated=await translatePlacesIfNeeded([filtered.source,...filtered.places]);

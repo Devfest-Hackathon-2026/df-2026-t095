@@ -1,7 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {places} from '../lib/places.ts';
-import {matchScenery,sceneryFromPhoto,filterScenery,type SeaColor} from '../lib/scenery.ts';
+import {matchScenery,sceneryFromPhoto,sceneryFromMaps,filterScenery,type SeaColor,type Townscape} from '../lib/scenery.ts';
+import {parseGroundedPlaces} from '../lib/google.ts';
 import {compareFactorEvidence} from '../lib/factor-types.ts';
 import {parseSearchFilters} from '../lib/climate-types.ts';
 import {filtersFromParams,filtersToParams} from '../lib/search-params.ts';
@@ -12,6 +13,7 @@ import {applyAtmosphereScenery} from '../lib/photo-scenery.ts';
 const source=places[0],candidate=places[1];
 const sea=(value:SeaColor)=>({seaColor:{value,basis:'photo' as const,note:'写真の水面に見える色です。'}});
 const filters={climate:'any',lessVisited:false,seaColor:'blue' as const,unknownData:'include' as const};
+const town=(...value:Townscape[])=>({townscape:{value,basis:'photo' as const,note:'建物と街路の構成を確認しました。'}});
 test('sea color filters use observed seawater, distinguish fresh water, and retain unknowns last',async()=>{
  const blue={...candidate,scenery:sea('blue')},green={...candidate,id:'green',scenery:sea('green')},unknown={...candidate,id:'unknown'};
  assert.deepEqual(matchScenery(source,blue,filters),{matched:['seaColor'],unknown:[]});assert.equal(matchScenery(source,green,filters),null);
@@ -54,4 +56,36 @@ test('atmosphere searches analyze only reusable photos and honor the cost budget
  const deps={photo:async()=>photo,analyze:async()=>{analyzed++;return sea('blue');}};
  const result=await applyAtmosphereScenery(source,pool,filters,deps);assert.equal(analyzed,Math.min(pool.length,searchPolicy().maxVerifications));assert.equal(result.places.length,12);assert.equal(result.places[0].sceneryMatch?.unknown.length,0);if(analyzed<pool.length)assert.equal(result.places[11].sceneryMatch?.unknown.length,1);
  analyzed=0;await applyAtmosphereScenery(source,pool,{...filters,seaColor:'any'},deps);assert.equal(analyzed,0);
+});
+test('townscape accepts multiple supported styles, excludes nonurban scenes, and preserves same-style matching',()=>{
+ const selected={...filters,seaColor:'any' as const,townscape:'historic' as const};
+ assert.deepEqual(matchScenery(source,{...candidate,scenery:town('historic','harbor')},selected)?.matched,['townscape']);
+ assert.equal(matchScenery(source,{...candidate,scenery:town('modern')},selected),null);
+ assert.equal(matchScenery(source,{...candidate,scenery:town('not_urban')},selected),null);
+ assert.deepEqual(matchScenery(source,candidate,selected)?.unknown,['townscape']);
+ assert.deepEqual(matchScenery({...source,scenery:town('historic','harbor')},{...candidate,scenery:town('harbor')},{...selected,townscape:'same'})?.matched,['townscape']);
+ const both={...filters,townscape:'historic' as const};
+ assert.equal(matchScenery(source,{...candidate,scenery:{...sea('green'),...town('historic')}},both),null);
+ assert.deepEqual(matchScenery(source,{...candidate,scenery:{...sea('blue'),...town('historic')}},both)?.matched,['seaColor','townscape']);
+ const parsed=parseSearchFilters(both);assert.deepEqual(filtersFromParams(filtersToParams(new URLSearchParams(),parsed)),parsed);
+ assert.throws(()=>parseSearchFilters({...both,townscape:'safe'}),/街の雰囲気/);
+});
+test('Maps townscape interpretations require grounding and never manufacture sea color',()=>{
+ const raw={name:'Example Old Town',city:'Kyoto',country:'Japan',lat:35,lng:135,features:{...source.features},townscape:['historic'],townscapeNote:'石造りの建物と歩行者街路があるという資料。',seaColor:'blue',seaColorNote:'blue'};
+ const [parsed]=parseGroundedPlaces({candidates:[{content:{parts:[{text:JSON.stringify({places:[raw]})}]},groundingMetadata:{groundingChunks:[{maps:{title:raw.name,uri:'https://maps.google.com/?cid=123'}}]}}]});
+ assert.equal(parsed.scenery?.townscape?.basis,'maps');assert.ok(parsed.scenery?.townscape?.source);assert.equal(parsed.scenery?.seaColor,undefined);
+ assert.deepEqual(sceneryFromMaps(raw),{});
+ assert.deepEqual(sceneryFromMaps({...raw,townscape:['historic','safe']},{title:'Maps',url:'https://maps.google.com'}),{});
+});
+test('a townscape-only atmosphere search reuses grounded profiles without any photo analysis',async()=>{
+ let calls=0;
+ const historic={...candidate,scenery:{townscape:{value:['historic'] as Townscape[],basis:'maps' as const,note:'建物の資料',source:{title:'Maps',url:'https://maps.google.com'}}}};
+ const result=await applyAtmosphereScenery({...source,scenery:historic.scenery},[historic],{...filters,seaColor:'any',townscape:'same'}, {photo:async()=>{calls++;return null;},analyze:async()=>{calls++;return{};}});
+ assert.equal(calls,0);assert.deepEqual(result.places[0].sceneryMatch?.matched,['townscape']);
+});
+test('photo streetscape evidence retains its source and does not erase non-sea classification',async()=>{
+ const photo=(await samplePhoto(candidate))!;
+ const scenery=sceneryFromPhoto({seaColor:'blue',seaColorNote:'水面',townscape:['historic','green'],townscapeNote:'古い建物と並木が見えます。'},photo,'flowing_water');
+ assert.equal(scenery.seaColor?.value,'not_sea');assert.deepEqual(scenery.townscape?.value,['historic','green']);assert.equal(scenery.townscape?.source?.url,photo.sourcePage);
+ assert.equal(sceneryFromPhoto({townscape:['not_urban','modern'],townscapeNote:'混在'},photo).townscape,undefined);
 });

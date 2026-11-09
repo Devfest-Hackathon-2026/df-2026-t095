@@ -10,6 +10,7 @@ export async function discoverPhotoCandidates(source:Place,preferences:Quality[]
  const description=(extractJson(raw) as {landscape?:unknown}).landscape;
  if(typeof description!=='string'||!description.trim())return[];
  return googleDiscover(source.locationUnknown?'撮影場所は未指定の参照風景':source,preferences,destination,{
+  townscape:filters.townscape,
   seaColor:filters.seaColor,
   climate:filters.climate==='same'?source.climate?.code:filters.climate,
   countries:filters.lessVisited?await lessVisitedCountryNames():[],
