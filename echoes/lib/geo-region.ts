@@ -6,3 +6,4 @@ export function validateRegion(value:unknown):GeoRegion{
  const m=regionMetrics(r);if(m.widthKm<.1||m.heightKm<.1)throw new Error('縦・横とも100 m以上の範囲を選んでください。');if(m.widthKm>40||m.heightKm>40||m.areaKm2>900)throw new Error('参照範囲は一辺40 km以内、面積900 km²以内にしてください。');return{north:r.north,south:r.south,east:r.east,west:r.west};
 }
 export function regionAround(lat:number,lng:number,halfKm=1):GeoRegion{const dy=halfKm/111.32,dx=halfKm/(111.32*Math.cos(lat*Math.PI/180));return{north:lat+dy,south:lat-dy,east:lng+dx,west:lng-dx};}
+export function moveRegion(region:GeoRegion,lat:number,lng:number):GeoRegion{const m=regionMetrics(region),dy=m.heightKm/2/111.32,dx=m.widthKm/2/(111.32*Math.cos(lat*Math.PI/180));return validateRegion({north:lat+dy,south:lat-dy,east:lng+dx,west:lng-dx});}
