@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {places} from '../lib/places.ts';
 import {distinctTerrainPlaces,rankTerrainRegions,type TerrainRecord} from '../lib/terrain-ranking.ts';
 import {environmentFilter} from '../lib/search-filters.ts';
-import {parseSearchFilters} from '../lib/climate-types.ts';
+import {defaultSearchFilters,parseSearchFilters} from '../lib/climate-types.ts';
 import {visionOverlap} from '../lib/vision.ts';
 import {evidenceScore,compatiblePhotoScenes} from '../lib/visual-ranking.ts';
 const point=places[0];
@@ -19,7 +19,7 @@ test('less-visited filter uses dated arrivals, excludes missing data and keeps c
  const source={...point,climate:climate('Af')};const samoa={...point,id:'samoa',country:'サモア',countryCode:'WS',climate:climate('Af')},japan={...point,id:'japan',countryCode:'JP',climate:climate('Af')},unknown={...point,id:'unknown',country:'不明',countryCode:'ZZ',climate:climate('Af')};
  const result=await environmentFilter(source,[samoa,japan,unknown],{climate:'same',lessVisited:true});assert.deepEqual(result.places.map(p=>p.id),['samoa']);assert.equal(result.places[0].tourism?.year,2019);assert.equal(result.places[0].tourism?.arrivals,181000);
 });
-test('invalid climate and country filters are rejected',()=>{for(const invalid of ['same',{climate:'Cff',lessVisited:false},{climate:'any',lessVisited:'true'}])assert.throws(()=>parseSearchFilters(invalid));assert.deepEqual(parseSearchFilters(undefined),{climate:'any',lessVisited:false});});
+test('invalid climate and country filters are rejected',()=>{for(const invalid of ['same',{climate:'Cff',lessVisited:false},{climate:'any',lessVisited:'true'}])assert.throws(()=>parseSearchFilters(invalid));assert.deepEqual(parseSearchFilters(undefined),defaultSearchFilters);});
 test('terrain candidates exclude the source region and all nearby points even when IDs differ',()=>{
  const source={lat:-15,lng:-148.16};const pool=[{...point,id:'same',...source,landform:'atoll'},{...point,id:'near',lat:-15.02,lng:-148.17,landform:'atoll'},{...point,id:'far',lat:-9.4,lng:46.35,landform:'atoll'},{...point,id:'wrong-kind',lat:30,lng:30,landform:'mesa'}];
  assert.deepEqual(distinctTerrainPlaces(source,pool,'atoll',{north:-14.8,south:-15.2,east:-148,west:-148.3}).map(p=>p.id),['far']);

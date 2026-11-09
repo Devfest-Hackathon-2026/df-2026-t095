@@ -1,3 +1,4 @@
+import {compareFactorEvidence} from './factor-types.ts';
 import type {Place} from './places.ts';
 import type {GeoRegion} from './geo-region.ts';
 import {distanceKm} from './discovery.ts';
@@ -26,6 +27,6 @@ export function distinctTerrainPlaces(source:{lat:number;lng:number},pool:Place[
  return pool.filter(p=>p.landform===kind&&distanceKm(source,p)>=100&&!(region&&p.lat>=region.south&&p.lat<=region.north&&p.lng>=region.west&&p.lng<=region.east));
 }
 export function rankTerrainRegions(reference:TerrainRecord,candidates:TerrainRecord[],pool:Place[]){
- const named=new Map(pool.map(p=>[p.id,p]));const ranked=candidates.filter(p=>validTerrainRecord(p)&&named.has(p.id)&&distanceKm(reference,p)>=100).map(p=>({...p,name:named.get(p.id)!.name,country:named.get(p.id)!.country,referenceHalfKm:named.get(p.id)!.referenceHalfKm,climate:named.get(p.id)!.climate,tourism:named.get(p.id)!.tourism,similarity:terrainSimilarity(reference,p),distanceKm:distanceKm(reference,p)})).sort((a,b)=>b.similarity-a.similarity||a.id.localeCompare(b.id));
+ const named=new Map(pool.map(p=>[p.id,p]));const ranked=candidates.filter(p=>validTerrainRecord(p)&&named.has(p.id)&&distanceKm(reference,p)>=100).map(p=>({...p,name:named.get(p.id)!.name,country:named.get(p.id)!.country,referenceHalfKm:named.get(p.id)!.referenceHalfKm,factors:named.get(p.id)!.factors,factorMatch:named.get(p.id)!.factorMatch,climate:named.get(p.id)!.climate,tourism:named.get(p.id)!.tourism,similarity:terrainSimilarity(reference,p),distanceKm:distanceKm(reference,p)})).sort((a,b)=>compareFactorEvidence(a,b)||b.similarity-a.similarity||a.id.localeCompare(b.id));
  const result:typeof ranked=[];for(const p of ranked){if(result.some(x=>distanceKm(x,p)<100))continue;result.push(p);if(result.length===5)break;}return result;
 }

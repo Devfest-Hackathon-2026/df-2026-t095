@@ -1,4 +1,5 @@
 "use client";
+import {filtersFromParams,filtersToParams} from './search-params.ts';
 import {defaultSearchFilters,parseSearchFilters,type SearchFilters} from './climate-types';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import {defaultPreferences,places,type Place,type Quality} from './places';
@@ -35,7 +36,7 @@ export function useDiscovery(){
   const params=new URLSearchParams(window.location.search);const initial=places.find(p=>p.id===params.get('source'));const method=params.get('method');if(method==='visual'||method==='terrain')setSearchKindState(method);const weight=Number(params.get('weight'));if(params.has('weight')&&Number.isFinite(weight)&&weight>=0&&weight<=1)setVisualWeightState(weight);
   if(initial){setSource(initial);setQuery(initial.name);}
   const prefs=params.get('qualities')?.split(',').filter(isQuality);if(prefs?.length)setPreferences([...new Set(prefs)]);
-  const climate=params.get('climate');if(climate)try{setFiltersState(parseSearchFilters({climate,lessVisited:params.get('lessVisited')==='true'}));}catch{}
+  try{const hasFilters=Object.keys(defaultSearchFilters).some(key=>params.has(key));setFiltersState(hasFilters?filtersFromParams(params):parseSearchFilters(JSON.parse(localStorage.getItem('elsewhere:filters')||'null')));}catch{}
   const dest=params.get('destination');if(dest&&dest.length<=100)setDestinationState(dest);
   try{const data=JSON.parse(localStorage.getItem('elsewhere:saved-v2')||'null');if(Array.isArray(data))setSavedRefs(data.filter(r=>typeof r?.placeId==='string'&&typeof r?.sampleId==='string'));else{const legacy=JSON.parse(localStorage.getItem('elsewhere:saved')||'[]');if(Array.isArray(legacy))setSavedRefs(legacy.filter(id=>places.some(p=>p.id===id)).map(sampleId=>({placeId:'',sampleId})));}}catch{}
   try{const previous=JSON.parse(localStorage.getItem('elsewhere:saved-v2')||'null');if(Array.isArray(previous))localRefs.current=previous.filter(r=>typeof r?.placeId==='string'&&typeof r?.sampleId==='string');else{const legacy=JSON.parse(localStorage.getItem('elsewhere:saved')||'[]');if(Array.isArray(legacy))localRefs.current=legacy.filter(id=>places.some(p=>p.id===id)).map(sampleId=>({placeId:'',sampleId}));}}catch{}
@@ -107,13 +108,13 @@ export function useDiscovery(){
  };
  const cancelSearch=()=>{request.current?.abort();setLoading(false);setToast('検索を中止しました。');};
  const togglePreference=(q:Quality)=>{setShareUrl('');userChanged.current=true;if(searchKind==='visual'){setLivePlaces([]);setVisualSearch(null);}setPreferences(prev=>prev.includes(q)?prev.length>1?prev.filter(x=>x!==q):prev:[...prev,q]);setActiveId(null);};
- const setFilters=(value:SearchFilters)=>{userChanged.current=true;request.current?.abort();setLoading(false);setFiltersState(value);setShareUrl('');setLivePlaces([]);setVisualSearch(null);setError('');};
+ const setFilters=(value:SearchFilters)=>{userChanged.current=true;request.current?.abort();setLoading(false);setFiltersState(value);try{localStorage.setItem('elsewhere:filters',JSON.stringify(value));}catch{}setShareUrl('');setLivePlaces([]);setVisualSearch(null);setError('');};
  const setDestination=(value:string)=>{setShareUrl('');userChanged.current=true;setDestinationState(value);setActiveId(null);setLivePlaces([]);};
  const setSearchKind=(kind:'atmosphere'|'visual'|'terrain')=>{if(uploadFile&&kind!=='visual')selectUpload(null);setShareUrl('');request.current?.abort();setLoading(false);setSearchKindState(kind);setLivePlaces([]);setVisualSearch(null);setError('');};
  const setVisualWeight=(weight:number)=>{setShareUrl('');setVisualWeightState(weight);setLivePlaces([]);setVisualSearch(null);};
  const share=async()=>{
   if(source.uploadPhoto){setToast('アップロード写真は共有リンクに含めません。地名で選んだ検索を共有してください。');return;}
-  const url=new URL(window.location.origin+window.location.pathname);url.searchParams.set('method',searchKind);url.searchParams.set('climate',filters.climate);url.searchParams.set('lessVisited',String(filters.lessVisited));if(searchKind==='visual')url.searchParams.set('weight',String(visualWeight));
+  const url=new URL(window.location.origin+window.location.pathname);url.searchParams.set('method',searchKind);filtersToParams(url.searchParams,filters);if(searchKind==='visual')url.searchParams.set('weight',String(visualWeight));
   try{if(session.current){const cloud=await import('./firebase-client');url.searchParams.set('share',await cloud.createShare(session.current,{sourcePlaceId:source.placeId||'',sourceSampleId:source.placeId?'':source.id,preferences,destination}));}else{url.searchParams.set(source.placeId?'placeId':'source',source.placeId||source.id);url.searchParams.set('qualities',preferences.join(','));url.searchParams.set('destination',destination);}setShareUrl(url.toString());try{await navigator.clipboard.writeText(url.toString());setToast('検索のリンクをコピーしました。');}catch{window.history.replaceState(null,'',url);setToast('アドレス欄の URL をコピーして共有できます。');}}
   catch{setToast('共有リンクを作れませんでした。接続を確認してお試しください。');}
  };

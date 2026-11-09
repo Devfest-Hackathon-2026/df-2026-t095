@@ -1,3 +1,4 @@
+import {compareFactorEvidence} from './factor-types.ts';
 import { places, qualities, type Place, type Quality } from "./places.ts";
 
 export type RankedPlace = Place & { shared: Quality[]; score: number };
@@ -15,21 +16,20 @@ export function rankPlaces(source: Place, preferences: Quality[], destination = 
       const shared = selected.filter(q => source.features[q] >= 3 && p.features[q] >= 3);
       return { ...p, score, shared };
     })
-    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+    .sort((a, b) => compareFactorEvidence(a,b) || b.score - a.score || a.name.localeCompare(b.name));
 }
 export function diverseResults(ranked: RankedPlace[], limit = 3): RankedPlace[] {
   const result: RankedPlace[] = [];
   const countries = new Set<string>();
   const continents = new Map<string, number>();
-  for (const p of ranked) {
-    if (!countries.has(p.country) && (continents.get(p.continent) || 0) < 2) { result.push(p); countries.add(p.country); continents.set(p.continent, (continents.get(p.continent) || 0) + 1); }
-    if (result.length === limit) break;
-  }
-  if (result.length < limit) {
-    for (const p of ranked) {
-      if (!result.some(r => r.id === p.id)) result.push(p);
-      if (result.length === limit) break;
+  const priorities=[...new Set(ranked.map(p=>p.factorMatch?.unknown.length||0))].sort((a,b)=>a-b);
+  for(const priority of priorities){
+    const group=ranked.filter(p=>(p.factorMatch?.unknown.length||0)===priority);
+    for(const p of group){
+      if(!countries.has(p.country)&&(continents.get(p.continent)||0)<2){result.push(p);countries.add(p.country);continents.set(p.continent,(continents.get(p.continent)||0)+1);}
+      if(result.length===limit)return result;
     }
+    for(const p of group){if(!result.some(r=>r.id===p.id))result.push(p);if(result.length===limit)return result;}
   }
   return result;
 }

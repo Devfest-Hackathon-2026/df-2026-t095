@@ -55,7 +55,7 @@ export async function terrainDiscovery(source:Place,catalog:Place[],stored:Terra
   };
   const live=deps===defaults?await cachedPublicData<TerrainRecord[]>('terrain-search',JSON.stringify({version:4,source:{lat:source.lat,lng:source.lng},region,area}),load,(v):v is TerrainRecord[]=>Array.isArray(v)&&v.length>0&&v.every(validTerrainRecord),86400000):await load();
   for(const r of live){if(!validTerrainRecord(r)||distanceKm(source,r)<100||distanceKm(area,r)>area.radiusKm)continue;const referenceRegion=region?moveRegion(region,r.lat,r.lng):undefined;records.push(r);livePlaces.push({...source,id:r.id,lat:r.lat,lng:r.lng,name:`衛星候補 ${r.lat.toFixed(3)}, ${r.lng.toFixed(3)}`,country:'',city:'',continent:'',climate:undefined,tourism:undefined,landform:undefined,referenceRegion,referenceHalfKm:region?Math.max(regionMetrics(region).widthKm,regionMetrics(region).heightKm)/2:.1,profiled:false});}
-  if(filters.lessVisited||destination!=='world')livePlaces=await Promise.all(livePlaces.map(deps.locate));
+  if(filters.lessVisited||filters.population&&filters.population!=='any'||filters.waterQuality||filters.lowHomicide||destination!=='world')livePlaces=await Promise.all(livePlaces.map(deps.locate));
   livePlaces=(await deps.filter(environment.source,livePlaces,filters)).places.filter(p=>matchesDestination(p,destination));
  }catch{liveNote='指定範囲の衛星探索を完了できなかったため、取得できた登録地形で比較しました。';}
  const liveIds=new Set(livePlaces.map(p=>p.id));

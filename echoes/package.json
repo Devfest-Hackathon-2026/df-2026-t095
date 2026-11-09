@@ -16,6 +16,7 @@
     "google:check": "node --env-file=.env.local scripts/google/doctor.mjs",
     "google:rules": "node scripts/google/deploy-rules.mjs",
     "data:climate": "python3 scripts/data/prepare-climate.py",
+    "data:factors": "node scripts/data/prepare-place-factors.mjs",
     "data:tourism": "node scripts/data-tourism.mjs",
     "google:catalog": "node --env-file=.env.local scripts/google/setup-catalog.mjs",
     "google:terrain": "node --env-file=.env.local scripts/google/warm-terrain.mjs",

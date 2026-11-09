@@ -1,4 +1,5 @@
 import type {CommonsPhoto,VisualEvidence,UploadPhoto} from './visual-types.ts';
+import type {PlaceFactors,FactorMatch} from './factor-types.ts';
 export const qualities = [
   { id: "water", label: "水辺を歩きたい", description: "川や運河に沿って歩けること", icon: "Waves" },
   { id: "green", label: "緑に囲まれたい", description: "木々や庭園など、緑が身近にあること", icon: "Tree" },
@@ -21,6 +22,7 @@ export type Place = {
   referenceRegion?:{north:number;south:number;east:number;west:number};
   climate?:{code:string;label:string;period:string;source:string;nearby:boolean}|null;
   tourism?:{arrivals:number;year:number;source:string}|null;
+  factors?:PlaceFactors;factorMatch?:FactorMatch;
 };
 export const defaultPreferences: Quality[] = ["water", "green", "quiet"];
 export const places: Place[] = [

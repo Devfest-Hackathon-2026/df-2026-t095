@@ -1,0 +1,5042 @@
+{
+  "retrievedAt": "2026-11-09T13:17:38.196Z",
+  "period": "2020–2024",
+  "license": "CC BY 4.0",
+  "method": "各系列の2020〜2024年の最新公表値。水質は良好な河川・湖沼・地下水域の割合。人口・犯罪も国単位。地点の混雑、水の透明度・遊泳可否、旅行の安全性は示さない。",
+  "series": {
+    "populationDensity": {
+      "indicator": "EN.POP.DNST",
+      "unit": "人/km²"
+    },
+    "waterQuality": {
+      "indicator": "EN.H2O.BDYS.ZS",
+      "unit": "%"
+    },
+    "homicideRate": {
+      "indicator": "VC.IHR.PSRC.P5",
+      "unit": "件/10万人"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "AW",
+      "iso3": "ABW",
+      "name": "Aruba",
+      "factors": {
+        "populationDensity": {
+          "value": 599.972222222222,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "AF",
+      "iso3": "AFG",
+      "name": "Afghanistan",
+      "factors": {
+        "populationDensity": {
+          "value": 65.3871977676586,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 4.0324584656778,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AO",
+      "iso3": "AGO",
+      "name": "Angola",
+      "factors": {
+        "populationDensity": {
+          "value": 30.3889059116066,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 75.25,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "AL",
+      "iso3": "ALB",
+      "name": "Albania",
+      "factors": {
+        "populationDensity": {
+          "value": 86.756496350365,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 39.06,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.38708340817063,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AD",
+      "iso3": "AND",
+      "name": "Andorra",
+      "factors": {
+        "populationDensity": {
+          "value": 175.081196581197,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 68,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.58464719565779,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AE",
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "factors": {
+        "populationDensity": {
+          "value": 154.694452266967,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.693218125037315,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AR",
+      "iso3": "ARG",
+      "name": "Argentina",
+      "factors": {
+        "populationDensity": {
+          "value": 16.6976014820824,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 62.2,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 4.49291137824536,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AM",
+      "iso3": "ARM",
+      "name": "Armenia",
+      "factors": {
+        "populationDensity": {
+          "value": 107.573210777534,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.20833575400906,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AS",
+      "iso3": "ASM",
+      "name": "American Samoa",
+      "factors": {
+        "populationDensity": {
+          "value": 235,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "AG",
+      "iso3": "ATG",
+      "name": "Antigua and Barbuda",
+      "factors": {
+        "populationDensity": {
+          "value": 212.973940376745,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 0,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 10.7163332993983,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AU",
+      "iso3": "AUS",
+      "name": "Australia",
+      "factors": {
+        "populationDensity": {
+          "value": 3.53710598992988,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 83.76,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.854406035826682,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AT",
+      "iso3": "AUT",
+      "name": "Austria",
+      "factors": {
+        "populationDensity": {
+          "value": 111.221303926321,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 82.26,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.876191031111463,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "AZ",
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "factors": {
+        "populationDensity": {
+          "value": 123.446218995765,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 56.6,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.16122820563689,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BI",
+      "iso3": "BDI",
+      "name": "Burundi",
+      "factors": {
+        "populationDensity": {
+          "value": 547.032165109034,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BE",
+      "iso3": "BEL",
+      "name": "Belgium",
+      "factors": {
+        "populationDensity": {
+          "value": 388.880581303604,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 26.25,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.08030153549307,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BJ",
+      "iso3": "BEN",
+      "name": "Benin",
+      "factors": {
+        "populationDensity": {
+          "value": 128.261120964881,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 89.39,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BF",
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "factors": {
+        "populationDensity": {
+          "value": 86.070105994152,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 8.99,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BD",
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "factors": {
+        "populationDensity": {
+          "value": 1333.35149419989,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BG",
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "factors": {
+        "populationDensity": {
+          "value": 59.3351234340457,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 32.68,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.08890737415431,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BH",
+      "iso3": "BHR",
+      "name": "Bahrain",
+      "factors": {
+        "populationDensity": {
+          "value": 1985.8375,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 4.5,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.195636140255462,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BS",
+      "iso3": "BHS",
+      "name": "Bahamas, The",
+      "factors": {
+        "populationDensity": {
+          "value": 40.0882117882118,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 64.71,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 32.1981392997156,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BA",
+      "iso3": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "factors": {
+        "populationDensity": {
+          "value": 61.80181640625,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 30.58,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.22446173133237,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BY",
+      "iso3": "BLR",
+      "name": "Belarus",
+      "factors": {
+        "populationDensity": {
+          "value": 44.9936396421252,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 69.22,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BZ",
+      "iso3": "BLZ",
+      "name": "Belize",
+      "factors": {
+        "populationDensity": {
+          "value": 18.2846120122753,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 78.95,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 28.0582917218107,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BM",
+      "iso3": "BMU",
+      "name": "Bermuda",
+      "factors": {
+        "populationDensity": {
+          "value": 1196.96296296296,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 6.18257133141674,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BO",
+      "iso3": "BOL",
+      "name": "Bolivia",
+      "factors": {
+        "populationDensity": {
+          "value": 11.4097266273871,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 55.56,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 4.41843313132273,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BR",
+      "iso3": "BRA",
+      "name": "Brazil",
+      "factors": {
+        "populationDensity": {
+          "value": 25.3643242396035,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 68.23,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 19.2752957673079,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BB",
+      "iso3": "BRB",
+      "name": "Barbados",
+      "factors": {
+        "populationDensity": {
+          "value": 655.375870069606,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 7.43794627677661,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BN",
+      "iso3": "BRN",
+      "name": "Brunei Darussalam",
+      "factors": {
+        "populationDensity": {
+          "value": 87.8028462998102,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "BT",
+      "iso3": "BTN",
+      "name": "Bhutan",
+      "factors": {
+        "populationDensity": {
+          "value": 20.7531200839014,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.46751324015657,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "BW",
+      "iso3": "BWA",
+      "name": "Botswana",
+      "factors": {
+        "populationDensity": {
+          "value": 4.44857163022956,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 83.81,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 11.3681767255945,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CF",
+      "iso3": "CAF",
+      "name": "Central African Republic",
+      "factors": {
+        "populationDensity": {
+          "value": 8.55675944653119,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CA",
+      "iso3": "CAN",
+      "name": "Canada",
+      "factors": {
+        "populationDensity": {
+          "value": 4.69492973932436,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 87.95,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.97968887560784,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CH",
+      "iso3": "CHE",
+      "name": "Switzerland",
+      "factors": {
+        "populationDensity": {
+          "value": 227.933848026418,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 79.41,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.597481940544685,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "JG",
+      "iso3": "CHI",
+      "name": "Channel Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 842.126262626263,
+          "year": 2021,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CL",
+      "iso3": "CHL",
+      "name": "Chile",
+      "factors": {
+        "populationDensity": {
+          "value": 26.6360096771031,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 73.06,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.34829073035101,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CN",
+      "iso3": "CHN",
+      "name": "China",
+      "factors": {
+        "populationDensity": {
+          "value": 150.079195075526,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 88.52,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.5018560705357,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CI",
+      "iso3": "CIV",
+      "name": "Cote d'Ivoire",
+      "factors": {
+        "populationDensity": {
+          "value": 100.422106918239,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 76.92,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CM",
+      "iso3": "CMR",
+      "name": "Cameroon",
+      "factors": {
+        "populationDensity": {
+          "value": 61.6101711408686,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 40,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.76008919336955,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CD",
+      "iso3": "COD",
+      "name": "Congo, Dem. Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 48.2019651088419,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 66,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CG",
+      "iso3": "COG",
+      "name": "Congo, Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 18.544541727672,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CO",
+      "iso3": "COL",
+      "name": "Colombia",
+      "factors": {
+        "populationDensity": {
+          "value": 47.6668436232537,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 52.58,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 24.9134420347488,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KM",
+      "iso3": "COM",
+      "name": "Comoros",
+      "factors": {
+        "populationDensity": {
+          "value": 463.511793335829,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CV",
+      "iso3": "CPV",
+      "name": "Cabo Verde",
+      "factors": {
+        "populationDensity": {
+          "value": 130.242431761787,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 89,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.99464423976475,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CR",
+      "iso3": "CRI",
+      "name": "Costa Rica",
+      "factors": {
+        "populationDensity": {
+          "value": 101.461827531646,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 63.92,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 17.7454798727379,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CU",
+      "iso3": "CUB",
+      "name": "Cuba",
+      "factors": {
+        "populationDensity": {
+          "value": 105.778256262042,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "CW",
+      "iso3": "CUW",
+      "name": "Curacao",
+      "factors": {
+        "populationDensity": {
+          "value": 351.277027027027,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "KY",
+      "iso3": "CYM",
+      "name": "Cayman Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 310.2375,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 4.3677976836113,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CY",
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "factors": {
+        "populationDensity": {
+          "value": 147.000216450216,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 75,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.81785876397005,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "name": "Czechia",
+      "factors": {
+        "populationDensity": {
+          "value": 141.338237020958,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 15.53,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.767827757917044,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "DE",
+      "iso3": "DEU",
+      "name": "Germany",
+      "factors": {
+        "populationDensity": {
+          "value": 239.008078871305,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 76.7,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.910722780231795,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "DJ",
+      "iso3": "DJI",
+      "name": "Djibouti",
+      "factors": {
+        "populationDensity": {
+          "value": 50.4194132873167,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "DM",
+      "iso3": "DMA",
+      "name": "Dominica",
+      "factors": {
+        "populationDensity": {
+          "value": 88.155792276964,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 27.063396005142,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "DK",
+      "iso3": "DNK",
+      "name": "Denmark",
+      "factors": {
+        "populationDensity": {
+          "value": 149.4248,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 29.31,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.840599404536194,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "DO",
+      "iso3": "DOM",
+      "name": "Dominican Republic",
+      "factors": {
+        "populationDensity": {
+          "value": 237.095984440855,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 88.24,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 10.9166976980638,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "DZ",
+      "iso3": "DZA",
+      "name": "Algeria",
+      "factors": {
+        "populationDensity": {
+          "value": 19.6555073181791,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 1.16107238811947,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "EC",
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "factors": {
+        "populationDensity": {
+          "value": 73.020929296183,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 45.7228145164847,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "EG",
+      "iso3": "EGY",
+      "name": "Egypt, Arab Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 117.070930734844,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "ER",
+      "iso3": "ERI",
+      "name": "Eritrea",
+      "factors": {
+        "populationDensity": {
+          "value": 29.2682367549669,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "ES",
+      "iso3": "ESP",
+      "name": "Spain",
+      "factors": {
+        "populationDensity": {
+          "value": 97.7591687574834,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 21.6,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.690855954769765,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "EE",
+      "iso3": "EST",
+      "name": "Estonia",
+      "factors": {
+        "populationDensity": {
+          "value": 32.1165691551603,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 18.5,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.53599045052794,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "ET",
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "factors": {
+        "populationDensity": {
+          "value": 117.686187969574,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 72.73,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "FI",
+      "iso3": "FIN",
+      "name": "Finland",
+      "factors": {
+        "populationDensity": {
+          "value": 18.4865493421053,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 59.71,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.98193498501344,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "FJ",
+      "iso3": "FJI",
+      "name": "Fiji",
+      "factors": {
+        "populationDensity": {
+          "value": 50.6618665793924,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.0559533103824,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "FR",
+      "iso3": "FRA",
+      "name": "France",
+      "factors": {
+        "populationDensity": {
+          "value": 127.194828833844,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 85.26,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.33506280409367,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "FO",
+      "iso3": "FRO",
+      "name": "Faroe Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 39.8832116788321,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "FM",
+      "iso3": "FSM",
+      "name": "Micronesia, Fed. Sts.",
+      "factors": {
+        "populationDensity": {
+          "value": 161.426533523538,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GA",
+      "iso3": "GAB",
+      "name": "Gabon",
+      "factors": {
+        "populationDensity": {
+          "value": 9.8535025420111,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 93.55,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GB",
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "factors": {
+        "populationDensity": {
+          "value": 286.367957673707,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 32.88,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.11868407522333,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "GE",
+      "iso3": "GEO",
+      "name": "Georgia",
+      "factors": {
+        "populationDensity": {
+          "value": 66.70138913188,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 92,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GH",
+      "iso3": "GHA",
+      "name": "Ghana",
+      "factors": {
+        "populationDensity": {
+          "value": 151.30734442916,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 83,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.83111773115644,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "GI",
+      "iso3": "GIB",
+      "name": "Gibraltar",
+      "factors": {
+        "populationDensity": {
+          "value": 3932.9,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GN",
+      "iso3": "GIN",
+      "name": "Guinea",
+      "factors": {
+        "populationDensity": {
+          "value": 60.0471471593684,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 80.89,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GM",
+      "iso3": "GMB",
+      "name": "Gambia, The",
+      "factors": {
+        "populationDensity": {
+          "value": 272.726086956522,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 58,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GW",
+      "iso3": "GNB",
+      "name": "Guinea-Bissau",
+      "factors": {
+        "populationDensity": {
+          "value": 78.2842105263158,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GQ",
+      "iso3": "GNQ",
+      "name": "Equatorial Guinea",
+      "factors": {
+        "populationDensity": {
+          "value": 67.4657683189847,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GR",
+      "iso3": "GRC",
+      "name": "Greece",
+      "factors": {
+        "populationDensity": {
+          "value": 80.7225290923196,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 20.37,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.839605274224601,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "GD",
+      "iso3": "GRD",
+      "name": "Grenada",
+      "factors": {
+        "populationDensity": {
+          "value": 340.718023255814,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 13.6657527694502,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "GL",
+      "iso3": "GRL",
+      "name": "Greenland",
+      "factors": {
+        "populationDensity": {
+          "value": 0.13847274570044,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GT",
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "factors": {
+        "populationDensity": {
+          "value": 171.765201567749,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 23.3657267272051,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "GU",
+      "iso3": "GUM",
+      "name": "Guam",
+      "factors": {
+        "populationDensity": {
+          "value": 310.123844731978,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "GY",
+      "iso3": "GUY",
+      "name": "Guyana",
+      "factors": {
+        "populationDensity": {
+          "value": 3.93618925831202,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 67.76,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 19.1201580922439,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "HK",
+      "iso3": "HKG",
+      "name": "Hong Kong SAR, China",
+      "factors": {
+        "populationDensity": {
+          "value": 7165.80952380952,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.376205815214825,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "HN",
+      "iso3": "HND",
+      "name": "Honduras",
+      "factors": {
+        "populationDensity": {
+          "value": 96.7530878541425,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 31.4424316507577,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "HR",
+      "iso3": "HRV",
+      "name": "Croatia",
+      "factors": {
+        "populationDensity": {
+          "value": 69.0886347390994,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 90.91,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.667347104040825,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "HT",
+      "iso3": "HTI",
+      "name": "Haiti",
+      "factors": {
+        "populationDensity": {
+          "value": 427.160994194485,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 41.1518089717388,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "HU",
+      "iso3": "HUN",
+      "name": "Hungary",
+      "factors": {
+        "populationDensity": {
+          "value": 104.778270874425,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 12.98,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.722657964901225,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "factors": {
+        "populationDensity": {
+          "value": 149.802588244483,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 5,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.303768746039586,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "IM",
+      "iso3": "IMN",
+      "name": "Isle of Man",
+      "factors": {
+        "populationDensity": {
+          "value": 147.033388249558,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "IN",
+      "iso3": "IND",
+      "name": "India",
+      "factors": {
+        "populationDensity": {
+          "value": 488.006414322664,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 10,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.81530423021647,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "IE",
+      "iso3": "IRL",
+      "name": "Ireland",
+      "factors": {
+        "populationDensity": {
+          "value": 78.3247205690231,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 58.2,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.654270171245596,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "IR",
+      "iso3": "IRN",
+      "name": "Iran, Islamic Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 56.4362021571649,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "IQ",
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "factors": {
+        "populationDensity": {
+          "value": 106.055824292263,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "IS",
+      "iso3": "ISL",
+      "name": "Iceland",
+      "factors": {
+        "populationDensity": {
+          "value": 3.83324407418427,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.29013114183057,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "IL",
+      "iso3": "ISR",
+      "name": "Israel",
+      "factors": {
+        "populationDensity": {
+          "value": 462.20887245841,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 40,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.62581066709758,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "IT",
+      "iso3": "ITA",
+      "name": "Italy",
+      "factors": {
+        "populationDensity": {
+          "value": 199.353117814149,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50.66,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.568072449338316,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "JM",
+      "iso3": "JAM",
+      "name": "Jamaica",
+      "factors": {
+        "populationDensity": {
+          "value": 262.158356417359,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 62.98,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 49.4403451527686,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "JO",
+      "iso3": "JOR",
+      "name": "Jordan",
+      "factors": {
+        "populationDensity": {
+          "value": 130.108746086447,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2020,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.987830151085125,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "JP",
+      "iso3": "JPN",
+      "name": "Japan",
+      "factors": {
+        "populationDensity": {
+          "value": 340.124474622771,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 57.14,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.229153196964695,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KZ",
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "factors": {
+        "populationDensity": {
+          "value": 7.62772567322295,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 48.86,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.55058633787163,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KE",
+      "iso3": "KEN",
+      "name": "Kenya",
+      "factors": {
+        "populationDensity": {
+          "value": 97.1507781297342,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 37.05,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 4.87166844718499,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KG",
+      "iso3": "KGZ",
+      "name": "Kyrgyz Republic",
+      "factors": {
+        "populationDensity": {
+          "value": 37.653117831074,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 1.74734308054439,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KH",
+      "iso3": "KHM",
+      "name": "Cambodia",
+      "factors": {
+        "populationDensity": {
+          "value": 99.9252266032178,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "KI",
+      "iso3": "KIR",
+      "name": "Kiribati",
+      "factors": {
+        "populationDensity": {
+          "value": 165.86683107275,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "KN",
+      "iso3": "KNA",
+      "name": "St. Kitts and Nevis",
+      "factors": {
+        "populationDensity": {
+          "value": 179.475095785441,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 82,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 64.1601437187219,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KR",
+      "iso3": "KOR",
+      "name": "Korea, Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 530.236321721311,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 93.56,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.477306316584835,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KW",
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "factors": {
+        "populationDensity": {
+          "value": 274.81835016835,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.249991818449578,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LA",
+      "iso3": "LAO",
+      "name": "Lao PDR",
+      "factors": {
+        "populationDensity": {
+          "value": 33.6647270363951,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 80,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "LB",
+      "iso3": "LBN",
+      "name": "Lebanon",
+      "factors": {
+        "populationDensity": {
+          "value": 567.542717497556,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 29.09,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.24466989542556,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LR",
+      "iso3": "LBR",
+      "name": "Liberia",
+      "factors": {
+        "populationDensity": {
+          "value": 58.272601744186,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "LY",
+      "iso3": "LBY",
+      "name": "Libya",
+      "factors": {
+        "populationDensity": {
+          "value": 4.1948594519022,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "LC",
+      "iso3": "LCA",
+      "name": "St. Lucia",
+      "factors": {
+        "populationDensity": {
+          "value": 294.662295081967,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 39.0440891432332,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LI",
+      "iso3": "LIE",
+      "name": "Liechtenstein",
+      "factors": {
+        "populationDensity": {
+          "value": 252.8125,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 80.2,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 5.12242598094458,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LK",
+      "iso3": "LKA",
+      "name": "Sri Lanka",
+      "factors": {
+        "populationDensity": {
+          "value": 354.283866795991,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "LS",
+      "iso3": "LSO",
+      "name": "Lesotho",
+      "factors": {
+        "populationDensity": {
+          "value": 76.9902173913043,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 64.71,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "LT",
+      "iso3": "LTU",
+      "name": "Lithuania",
+      "factors": {
+        "populationDensity": {
+          "value": 46.145997763221,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 22.36,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.62779952622526,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LU",
+      "iso3": "LUX",
+      "name": "Luxembourg",
+      "factors": {
+        "populationDensity": {
+          "value": 262.972429169612,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 0,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.5306610542428,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "LV",
+      "iso3": "LVA",
+      "name": "Latvia",
+      "factors": {
+        "populationDensity": {
+          "value": 29.9875301301623,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 83.76,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.49681788529087,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MO",
+      "iso3": "MAC",
+      "name": "Macao SAR, China",
+      "factors": {
+        "populationDensity": {
+          "value": 20630.6306306306,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.560293537784445,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MF",
+      "iso3": "MAF",
+      "name": "St. Martin (French part)",
+      "factors": {
+        "populationDensity": {
+          "value": 493,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MA",
+      "iso3": "MAR",
+      "name": "Morocco",
+      "factors": {
+        "populationDensity": {
+          "value": 85.3264015236388,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 79.15,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.70500474577332,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MC",
+      "iso3": "MCO",
+      "name": "Monaco",
+      "factors": {
+        "populationDensity": {
+          "value": 18536.9481765835,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MD",
+      "iso3": "MDA",
+      "name": "Moldova",
+      "factors": {
+        "populationDensity": {
+          "value": 83.5090902770536,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.54314378217647,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MG",
+      "iso3": "MDG",
+      "name": "Madagascar",
+      "factors": {
+        "populationDensity": {
+          "value": 54.9414850464077,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 90.67,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MV",
+      "iso3": "MDV",
+      "name": "Maldives",
+      "factors": {
+        "populationDensity": {
+          "value": 1771.13758389262,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MX",
+      "iso3": "MEX",
+      "name": "Mexico",
+      "factors": {
+        "populationDensity": {
+          "value": 67.3170642249029,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 56.89,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 24.8589948436701,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MH",
+      "iso3": "MHL",
+      "name": "Marshall Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 207.447513812155,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 87,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MK",
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "factors": {
+        "populationDensity": {
+          "value": 72.3377874702617,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 72.22,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.52854990019388,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "ML",
+      "iso3": "MLI",
+      "name": "Mali",
+      "factors": {
+        "populationDensity": {
+          "value": 20.0612978306657,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 70,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MT",
+      "iso3": "MLT",
+      "name": "Malta",
+      "factors": {
+        "populationDensity": {
+          "value": 1805.00396636522,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 6.67,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.562898250512237,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MM",
+      "iso3": "MMR",
+      "name": "Myanmar",
+      "factors": {
+        "populationDensity": {
+          "value": 83.5032880322368,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.57510107248619,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "ME",
+      "iso3": "MNE",
+      "name": "Montenegro",
+      "factors": {
+        "populationDensity": {
+          "value": 46.3587360594796,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 95.35,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.789201202111271,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MN",
+      "iso3": "MNG",
+      "name": "Mongolia",
+      "factors": {
+        "populationDensity": {
+          "value": 2.26165292694361,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 5.91503475082916,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MP",
+      "iso3": "MNP",
+      "name": "Northern Mariana Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 96.8884026258206,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MZ",
+      "iso3": "MOZ",
+      "name": "Mozambique",
+      "factors": {
+        "populationDensity": {
+          "value": 44.0394796408861,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MR",
+      "iso3": "MRT",
+      "name": "Mauritania",
+      "factors": {
+        "populationDensity": {
+          "value": 5.01542155816435,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.999971522550119,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MU",
+      "iso3": "MUS",
+      "name": "Mauritius",
+      "factors": {
+        "populationDensity": {
+          "value": 622.8895,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.27249663925174,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "MW",
+      "iso3": "MWI",
+      "name": "Malawi",
+      "factors": {
+        "populationDensity": {
+          "value": 229.691196436148,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 75.25,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "MY",
+      "iso3": "MYS",
+      "name": "Malaysia",
+      "factors": {
+        "populationDensity": {
+          "value": 108.226063004109,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.734492430713877,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NA",
+      "iso3": "NAM",
+      "name": "Namibia",
+      "factors": {
+        "populationDensity": {
+          "value": 3.68051476393494,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 63,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 11.2077806904171,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NC",
+      "iso3": "NCL",
+      "name": "New Caledonia",
+      "factors": {
+        "populationDensity": {
+          "value": 15.7536068044789,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "NE",
+      "iso3": "NER",
+      "name": "Niger",
+      "factors": {
+        "populationDensity": {
+          "value": 21.340816294308,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 80,
+          "year": 2020,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "NG",
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "factors": {
+        "populationDensity": {
+          "value": 255.47556243618,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50.78,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 15.7466808233499,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NI",
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "factors": {
+        "populationDensity": {
+          "value": 56.702783779292,
+          "year": 2023,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 11.3473196321723,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NL",
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "factors": {
+        "populationDensity": {
+          "value": 534.407038907039,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 12.67,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.690893081283378,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NO",
+      "iso3": "NOR",
+      "name": "Norway",
+      "factors": {
+        "populationDensity": {
+          "value": 15.2971120322837,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.724747049690651,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NP",
+      "iso3": "NPL",
+      "name": "Nepal",
+      "factors": {
+        "populationDensity": {
+          "value": 206.843767003837,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 2.13004129984372,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "NR",
+      "iso3": "NRU",
+      "name": "Naoero",
+      "factors": {
+        "populationDensity": {
+          "value": 568.904761904762,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "name": "New Zealand",
+      "factors": {
+        "populationDensity": {
+          "value": 20.0903877558771,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 57.93,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.46149415952832,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "OM",
+      "iso3": "OMN",
+      "name": "Oman",
+      "factors": {
+        "populationDensity": {
+          "value": 17.0647431340872,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.138633928990513,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PK",
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "factors": {
+        "populationDensity": {
+          "value": 325.951074097136,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 4.33487075793336,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PA",
+      "iso3": "PAN",
+      "name": "Panama",
+      "factors": {
+        "populationDensity": {
+          "value": 60.873240765705,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 75.23,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 11.7072934419645,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PE",
+      "iso3": "PER",
+      "name": "Peru",
+      "factors": {
+        "populationDensity": {
+          "value": 26.73269375,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 37.44,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 8.60480803979216,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PH",
+      "iso3": "PHL",
+      "name": "Philippines",
+      "factors": {
+        "populationDensity": {
+          "value": 388.515511285508,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 4.34759149828352,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PW",
+      "iso3": "PLW",
+      "name": "Palau",
+      "factors": {
+        "populationDensity": {
+          "value": 38.4673913043478,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "PG",
+      "iso3": "PNG",
+      "name": "Papua New Guinea",
+      "factors": {
+        "populationDensity": {
+          "value": 23.3549043854613,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "PL",
+      "iso3": "POL",
+      "name": "Poland",
+      "factors": {
+        "populationDensity": {
+          "value": 119.447293102885,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 67.59,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.802314721828908,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PR",
+      "iso3": "PRI",
+      "name": "Puerto Rico (US)",
+      "factors": {
+        "populationDensity": {
+          "value": 361.050845546787,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 14.5896581532053,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "KP",
+      "iso3": "PRK",
+      "name": "Korea, Dem. People's Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 220.071613653351,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "PT",
+      "iso3": "PRT",
+      "name": "Portugal",
+      "factors": {
+        "populationDensity": {
+          "value": 116.747022016121,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 52.94,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.719971949892832,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PY",
+      "iso3": "PRY",
+      "name": "Paraguay",
+      "factors": {
+        "populationDensity": {
+          "value": 17.4973295634479,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 71.61,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.7795163925492,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PS",
+      "iso3": "PSE",
+      "name": "West Bank and Gaza",
+      "factors": {
+        "populationDensity": {
+          "value": 877.86755186722,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.622023007311598,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "PF",
+      "iso3": "PYF",
+      "name": "French Polynesia",
+      "factors": {
+        "populationDensity": {
+          "value": 80.0360692984948,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "QA",
+      "iso3": "QAT",
+      "name": "Qatar",
+      "factors": {
+        "populationDensity": {
+          "value": 248.722541340296,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.0691454145354033,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "RO",
+      "iso3": "ROU",
+      "name": "Romania",
+      "factors": {
+        "populationDensity": {
+          "value": 82.805128650904,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50.86,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.10887485110282,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "RU",
+      "iso3": "RUS",
+      "name": "Russian Federation",
+      "factors": {
+        "populationDensity": {
+          "value": 8.77271713092917,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.76512531955806,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "RW",
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "factors": {
+        "populationDensity": {
+          "value": 599.948415578041,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 77.78,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 3.61247427164444,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SA",
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "factors": {
+        "populationDensity": {
+          "value": 16.421102577581,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SD",
+      "iso3": "SDN",
+      "name": "Sudan",
+      "factors": {
+        "populationDensity": {
+          "value": 27.0069395074946,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SN",
+      "iso3": "SEN",
+      "name": "Senegal",
+      "factors": {
+        "populationDensity": {
+          "value": 96.0992260946346,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 44.44,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SG",
+      "iso3": "SGP",
+      "name": "Singapore",
+      "factors": {
+        "populationDensity": {
+          "value": 8329.00110375276,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.0690954942050905,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SB",
+      "iso3": "SLB",
+      "name": "Solomon Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 29.2675241157556,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SL",
+      "iso3": "SLE",
+      "name": "Sierra Leone",
+      "factors": {
+        "populationDensity": {
+          "value": 119.728761429759,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 70,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 2.22431228940123,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SV",
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "factors": {
+        "populationDensity": {
+          "value": 305.897345559846,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 51,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 7.89768799960639,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SM",
+      "iso3": "SMR",
+      "name": "San Marino",
+      "factors": {
+        "populationDensity": {
+          "value": 555.179738562092,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SO",
+      "iso3": "SOM",
+      "name": "Somalia, Fed. Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 30.3011939299264,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "RS",
+      "iso3": "SRB",
+      "name": "Serbia",
+      "factors": {
+        "populationDensity": {
+          "value": 75.1977823623367,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 50.79,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.31400205013848,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SS",
+      "iso3": "SSD",
+      "name": "South Sudan",
+      "factors": {
+        "populationDensity": {
+          "value": 18.8998908106911,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "ST",
+      "iso3": "STP",
+      "name": "Sao Tome and Principe",
+      "factors": {
+        "populationDensity": {
+          "value": 245.35,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SR",
+      "iso3": "SUR",
+      "name": "Suriname",
+      "factors": {
+        "populationDensity": {
+          "value": 3.95265370906713,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 6.51946457704576,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SK",
+      "iso3": "SVK",
+      "name": "Slovak Republic",
+      "factors": {
+        "populationDensity": {
+          "value": 112.771817803661,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 61.44,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.12358440823663,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SI",
+      "iso3": "SVN",
+      "name": "Slovenia",
+      "factors": {
+        "populationDensity": {
+          "value": 105.659440264223,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 86.81,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 0.566466326409227,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SE",
+      "iso3": "SWE",
+      "name": "Sweden",
+      "factors": {
+        "populationDensity": {
+          "value": 25.9525842806983,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 48.37,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 1.14675703743944,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SZ",
+      "iso3": "SWZ",
+      "name": "Eswatini",
+      "factors": {
+        "populationDensity": {
+          "value": 72.2570930232558,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 70,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 12.5145709802017,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SX",
+      "iso3": "SXM",
+      "name": "Sint Maarten (Dutch part)",
+      "factors": {
+        "populationDensity": {
+          "value": 1275,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "SC",
+      "iso3": "SYC",
+      "name": "Seychelles",
+      "factors": {
+        "populationDensity": {
+          "value": 265.544857768053,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 7.96669919735506,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "SY",
+      "iso3": "SYR",
+      "name": "Syrian Arab Republic",
+      "factors": {
+        "populationDensity": {
+          "value": 134.361269944998,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TC",
+      "iso3": "TCA",
+      "name": "Turks and Caicos Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 49.07564620398,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 76.3400403511642,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "TD",
+      "iso3": "TCD",
+      "name": "Chad",
+      "factors": {
+        "populationDensity": {
+          "value": 16.1206504129606,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TG",
+      "iso3": "TGO",
+      "name": "Togo",
+      "factors": {
+        "populationDensity": {
+          "value": 154.560728075014,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2020,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TH",
+      "iso3": "THA",
+      "name": "Thailand",
+      "factors": {
+        "populationDensity": {
+          "value": 140.280708175928,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 36.76,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TJ",
+      "iso3": "TJK",
+      "name": "Tajikistan",
+      "factors": {
+        "populationDensity": {
+          "value": 76.3090064125658,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.892370798940089,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "TM",
+      "iso3": "TKM",
+      "name": "Turkmenistan",
+      "factors": {
+        "populationDensity": {
+          "value": 15.9481156768029,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TL",
+      "iso3": "TLS",
+      "name": "Timor-Leste",
+      "factors": {
+        "populationDensity": {
+          "value": 94.1921990585071,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TO",
+      "iso3": "TON",
+      "name": "Tonga",
+      "factors": {
+        "populationDensity": {
+          "value": 144.6875,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TT",
+      "iso3": "TTO",
+      "name": "Trinidad and Tobago",
+      "factors": {
+        "populationDensity": {
+          "value": 266.835608424337,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 87.5,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 40.4432986623964,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "TN",
+      "iso3": "TUN",
+      "name": "Tunisia",
+      "factors": {
+        "populationDensity": {
+          "value": 79.0236161174047,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 84.94,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 4.69348024650292,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "TR",
+      "iso3": "TUR",
+      "name": "Turkiye",
+      "factors": {
+        "populationDensity": {
+          "value": 111.116589789899,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 78.45,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 3.22789482308636,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "TV",
+      "iso3": "TUV",
+      "name": "Tuvalu",
+      "factors": {
+        "populationDensity": {
+          "value": 371,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "TZ",
+      "iso3": "TZA",
+      "name": "Tanzania",
+      "factors": {
+        "populationDensity": {
+          "value": 77.5567386877828,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 88.89,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 3.74921291744897,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "UG",
+      "iso3": "UGA",
+      "name": "Uganda",
+      "factors": {
+        "populationDensity": {
+          "value": 249.426949930182,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 84.09,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 8.97308867739149,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "UA",
+      "iso3": "UKR",
+      "name": "Ukraine",
+      "factors": {
+        "populationDensity": {
+          "value": 65.343840179496,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 3.77663964401616,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "UY",
+      "iso3": "URY",
+      "name": "Uruguay",
+      "factors": {
+        "populationDensity": {
+          "value": 19.3501622708781,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 81.75,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 11.2453054170348,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "US",
+      "iso3": "USA",
+      "name": "United States",
+      "factors": {
+        "populationDensity": {
+          "value": 37.1693654604249,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 41.97,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 5.76340794073065,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "UZ",
+      "iso3": "UZB",
+      "name": "Uzbekistan",
+      "factors": {
+        "populationDensity": {
+          "value": 82.9213906182299,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 1.39879762685076,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "VC",
+      "iso3": "VCT",
+      "name": "St. Vincent and the Grenadines",
+      "factors": {
+        "populationDensity": {
+          "value": 258.652956298201,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 51.3212761232698,
+          "year": 2023,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "VE",
+      "iso3": "VEN",
+      "name": "Venezuela, RB",
+      "factors": {
+        "populationDensity": {
+          "value": 32.2040054418684,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 12.6466448562847,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "VG",
+      "iso3": "VGB",
+      "name": "British Virgin Islands",
+      "factors": {
+        "populationDensity": {
+          "value": 261.397350993377,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "VI",
+      "iso3": "VIR",
+      "name": "Virgin Islands (U.S.)",
+      "factors": {
+        "populationDensity": {
+          "value": 299.933908045977,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "VN",
+      "iso3": "VNM",
+      "name": "Viet Nam",
+      "factors": {
+        "populationDensity": {
+          "value": 322.202750862237,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "VU",
+      "iso3": "VUT",
+      "name": "Vanuatu",
+      "factors": {
+        "populationDensity": {
+          "value": 26.8912133891213,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 0.3346065111081,
+          "year": 2020,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "WS",
+      "iso3": "WSM",
+      "name": "Samoa",
+      "factors": {
+        "populationDensity": {
+          "value": 78.4241007194245,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 100,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "XK",
+      "iso3": "XKX",
+      "name": "Kosovo",
+      "factors": {
+        "populationDensity": null,
+        "waterQuality": null,
+        "homicideRate": {
+          "value": 1.89497747704421,
+          "year": 2021,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "YE",
+      "iso3": "YEM",
+      "name": "Yemen, Rep.",
+      "factors": {
+        "populationDensity": {
+          "value": 76.866711618886,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 37.8,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "factors": {
+        "populationDensity": {
+          "value": 52.7637578415451,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 70.69,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 43.7202551331462,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    },
+    {
+      "iso2": "ZM",
+      "iso3": "ZMB",
+      "name": "Zambia",
+      "factors": {
+        "populationDensity": {
+          "value": 28.6726428926943,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 85.71,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": null
+      }
+    },
+    {
+      "iso2": "ZW",
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "factors": {
+        "populationDensity": {
+          "value": 42.9995424583172,
+          "year": 2024,
+          "unit": "人/km²",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.POP.DNST"
+        },
+        "waterQuality": {
+          "value": 80.95,
+          "year": 2023,
+          "unit": "%",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/EN.H2O.BDYS.ZS"
+        },
+        "homicideRate": {
+          "value": 6.75833125350771,
+          "year": 2022,
+          "unit": "件/10万人",
+          "scope": "country",
+          "source": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5"
+        }
+      }
+    }
+  ]
+}
