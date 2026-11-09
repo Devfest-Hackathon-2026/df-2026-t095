@@ -25,9 +25,13 @@ function townscapeObservation(data:Record<string,unknown>,basis:'photo'|'maps',s
 export function sceneryFromMaps(data:Record<string,unknown>,source?:SourceLink):Scenery {
  return source?townscapeObservation(data,'maps',source):{};
 }
+export function supportsNaturalScenery(photo:AnalysisPhoto){
+ return photo.provider==='upload'||!/landsat|sentinel|aster\b|satellite|false[\s_-]*colou?r|multispectral|infrared|衛星|赤外|疑似カラー|擬似カラー/i.test(`${photo.title} ${photo.description}`);
+}
 
 /** Observations refer to this particular photo, not current water conditions. */
 export function sceneryFromPhoto(data:Record<string,unknown>,photo:AnalysisPhoto,scene?:unknown):Scenery {
+ if(!supportsNaturalScenery(photo)||data.naturalColorPhoto!==true)return{};
  const source=photo.provider==='commons'?{title:photo.title,url:photo.sourcePage}:undefined;
  const scenery=townscapeObservation(data,'photo',source);
  const value=data.seaColor;

@@ -3,6 +3,10 @@ import {compareFactorEvidence,unknownEvidenceCount} from './factor-types.ts';
 import { places, qualities, type Place, type Quality } from "./places.ts";
 
 export type RankedPlace = Place & { shared: Quality[]; score: number };
+export function sourceLookupQuery(query:string,source:Pick<Place,'name'|'city'|'country'>){
+ const entered=query.trim();
+ return entered===source.name?[...new Set([source.name,source.city,source.country].filter(Boolean))].join(' '):entered;
+}
 export function isQuality(value: unknown): value is Quality {
   return typeof value === "string" && qualities.some(q => q.id === value);
 }

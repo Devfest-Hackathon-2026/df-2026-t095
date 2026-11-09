@@ -1,8 +1,9 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {places} from '../lib/places.ts';
-import {matchScenery,sceneryFromPhoto,sceneryFromMaps,filterScenery,type SeaColor,type Townscape} from '../lib/scenery.ts';
+import {matchScenery,sceneryFromPhoto,sceneryFromMaps,filterScenery,supportsNaturalScenery,type SeaColor,type Townscape} from '../lib/scenery.ts';
 import {parseGroundedPlaces} from '../lib/google.ts';
+import {sourceLookupQuery} from '../lib/discovery.ts';
 import {compareFactorEvidence} from '../lib/factor-types.ts';
 import {parseSearchFilters} from '../lib/climate-types.ts';
 import {filtersFromParams,filtersToParams} from '../lib/search-params.ts';
@@ -21,9 +22,9 @@ test('sea color filters use observed seawater, distinguish fresh water, and reta
  assert.deepEqual(matchScenery(source,unknown,filters)?.unknown,['seaColor']);assert.equal(matchScenery(source,unknown,{...filters,unknownData:'exclude'}),null);
  assert.equal(filterScenery(source,[unknown,blue,green],filters).sort(compareFactorEvidence)[0].id,blue.id);
  const photo=(await samplePhoto(source))!;
- assert.equal(sceneryFromPhoto({seaColor:'blue',seaColorNote:'青い水'},photo,'flowing_water').seaColor?.value,'not_sea');
- assert.deepEqual(sceneryFromPhoto({seaColor:'invented',seaColorNote:'blue'},photo,'coast'),{});
- assert.deepEqual(sceneryFromPhoto({seaColor:'blue'},photo,'coast'),{});
+ assert.equal(sceneryFromPhoto({naturalColorPhoto:true,seaColor:'blue',seaColorNote:'青い水'},photo,'flowing_water').seaColor?.value,'not_sea');
+ assert.deepEqual(sceneryFromPhoto({naturalColorPhoto:true,seaColor:'invented',seaColorNote:'blue'},photo,'coast'),{});
+ assert.deepEqual(sceneryFromPhoto({naturalColorPhoto:true,seaColor:'blue'},photo,'coast'),{});
  assert.deepEqual(matchScenery(source,{...candidate,scenery:{seaColor:{value:'blue',basis:'maps',note:'not a photo'}}},filters)?.unknown,['seaColor']);
 });
 test('same-color search supports a location-unknown reference photo and survives shared links',()=>{
@@ -85,7 +86,19 @@ test('a townscape-only atmosphere search reuses grounded profiles without any ph
 });
 test('photo streetscape evidence retains its source and does not erase non-sea classification',async()=>{
  const photo=(await samplePhoto(candidate))!;
- const scenery=sceneryFromPhoto({seaColor:'blue',seaColorNote:'水面',townscape:['historic','green'],townscapeNote:'古い建物と並木が見えます。'},photo,'flowing_water');
+ const scenery=sceneryFromPhoto({naturalColorPhoto:true,seaColor:'blue',seaColorNote:'水面',townscape:['historic','green'],townscapeNote:'古い建物と並木が見えます。'},photo,'flowing_water');
  assert.equal(scenery.seaColor?.value,'not_sea');assert.deepEqual(scenery.townscape?.value,['historic','green']);assert.equal(scenery.townscape?.source?.url,photo.sourcePage);
- assert.equal(sceneryFromPhoto({townscape:['not_urban','modern'],townscapeNote:'混在'},photo).townscape,undefined);
+ assert.equal(sceneryFromPhoto({naturalColorPhoto:true,townscape:['not_urban','modern'],townscapeNote:'混在'},photo).townscape,undefined);
+});
+test('processed satellite colors and illustrations cannot become natural sea-color evidence',async()=>{
+ const photo=(await samplePhoto(candidate))!,raw={naturalColorPhoto:true,seaColor:'blue',seaColorNote:'青い海',townscape:['modern'],townscapeNote:'建物'};
+ const satellite={...photo,title:'File:Tikehau - Landsat satellite.jpg'};
+ assert.equal(supportsNaturalScenery(satellite),false);assert.deepEqual(sceneryFromPhoto(raw,satellite,'coast'),{});
+ assert.deepEqual(sceneryFromPhoto({...raw,naturalColorPhoto:false},photo,'coast'),{});
+ assert.equal(supportsNaturalScenery({...photo,title:'File:Lagoon aerial photograph.jpg'}),true);
+});
+test('selected reference names keep their city and country when resolving ambiguous place names',()=>{
+ assert.equal(sourceLookupQuery('鴨川',source),'鴨川 京都 日本');
+ assert.equal(sourceLookupQuery('別の場所',source),'別の場所');
+ assert.equal(sourceLookupQuery('京都',{name:'京都',city:'京都',country:'日本'}),'京都 日本');
 });

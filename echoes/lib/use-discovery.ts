@@ -5,7 +5,7 @@ import {filtersFromParams,filtersToParams} from './search-params.ts';
 import {defaultSearchFilters,parseSearchFilters,type SearchFilters} from './climate-types';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import {defaultPreferences,places,type Place,type Quality} from './places';
-import {diverseResults,isQuality,rankPlaces} from './discovery';
+import {diverseResults,isQuality,rankPlaces,sourceLookupQuery} from './discovery';
 import type {VisualSearchSummary} from './visual-types';
 import type {AppConfig} from './app-config';
 import type {Account,FirebaseSession,SavedRef} from './firebase-client';
@@ -127,18 +127,18 @@ export function useDiscovery(){
   setError('');setShareUrl('');setVisualSearch(null);setView('discover');setActiveId(null);setRoute(null);userChanged.current=true;
   if(!liveMode){const p=places.find(p=>p.name===query.trim()||`${p.name} ${p.city}`===query.trim());if(!p){setError('サンプルから出発点を選んでください。Google 検索では好きな場所を入力できます。');return;}setSource(p);return;}
   if(!uploadFile&&query.trim().length<2){setError('出発点の地名を入れてください。');return;}
-  if(searchKind==='terrain'){setResolving(true);try{chooseSource(await resolve({query:query.trim()}));}catch(e){setError(e instanceof Error?e.message:'出発点を確認できませんでした。');}finally{setResolving(false);}return;}
+  if(searchKind==='terrain'){setResolving(true);try{chooseSource(await resolve({query:sourceLookupQuery(query,source)}));}catch(e){setError(e instanceof Error?e.message:'出発点を確認できませんでした。');}finally{setResolving(false);}return;}
   request.current?.abort();const c=new AbortController();request.current=c;setLoading(true);setLivePlaces([]);
   if(searchKind==='visual'){
    if(uploadFile){
     if(!uploadRights){setLoading(false);setError('画像解析に利用できる写真であることを確認してください。');return;}
     try{const form=new FormData();form.set('photo',uploadFile);form.set('rights','confirmed');form.set('preferences',JSON.stringify(preferences));form.set('destination',destination);form.set('visualWeight',String(visualWeight));form.set('filters',JSON.stringify(filters));const r=await fetch('/api/visual/upload',{method:'POST',body:form,signal:c.signal});const data=await r.json() as {source:Place;places:Place[];visualSearch:VisualSearchSummary;error?:string};if(!r.ok)throw new Error(data.error||'写真の解析を完了できませんでした。');if(c.signal.aborted)return;setSource({...data.source,image:uploadPreview});setLivePlaces(data.places);setVisualSearch(data.visualSearch);data.places.forEach(p=>known.current.set(p.id,p));}catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'写真の解析を完了できませんでした。');}finally{if(request.current===c)setLoading(false);}return;
    }
-   try{const sample=places.find(p=>p.name===query.trim());const current=sample||(query.trim()===source.name&&source.placeId?source:await resolve({query:query.trim()},c.signal));
+   try{const sample=places.find(p=>p.name===query.trim());const current=sample||(query.trim()===source.name&&source.placeId?source:await resolve({query:sourceLookupQuery(query,source)},c.signal));
     const r=await fetch('/api/visual',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sampleId:sample?.id,placeId:current.placeId,source:query.trim(),preferences,destination,visualWeight,filters}),signal:c.signal});const data=await r.json() as {source:Place;places:Place[];visualSearch:VisualSearchSummary;error?:string};if(!r.ok)throw new Error(data.error||'写真の比較を完了できませんでした。');if(c.signal.aborted)return;setSource(data.source);setQuery(data.source.name);setLivePlaces(data.places);setVisualSearch(data.visualSearch);[data.source,...data.places].forEach(p=>known.current.set(p.id,p));
    }catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'写真の比較を完了できませんでした。');}finally{if(request.current===c)setLoading(false);}return;
   }
-  try{const current=query.trim()===source.name&&source.placeId?source:await resolve({query:query.trim()},c.signal);setSource(current);known.current.set(current.id,current);
+  try{const current=query.trim()===source.name&&source.placeId?source:await resolve({query:sourceLookupQuery(query,source)},c.signal);setSource(current);known.current.set(current.id,current);
    const r=await fetch('/api/discover',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({placeId:current.placeId,source:`${current.name} ${current.city}`,preferences,destination,filters}),signal:c.signal});const data=await r.json() as {source?:Place;places?:Place[];error?:string};if(!r.ok||!data.source||!Array.isArray(data.places))throw new Error(data.error||'検索結果を取得できませんでした。');if(c.signal.aborted)return;setSource(data.source);setQuery(data.source.name);setLivePlaces(data.places);[data.source,...data.places].forEach(p=>known.current.set(p.id,p));
   }catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'検索を完了できませんでした。');}finally{if(request.current===c)setLoading(false);}
  };
