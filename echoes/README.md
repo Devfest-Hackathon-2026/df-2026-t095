@@ -115,4 +115,4 @@ npm run google:check
 
 写真検索、API接続、保存・共有、画面の検証結果は `VERIFICATION.md` に記録します。公開中のサービスに残る作業は `PRODUCTION_READINESS.md` を参照してください。
 
-アプリは Cloud Run（https://private-deployment.invalid）で公開しています。Firebase App Hosting も利用できます。標準の Next.js の `build` / `start` と Dockerfile を用意しています。公開先のドメイン制限、実行用サービスアカウントの権限、Firebase の認証ドメイン、Secrets を別途設定してください。ローカルの `.env.local` をアップロードしないでください。
+アプリは Cloud Run で公開しています。デプロイ先の URL は、リポジトリのルートにある Git 管理対象外の `DEPLOYMENT.local.md` に保管します。Firebase App Hosting も利用できます。標準の Next.js の `build` / `start` と Dockerfile を用意しています。公開先のドメイン制限、実行用サービスアカウントの権限、Firebase の認証ドメイン、Secrets を別途設定してください。ローカルの `.env.local` をアップロードしないでください。

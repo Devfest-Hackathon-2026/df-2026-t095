@@ -1,4 +1,5 @@
 # 秘密情報（コミットしない）
+/DEPLOYMENT.local.md
 .env
 .env.*
 !.env.example
