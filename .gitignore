@@ -46,3 +46,10 @@ coverage/
 next-env.d.ts
 *.tsbuildinfo
 history-dry-run/
+
+# Hackathon submission materials generated locally
+/submission/
+/brag-output/
+
+# Local Claude Code settings and reversible patches
+/.claude/
