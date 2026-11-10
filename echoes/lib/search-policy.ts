@@ -12,7 +12,8 @@ export type SearchPolicy = {
 /** Server-only policy: request parameters cannot increase the configured budget. */
 export function searchPolicy(env: Record<string, string | undefined> = process.env): SearchPolicy {
   const value = env.ELSEWHERE_SAVE_COSTS ?? 'true';
-  if (value !== 'true' && value !== 'false') throw new Error('ELSEWHERE_SAVE_COSTS は true または false を指定してください。');
+  if (value !== 'true' && value !== 'false')
+    throw new Error('ELSEWHERE_SAVE_COSTS は true または false を指定してください。');
   const saveCosts = value === 'true';
   return {
     saveCosts,

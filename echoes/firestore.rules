@@ -22,11 +22,27 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['preferences', 'destination', 'updatedAt'])
         && request.resource.data.updatedAt == request.time;
     }
+    // 利用者が選んだときだけ届く匿名の評価。読み取りはサーバーの集計だけに限る。
+    match /feedback/{id} {
+      allow read: if false;
+      allow delete: if request.auth != null && id.size() == 64;
+      allow create, update: if request.auth != null && id.size() == 64
+        && request.resource.data.keys().hasAll(['sourceId', 'candidateId', 'preferences', 'judgement', 'searchKind', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['sourceId', 'candidateId', 'preferences', 'judgement', 'searchKind', 'createdAt'])
+        && request.resource.data.sourceId is string && request.resource.data.sourceId.size() > 0 && request.resource.data.sourceId.size() <= 300
+        && request.resource.data.candidateId is string && request.resource.data.candidateId.size() > 0 && request.resource.data.candidateId.size() <= 300
+        && request.resource.data.preferences is list && request.resource.data.preferences.size() >= 1 && request.resource.data.preferences.size() <= 6
+        && request.resource.data.preferences.hasOnly(['water', 'green', 'quiet', 'walk', 'cafes', 'history'])
+        && request.resource.data.judgement in ['similar', 'different', 'wrong_landscape']
+        && request.resource.data.searchKind in ['atmosphere', 'visual', 'terrain']
+        && request.resource.data.createdAt == request.time;
+    }
     match /shares/{id} {
       allow get: if id.size() <= 64;
       allow list: if false;
       allow create: if request.auth != null && preferences(request.resource.data)
-        && request.resource.data.keys().hasOnly(['sourcePlaceId', 'sourceSampleId', 'preferences', 'destination', 'createdBy', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['sourcePlaceId', 'sourceSampleId', 'preferences', 'destination', 'createdBy', 'createdAt', 'resultIds'])
+        && (!('resultIds' in request.resource.data) || (request.resource.data.resultIds is list && request.resource.data.resultIds.size() >= 1 && request.resource.data.resultIds.size() <= 12))
         && request.resource.data.sourcePlaceId is string && request.resource.data.sourcePlaceId.size() <= 256
         && request.resource.data.sourceSampleId is string && request.resource.data.sourceSampleId.size() <= 64
         && request.resource.data.createdBy == request.auth.uid && request.resource.data.createdAt == request.time;

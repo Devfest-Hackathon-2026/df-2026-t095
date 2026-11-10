@@ -9,4 +9,15 @@ dist
 .vinext
 .impeccable
 outputs
-.cache
+# Only public runtime data from .cache ships in the image.
+.cache/*
+!.cache/climate
+!.cache/commons-embeddings
+!.cache/commons-images
+!.cache/commons-lookups
+!.cache/commons-scenery
+!.cache/commons-vision
+!.cache/photo-index-v1.json
+!.cache/terrain-regions
+!.cache/terrain-regions-v3.json
+!.cache/terrain-search

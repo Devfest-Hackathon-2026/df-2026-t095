@@ -1,0 +1,32 @@
+# Files uploaded to Cloud Build. Keep in step with .dockerignore.
+node_modules/
+.next/
+dist/
+.git/
+.gitignore
+.env*
+.dev.vars*
+.wrangler/
+.sites-runtime/
+.vinext/
+.impeccable/
+outputs/
+*.tsbuildinfo
+*.pem
+*.key
+*.p12
+service-account*.json
+credentials*.json
+
+# Only public runtime data from .cache is uploaded.
+.cache/*
+!.cache/climate
+!.cache/commons-embeddings
+!.cache/commons-images
+!.cache/commons-lookups
+!.cache/commons-scenery
+!.cache/commons-vision
+!.cache/photo-index-v1.json
+!.cache/terrain-regions
+!.cache/terrain-regions-v3.json
+!.cache/terrain-search

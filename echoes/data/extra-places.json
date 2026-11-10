@@ -3911,7 +3911,7 @@
     "continent": "Europe",
     "lat": 49.2389,
     "lng": 7.00245,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/20110603Echelmeyerpark_Saarbruecken.jpg/960px-20110603Echelmeyerpark_Saarbruecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "20110603Echelmeyerpark Saarbruecken.jpg",
     "profiled": false,
     "features": {
@@ -3938,6 +3938,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:20110603Echelmeyerpark_Saarbruecken.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 15454160,
+      "title": "File:20110603Echelmeyerpark Saarbruecken.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20110603Echelmeyerpark_Saarbruecken.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/20110603Echelmeyerpark_Saarbruecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/20110603Echelmeyerpark_Saarbruecken.jpg/960px-20110603Echelmeyerpark_Saarbruecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "d408da4431a240df33c95c3959ff2c75943fd95c",
+      "mime": "image/jpeg",
+      "author": "AnRo0002",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Echelmeyerpark (Saarbrücken) mit Denkmal, Friedhofskapelle und St. Michael",
+      "categories": "Echelmeyerpark (Saarbrücken)|Taken with Olympus FE-47 / X-43|CC-Zero|Friedhofskapelle im Echelmeyerpark (Saarbrücken)|St. Michael (Saarbrücken-St. Johann)|Self-published work|Saarbrücken photographs taken on 2011-06-03",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文と一致しており、エッシェルマイヤー公園内の記念碑や礼拝堂、周囲の木々などの景観が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -3949,7 +3968,7 @@
     "continent": "Europe",
     "lat": 52.5283,
     "lng": 13.6103,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Schleipfuhl_Hellersdorf_20110627_AMA_fec_%28112%29.JPG/960px-Schleipfuhl_Hellersdorf_20110627_AMA_fec_%28112%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Schleipfuhl Hellersdorf 20110627 AMA fec (112).JPG",
     "profiled": false,
     "features": {
@@ -3976,6 +3995,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Schleipfuhl_Hellersdorf_20110627_AMA_fec_(112).JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 15645763,
+      "title": "File:Schleipfuhl Hellersdorf 20110627 AMA fec (112).JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Schleipfuhl_Hellersdorf_20110627_AMA_fec_(112).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Schleipfuhl_Hellersdorf_20110627_AMA_fec_%28112%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Schleipfuhl_Hellersdorf_20110627_AMA_fec_%28112%29.JPG/960px-Schleipfuhl_Hellersdorf_20110627_AMA_fec_%28112%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "f1ca847bdaf150e6c7fcb5c50ee1c6ce17f3258b",
+      "mime": "image/jpeg",
+      "author": "44penguins (Angela M. Arnold)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Berlin-Hellersdorf, Schleipfuhl",
+      "categories": "Schleipfuhl|GFDL|Taken with Panasonic Lumix DMC-FX30|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Attribution only license|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にベルリンのヘラースドルフにあるシュライプフール（Schleipfuhl）と記載されており、指定された場所の水辺や生い茂る木々の風景が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -3987,7 +4025,7 @@
     "continent": "Europe",
     "lat": 51.41778,
     "lng": 6.80846,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Duisburger_Stadtwald_am_Wolfsberg.jpg/960px-Duisburger_Stadtwald_am_Wolfsberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Duisburger Stadtwald am Wolfsberg.jpg",
     "profiled": false,
     "features": {
@@ -4014,6 +4052,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Duisburger_Stadtwald_am_Wolfsberg.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 48890067,
+      "title": "File:Duisburger Stadtwald am Wolfsberg.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Duisburger_Stadtwald_am_Wolfsberg.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Duisburger_Stadtwald_am_Wolfsberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Duisburger_Stadtwald_am_Wolfsberg.jpg/960px-Duisburger_Stadtwald_am_Wolfsberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "7fbd6533a803c720b19381f81ffe7fff079d972e",
+      "mime": "image/jpeg",
+      "author": "Dat doris",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Duisburger Stadtwald beim Wolfsberg; Landschaftsschutzgebiet „Duisburger Stadtwald mit den Bereichen Witzberg, Monning, Wolfsberg, Am Stein, Eselsbruch, Nachtigallental, Uhlenhorst“",
+      "categories": "Images from Wiki Loves Earth 2016 in Germany|Duisburger Stadtwald|Landschaftsschutzgebiet Duisburger Stadtwald mit den Bereichen Witzberg, Monning, Wolfsberg, Am Stein, Eselsbruch, Nachtigallental, Uhlenhorst|Self-published work|Uploaded via Campaign:wle-de-nw|Images from Wiki Loves Earth 2016, DE-NW|Images from Wiki Loves Earth 2016|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名および説明にDuisburger Stadtwald（デュースブルク市立森林公園）のWolfsberg周辺であることが記載されており、森林の自然景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -4101,7 +4158,7 @@
     "continent": "Europe",
     "lat": 51.5161,
     "lng": 14.006,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Senftenberg_schlosspark.JPG/960px-Senftenberg_schlosspark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Senftenberg schlosspark.JPG",
     "profiled": false,
     "features": {
@@ -4128,6 +4185,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Senftenberg_schlosspark.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 4176012,
+      "title": "File:Senftenberg schlosspark.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Senftenberg_schlosspark.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Senftenberg_schlosspark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Senftenberg_schlosspark.JPG/960px-Senftenberg_schlosspark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "ada027db6532076b453454f66bb3f8c0672e2a8f",
+      "mime": "image/jpeg",
+      "author": "Z thomas",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Schlosspark in Senftenberg, Blick auf den Pavillon",
+      "categories": "GFDL|Schlossteich Senftenberg|Pavillon im Schlosspark Senftenberg|License migration redundant|Self-published work|Photos by Z thomas|Files with coordinates missing SDC location of creation|2008 in Senftenberg (Niederlausitz)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ゼンフテンベルクのシュロスパルク（城館公園）にある池や東屋が写っており、指定された公園の風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -4405,7 +4481,7 @@
     "continent": "Europe",
     "lat": 50.9665,
     "lng": 11.004111111,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg/960px-Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Egapark Erfurt 2026-10-06 090 Wasserachse.jpg",
     "profiled": false,
     "features": {
@@ -4432,6 +4508,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 201253653,
+      "title": "File:Egapark Erfurt 2026-10-06 090 Wasserachse.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg/960px-Egapark_Erfurt_2026-10-06_090_Wasserachse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "6fb62435a679224828bf7ce425d6ee02bc6c1b38",
+      "mime": "image/jpeg",
+      "author": "Ousw",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Egapark Erfurt 2026-10-06 090 Wasserachse",
+      "categories": "CC-Zero|Egapark Erfurt|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：エガパーク（egapark）内の水軸（Wasserachse）にある噴水や池、周囲の庭園の景観が主に写っています。",
+      "verified": true
     }
   },
   {
@@ -4481,7 +4576,7 @@
     "continent": "Europe",
     "lat": 51.35376,
     "lng": 12.40369,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG/960px-H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Hügel Mariannenpark Juni 2015 03.JPG",
     "profiled": false,
     "features": {
@@ -4508,6 +4603,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 47960408,
+      "title": "File:Hügel Mariannenpark Juni 2015 03.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG/960px-H%C3%BCgel_Mariannenpark_Juni_2015_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "18c5f7598e6525f1d280b8d9785a87d67e5fb678",
+      "mime": "image/jpeg",
+      "author": "Don-kun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Hügel mit einer Art Rodelbahn o.Ä. im Mariannenpark in Leipzig, Bereich an der Hangunterkante",
+      "categories": "Mariannenpark|Self-published work|June 2015 in Leipzig",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にライプツィヒのマリアンネン公園であることが明記されており、公園内の芝生や木々などの景観が中心に写っています。",
+      "verified": true
     }
   },
   {
@@ -4706,7 +4820,7 @@
     "continent": "Europe",
     "lat": 50.1014,
     "lng": 8.74717,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dreieichpark.jpg/960px-Dreieichpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Dreieichpark.jpg",
     "profiled": false,
     "features": {
@@ -4733,6 +4847,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dreieichpark.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 4105353,
+      "title": "File:Dreieichpark.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dreieichpark.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Dreieichpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dreieichpark.jpg/960px-Dreieichpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "439f24dde76a6902cb1557639326590ae89dc5ab",
+      "mime": "image/jpeg",
+      "author": "Christos Vittoratos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Dreieichpark, cement exhibition buildings built in 1879",
+      "categories": "GFDL|Taken with Canon Digital IXUS 65|Dreieich-Park|License migration redundant|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ドライアイヒ公園（Dreieichpark）内の緑地や遊歩道、歴史的なセメント展示建造物が写っており、公園の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -4781,7 +4914,7 @@
     "continent": "Europe",
     "lat": 51.390555555,
     "lng": 6.998333333,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Essen_Werden_-_Brehminsel_%28Gustav-Heinemann-Br%C3%BCcke%29_01_ies.jpg/960px-Essen_Werden_-_Brehminsel_%28Gustav-Heinemann-Br%C3%BCcke%29_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Essen Werden - Brehminsel (Gustav-Heinemann-Brücke) 01 ies.jpg",
     "profiled": false,
     "features": {
@@ -4808,6 +4941,25 @@
       "checkedAt": "2026-11-09T13:28:55.451Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Essen_Werden_-_Brehminsel_(Gustav-Heinemann-Br%C3%BCcke)_01_ies.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 8019012,
+      "title": "File:Essen Werden - Brehminsel (Gustav-Heinemann-Brücke) 01 ies.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Essen_Werden_-_Brehminsel_(Gustav-Heinemann-Br%C3%BCcke)_01_ies.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Essen_Werden_-_Brehminsel_%28Gustav-Heinemann-Br%C3%BCcke%29_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Essen_Werden_-_Brehminsel_%28Gustav-Heinemann-Br%C3%BCcke%29_01_ies.jpg/960px-Essen_Werden_-_Brehminsel_%28Gustav-Heinemann-Br%C3%BCcke%29_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "95019ee1e05fc7382ec1f8359bc01a41f9cfb790",
+      "mime": "image/jpeg",
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Brehminsel der Ruhr in Essen -Werden",
+      "categories": "GFDL|Taken with Canon EOS 400D|Views from Gustav-Heinemann-Brücke (Essen)|License migration redundant|Brehminsel|Self-published work|Ruhr at Essen|Pedaloes in North Rhine-Westphalia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明と一致しており、ルール川に浮かぶブレーム島（Brehminsel）の景観が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -4856,7 +5008,7 @@
     "continent": "Europe",
     "lat": 52.3786,
     "lng": 9.73222,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg/960px-2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "2025-04-20 Alter St. Nikolai-Friedhof Hannover.jpg",
     "profiled": false,
     "features": {
@@ -4883,6 +5035,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 163854772,
+      "title": "File:2025-04-20 Alter St. Nikolai-Friedhof Hannover.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg/960px-2025-04-20_Alter_St._Nikolai-Friedhof_Hannover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9b4aec6956c4649e3a662560ecf8d30d8f60420b",
+      "mime": "image/jpeg",
+      "author": "Bernd Schwabe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Es ist Ostern",
+      "categories": "Alter St.-Nikolai-Friedhof (Hannover)|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation (52° N, 9° E)|Photographs taken on 2025-04-20",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名に示されている通り、ハノーファーの旧聖ニコライ墓地（Alter St.-Nikolai-Friedhof）の敷地と墓石の風景が主な被写体として撮影されています。",
+      "verified": true
     }
   },
   {
@@ -4931,7 +5102,7 @@
     "continent": "Europe",
     "lat": 51.154159,
     "lng": 14.984879,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2026-06_G%C3%B6rlitz_%287%29.jpg/960px-2026-06_G%C3%B6rlitz_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "2026-06 Görlitz (7).jpg",
     "profiled": false,
     "features": {
@@ -4958,6 +5129,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2026-06_G%C3%B6rlitz_(7).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 194100723,
+      "title": "File:2026-06 Görlitz (7).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2026-06_G%C3%B6rlitz_(7).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/2026-06_G%C3%B6rlitz_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/2026-06_G%C3%B6rlitz_%287%29.jpg/960px-2026-06_G%C3%B6rlitz_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "7b0ed103b8fb0189ca59550a05f244ee211a556a",
+      "mime": "image/jpeg",
+      "author": "Marek Mróz",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Görlitz, Demianiplatz",
+      "categories": "Demianiplatz|Self-published work|Creative Commons Attribution 4.0 missing SDC copyright license|Creative Commons Attribution missing SDC copyright status|Self-published work missing SDC copyright license|2026 in Görlitz",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にゲルリッツのデミアーニ広場（Demianiplatz）と記載されており、広場の街並みや路面電車の停留所などの景観が主たる被写体として捉えられています。",
+      "verified": true
     }
   },
   {
@@ -4969,7 +5159,7 @@
     "continent": "Europe",
     "lat": 50.1442,
     "lng": 8.71475,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Huthpark.jpg/960px-Huthpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Huthpark.jpg",
     "profiled": false,
     "features": {
@@ -4996,6 +5186,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Huthpark.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 99855803,
+      "title": "File:Huthpark.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Huthpark.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Huthpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Huthpark.jpg/960px-Huthpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "87aaf62fd0ffeb24d9c473faefd13b2e1e1d81d9",
+      "mime": "image/jpeg",
+      "author": "Fnordson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Park",
+      "categories": "Germany photographs taken on 2021-02-14|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation (50° N, 8° E)|Huthpark (Frankfurt)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名および説明からフート公園（Huthpark）であることが確認でき、広場や木々が広がる公園の景観が主な被写体として写っています。",
+      "verified": true
     }
   },
   {
@@ -5120,7 +5329,7 @@
     "continent": "Europe",
     "lat": 52.4955,
     "lng": 13.4497,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Berlin-Treptow_Schlesischer_Busch.jpg/960px-Berlin-Treptow_Schlesischer_Busch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Berlin-Treptow Schlesischer Busch.jpg",
     "profiled": false,
     "features": {
@@ -5147,6 +5356,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Berlin-Treptow_Schlesischer_Busch.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 16330695,
+      "title": "File:Berlin-Treptow Schlesischer Busch.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Berlin-Treptow_Schlesischer_Busch.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Berlin-Treptow_Schlesischer_Busch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Berlin-Treptow_Schlesischer_Busch.jpg/960px-Berlin-Treptow_Schlesischer_Busch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3c988f7ce67bf4f60ef4af7ee6a671b9cf783fa6",
+      "mime": "image/jpeg",
+      "author": "Assenmacher",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Park \"Schlesischer Busch\" in Berlin-Alt-Treptow an der Puschkinallee mit einem der drei noch erhaltenen Wachtürmen der Berliner Mauer",
+      "categories": "Taken with Canon Digital IXUS 330|Self-published work|Files with coordinates missing SDC location of creation|Graffiti in Berlin-Alt-Treptow|Führungsstelle Schlesischer Busch",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：シュレージシャー・ブッシュ公園内に残る旧監視塔と緑地が写っており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -5271,7 +5499,7 @@
     "continent": "Europe",
     "lat": 49.2251,
     "lng": 6.96314,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/DFG_Park_1.JPG/960px-DFG_Park_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "DFG Park 1.JPG",
     "profiled": false,
     "features": {
@@ -5298,6 +5526,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:DFG_Park_1.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 14843925,
+      "title": "File:DFG Park 1.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:DFG_Park_1.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/DFG_Park_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/DFG_Park_1.JPG/960px-DFG_Park_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "4257e1e3024a5868eb0fe50fc455843457e2e8bd",
+      "mime": "image/jpeg",
+      "author": "E.peiffer@gmx.net 13:31, 21. Apr. 2008 (CEST)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Saarbrücken: Deutsch-Französischer Garten, Parkausschnitt",
+      "categories": "GFDL|Deutsch-Französischer Garten|User-created GFDL images|License migration completed|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にDeutsch-Französischer Gartenの園内風景であることが明記されており、写真も芝生や木々、花壇などの公園の景観を主体に捉えています。",
+      "verified": true
     }
   },
   {
@@ -5309,7 +5556,7 @@
     "continent": "Europe",
     "lat": 52.1349,
     "lng": 11.669,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Elbauenpark.jpg/960px-Elbauenpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Elbauenpark.jpg",
     "profiled": false,
     "features": {
@@ -5336,6 +5583,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Elbauenpark.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 16254449,
+      "title": "File:Elbauenpark.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Elbauenpark.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Elbauenpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Elbauenpark.jpg/960px-Elbauenpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "25582c806b70bc0aa5d294f7aca5fea7f6d079ac",
+      "mime": "image/jpeg",
+      "author": "https://www.flickr.com/photos/anfroese/",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Blick über einen Teil des Elbauenparks",
+      "categories": "Elbauenpark|Flickr images reviewed by FlickreviewR|Flickr images missing SDC creator|Flickr images missing SDC inception|Flickr images missing SDC published in",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にエルバウエンパークの一角を見渡す眺めとあり、園内の特徴的なタワーや緑地などの景観が主体として捉えられています。",
+      "verified": true
     }
   },
   {
@@ -5497,7 +5763,7 @@
     "continent": "Europe",
     "lat": 52.4912,
     "lng": 13.3503,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg/960px-Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Berlin-Schöneberg Alice-Salomon-Park Panorama.jpg",
     "profiled": false,
     "features": {
@@ -5524,6 +5790,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 15312083,
+      "title": "File:Berlin-Schöneberg Alice-Salomon-Park Panorama.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg/960px-Berlin-Sch%C3%B6neberg_Alice-Salomon-Park_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "8b2adc93073b4426c6622275c058f7156bf11e9a",
+      "mime": "image/jpeg",
+      "author": "Assenmacher",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Berlin-Schöneberg Alice-Salomon-Park Panorama",
+      "categories": "Alice-Salomon-Park (Berlin-Schöneberg)|Self-published work|Images with extracted images|On OSM|Files with coordinates missing SDC location of creation",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にあるアリス・ザロモン公園のパノラマ写真であり、園内の歩道や芝生、木々などの風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -5649,7 +5934,7 @@
     "continent": "Europe",
     "lat": 51.1375,
     "lng": 14.990277777,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg/960px-Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Volksbad Weinlache Weinberghaus und Turm Görlitz.jpg",
     "profiled": false,
     "features": {
@@ -5676,6 +5961,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 18412796,
+      "title": "File:Volksbad Weinlache Weinberghaus und Turm Görlitz.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg/960px-Volksbad_Weinlache_Weinberghaus_und_Turm_G%C3%B6rlitz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "7360f5707e24adf1c784f289e95402c3eb9dbf34",
+      "mime": "image/jpeg",
+      "author": "Südstädter",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Das Volksbad (Weinlache) und der Weinberg mit Weinberghaus und Weinbergturm um 1970",
+      "categories": "Weinbergturm (Görlitz)|Self-published work|Görlitz in the 1970s|On OSM|Files with coordinates missing SDC location of creation|Volksbad (Görlitz)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にヴァインベルク（Weinberg）と周辺の塔や水浴場が写っていると記されており、指定された場所の風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -5725,7 +6029,7 @@
     "continent": "Europe",
     "lat": 52.5029,
     "lng": 13.3766,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Mendelssohn-Bartholdy-Park_20150224_5.jpg/960px-Mendelssohn-Bartholdy-Park_20150224_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Mendelssohn-Bartholdy-Park 20150224 5.jpg",
     "profiled": false,
     "features": {
@@ -5752,6 +6056,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mendelssohn-Bartholdy-Park_20150224_5.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 38617853,
+      "title": "File:Mendelssohn-Bartholdy-Park 20150224 5.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mendelssohn-Bartholdy-Park_20150224_5.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mendelssohn-Bartholdy-Park_20150224_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Mendelssohn-Bartholdy-Park_20150224_5.jpg/960px-Mendelssohn-Bartholdy-Park_20150224_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "102e91c2f82c5dc34b0bc942bae34295bdb4dc34",
+      "mime": "image/jpeg",
+      "author": "Sebastian Rittau",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Mendelssohn-Bartholdy-Park",
+      "categories": "Mendelssohn-Bartholdy-Park|Taken with Canon EOS 700D|CC-Zero|Self-published work|Photos by User:Srittau|On OSM|Files with coordinates missing SDC location of creation",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明および写真の内容から、メンデルスゾーン＝バルトルディ公園（Mendelssohn-Bartholdy-Park）の芝生や木々、周囲の景観が主な被写体として捉えられていることが確認できます。",
+      "verified": true
     }
   },
   {
@@ -5801,7 +6124,7 @@
     "continent": "Europe",
     "lat": 51.4464,
     "lng": 7.045,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Alter_Friedhof_Huttrop.JPG/960px-Alter_Friedhof_Huttrop.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Alter Friedhof Huttrop.JPG",
     "profiled": false,
     "features": {
@@ -5828,6 +6151,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Alter_Friedhof_Huttrop.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 15940686,
+      "title": "File:Alter Friedhof Huttrop.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alter_Friedhof_Huttrop.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Alter_Friedhof_Huttrop.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Alter_Friedhof_Huttrop.JPG/960px-Alter_Friedhof_Huttrop.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "5203208f1dfde2449713ec2696b5c3f5c604f93c",
+      "mime": "image/jpeg",
+      "author": "Wiki05",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Alter Friedhof Huttrop in Essen-Huttrop",
+      "categories": "Taken with Nikon D3100|CC-Zero|Alter Friedhof Huttrop|Self-published work|On OSM|Files with coordinates missing SDC location of creation (51° N, 7° E)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にあるエッセン・フットロップの旧墓地（Alter Friedhof Huttrop）の敷地景観が写されており、墓石や芝生が広がる場所そのものが主役となっています。",
+      "verified": true
     }
   },
   {
@@ -5876,7 +6218,7 @@
     "continent": "Europe",
     "lat": 54.3121,
     "lng": 10.1151,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg/960px-Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Suedfriedhof Kiel Kapelle msu2017-9884.jpg",
     "profiled": false,
     "features": {
@@ -5903,6 +6245,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 62197886,
+      "title": "File:Suedfriedhof Kiel Kapelle msu2017-9884.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg/960px-Suedfriedhof_Kiel_Kapelle_msu2017-9884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3541cec20e31f1b5fc05963e7ae9565ea88e94aa",
+      "mime": "image/jpeg",
+      "author": "User:Matthias Süßen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Südfriedhof Kiel Kapelle",
+      "categories": "Images from Wiki Loves Monuments 2017 in Germany|Self-published work|Uploads by User:Matthias Süßen|Images from Wiki Loves Monuments 2017|Uploaded with LrMediaWiki|September 2017 in Kiel|Images from Wiki Loves Monuments missing SDC creator|Images from Wiki Loves Monuments missing SDC depicts|Images from Wiki Loves Monuments missing SDC location of creation|Images from Wiki Loves Monuments 2017, DE-SH|Kapelle Südfriedhof (Kiel)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文の通り、キールの南墓地（Südfriedhof）にある礼拝堂の外観が写されており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -5914,7 +6275,7 @@
     "continent": "Europe",
     "lat": 51.15878116,
     "lng": 14.98987913,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Nikolaizwinger_G%C3%B6rlitz_%288%29.JPG/960px-Nikolaizwinger_G%C3%B6rlitz_%288%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Nikolaizwinger Görlitz (8).JPG",
     "profiled": false,
     "features": {
@@ -5941,6 +6302,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nikolaizwinger_G%C3%B6rlitz_(8).JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 96274666,
+      "title": "File:Nikolaizwinger Görlitz (8).JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nikolaizwinger_G%C3%B6rlitz_(8).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Nikolaizwinger_G%C3%B6rlitz_%288%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Nikolaizwinger_G%C3%B6rlitz_%288%29.JPG/960px-Nikolaizwinger_G%C3%B6rlitz_%288%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "ceedf65355bb72ca65f61de4748c2d9ae60dcf52",
+      "mime": "image/jpeg",
+      "author": "Photographer and uploader was Hajotthu at de.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Stadtmauer am Nikolaizwinger Görlitz",
+      "categories": "GFDL|Taken with Olympus E-M1|User-created GFDL images|Nikolaizwinger|License migration completed|Self-published work|Photographs taken on 2020-10-02",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名および説明のとおり、ゲルリッツのニコライツヴィンガー（Nikolaizwinger）にある城壁と庭園の景観が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -6027,7 +6407,7 @@
     "continent": "Europe",
     "lat": 51.375555555,
     "lng": 6.738611111,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/HeinrichHildebrandHoeheAusblick06.jpg/960px-HeinrichHildebrandHoeheAusblick06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "HeinrichHildebrandHoeheAusblick06.jpg",
     "profiled": false,
     "features": {
@@ -6054,6 +6434,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:HeinrichHildebrandHoeheAusblick06.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 14358527,
+      "title": "File:HeinrichHildebrandHoeheAusblick06.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:HeinrichHildebrandHoeheAusblick06.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/HeinrichHildebrandHoeheAusblick06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/HeinrichHildebrandHoeheAusblick06.jpg/960px-HeinrichHildebrandHoeheAusblick06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "03c2c94f72143cb3a57c5e84d3e258e61b7b4b21",
+      "mime": "image/jpeg",
+      "author": "NatiSythen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Ausblicke von der Heinrich-Hildebrand-Höhe im Angerpark in Duisburg Angerhausen",
+      "categories": "Taken with Nikon D7000|Photos by User:NatiSythen|Views from Heinrich-Hildebrand-Höhe",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文の通り、アンガーパーク内にあるハインリヒ・ヒルデブラントの丘からの景観が主な被写体として写っています。",
+      "verified": true
     }
   },
   {
@@ -6065,7 +6464,7 @@
     "continent": "Europe",
     "lat": 50.0988,
     "lng": 8.69889,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/FFM_Willemer-Gartenhaus_Aussen_N.jpg/960px-FFM_Willemer-Gartenhaus_Aussen_N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "FFM Willemer-Gartenhaus Aussen N.jpg",
     "profiled": false,
     "features": {
@@ -6092,6 +6491,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:FFM_Willemer-Gartenhaus_Aussen_N.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 20217301,
+      "title": "File:FFM Willemer-Gartenhaus Aussen N.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:FFM_Willemer-Gartenhaus_Aussen_N.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/FFM_Willemer-Gartenhaus_Aussen_N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/FFM_Willemer-Gartenhaus_Aussen_N.jpg/960px-FFM_Willemer-Gartenhaus_Aussen_N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9218e62e9c5509ffac86f2ba9ac2b6f601ba3d33",
+      "mime": "image/jpeg",
+      "author": "Frank Behnsen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Frankfurt am Main, Stadtteil Sachsenhausen: Das Willemer-Häuschen oder Willemer-Gartenhaus ist ein klassizistisches Gartenhaus aus dem frühen 19. Jahrhundert. Bekannt wurde es durch die dortigen Begegnungen des Dichters Johann Wolgang von Goethe mit Marianne von Willemer im Jahr 1814. Im Zweiten Weltkrieg wurde das Originalgebäude zerstört und anschließend am selben Ort originalgetreu wieder aufgebaut. Heute befindet sich im Haus eine Goethe-Gedenkstätte. Das Foto zeigt eine Seitenansicht des Gebäudes von Norden, gesehen vom Willemerschen Garten aus",
+      "categories": "GFDL|Goethe memorial Willemer-Gartenhaus|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されているヴィレマー・ガルテンハウス（ゲーテ記念館）の外観および庭園の景観が写っており、指定された場所そのものが主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -6178,7 +6596,7 @@
     "continent": "Europe",
     "lat": 51.4669,
     "lng": 6.99806,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Grabmal_G%C3%B6tte%2C_Friedhof_Segeroth.jpg/960px-Grabmal_G%C3%B6tte%2C_Friedhof_Segeroth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Grabmal Götte, Friedhof Segeroth.jpg",
     "profiled": false,
     "features": {
@@ -6205,6 +6623,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Grabmal_G%C3%B6tte,_Friedhof_Segeroth.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 17532325,
+      "title": "File:Grabmal Götte, Friedhof Segeroth.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grabmal_G%C3%B6tte,_Friedhof_Segeroth.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Grabmal_G%C3%B6tte%2C_Friedhof_Segeroth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Grabmal_G%C3%B6tte%2C_Friedhof_Segeroth.jpg/960px-Grabmal_G%C3%B6tte%2C_Friedhof_Segeroth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "0dd8696d1236cb94221f4103e2f8073b7aa81075",
+      "mime": "image/jpeg",
+      "author": "Wiki05",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Alter Friedhof Segeroth in Essen; Grabmal Götte",
+      "categories": "CC-Zero|Alter Friedhof Segeroth|Self-published work|Graves in Essen",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にある通り、ゼーゲロート旧墓地（Alter Friedhof Segeroth）内にある墓碑と周囲の風景が撮影されており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -6292,7 +6729,7 @@
     "continent": "Europe",
     "lat": 52.5042,
     "lng": 13.4415,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_%2866%29.JPG/960px-Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_%2866%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Eastsidepark Teil F'hain 20120-4-1 ama fec (66).JPG",
     "profiled": false,
     "features": {
@@ -6319,6 +6756,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_(66).JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 18940202,
+      "title": "File:Eastsidepark Teil F'hain 20120-4-1 ama fec (66).JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_(66).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_%2866%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_%2866%29.JPG/960px-Eastsidepark_Teil_F%27hain_20120-4-1_ama_fec_%2866%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "883e15942186229849e61d155b60b813d50cf9c0",
+      "mime": "image/jpeg",
+      "author": "Angela M. Arnold (44 penguins)",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Berlin-Friedrichshain, Eastside-Park; Teil 2",
+      "categories": "Taken with Olympus SP-560UZ|Eastside-Park",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にイーストサイドパークと記載されており、公園の芝生や川沿いの遊歩道を中心とした景観が捉えられています。",
+      "verified": true
     }
   },
   {
@@ -6406,7 +6862,7 @@
     "continent": "Europe",
     "lat": 53.54535556,
     "lng": 9.93545833,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Altonaer_Balkon_%281%29.jpg/960px-Altonaer_Balkon_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Altonaer Balkon (1).jpg",
     "profiled": false,
     "features": {
@@ -6433,6 +6889,25 @@
       "checkedAt": "2026-11-09T13:28:55.452Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Altonaer_Balkon_(1).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 77573565,
+      "title": "File:Altonaer Balkon (1).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Altonaer_Balkon_(1).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Altonaer_Balkon_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Altonaer_Balkon_%281%29.jpg/960px-Altonaer_Balkon_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "ed15cf74531ea623b9a4b9b2b09c2a1cafd56093",
+      "mime": "image/jpeg",
+      "author": "Swenrauh",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Altonaer Balkon",
+      "categories": "Benches in Hamburg|Views of Hamburg|Altonaer Balkon|Self-published work|Port cranes in Hamburg|Elbe in Hamburg in 2019|Files with coordinates missing SDC location of creation (53° N, 9° E)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明と一致しており、アルトナ・バルコニーの展望広場およびそこから見渡すエルベ川や港の景観が主に写っています。",
+      "verified": true
     }
   },
   {
@@ -6594,7 +7069,7 @@
     "continent": "Europe",
     "lat": 52.5003,
     "lng": 13.3801,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Elise-Tilse-Park%2C_Blick_von_der_Hochebene_Richtung_Osten.jpg/960px-Elise-Tilse-Park%2C_Blick_von_der_Hochebene_Richtung_Osten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Elise-Tilse-Park, Blick von der Hochebene Richtung Osten.jpg",
     "profiled": false,
     "features": {
@@ -6621,6 +7096,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Elise-Tilse-Park,_Blick_von_der_Hochebene_Richtung_Osten.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 84442868,
+      "title": "File:Elise-Tilse-Park, Blick von der Hochebene Richtung Osten.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Elise-Tilse-Park,_Blick_von_der_Hochebene_Richtung_Osten.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Elise-Tilse-Park%2C_Blick_von_der_Hochebene_Richtung_Osten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Elise-Tilse-Park%2C_Blick_von_der_Hochebene_Richtung_Osten.jpg/960px-Elise-Tilse-Park%2C_Blick_von_der_Hochebene_Richtung_Osten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "5369a496a864d522729963dd06b035377fc606c5",
+      "mime": "image/jpeg",
+      "author": "Gabrielranarivelo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Blick von der Hochebene Richtung Osten",
+      "categories": "Elise-Tilse-Park|Self-published work|On OSM|Files with coordinates missing SDC location of creation|Taken with Huawei Y6 (2019)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名および説明にエリーゼ・ティルゼ公園の高台から東方向を望む景色であることが明記されており、公園の広場や緑地を含む景観が主たる被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -6670,7 +7164,7 @@
     "continent": "Europe",
     "lat": 50.1454,
     "lng": 8.50226,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Bad_Soden_Taunus_Alter_Kurpark.JPG/960px-Bad_Soden_Taunus_Alter_Kurpark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Bad Soden Taunus Alter Kurpark.JPG",
     "profiled": false,
     "features": {
@@ -6697,6 +7191,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bad_Soden_Taunus_Alter_Kurpark.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 19321290,
+      "title": "File:Bad Soden Taunus Alter Kurpark.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bad_Soden_Taunus_Alter_Kurpark.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Bad_Soden_Taunus_Alter_Kurpark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Bad_Soden_Taunus_Alter_Kurpark.JPG/960px-Bad_Soden_Taunus_Alter_Kurpark.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9e42a7456ef90b7fd9c1c9e34c7f0ee9be7c50f1",
+      "mime": "image/jpeg",
+      "author": "Daviidos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Der Alte Kurpark in Bad Soden Taunus",
+      "categories": "Taken with Canon PowerShot SX230 HS|Badehaus (Bad Soden)|Alter Kurpark (Bad Soden)|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されている通り、バート・ゾーデンにあるアルター・クールパルクの芝生や木々、建物の景観が写されており、公園そのものが主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -6784,7 +7297,7 @@
     "continent": "Europe",
     "lat": 53.58027778,
     "lng": 9.90361111,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/HH-Altona_Volkspark_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "HH-Altona Volkspark o.jpg",
     "profiled": false,
     "features": {
@@ -6811,6 +7324,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:HH-Altona_Volkspark_o.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 28869805,
+      "title": "File:HH-Altona Volkspark o.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:HH-Altona_Volkspark_o.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/HH-Altona_Volkspark_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/HH-Altona_Volkspark_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "824863c5211dc4fdd9907359061b96c6b683f6a6",
+      "mime": "image/jpeg",
+      "author": "Benjamin Rabe from Hamburg, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Volkspark",
+      "categories": "Taken with Olympus C-720UZ|Altonaer Volkspark|Flickr images reviewed by FlickreviewR|Flickr images missing SDC published in",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名と説明からアルトナ市民公園であることが確認でき、公園内の並木道や広場の風景が主体として写っています。",
+      "verified": true
     }
   },
   {
@@ -7085,7 +7617,7 @@
     "continent": "Europe",
     "lat": 50.0935,
     "lng": 8.64626,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/FFM-Niederrad_LILU_Mitte_Westblick.jpg/960px-FFM-Niederrad_LILU_Mitte_Westblick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "FFM-Niederrad LILU Mitte Westblick.jpg",
     "profiled": false,
     "features": {
@@ -7112,6 +7644,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:FFM-Niederrad_LILU_Mitte_Westblick.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 25884954,
+      "title": "File:FFM-Niederrad LILU Mitte Westblick.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:FFM-Niederrad_LILU_Mitte_Westblick.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/FFM-Niederrad_LILU_Mitte_Westblick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/FFM-Niederrad_LILU_Mitte_Westblick.jpg/960px-FFM-Niederrad_LILU_Mitte_Westblick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "41f251797a7e2a8249b6a8481c3284007515b87e",
+      "mime": "image/jpeg",
+      "author": "Frank Behnsen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Frankfurt am Main, Stadtteil Niederrad: Das Licht- und Luftbad Niederrad ist eine städtische Grünanlage auf einer schmalen Landzunge am südlichen Mainufer. Das Foto zeigt einen Blick nach Westen, etwa von der Mitte der 500 Meter langen Landzunge aus. Im Hintergrund das im Park eingerichtete Café LILU 1",
+      "categories": "GFDL|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Licht- und Luftbad Niederrad|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にリヒト・ウント・ルフトバート・ニーダーラートの緑地内から西側を望む風景であると明記されており、公園の景観が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -7123,7 +7674,7 @@
     "continent": "Europe",
     "lat": 51.0544,
     "lng": 13.73,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/DD-Herzogin-Garten-04.jpg/960px-DD-Herzogin-Garten-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "DD-Herzogin-Garten-04.jpg",
     "profiled": false,
     "features": {
@@ -7150,6 +7701,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:DD-Herzogin-Garten-04.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 75914602,
+      "title": "File:DD-Herzogin-Garten-04.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:DD-Herzogin-Garten-04.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/DD-Herzogin-Garten-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/DD-Herzogin-Garten-04.jpg/960px-DD-Herzogin-Garten-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "62129451fc242a9919a92a19b87f27cf1dae2e7d",
+      "mime": "image/jpeg",
+      "author": "SchiDD",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Ehemalige Orangerie, Wohn- und Parkanlage „An der Herzogin Garten“ in Dresden, Ostraallee (kurz vor der Fertigstellung)",
+      "categories": "Der Herzogin Garten (Dresden)|Self-published work|Dresden photographs taken on 2019-01-16|Photos by SchiDD/2019",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にあるドレスデンの「ヘルツォーギン・ガルテン（An der Herzogin Garten）」の庭園および旧オランジェリーの景観が主たる被写体として捉えられています。",
+      "verified": true
     }
   },
   {
@@ -7161,7 +7731,7 @@
     "continent": "Europe",
     "lat": 51.352847222,
     "lng": 7.467697222,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Stadtgarten_Hagen.jpg/960px-Stadtgarten_Hagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Stadtgarten Hagen.jpg",
     "profiled": false,
     "features": {
@@ -7188,6 +7758,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Stadtgarten_Hagen.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 148138066,
+      "title": "File:Stadtgarten Hagen.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Stadtgarten_Hagen.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Stadtgarten_Hagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Stadtgarten_Hagen.jpg/960px-Stadtgarten_Hagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "576133261cd50486cc9092c2fcd8006f7e83682a",
+      "mime": "image/jpeg",
+      "author": "Stnovaff",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Stadtgarten Hagen (geographical object)",
+      "categories": "Gardens in Germany|Self-published work|Uploaded with Mobile/Android|Germany photographs taken on 2024-05-07|Files with coordinates missing SDC location of creation (51° N, 7° E)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明およびファイル名が指定の場所と一致しており、公園内の池や噴水を中心とした景観が写されているためです。",
+      "verified": true
     }
   },
   {
@@ -7388,7 +7977,7 @@
     "continent": "Europe",
     "lat": 47.7213,
     "lng": 10.3288,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Engelhaldepark_Kempten.jpg/960px-Engelhaldepark_Kempten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Engelhaldepark Kempten.jpg",
     "profiled": false,
     "features": {
@@ -7415,6 +8004,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Engelhaldepark_Kempten.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 20280871,
+      "title": "File:Engelhaldepark Kempten.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Engelhaldepark_Kempten.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Engelhaldepark_Kempten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Engelhaldepark_Kempten.jpg/960px-Engelhaldepark_Kempten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "9fe3c2dcc3facc352b096f99cdd8d3fbb0cc61ff",
+      "mime": "image/jpeg",
+      "author": "Alofok",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Engelhaldepark in Kempten",
+      "categories": "Taken with Sony DSC-H55|Engelhaldepark|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文の通り、ケンプテンにあるエンゲルハルデ公園（Engelhaldepark）の池や豊かな緑地景観が写されています。",
+      "verified": true
     }
   },
   {
@@ -7540,7 +8148,7 @@
     "continent": "Europe",
     "lat": 50.1779,
     "lng": 8.66018,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pano_bonaflug.jpg/960px-Pano_bonaflug.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Pano bonaflug.jpg",
     "profiled": false,
     "features": {
@@ -7567,6 +8175,25 @@
       "checkedAt": "2026-11-09T13:28:55.453Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pano_bonaflug.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27897070,
+      "title": "File:Pano bonaflug.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pano_bonaflug.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pano_bonaflug.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pano_bonaflug.jpg/960px-Pano_bonaflug.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "dc6bf1dcba03ac79ed0531599aff0b91448214ad",
+      "mime": "image/jpeg",
+      "author": "Urbanquest",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Alter Flugplatz Bonames (Grüngürtel Frankfurt am Main)",
+      "categories": "GFDL|License migration redundant|Alter Flugplatz (Frankfurter Grüngürtel)|Self-published work|Panoramics in Hesse",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にフランクフルトの旧飛行場（Alter Flugplatz Bonames）であることが明記されており、元滑走路や周囲に広がる緑地の景観が写真の主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -7918,7 +8545,7 @@
     "continent": "Europe",
     "lat": 51.5178,
     "lng": -0.086595,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg/960px-Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Finsbury Circus Gardens City of London 2025 Image Credit Realm.jpg",
     "profiled": false,
     "features": {
@@ -7945,6 +8572,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 167958784,
+      "title": "File:Finsbury Circus Gardens City of London 2025 Image Credit Realm.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg/960px-Finsbury_Circus_Gardens_City_of_London_2025_Image_Credit_Realm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "e8d996e4ed6b95bd8b3f1f37dd06faaa25d8dcc1",
+      "mime": "image/jpeg",
+      "author": "User07963",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Finsbury Circus Gardens. Design by Realm for City of London 2025. Image Credit Realm",
+      "categories": "Finsbury Circus|Self-published work|Items with VRTS permission confirmed",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：フィンズベリー・サーカスの庭園とそれを取り囲む楕円形の街並みが上空から捉えられており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -7956,7 +8602,7 @@
     "continent": "North America",
     "lat": 33.986437,
     "lng": -118.475382,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Venice_Beach_Sunset.jpg/960px-Venice_Beach_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Venice Beach Sunset.jpg",
     "profiled": false,
     "features": {
@@ -7983,6 +8629,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Venice_Beach_Sunset.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 54922950,
+      "title": "File:Venice Beach Sunset.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Venice_Beach_Sunset.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Venice_Beach_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Venice_Beach_Sunset.jpg/960px-Venice_Beach_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "62d2a968d3974415657d90cba777f36dc5a658f1",
+      "mime": "image/jpeg",
+      "author": "Matt RF Webb",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Sunset at Venice Beach, Los Angeles",
+      "categories": "Taken with HTC One X|2016 in Los Angeles|Venice Fishing Pier|September 2016 in California|Self-published work|Many people|Files with coordinates missing SDC location of creation|United States photographs taken on 2016-09-04|Photographic silhouettes of people in the United States|Photographic silhouettes of people against sunsets|Sunsets of Venice, Los Angeles|Piers at sunset in the United States",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文のとおりベニス・ビーチの夕景が捉えられており、海岸や桟橋の風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -8070,7 +8735,7 @@
     "continent": "South America",
     "lat": 4.6021,
     "lng": -74.0726,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/BOG_PArque_Santander.JPG/960px-BOG_PArque_Santander.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "BOG PArque Santander.JPG",
     "profiled": false,
     "features": {
@@ -8097,6 +8762,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:BOG_PArque_Santander.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 11127251,
+      "title": "File:BOG PArque Santander.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:BOG_PArque_Santander.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/BOG_PArque_Santander.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/BOG_PArque_Santander.JPG/960px-BOG_PArque_Santander.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3269d5d0a64d8a631fa94554adc3edd9ef7f70ca",
+      "mime": "image/jpeg",
+      "author": "Felipe Restrepo Acosta",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Bogotá, estatua de Francisco de Paula Santander en el parque homónimo, en la carrera Séptima con calle Dieciséis.",
+      "categories": "GFDL|License migration redundant|Self-published work|Statues of Francisco de Paula Santander in Bogotá|Fountains in Bogotá|Parque Santander (Bogotá)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ボゴタのサンタンデール公園にある像や噴水、広場を含めた現地の景観が写されています。",
+      "verified": true
     }
   },
   {
@@ -8526,7 +9210,7 @@
     "continent": "Europe",
     "lat": 51.9569,
     "lng": 7.63056,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/MuensterPromenadeEingangstorEngelenschanze.jpg/960px-MuensterPromenadeEingangstorEngelenschanze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "MuensterPromenadeEingangstorEngelenschanze.jpg",
     "profiled": false,
     "features": {
@@ -8553,6 +9237,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MuensterPromenadeEingangstorEngelenschanze.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 764976,
+      "title": "File:MuensterPromenadeEingangstorEngelenschanze.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:MuensterPromenadeEingangstorEngelenschanze.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/MuensterPromenadeEingangstorEngelenschanze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/MuensterPromenadeEingangstorEngelenschanze.jpg/960px-MuensterPromenadeEingangstorEngelenschanze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "b17e63e6939f20937691cee794b096215816d821",
+      "mime": "image/jpeg",
+      "author": "Stefan Brueggemann",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Eingangstor zur Engelenschanze an der Promenade in Münster, Westfalen, Deutschland",
+      "categories": "Engelenschanze|GFDL|Taken with Sony DSC-P100|CC-BY-SA-2.5,2.0,1.0|License migration redundant|Self-published work|2006 in Münster (Westfalen)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文のとおり、ミュンスターの遊歩道側から見たエンゲレンシャンツェ（Engelenschanze）の入口門と公園内の景観が写っています。",
+      "verified": true
     }
   },
   {
@@ -8753,7 +9456,7 @@
     "continent": "Europe",
     "lat": 55.65764036,
     "lng": 12.63921261,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Amager_Strandpark_-_kite_surfers.jpg/960px-Amager_Strandpark_-_kite_surfers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Amager Strandpark - kite surfers.jpg",
     "profiled": false,
     "features": {
@@ -8780,6 +9483,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Amager_Strandpark_-_kite_surfers.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 10779678,
+      "title": "File:Amager Strandpark - kite surfers.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amager_Strandpark_-_kite_surfers.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Amager_Strandpark_-_kite_surfers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Amager_Strandpark_-_kite_surfers.jpg/960px-Amager_Strandpark_-_kite_surfers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "fb744d8bd3f25956b9a0d77e18a2b1fbff77cdfa",
+      "mime": "image/jpeg",
+      "author": "Stig Nygaard's",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Kite surfers in Amager Beach Park in Copenhagen, Denmark",
+      "categories": "Kitesurfing in Denmark|Taken with Canon PowerShot A650 IS|Amager Strandpark|Flickr images reviewed by FlickreviewR|Flickr images missing SDC creator|Flickr images missing SDC source of file|Denmark photographs taken on 2009-05-30|Files with coordinates missing SDC location of creation|Film locations of Headhunter (2009)|Files from Stig Nygaard Flickr stream|Flickr images missing SDC Flickr photo ID|Flickr images missing SDC published in",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明と一致するアマー・ストランパーク（Amager Strandpark）の砂浜や海の景観が広く写されており、場所そのものの風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -8829,7 +9551,7 @@
     "continent": "Europe",
     "lat": 48.0007,
     "lng": 7.85696,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Alter_Friedhof_%28Freiburg%29_1.jpg/960px-Alter_Friedhof_%28Freiburg%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Alter Friedhof (Freiburg) 1.jpg",
     "profiled": false,
     "features": {
@@ -8856,6 +9578,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Alter_Friedhof_(Freiburg)_1.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 6866666,
+      "title": "File:Alter Friedhof (Freiburg) 1.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alter_Friedhof_(Freiburg)_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Alter_Friedhof_%28Freiburg%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Alter_Friedhof_%28Freiburg%29_1.jpg/960px-Alter_Friedhof_%28Freiburg%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "5e497e89e252d84ae554be36bce332b5aab801b8",
+      "mime": "image/jpeg",
+      "author": "user:Joergens.mi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Der Alte Friedhof in Freiburg Herdern",
+      "categories": "Taken with Pentax K20D|Alter Friedhof (Freiburg im Breisgau)|Joergens.mi|Jömi(200905)|Files with coordinates missing SDC location of creation (48° N, 7° E)|JöMi Alter Friedhof",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：フライブルクの旧墓地（Alter Friedhof）にある小道と歴史的な墓石の並びを捉えており、指定された場所の景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -8981,7 +9722,7 @@
     "continent": "Europe",
     "lat": 35.8975,
     "lng": 14.51777778,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg/960px-Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Valletta Lower Barrakka gardens Malta 2014 2.jpg",
     "profiled": false,
     "features": {
@@ -9008,6 +9749,25 @@
       "checkedAt": "2026-11-09T13:28:55.454Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 38398056,
+      "title": "File:Valletta Lower Barrakka gardens Malta 2014 2.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg/960px-Valletta_Lower_Barrakka_gardens_Malta_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "85b55c3dd66223cfe1f01b2c718fb3ca86193f85",
+      "mime": "image/jpeg",
+      "author": "Karelj",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Monument to Alexander Ball in Lower Barrakka Gardens in Valletta , Malta",
+      "categories": "GFDL|Taken with Canon EOS 60D|CC-BY-SA-3.0,2.5,2.0,1.0|Lower Barrakka Gardens|Monument to Alexander Ball (Valletta)|License migration redundant|Self-published work|2014 in Valletta|Files with coordinates missing SDC location of creation|Fountains in Valletta",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文と一致しており、ロウアー・バラッカ・ガーデンズ内にあるアレクサンダー・ボールの記念碑と噴水を中心とした庭園の景観が写っています。",
+      "verified": true
     }
   },
   {
@@ -9246,7 +10006,7 @@
     "continent": "Europe",
     "lat": 48.144064294,
     "lng": 11.581718516,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Dichtergarten_Muenchen-1.jpg/960px-Dichtergarten_Muenchen-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Dichtergarten Muenchen-1.jpg",
     "profiled": false,
     "features": {
@@ -9273,6 +10033,25 @@
       "checkedAt": "2026-11-09T13:28:55.455Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dichtergarten_Muenchen-1.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 12033260,
+      "title": "File:Dichtergarten Muenchen-1.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dichtergarten_Muenchen-1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Dichtergarten_Muenchen-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Dichtergarten_Muenchen-1.jpg/960px-Dichtergarten_Muenchen-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "0cd22eb89a50aedaa577305c397c3368b4dfe67b",
+      "mime": "image/jpeg",
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Dichtergarten, München",
+      "categories": "GFDL|License migration redundant|Self-published work|Photographs by User:Rufus46|Trees in Munich|Finanzgarten (München)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にディヒターガルテン（Dichtergarten）と記載されており、園内の木々や芝生といった公園の景観が主な被写体として捉えられています。",
+      "verified": true
     }
   },
   {
@@ -9284,7 +10063,7 @@
     "continent": "Europe",
     "lat": 51.9184,
     "lng": 8.38062,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Mohns-Park-Freilichtbuehne.jpg/960px-Mohns-Park-Freilichtbuehne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Mohns-Park-Freilichtbuehne.jpg",
     "profiled": false,
     "features": {
@@ -9311,6 +10090,25 @@
       "checkedAt": "2026-11-09T13:28:55.455Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mohns-Park-Freilichtbuehne.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 20603157,
+      "title": "File:Mohns-Park-Freilichtbuehne.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mohns-Park-Freilichtbuehne.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mohns-Park-Freilichtbuehne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Mohns-Park-Freilichtbuehne.jpg/960px-Mohns-Park-Freilichtbuehne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "999cdcf268ccda914bada48619984a3d9229ae0b",
+      "mime": "image/jpeg",
+      "author": "Hewa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Freilichtbühne im Mohns Park, Gütersloh",
+      "categories": "Mohns Park|Culture of Gütersloh|Self-published work|Images with extracted images|Open air theaters in North Rhine-Westphalia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にモーンズ・パーク（Mohns Park）の野外劇場と記載されており、公園内の景観が主な被写体として写されているためです。",
+      "verified": true
     }
   },
   {
@@ -9436,7 +10234,7 @@
     "continent": "Europe",
     "lat": 51.2966,
     "lng": 12.405,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leipzig_Loessnig_Silbersee_Plattenbau.jpg/960px-Leipzig_Loessnig_Silbersee_Plattenbau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Leipzig Loessnig Silbersee Plattenbau.jpg",
     "profiled": false,
     "features": {
@@ -9463,6 +10261,25 @@
       "checkedAt": "2026-11-09T13:28:55.455Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Leipzig_Loessnig_Silbersee_Plattenbau.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 16077105,
+      "title": "File:Leipzig Loessnig Silbersee Plattenbau.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leipzig_Loessnig_Silbersee_Plattenbau.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Leipzig_Loessnig_Silbersee_Plattenbau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Leipzig_Loessnig_Silbersee_Plattenbau.jpg/960px-Leipzig_Loessnig_Silbersee_Plattenbau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "3f31a7e4b0590be9ba690e086bd39a48342c842d",
+      "mime": "image/jpeg",
+      "author": "Joeb07",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Der Stauteich im Erholungspark Lößnig-Dölitz , dahinter die Plattenbau-Silhouette des Stadtteils Lößnig im Süden der Stadt",
+      "categories": "GFDL|License migration redundant|Plattenbau in Leipzig|Self-published work|Files by User:Joeb07|Files with coordinates missing SDC location of creation|Water reflections of buildings in Saxony|Leipzig photographs taken on 2011-08-05|Stauteich Lößnig|Water reflections of trees in Leipzig",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に「Erholungspark Lößnig-Dölitz」の池と明記されており、公園内の池や周囲の自然が主な被写体として捉えられているためです。",
+      "verified": true
     }
   },
   {
@@ -9587,7 +10404,7 @@
     "continent": "Europe",
     "lat": 50.8672,
     "lng": 12.0658,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Gera_Dahliengarten.JPG/960px-Gera_Dahliengarten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Gera Dahliengarten.JPG",
     "profiled": false,
     "features": {
@@ -9614,6 +10431,25 @@
       "checkedAt": "2026-11-09T13:28:55.455Z",
       "type": "Q22698",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gera_Dahliengarten.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 3105361,
+      "title": "File:Gera Dahliengarten.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gera_Dahliengarten.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Gera_Dahliengarten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Gera_Dahliengarten.JPG/960px-Gera_Dahliengarten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "0e42084244a705c1f6dd59a8465c1ce41df6cc0c",
+      "mime": "image/jpeg",
+      "author": "Steffen Löwe",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Dahliengarten, Gera",
+      "categories": "GFDL|Dahliengarten (Gera)|Taken with Fujifilm FinePix A600|Bundesgartenschau 2007|License migration redundant|Self-published work|2007 in Gera",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ゲーラのダリア園（Dahliengarten）に咲く花壇や噴水のある庭園の景観が写っており、指定された場所の風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -11751,7 +12587,7 @@
     "continent": "North America",
     "lat": 59.841669444,
     "lng": -136.660661111,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/O%27Connor_Delta_in_Tatshenshini_River.JPG/960px-O%27Connor_Delta_in_Tatshenshini_River.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "O'Connor Delta in Tatshenshini River.JPG",
     "profiled": false,
     "features": {
@@ -11778,6 +12614,25 @@
       "checkedAt": "2026-11-09T13:28:58.604Z",
       "type": "Q4022",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:O%27Connor_Delta_in_Tatshenshini_River.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 3653839,
+      "title": "File:O'Connor Delta in Tatshenshini River.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:O%27Connor_Delta_in_Tatshenshini_River.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/O%27Connor_Delta_in_Tatshenshini_River.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/O%27Connor_Delta_in_Tatshenshini_River.JPG/960px-O%27Connor_Delta_in_Tatshenshini_River.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "7dab2bae2a8aa712eb320533d379e9bfb62c3acc",
+      "mime": "image/jpeg",
+      "author": "Random89",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Landscape photograph of the O'Connor Creek delta in the Tatshenshini River in north-western British Columbia",
+      "categories": "GFDL|Tatshenshini-Alsek Park|Tatshenshini River|License migration redundant|Self-published work|July 2006 in British Columbia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にタッシェンシニ川の三角州の風景写真であると記されており、写真も川や山並みなどの自然景観を主役に捉えています。",
+      "verified": true
     }
   },
   {
@@ -11827,7 +12682,7 @@
     "continent": "North America",
     "lat": 45.0947079,
     "lng": -87.5912178,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/MenomineeRiverNiagaraWisconsinUS141.jpg/960px-MenomineeRiverNiagaraWisconsinUS141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "MenomineeRiverNiagaraWisconsinUS141.jpg",
     "profiled": false,
     "features": {
@@ -11854,6 +12709,25 @@
       "checkedAt": "2026-11-09T13:28:58.604Z",
       "type": "Q4022",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MenomineeRiverNiagaraWisconsinUS141.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 8819811,
+      "title": "File:MenomineeRiverNiagaraWisconsinUS141.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:MenomineeRiverNiagaraWisconsinUS141.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/MenomineeRiverNiagaraWisconsinUS141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/MenomineeRiverNiagaraWisconsinUS141.jpg/960px-MenomineeRiverNiagaraWisconsinUS141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "c7e9154568cbd1d6bf8f644c6e58ddb31a41cb7b",
+      "mime": "image/jpeg",
+      "author": "Royalbroil",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Looking westerly at the w:Menominee River from a park in w:Niagara, Wisconsin along w:U.S. Route 141 . The other side of the river is in the state of Michigan as the river is the state line. This file was uploaded with Commonist .",
+      "categories": "Taken with Canon EOS 1000D|Menominee River|Niagara, Wisconsin|Self-published work|Uploaded with Commonist|Files by User:Royalbroil from en.wikipedia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ウィスコンシン州ナイアガラ付近から撮影されたメノミニー川と、その両岸の自然景観が写されています。",
+      "verified": true
     }
   },
   {
@@ -12244,7 +13118,7 @@
     "continent": "Europe",
     "lat": 49.0425,
     "lng": 8.846666666,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Schleuse_Kraichbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Schleuse Kraichbach.jpg",
     "profiled": false,
     "features": {
@@ -12271,6 +13145,25 @@
       "checkedAt": "2026-11-09T13:28:58.605Z",
       "type": "Q4022",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Schleuse_Kraichbach.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 2232184,
+      "title": "File:Schleuse Kraichbach.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Schleuse_Kraichbach.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Schleuse_Kraichbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Schleuse_Kraichbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "9b0f09bf21ee00df9defca40b1d11139b6d4602a",
+      "mime": "image/jpeg",
+      "author": "Michael Linnenbach",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Die zwischen Hockenheim und Ketsch über den Kraichbach führende Kraichbachbrücke mit ihren drei Schleusentoren wurde bereits im Jahr 1843 durch den damaligen Großherzog Leopold von Baden errichtet. Das einst für die Wiesenwässerung genutzte Bauwerk ist seit den 1960er Jahren funktionslos. Foto: Michael Linnenbach 11:31, 23. Mär 2006 (CET) (Aufnahme: 2004)",
+      "categories": "GFDL|Kraichbach|License migration completed|Kraichbachschleuse (Ketsch)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にある通り、クライヒバッハ川（Kraichbach）に架かる水門付きの橋と水辺の風景が写っており、指定された場所の景観と合致しています。",
+      "verified": true
     }
   },
   {
@@ -12434,7 +13327,7 @@
     "continent": "North America",
     "lat": 49.7,
     "lng": -125.55,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/ButtleLake.jpg/960px-ButtleLake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "ButtleLake.jpg",
     "profiled": false,
     "features": {
@@ -12461,6 +13354,25 @@
       "checkedAt": "2026-11-09T13:29:01.493Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ButtleLake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 2942559,
+      "title": "File:ButtleLake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ButtleLake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/ButtleLake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/ButtleLake.jpg/960px-ButtleLake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "b8462fc969e1d173018b457a23fa39b9dc422c5a",
+      "mime": "image/jpeg",
+      "author": "Logantech",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "A shot of Buttle Lake from near Ralph River",
+      "categories": "Taken with Canon EOS 400D|Buttle Lake|Flickr images reviewed by File Upload Bot (Magnus Manske)|Lake beaches in British Columbia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にラルフ川付近から撮影したバートル湖とあり、写真も湖と周囲の山々が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -12842,7 +13754,7 @@
     "continent": "North America",
     "lat": 51.416667,
     "lng": -121.209722,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/After_noon_Green_lake_%281596348518%29.jpg/960px-After_noon_Green_lake_%281596348518%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "After noon Green lake (1596348518).jpg",
     "profiled": false,
     "features": {
@@ -12869,6 +13781,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:After_noon_Green_lake_(1596348518).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 143823630,
+      "title": "File:After noon Green lake (1596348518).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:After_noon_Green_lake_(1596348518).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/After_noon_Green_lake_%281596348518%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/After_noon_Green_lake_%281596348518%29.jpg/960px-After_noon_Green_lake_%281596348518%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "cd3f0b6f670d55e8b2410999a3c4a5bb9741de00",
+      "mime": "image/jpeg",
+      "author": "pentaboxes",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "After noon Green lake",
+      "categories": "Flickr images reviewed by FlickreviewR 2",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に「Green lake」と記載されており、写真も湖と周囲の木々の景観を主に対象としています。",
+      "verified": true
     }
   },
   {
@@ -12917,7 +13848,7 @@
     "continent": "North America",
     "lat": 54.55,
     "lng": -124.583333333,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Stuart_Lake%2C_British_Columbia_-_01.jpg/960px-Stuart_Lake%2C_British_Columbia_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Stuart Lake, British Columbia - 01.jpg",
     "profiled": false,
     "features": {
@@ -12944,6 +13875,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Stuart_Lake,_British_Columbia_-_01.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27571845,
+      "title": "File:Stuart Lake, British Columbia - 01.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Stuart_Lake,_British_Columbia_-_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Stuart_Lake%2C_British_Columbia_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Stuart_Lake%2C_British_Columbia_-_01.jpg/960px-Stuart_Lake%2C_British_Columbia_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "d977d5ddfebf51634018f59c7d045a9d172cca96",
+      "mime": "image/jpeg",
+      "author": "https://www.flickr.com/photos/15193764@N07/",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Stuart Lake, British Columbia, Canada",
+      "categories": "Taken with Fujifilm FinePix Z10fd|Stuart Lake|Files uploaded by Anna Frodesiak|Flickr images reviewed by FlickreviewR 2",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にカナダのスチュアート湖であることが明記されており、湖面や空を中心とした現地の自然景観が写されています。",
+      "verified": true
     }
   },
   {
@@ -13105,7 +14055,7 @@
     "continent": "North America",
     "lat": 49.0667,
     "lng": -125.567,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Kennedy_Lake_along_Highway_4.jpg/960px-Kennedy_Lake_along_Highway_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Kennedy Lake along Highway 4.jpg",
     "profiled": false,
     "features": {
@@ -13132,6 +14082,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kennedy_Lake_along_Highway_4.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 2981298,
+      "title": "File:Kennedy Lake along Highway 4.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kennedy_Lake_along_Highway_4.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Kennedy_Lake_along_Highway_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Kennedy_Lake_along_Highway_4.jpg/960px-Kennedy_Lake_along_Highway_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "723bf69118fa84794654236578f0b88fd14f29c5",
+      "mime": "image/jpeg",
+      "author": "Wing-Chi Poon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Kennedy Lake along Highway 4 that leads into the Pacific Rim National Park. The white clouds roughly follow the contours of the mountain.",
+      "categories": "Mountains of British Columbia|Taken with Canon EOS 300D|Clayoquot Sound|Kennedy Lake|Self-published work|Photos by Wingchi Poon|Files with coordinates missing SDC location of creation|June 2005 in British Columbia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にハイウェイ4号線沿いのケネディ湖と記載されており、写真にも湖と周囲の山々からなる自然景観が捉えられています。",
+      "verified": true
     }
   },
   {
@@ -13180,7 +14149,7 @@
     "continent": "North America",
     "lat": 59.925,
     "lng": -134.938888888,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Bennett_Lake.jpg/960px-Bennett_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Bennett Lake.jpg",
     "profiled": false,
     "features": {
@@ -13207,6 +14176,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bennett_Lake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 78703757,
+      "title": "File:Bennett Lake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bennett_Lake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Bennett_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Bennett_Lake.jpg/960px-Bennett_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "381e5ba827be5f715d4fe2de198cf4f9b727afcc",
+      "mime": "image/jpeg",
+      "author": "Jakub Fryš",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Bennett Lake from Yukon, Canada",
+      "categories": "Mountains of Yukon|Lakes of Yukon|Bennett Lake (Canada)|Self-published work|Landscapes of Yukon|Beaches of Yukon|Files with coordinates missing SDC location of creation|Inland dunes of Canada|Featured pictures of Yukon|Canada photographs taken on 2019-04-27|Mass movements (geology) in Yukon|Dunes of Yukon|Blue sky in Yukon|April 2019 in Yukon|Featured pictures of beaches",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にカナダのユーコン準州からのベネット湖と明記されており、湖と周囲の山々や砂丘の自然景観が主体として捉えられています。",
+      "verified": true
     }
   },
   {
@@ -13255,7 +14243,7 @@
     "continent": "North America",
     "lat": 50.173611111,
     "lng": -119.33,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kalamalka_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Kalamalka Lake.jpg",
     "profiled": false,
     "features": {
@@ -13282,6 +14270,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kalamalka_Lake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 2895736,
+      "title": "File:Kalamalka Lake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kalamalka_Lake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kalamalka_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kalamalka_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "05ec42a9b0a039f20d5eaa2ed28b555db20fa1b1",
+      "mime": "image/jpeg",
+      "author": "LN? from Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Kalamalka Lake in British Columbia- not a great shot, but the colour is amazing",
+      "categories": "Kalamalka Lake|Coldstream, British Columbia|Flickr images reviewed by FlickreviewR",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明のとおり、独特な色合いを持つカラマルカ湖と周囲の山並みの景観が主な被写体として写っています。",
+      "verified": true
     }
   },
   {
@@ -13367,7 +14374,7 @@
     "continent": "North America",
     "lat": 49.2604,
     "lng": -122.858,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Como_Lake_in_Coquitlam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Como Lake in Coquitlam.jpg",
     "profiled": false,
     "features": {
@@ -13394,6 +14401,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Como_Lake_in_Coquitlam.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 116889103,
+      "title": "File:Como Lake in Coquitlam.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Como_Lake_in_Coquitlam.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Como_Lake_in_Coquitlam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Como_Lake_in_Coquitlam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "c953763403a568818c912f68a8925363ce513a33",
+      "mime": "image/jpeg",
+      "author": "P Guildfordsry",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Coquitlam",
+      "categories": "Parks in Coquitlam|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイル名に「Como Lake in Coquitlam」と記載されており、コモ湖の桟橋と周囲の水辺の風景が主役として写っています。",
+      "verified": true
     }
   },
   {
@@ -13480,7 +14506,7 @@
     "continent": "North America",
     "lat": 51.053,
     "lng": -116.141,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Floe_lake_july_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Floe lake july 2004.jpg",
     "profiled": false,
     "features": {
@@ -13507,6 +14533,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Floe_lake_july_2004.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 6646093,
+      "title": "File:Floe lake july 2004.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Floe_lake_july_2004.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Floe_lake_july_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Floe_lake_july_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "72310e9106dd36b7a032a8143a84feda85bd6acf",
+      "mime": "image/jpeg",
+      "author": "bryan birn",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "floe lake",
+      "categories": "Floe Lake|Self-published work|Lake beaches in British Columbia",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：フロー湖（Floe Lake）と背後の山々の自然景観が写っており、ファイル名や説明とも一致しています。",
+      "verified": true
     }
   },
   {
@@ -13743,7 +14788,7 @@
     "continent": "North America",
     "lat": 49.2917,
     "lng": -124.625,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Cameron_Lake_%28Vancouver_Island%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Cameron Lake (Vancouver Island).jpg",
     "profiled": false,
     "features": {
@@ -13770,6 +14815,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cameron_Lake_(Vancouver_Island).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 11567794,
+      "title": "File:Cameron Lake (Vancouver Island).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cameron_Lake_(Vancouver_Island).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Cameron_Lake_%28Vancouver_Island%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Cameron_Lake_%28Vancouver_Island%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "0be5645f53131587e73a28621c8d0632adedd1f2",
+      "mime": "image/jpeg",
+      "author": "Owen Lloyd",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Sunset on Cameron Lake.",
+      "categories": "GFDL|Cameron Lake (British Columbia)|License migration redundant|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：キャメロン湖の水面と周囲の山並みの景観が写されており、説明文の場所とも一致しています。",
+      "verified": true
     }
   },
   {
@@ -13781,7 +14845,7 @@
     "continent": "North America",
     "lat": 49.611944444,
     "lng": -125.175555555,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Comox_Lake_%286942517550%29.jpg/960px-Comox_Lake_%286942517550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Comox Lake (6942517550).jpg",
     "profiled": false,
     "features": {
@@ -13808,6 +14872,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Comox_Lake_(6942517550).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 24200350,
+      "title": "File:Comox Lake (6942517550).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Comox_Lake_(6942517550).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Comox_Lake_%286942517550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Comox_Lake_%286942517550%29.jpg/960px-Comox_Lake_%286942517550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "b84756a3151b456efa3262158eff9f3dc3b818ac",
+      "mime": "image/jpeg",
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Comox Lake near Courtenay, BC, Canada",
+      "categories": "Comox Lake|Comox Valley Regional District|Flickr images reviewed by File Upload Bot (Magnus Manske)|Photographs by David Stanley|Files with coordinates missing SDC location of creation|Canada photographs taken on 2012-04-17",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に示されたコモックス湖（Comox Lake）の湖面と周囲の山々が、写真全体の主な被写体として写し出されています。",
+      "verified": true
     }
   },
   {
@@ -13893,7 +14976,7 @@
     "continent": "North America",
     "lat": 49.3333,
     "lng": -124.7,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Horne_Lake.JPG/960px-Horne_Lake.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Horne Lake.JPG",
     "profiled": false,
     "features": {
@@ -13920,6 +15003,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Horne_Lake.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 21864421,
+      "title": "File:Horne Lake.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Horne_Lake.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Horne_Lake.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Horne_Lake.JPG/960px-Horne_Lake.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "c7d1bbf6dff8baaed4a8cb7ddd7437cf8d4a554e",
+      "mime": "image/jpeg",
+      "author": "Wasrts",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Horne Lake, Vancouver Island, British Columbia, Canada, viewed from Mt. Mark looking southeast",
+      "categories": "Taken with Fujifilm FinePix S1700|Horne Lake Caves Provincial Park|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：マーク山から撮影されたホーン湖とその周囲の山並みが写っており、指定された場所の自然景観が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -14229,7 +15331,7 @@
     "continent": "North America",
     "lat": 49.8167,
     "lng": -123.167,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Evans_Lake.jpg/960px-Evans_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Evans Lake.jpg",
     "profiled": false,
     "features": {
@@ -14256,6 +15358,25 @@
       "checkedAt": "2026-11-09T13:29:01.494Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Evans_Lake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 120231326,
+      "title": "File:Evans Lake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Evans_Lake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Evans_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Evans_Lake.jpg/960px-Evans_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "8a3f9f2dd1c150f4baa786efb784d0fb3f7cbf0f",
+      "mime": "image/jpeg",
+      "author": "Ruth Hartnup",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Evans Lake, BC",
+      "categories": "Lakes of British Columbia|Canada photographs taken on 2017-06-25|Flickr images reviewed by FlickreviewR 2|Photographs by Ruth Hartnup",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にEvans Lakeと記載されており、森林に囲まれた湖の自然景観が写真の主たる被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -14267,7 +15388,7 @@
     "continent": "North America",
     "lat": 51.444,
     "lng": -116.531,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Emerald_Lake-Yoho.jpg/960px-Emerald_Lake-Yoho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Emerald Lake-Yoho.jpg",
     "profiled": false,
     "features": {
@@ -14294,6 +15415,25 @@
       "checkedAt": "2026-11-09T13:29:01.495Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Emerald_Lake-Yoho.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 6514872,
+      "title": "File:Emerald Lake-Yoho.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Emerald_Lake-Yoho.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Emerald_Lake-Yoho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Emerald_Lake-Yoho.jpg/960px-Emerald_Lake-Yoho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "d51de51aad80141acceb3754dcbfb112730adc85",
+      "mime": "image/jpeg",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Emerald Lake in Yoho National Park, British Columbia, Canada.",
+      "categories": "Emerald Lake (British Columbia)|Pictures by User:Kadellar",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されている通り、ヨーホー国立公園のエメラルド湖と背後の山並みの風景が主な被写体として写されています。",
+      "verified": true
     }
   },
   {
@@ -14752,7 +15892,7 @@
     "continent": "Europe",
     "lat": 53.25885,
     "lng": -4.540288888,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Llyn-Cerrig-Bach-by-Eric-Jones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Llyn-Cerrig-Bach-by-Eric-Jones.jpg",
     "profiled": false,
     "features": {
@@ -14779,6 +15919,25 @@
       "checkedAt": "2026-11-09T13:29:01.495Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Llyn-Cerrig-Bach-by-Eric-Jones.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 6309639,
+      "title": "File:Llyn-Cerrig-Bach-by-Eric-Jones.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Llyn-Cerrig-Bach-by-Eric-Jones.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Llyn-Cerrig-Bach-by-Eric-Jones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Llyn-Cerrig-Bach-by-Eric-Jones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "f10df484b93768be1f53248a7a75df28b536f7a5",
+      "mime": "image/jpeg",
+      "author": "Eric Jones",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Llyn Cerrig-bach - the lake with the hoard of gold",
+      "categories": "Archaeological sites in Anglesey|Llyn Cerrig Bach|Images from Geograph Britain and Ireland|Information field template with formatting|Images by Eric Jones|United Kingdom photographs taken on 2008-04-14|Views of lakes from the lakeshore",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されているLlyn Cerrig Bach（湖）の水辺や周囲の自然景観が写されており、指定された場所そのものが主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -14827,7 +15986,7 @@
     "continent": "North America",
     "lat": 49.141944444,
     "lng": -121.43,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Greendrop_Lake.jpg/960px-Greendrop_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Greendrop Lake.jpg",
     "profiled": false,
     "features": {
@@ -14854,6 +16013,25 @@
       "checkedAt": "2026-11-09T13:29:01.495Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Greendrop_Lake.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 61752080,
+      "title": "File:Greendrop Lake.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Greendrop_Lake.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Greendrop_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Greendrop_Lake.jpg/960px-Greendrop_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "5a013a5a9190e8deb3dd2d001e70eb1572266040",
+      "mime": "image/jpeg",
+      "author": "Jonhall ( talk )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "w:Greendrop Lake in w:Chilliwack Lake Provincial Park",
+      "categories": "Lakes of British Columbia|Chilliwack Lake Provincial Park|Self-published work|Uploaded with MTC!",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されているグリーンドロップ湖の景観が写されており、指定された場所の自然風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -14865,7 +16043,7 @@
     "continent": "North America",
     "lat": 54.05,
     "lng": -125.75,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Francois_Lake%2C_British_Columbia.jpg/960px-Francois_Lake%2C_British_Columbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Francois Lake, British Columbia.jpg",
     "profiled": false,
     "features": {
@@ -14892,6 +16070,25 @@
       "checkedAt": "2026-11-09T13:29:01.495Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Francois_Lake,_British_Columbia.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 93676511,
+      "title": "File:Francois Lake, British Columbia.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Francois_Lake,_British_Columbia.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Francois_Lake%2C_British_Columbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Francois_Lake%2C_British_Columbia.jpg/960px-Francois_Lake%2C_British_Columbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "790d6827f7347b5c0640d1dba0a06f12c6687a71",
+      "mime": "image/jpeg",
+      "author": "Murray Foubister",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "along Hwy 16 from Prince George to Smithers...north side of François Lake looking west",
+      "categories": "Lakes of British Columbia|Provincial Parks of British Columbia|Flickr images reviewed by FlickreviewR 2",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ファイルの説明にフランソワ湖の北側から西を望む景色と明記されており、写真も湖と湖岸の風景を主被写体として捉えています。",
+      "verified": true
     }
   },
   {
@@ -15874,7 +17071,7 @@
     "continent": "Europe",
     "lat": 52.75,
     "lng": 13.5003,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Regenbogensee_-_2012-10-21_ama_fec_%283%29.JPG/960px-Regenbogensee_-_2012-10-21_ama_fec_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Regenbogensee - 2012-10-21 ama fec (3).JPG",
     "profiled": false,
     "features": {
@@ -15901,6 +17098,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Regenbogensee_-_2012-10-21_ama_fec_(3).JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 22330358,
+      "title": "File:Regenbogensee - 2012-10-21 ama fec (3).JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Regenbogensee_-_2012-10-21_ama_fec_(3).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Regenbogensee_-_2012-10-21_ama_fec_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Regenbogensee_-_2012-10-21_ama_fec_%283%29.JPG/960px-Regenbogensee_-_2012-10-21_ama_fec_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "ba448546ca654198beb3550c18cfa4a8240234e3",
+      "mime": "image/jpeg",
+      "author": "44 penguins (Angela M. Arnold)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Regenbogensee in der Gemeinde Wandlitz",
+      "categories": "Taken with Fujifilm FinePix F550EXR|Regenbogensee",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にヴァントリッツにあるレーゲンボーゲン湖（Regenbogensee）と記載されており、湖と周囲の木々の風景が主体として写っています。",
+      "verified": true
     }
   },
   {
@@ -15950,7 +17166,7 @@
     "continent": "Europe",
     "lat": 53.6681,
     "lng": 8.81389,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Aerial_photograph_400D_2012_05_28_9095_DxO.jpg/960px-Aerial_photograph_400D_2012_05_28_9095_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Aerial photograph 400D 2012 05 28 9095 DxO.jpg",
     "profiled": false,
     "features": {
@@ -15977,6 +17193,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_400D_2012_05_28_9095_DxO.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 19813441,
+      "title": "File:Aerial photograph 400D 2012 05 28 9095 DxO.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_400D_2012_05_28_9095_DxO.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Aerial_photograph_400D_2012_05_28_9095_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Aerial_photograph_400D_2012_05_28_9095_DxO.jpg/960px-Aerial_photograph_400D_2012_05_28_9095_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "bf36a145959d2a1a8bbff4ff78e91d1b2b623d41",
+      "mime": "image/jpeg",
+      "author": "Walter Rademacher",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Flögelner See",
+      "categories": "GFDL|Taken with Canon EOS 400D|License migration redundant|Flögelner See|Self-published work|CPB-Projekt Fotoflüge I|Images by Walter Rademacher|Fotoflug 2012-05-28|Aerial photographs of Geestland",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文に記載されているFlögelner See（湖）とその周辺の景観を上空から捉えた写真であり、場所そのものが主役となっています。",
+      "verified": true
     }
   },
   {
@@ -16102,7 +17337,7 @@
     "continent": "Europe",
     "lat": 51.2956,
     "lng": 9.85417,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Gruener_See_Hundelshausen.jpg/960px-Gruener_See_Hundelshausen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Gruener See Hundelshausen.jpg",
     "profiled": false,
     "features": {
@@ -16129,6 +17364,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gruener_See_Hundelshausen.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 10566522,
+      "title": "File:Gruener See Hundelshausen.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gruener_See_Hundelshausen.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Gruener_See_Hundelshausen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Gruener_See_Hundelshausen.jpg/960px-Gruener_See_Hundelshausen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "c1955a9bab6f2f37e47d1f3ca5ab70f546ba61e4",
+      "mime": "image/jpeg",
+      "author": "Jan Stubenitzky ( Dehio )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Grüner See bei Witzenhausen- Hundelshausen , Nordhessen. Ehemaliger Gipsbruch, heute Badesee",
+      "categories": "Taken with Panasonic Lumix DMC-TZ10|Self-published work|On OSM|Files with coordinates missing SDC location of creation (51° N, 9° E)|Grüner See (Hundelshausen)",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ヘッセン州のフンデルスハウゼン近郊にある湖「グリューナー・ゼー」の湖面や周囲の自然環境を主対象として撮影された風景写真です。",
+      "verified": true
     }
   },
   {
@@ -16178,7 +17432,7 @@
     "continent": "Europe",
     "lat": 51.4983,
     "lng": 14.1964,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Neuwieser_See_Elsterheide.JPG/960px-Neuwieser_See_Elsterheide.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Neuwieser See Elsterheide.JPG",
     "profiled": false,
     "features": {
@@ -16205,6 +17459,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Neuwieser_See_Elsterheide.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 19825126,
+      "title": "File:Neuwieser See Elsterheide.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Neuwieser_See_Elsterheide.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Neuwieser_See_Elsterheide.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Neuwieser_See_Elsterheide.JPG/960px-Neuwieser_See_Elsterheide.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "135d4ccb6b4d950cc3d7bfb2431c9bbce221b558",
+      "mime": "image/jpeg",
+      "author": "SeptemberWoman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Neuwieser See (Elsterheide)",
+      "categories": "Neuwieser See|Self-published work|2012 in Landkreis Bautzen|May 2012 in Saxony",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明にノイヴィーザー湖（Neuwieser See）と記載されており、湖とその周辺の景観が主な被写体として写っています。",
+      "verified": true
     }
   },
   {
@@ -16254,7 +17527,7 @@
     "continent": "Europe",
     "lat": 54.207777777,
     "lng": 10.2925,
-    "image": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lanker_See_%28Suedteil%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "commonsTitle": "Lanker See (Suedteil).jpg",
     "profiled": false,
     "features": {
@@ -16281,6 +17554,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lanker_See_(Suedteil).jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 11308526,
+      "title": "File:Lanker See (Suedteil).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lanker_See_(Suedteil).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lanker_See_%28Suedteil%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lanker_See_%28Suedteil%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sha1": "3b977c46b35a6e505f823b2597cd4c7a529633e9",
+      "mime": "image/jpeg",
+      "author": "The original uploader was Sipalius at German Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Southern part of the Lanker See looking southwest. Holstein Switzerland, Schleswig-Holstein, Germany",
+      "categories": "GFDL|Lakes of Schleswig-Holstein|Kühren|Wahlstorf (Holstein)|License migration completed|Holstein Switzerland|Bodies of water in Kreis Plön|FFH-Gebiet Lanker See und Kührener Teich|Lanker See",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：ランカー湖南部の水面や対岸の自然が写っており、指定された湖の風景が主な被写体となっています。",
+      "verified": true
     }
   },
   {
@@ -16292,7 +17584,7 @@
     "continent": "Europe",
     "lat": 51.381111111,
     "lng": 14.306944444,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG/960px-Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Knappensee Groß Särchen.JPG",
     "profiled": false,
     "features": {
@@ -16319,6 +17611,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27950738,
+      "title": "File:Knappensee Groß Särchen.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG/960px-Knappensee_Gro%C3%9F_S%C3%A4rchen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "eb9a5953740d79ce06b2821bdd68639f6ee885e0",
+      "mime": "image/jpeg",
+      "author": "SeptemberWoman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Knappensee bei Groß Särchen (Ortsteil von Lohsa)",
+      "categories": "Taken with Advent VC5200Z|Knappensee|Groß Särchen/Wulke Zdźary|Self-published work|2013 in Landkreis Bautzen|August 2013 in Saxony",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にクナッペン湖（Knappensee）であることが明記されており、写真も湖面や岸辺の風景を主体として写しています。",
+      "verified": true
     }
   },
   {
@@ -16330,7 +17641,7 @@
     "continent": "Europe",
     "lat": 61.786666666,
     "lng": 32.994166666,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%C5%A0otj%C3%A4rvi.jpg/960px-%C5%A0otj%C3%A4rvi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Šotjärvi.jpg",
     "profiled": false,
     "features": {
@@ -16357,6 +17668,25 @@
       "checkedAt": "2026-11-09T13:29:01.496Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0otj%C3%A4rvi.jpg",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27200251,
+      "title": "File:Šotjärvi.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%C5%A0otj%C3%A4rvi.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/%C5%A0otj%C3%A4rvi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%C5%A0otj%C3%A4rvi.jpg/960px-%C5%A0otj%C3%A4rvi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "d3bc89b8b5509323e6f4e008dae393e151f36da9",
+      "mime": "image/jpeg",
+      "author": "Semenov.m7",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Озеро Шотозеро в Пряжинском районе Республики Карелия.Вид с юго-восточного берега озера- берега деревни Салменица.",
+      "categories": "Taken with Panasonic Lumix DMC-TZ25|Lake Shotozero|Self-published work",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にカレリア共和国のショトゼロ湖（Озеро Шотозеро）からの眺望であることが明記されており、湖と空の自然景観が主体となっています。",
+      "verified": true
     }
   },
   {
@@ -16444,7 +17774,7 @@
     "continent": "Europe",
     "lat": 51.393055555,
     "lng": 14.334166666,
-    "image": "",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Graureihersee_2.JPG/960px-Graureihersee_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "commonsTitle": "Graureihersee 2.JPG",
     "profiled": false,
     "features": {
@@ -16471,6 +17801,25 @@
       "checkedAt": "2026-11-09T13:29:01.497Z",
       "type": "Q23397",
       "photoStatus": "pending subject and license verification"
+    },
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Graureihersee_2.JPG",
+    "commonsPhoto": {
+      "provider": "commons",
+      "pageId": 27406907,
+      "title": "File:Graureihersee 2.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Graureihersee_2.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Graureihersee_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Graureihersee_2.JPG/960px-Graureihersee_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha1": "674e99552d9868bdc05cb082a06bd7ce2d6f764d",
+      "mime": "image/jpeg",
+      "author": "SeptemberWoman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Graureihersee im Lausitzer Seenland, Landkreis Bautzen",
+      "categories": "Self-published work|Graureihersee",
+      "changes": "表示に合わせて縮小・トリミング",
+      "verification": "場所名・所在地・画像を照合：説明文にGraureiherseeと記載されており、写真も湖や周囲の湿地帯の風景を主対象として捉えています。",
+      "verified": true
     }
   },
   {

@@ -1,4 +1,4 @@
-# 将来 Google に公開する際のひな型です。現在は公開していません。
+# Firebase App Hosting 用のひな型です。現在の公開環境は Dockerfile から作る Cloud Run で、この設定は使っていません。
 # Next.js の標準 build / start を Firebase のアダプターが使用します。
 runConfig:
   minInstances: 0
@@ -6,5 +6,5 @@ runConfig:
   concurrency: 20
   cpu: 1
   memoryMiB: 1024
-# 公開前にランタイムの環境変数・Secrets・サービスアカウントの権限を設定してください。
+# App Hosting へ移すときは、ランタイムの環境変数・Secrets・サービスアカウントの権限を設定してください。
 # ローカル専用の GOOGLE_AUTH_USE_GCLOUD=true は公開環境へ渡さないでください。

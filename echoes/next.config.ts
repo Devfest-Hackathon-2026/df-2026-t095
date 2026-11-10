@@ -1,7 +1,7 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ['@google/earthengine','google-auth-library'],
+  serverExternalPackages: ['@google/earthengine', 'google-auth-library'],
 };
 
 export default nextConfig;

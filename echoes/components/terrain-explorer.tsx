@@ -1,50 +1,664 @@
-"use client";
-import {PlaceFactors} from './place-factors';
-import type {SearchFilters} from '@/lib/climate-types';
-import {GlobeView} from './globe-view';
-import {useEffect,useRef,useState,useMemo} from 'react';
-import type {Place} from '@/lib/places';
-import {regionAround,regionMetrics,validateRegion,type GeoRegion} from '@/lib/geo-region';
-import {RegionSelector} from './region-selector';
-import {MapView} from './map-view';
-import {Icon} from './icons';
+'use client';
+import { localeHeaders, numberLocale, t } from '@/lib/i18n';
+import { PlaceFactors } from './place-factors';
+import type { SearchFilters } from '@/lib/climate-types';
+import { GlobeView } from './globe-view';
+import { useEffect, useRef, useState, useMemo } from 'react';
+import type { Place } from '@/lib/places';
+import { regionAround, regionMetrics, validateRegion, type GeoRegion } from '@/lib/geo-region';
+import { RegionSelector } from './region-selector';
+import { MapView } from './map-view';
+import { Icon } from './icons';
+import { revealSection } from '@/lib/reveal-section';
 import terrainViews from '@/data/terrain-views.json';
-type Result={candidates:{id:string;name:string;country:string;referenceHalfKm?:number;origin?:'catalog'|'live';lat:number;lng:number;similarity:number;distanceKm:number;elevation:number|null;slope:number|null;relief:number|null;water:number|null;climate?:Place['climate'];factors?:Place['factors'];factorMatch?:Place['factorMatch']}[];liveNote?:string;catalogNote?:string;liveCandidateCount?:number;registeredCandidateCount?:number;sourceClimate?:Place['climate'];coverage?:number|null;year:number;method:string;limitation:string;attribution:string;catalog?:string;sources:{title:string;url:string}[]};
-const examples=[
- {id:'archipelago',label:'群島',name:'ストックホルム群島周辺',description:'島と水域を含む範囲を選びます。島の個数や並び方を確定する判定は行いません。',lat:59.35,lng:18.65,half:5},
- {id:'lagoon',label:'ラグーン',name:'サン・エリホ・ラグーン周辺',description:'海岸近くの水域と陸地を含めて選びます。海とのつながりは地図や現地の資料でも確認してください。',lat:33.006,lng:-117.271,half:1},
- {id:'atoll',label:'環礁',name:'ティケハウ環礁周辺',description:'環状の陸地・浅瀬・内側の水域を含めます。深い海は衛星埋め込みの対象外なので、データのある部分だけを比較します。',lat:-15.0,lng:-148.16,half:12},
- {id:'mesa',label:'メサ',name:'メサ・ヴェルデ周辺',description:'平らな頂部と周囲の斜面が手がかりです。種類の確定には標高や地質の確認が必要です。',lat:37.235,lng:-108.461,half:1},
- {id:'butte',label:'ビュート',name:'モニュメント・バレー周辺',description:'孤立した頂部と斜面を含めます。幅と高さによるメサとの区別は自動判定しません。',lat:36.991,lng:-110.098,half:1},
+type Result = {
+  candidates: {
+    id: string;
+    name: string;
+    country: string;
+    referenceHalfKm?: number;
+    origin?: 'catalog' | 'live';
+    lat: number;
+    lng: number;
+    similarity: number;
+    distanceKm: number;
+    elevation: number | null;
+    slope: number | null;
+    relief: number | null;
+    water: number | null;
+    climate?: Place['climate'];
+    factors?: Place['factors'];
+    factorMatch?: Place['factorMatch'];
+  }[];
+  liveNote?: string;
+  catalogNote?: string;
+  liveCandidateCount?: number;
+  registeredCandidateCount?: number;
+  sourceClimate?: Place['climate'];
+  coverage?: number | null;
+  year: number;
+  method: string;
+  limitation: string;
+  attribution: string;
+  catalog?: string;
+  sources: { title: string; url: string }[];
+};
+const examples = [
+  {
+    id: 'archipelago',
+    label: '群島',
+    name: 'ストックホルム群島周辺',
+    description: '島と水域を含む範囲を選びます。島の個数や並び方を確定する判定は行いません。',
+    lat: 59.35,
+    lng: 18.65,
+    half: 5,
+  },
+  {
+    id: 'lagoon',
+    label: 'ラグーン',
+    name: 'サン・エリホ・ラグーン周辺',
+    description:
+      '海岸近くの水域と陸地を含めて選びます。海とのつながりは地図や現地の資料でも確認してください。',
+    lat: 33.006,
+    lng: -117.271,
+    half: 1,
+  },
+  {
+    id: 'atoll',
+    label: '環礁',
+    name: 'ティケハウ環礁周辺',
+    description:
+      '環状の陸地・浅瀬・内側の水域を含めます。深い海は衛星埋め込みの対象外なので、データのある部分だけを比較します。',
+    lat: -15.0,
+    lng: -148.16,
+    half: 12,
+  },
+  {
+    id: 'mesa',
+    label: 'メサ',
+    name: 'メサ・ヴェルデ周辺',
+    description: '平らな頂部と周囲の斜面が手がかりです。種類の確定には標高や地質の確認が必要です。',
+    lat: 37.235,
+    lng: -108.461,
+    half: 1,
+  },
+  {
+    id: 'butte',
+    label: 'ビュート',
+    name: 'モニュメント・バレー周辺',
+    description: '孤立した頂部と斜面を含めます。幅と高さによるメサとの区別は自動判定しません。',
+    lat: 36.991,
+    lng: -110.098,
+    half: 1,
+  },
 ];
-export function TerrainExplorer({source,mapsKey,onPickLocation,onPickPlace,filters,destination}:{source:Place;mapsKey:string;onPickLocation:(p:{lat:number;lng:number})=>void;onPickPlace:(id:string)=>void;filters:SearchFilters;destination:string}){
- const [kind,setKind]=useState('lagoon'),[method,setMethod]=useState<'region'|'point'>('region');
- const [searchMode,setSearchMode]=useState<'hybrid'|'catalog'>('hybrid');
- const [searchLat,setSearchLat]=useState(String(source.lat)),[searchLng,setSearchLng]=useState(String(source.lng)),[radius,setRadius]=useState('500');
- const [region,setRegion]=useState<GeoRegion>(()=>regionAround(source.lat,source.lng,1));
- const [lat,setLat]=useState(String(source.lat)),[lng,setLng]=useState(String(source.lng));
- const [status,setStatus]=useState<'checking'|'ready'|'blocked'>('checking'),[busyKey,setBusyKey]=useState<string|null>(null),[resultState,setResultState]=useState<{key:string;value:Result}|null>(null),[errorState,setErrorState]=useState<{key:string;value:string}|null>(null),[active,setActive]=useState<string|null>(null),[mapMode,setMapMode]=useState<'globe'|'map'>('globe');const controller=useRef<AbortController|null>(null);
- const filterKey=JSON.stringify([filters,destination]);const busy=busyKey===filterKey;const result=resultState?.key===filterKey?resultState.value:null;const error=errorState?.key===filterKey?errorState.value:'';const setBusy=(value:boolean)=>setBusyKey(value?filterKey:null);const setResult=(value:Result|null)=>setResultState(value?{key:filterKey,value}:null);const setError=(value:string)=>setErrorState(value?{key:filterKey,value}:null);
- const check=()=>{setStatus('checking');fetch('/api/terrain').then(async r=>await r.json() as {ready?:boolean}).then(d=>setStatus(d.ready?'ready':'blocked')).catch(()=>setStatus('blocked'));};
- useEffect(()=>{let cancelled=false;fetch('/api/terrain').then(async r=>await r.json() as {ready?:boolean}).then(d=>{if(!cancelled)setStatus(d.ready?'ready':'blocked');}).catch(()=>{if(!cancelled)setStatus('blocked');});return()=>{cancelled=true;controller.current?.abort();};},[]);
- useEffect(()=>{controller.current?.abort();},[filterKey]);
- const reset=()=>{controller.current?.abort();controller.current=null;setBusy(false);setResult(null);setError('');};
- const changeRegion=(r:GeoRegion)=>{reset();setRegion(r);const m=regionMetrics(r);if(Number.isFinite(m.lat)&&Number.isFinite(m.lng)){setLat(String(m.lat));setLng(String(m.lng));setSearchLat(String(m.lat));setSearchLng(String(m.lng));}};
- const example=examples.find(t=>t.id===kind)!;
- let regionError='';try{validateRegion(region);}catch(e){regionError=e instanceof Error?e.message:'範囲を確認してください。';}
- const center={...source,id:'terrain-reference',name:method==='region'?'比較元の範囲の中心':'地形の参照地点',city:'',country:'',placeId:undefined,lat:Number(lat),lng:Number(lng)};
- const searchValid=searchMode==='catalog'||(searchLat.trim()!==''&&searchLng.trim()!==''&&[Number(searchLat),Number(searchLng),Number(radius)].every(Number.isFinite)&&Math.abs(Number(searchLat))<=80&&Math.abs(Number(searchLng))<=180&&Number(radius)>=150&&Number(radius)<=1000);
- const valid=searchValid&&lat.trim()!==''&&lng.trim()!==''&&Number.isFinite(center.lat)&&Math.abs(center.lat)<=80&&Number.isFinite(center.lng)&&Math.abs(center.lng)<=180&&(method==='point'||!regionError);
- const referenceCenter=method==='region'&&!regionError?{...center,...regionMetrics(region),landform:kind,viewExtent:{widthKm:regionMetrics(region).widthKm,heightKm:regionMetrics(region).heightKm}}:center;
- const points:Place[]=useMemo(()=>(result?.candidates||[]).map((p)=>{const extent=terrainViews[p.id as keyof typeof terrainViews];return{...source,id:p.id,name:p.name,city:p.country,country:p.country,climate:p.climate,factors:p.factors,factorMatch:p.factorMatch,lat:p.lat,lng:p.lng,landform:p.origin==='live'?undefined:kind,viewExtent:extent?{widthKm:extent.widthKm,heightKm:extent.heightKm}:{widthKm:(p.referenceHalfKm||5)*2,heightKm:(p.referenceHalfKm||5)*2}};}),[result,source,kind]);
- const run=async()=>{if(!valid)return;const c=new AbortController();controller.current?.abort();controller.current=c;setBusy(true);setResult(null);setError('');try{const r=await fetch('/api/terrain',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lat:center.lat,lng:center.lng,kind,filters,destination,searchMode,...(searchMode==='hybrid'?{searchArea:{lat:Number(searchLat),lng:Number(searchLng),radiusKm:Number(radius)}}:{}),...(method==='region'?{referenceRegion:region}:{})}),signal:c.signal});const d=await r.json() as Result&{error?:string};if(!r.ok)throw new Error(d.error||'地形を解析できませんでした。');if(!c.signal.aborted)setResult(d);}catch(e){if(!c.signal.aborted)setError(e instanceof Error?e.message:'地形を解析できませんでした。');}finally{if(controller.current===c)setBusy(false);}};
- const number=(value:number|null,unit:string)=>typeof value==='number'?`${Math.round(value).toLocaleString('ja-JP')} ${unit}`:'—';
- return <section className="terrain-explorer" aria-label="衛星データで地形を探す"><div className="terrain-heading"><span><Icon name="Mountains" size={24}/>世界の似た地形を探す</span><small>登録地形と指定範囲の衛星候補を比較</small></div><p className="terrain-intro">比較元から100 km以上離れた登録地形と、指定範囲の衛星候補を探します。比較元の範囲と、近接した地点は除外します。衛星データは近さの手がかりとして使います。</p><div className="terrain-types" role="group" aria-label="地形の参照例">{examples.map(t=><button key={t.id} aria-pressed={kind===t.id} onClick={()=>{reset();setKind(t.id);}}>{t.label}の例</button>)}</div><p className="terrain-type-description">{example.description}</p><button className="text-button terrain-example" onClick={()=>{reset();setLat(String(example.lat));setLng(String(example.lng));setSearchLat(String(example.lat));setSearchLng(String(example.lng));setRegion(regionAround(example.lat,example.lng,example.half));}}>参照例を表示：{example.name}<Icon name="ArrowRight" size={15}/></button><div className="terrain-types" role="group" aria-label="衛星データの参照方法"><button aria-pressed={method==='region'} onClick={()=>{reset();setMethod('region');}}>航空写真で範囲を選ぶ</button><button aria-pressed={method==='point'} onClick={()=>{reset();setMethod('point');}}>地点の周辺100 mを使う</button></div>
- {method==='region'&&<RegionSelector mapsKey={mapsKey} region={region} onChange={changeRegion}/>}
- {method==='point'&&<div className="terrain-controls"><label>参照地点の緯度<input type="number" step="any" min="-80" max="80" value={lat} onChange={e=>{reset();setLat(e.target.value);}}/></label><label>参照地点の経度<input type="number" step="any" min="-180" max="180" value={lng} onChange={e=>{reset();setLng(e.target.value);}}/></label></div>}<p className="terrain-note">上の地域・気候区分・国の条件でも絞り込めます。地形の輪郭の自動抽出や、レグールの土壌判定は未対応です。</p>
- <div className="terrain-types" role="group" aria-label="地形候補の探し方"><button aria-pressed={searchMode==='hybrid'} onClick={()=>{reset();setSearchMode('hybrid');}}>登録地形と指定範囲を探す</button><button aria-pressed={searchMode==='catalog'} onClick={()=>{reset();setSearchMode('catalog');}}>登録地形だけを比べる</button></div>
- {searchMode==='hybrid'&&<><div className="terrain-controls"><label>探索中心の緯度<input type="number" step="any" min="-80" max="80" value={searchLat} onChange={e=>{reset();setSearchLat(e.target.value);}}/></label><label>探索中心の経度<input type="number" step="any" min="-180" max="180" value={searchLng} onChange={e=>{reset();setSearchLng(e.target.value);}}/></label><label>探索半径（km）<input type="number" min="150" max="1000" step="50" value={radius} onChange={e=>{reset();setRadius(e.target.value);}}/></label></div><button className="text-button" onClick={()=>{reset();setSearchLat(String(referenceCenter.lat));setSearchLng(String(referenceCenter.lng));}}>探索中心を比較元に戻す</button><p className="terrain-note">衛星候補は検索時に探し、未分類として表示します。探索半径は150〜1,000 kmです。</p>{!searchValid&&<p role="alert">探索中心の緯度・経度と、半径150〜1,000 kmを確認してください。</p>}</>}
- {status==='blocked'?<div className="visual-summary is-fallback"><strong>Earth Engine の接続を確認してください</strong><p>利用登録または権限が必要です。解析結果はまだありません。</p><button className="secondary-button" onClick={check}>接続を再確認</button></div>:<button className="primary-button" disabled={busy||!valid||status!=='ready'} onClick={()=>void run()}>{busy?'別の地形と比較しています…':status==='checking'?'接続を確認しています…':'別の場所にある似た地形を探す'}<Icon name="ArrowRight" size={18}/></button>}{busy&&<button className="text-button" onClick={reset}>解析を中止</button>}{error&&<p className="error-message" role="alert">{error}</p>}
- {result&&<div className="terrain-results"><h3>{result.candidates.length} 件の地形候補</h3>{result.liveNote&&<p role="status">{result.liveNote}</p>}{result.catalogNote&&<p role="status">{result.catalogNote}</p>}<p>{result.year}年の衛星埋め込みを使用。{result.method}</p>{typeof result.coverage==='number'&&<p>参照範囲のデータ被覆率は約{Math.round(result.coverage*100)}%。類似率ではありません。{result.coverage<.5?'データのある部分が少ないため、範囲全体を表す比較にはなっていません。':''}</p>}{result.sourceClimate&&<p>比較元の気候：{result.sourceClimate.code} · {result.sourceClimate.label}（範囲内の陸地の分類）</p>}{!result.candidates.length?<p>条件に合う地形候補がありません。探索中心・半径や条件を変えて試してください。</p>:<><div className="terrain-map-switch view-switch" aria-label="地形候補の地図表示"><button aria-pressed={mapMode==='globe'} onClick={()=>setMapMode('globe')}>地球儀</button><button aria-pressed={mapMode==='map'} onClick={()=>setMapMode('map')}>地図</button></div>{mapMode==='globe'?<GlobeView source={referenceCenter} places={points} activeId={active} onSelect={setActive} mapsKey={mapsKey}/>:<MapView source={referenceCenter} places={points} activeId={active} onSelect={setActive} mapsKey={mapsKey} live onPickLocation={onPickLocation} onPickPlace={onPickPlace}/>}<p className="mobile-table-hint">表は左右にスクロールできます。</p><div className="terrain-table-wrap"><table><thead><tr><th>別の地形・地域</th><th>比較元から</th><th>平均標高</th><th>平均傾斜</th><th>水域の観測頻度</th></tr></thead><tbody>{result.candidates.map((p)=><tr key={p.id}><td><button onClick={()=>setActive(p.id)}>{p.name}</button><PlaceFactors place={{...source,...p}} compact/><span className="terrain-country">{[p.origin==='live'?'未分類の衛星候補':'登録地形',p.country,p.climate?.code].filter(Boolean).join(' · ')}</span><a href={`https://earth.google.com/web/@${p.lat},${p.lng},0a,40000d,35y,0h,0t,0r`} target="_blank" rel="noopener noreferrer">Google Earth で見る</a></td><td>{p.distanceKm.toLocaleString('ja-JP')} km</td><td>{number(p.elevation,'m')}</td><td>{typeof p.slope==='number'?`${p.slope.toFixed(1)}°`:'—'}</td><td>{number(p.water,'%')}</td></tr>)}</tbody></table></div></>}<p>{result.limitation}</p><p>水域の観測頻度は過去の観測値です。現在の水深や類似率を示しません。標高の欠測は「—」で示します。</p><div className="terrain-sources">{result.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer">{s.title}</a>)}</div><small>{result.catalog==='bigquery'?'BigQuery の地形カタログを使用。 ':''}{result.attribution}</small></div>}
- </section>;
+export function TerrainExplorer({
+  source,
+  mapsKey,
+  onPickLocation,
+  onPickPlace,
+  filters,
+  destination,
+}: {
+  source: Place;
+  mapsKey: string;
+  onPickLocation: (p: { lat: number; lng: number }) => void;
+  onPickPlace: (id: string) => void;
+  filters: SearchFilters;
+  destination: string;
+}) {
+  const [kind, setKind] = useState('lagoon'),
+    [method, setMethod] = useState<'region' | 'point'>('region');
+  const [searchMode, setSearchMode] = useState<'hybrid' | 'catalog'>('hybrid');
+  const [searchLat, setSearchLat] = useState(String(source.lat)),
+    [searchLng, setSearchLng] = useState(String(source.lng)),
+    [radius, setRadius] = useState('500');
+  const [region, setRegion] = useState<GeoRegion>(() => regionAround(source.lat, source.lng, 1));
+  const [lat, setLat] = useState(String(source.lat)),
+    [lng, setLng] = useState(String(source.lng));
+  const [status, setStatus] = useState<'checking' | 'ready' | 'blocked'>('checking'),
+    [busyKey, setBusyKey] = useState<string | null>(null),
+    [resultState, setResultState] = useState<{ key: string; value: Result } | null>(null),
+    [errorState, setErrorState] = useState<{ key: string; value: string } | null>(null),
+    [active, setActive] = useState<string | null>(null),
+    [mapMode, setMapMode] = useState<'globe' | 'map'>('globe');
+  const controller = useRef<AbortController | null>(null);
+  // 解析が終わったら、結果（または失敗の理由）まで移動する。結果はボタンのすぐ下に出るが、画面の外になりやすい。
+  const [runRevision, setRunRevision] = useState(0);
+  const resultsHeading = useRef<HTMLHeadingElement>(null);
+  // 参照例を表示したら、その例を映した範囲の地図（または座標の欄）まで移動する。
+  const [exampleRevision, setExampleRevision] = useState(0);
+  const root = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (exampleRevision)
+      revealSection(root.current?.querySelector('.region-selector, .terrain-controls'), {
+        focus: null,
+      });
+  }, [exampleRevision]);
+  const errorMessage = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    if (!runRevision) return;
+    if (resultsHeading.current) revealSection(resultsHeading.current);
+    else errorMessage.current?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
+  }, [runRevision]);
+  const filterKey = JSON.stringify([filters, destination]);
+  const busy = busyKey === filterKey;
+  const result = resultState?.key === filterKey ? resultState.value : null;
+  const error = errorState?.key === filterKey ? errorState.value : '';
+  const setBusy = (value: boolean) => setBusyKey(value ? filterKey : null);
+  const setResult = (value: Result | null) =>
+    setResultState(value ? { key: filterKey, value } : null);
+  const setError = (value: string) => setErrorState(value ? { key: filterKey, value } : null);
+  const check = () => {
+    setStatus('checking');
+    fetch('/api/terrain')
+      .then(async r => (await r.json()) as { ready?: boolean })
+      .then(d => setStatus(d.ready ? 'ready' : 'blocked'))
+      .catch(() => setStatus('blocked'));
+  };
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/terrain')
+      .then(async r => (await r.json()) as { ready?: boolean })
+      .then(d => {
+        if (!cancelled) setStatus(d.ready ? 'ready' : 'blocked');
+      })
+      .catch(() => {
+        if (!cancelled) setStatus('blocked');
+      });
+    return () => {
+      cancelled = true;
+      controller.current?.abort();
+    };
+  }, []);
+  useEffect(() => {
+    controller.current?.abort();
+  }, [filterKey]);
+  const reset = () => {
+    controller.current?.abort();
+    controller.current = null;
+    setBusy(false);
+    setResult(null);
+    setError('');
+  };
+  const changeRegion = (r: GeoRegion) => {
+    reset();
+    setRegion(r);
+    const m = regionMetrics(r);
+    if (Number.isFinite(m.lat) && Number.isFinite(m.lng)) {
+      setLat(String(m.lat));
+      setLng(String(m.lng));
+      setSearchLat(String(m.lat));
+      setSearchLng(String(m.lng));
+    }
+  };
+  const example = examples.find(item => item.id === kind)!;
+  let regionError = '';
+  try {
+    validateRegion(region);
+  } catch (e) {
+    regionError = e instanceof Error ? e.message : t('範囲を確認してください。');
+  }
+  const center = {
+    ...source,
+    id: 'terrain-reference',
+    name: method === 'region' ? t('比較元の範囲の中心') : t('地形の参照地点'),
+    city: '',
+    country: '',
+    placeId: undefined,
+    lat: Number(lat),
+    lng: Number(lng),
+  };
+  const searchValid =
+    searchMode === 'catalog' ||
+    (searchLat.trim() !== '' &&
+      searchLng.trim() !== '' &&
+      [Number(searchLat), Number(searchLng), Number(radius)].every(Number.isFinite) &&
+      Math.abs(Number(searchLat)) <= 80 &&
+      Math.abs(Number(searchLng)) <= 180 &&
+      Number(radius) >= 150 &&
+      Number(radius) <= 1000);
+  const valid =
+    searchValid &&
+    lat.trim() !== '' &&
+    lng.trim() !== '' &&
+    Number.isFinite(center.lat) &&
+    Math.abs(center.lat) <= 80 &&
+    Number.isFinite(center.lng) &&
+    Math.abs(center.lng) <= 180 &&
+    (method === 'point' || !regionError);
+  const referenceCenter =
+    method === 'region' && !regionError
+      ? {
+          ...center,
+          ...regionMetrics(region),
+          landform: kind,
+          viewExtent: {
+            widthKm: regionMetrics(region).widthKm,
+            heightKm: regionMetrics(region).heightKm,
+          },
+        }
+      : center;
+  const points: Place[] = useMemo(
+    () =>
+      (result?.candidates || []).map(p => {
+        const extent = terrainViews[p.id as keyof typeof terrainViews];
+        return {
+          ...source,
+          id: p.id,
+          name: p.name,
+          city: p.country,
+          country: p.country,
+          climate: p.climate,
+          factors: p.factors,
+          factorMatch: p.factorMatch,
+          lat: p.lat,
+          lng: p.lng,
+          landform: p.origin === 'live' ? undefined : kind,
+          viewExtent: extent
+            ? { widthKm: extent.widthKm, heightKm: extent.heightKm }
+            : { widthKm: (p.referenceHalfKm || 5) * 2, heightKm: (p.referenceHalfKm || 5) * 2 },
+        };
+      }),
+    [result, source, kind],
+  );
+  const run = async () => {
+    if (!valid) return;
+    const c = new AbortController();
+    controller.current?.abort();
+    controller.current = c;
+    setBusy(true);
+    setResult(null);
+    setError('');
+    try {
+      const r = await fetch('/api/terrain', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...localeHeaders() },
+        body: JSON.stringify({
+          lat: center.lat,
+          lng: center.lng,
+          kind,
+          filters,
+          destination,
+          searchMode,
+          ...(searchMode === 'hybrid'
+            ? {
+                searchArea: {
+                  lat: Number(searchLat),
+                  lng: Number(searchLng),
+                  radiusKm: Number(radius),
+                },
+              }
+            : {}),
+          ...(method === 'region' ? { referenceRegion: region } : {}),
+        }),
+        signal: c.signal,
+      });
+      const d = (await r.json()) as Result & { error?: string };
+      if (!r.ok) throw new Error(d.error || t('地形を解析できませんでした。'));
+      if (!c.signal.aborted) {
+        setResult(d);
+        setRunRevision(n => n + 1);
+      }
+    } catch (e) {
+      if (!c.signal.aborted) {
+        setError(e instanceof Error ? e.message : t('地形を解析できませんでした。'));
+        setRunRevision(n => n + 1);
+      }
+    } finally {
+      if (controller.current === c) setBusy(false);
+    }
+  };
+  const number = (value: number | null, unit: string) =>
+    typeof value === 'number' ? `${Math.round(value).toLocaleString(numberLocale())} ${unit}` : '—';
+  return (
+    <section ref={root} className="terrain-explorer" aria-label={t('衛星データで地形を探す')}>
+      <div id="terrain-heading" tabIndex={-1} className="terrain-heading">
+        <span>
+          <Icon name="Mountains" size={24} />
+          {t('世界の似た地形を探す')}
+        </span>
+        <small>{t('登録地形と指定範囲の衛星候補を比較')}</small>
+      </div>
+      <p className="terrain-intro">
+        {t(
+          '比較元から100 km以上離れた登録地形と、指定範囲の衛星候補を探します。比較元の範囲と、近接した地点は除外します。衛星データは近さの手がかりとして使います。',
+        )}
+      </p>
+      <div className="terrain-types" role="group" aria-label={t('地形の参照例')}>
+        {examples.map(item => (
+          <button
+            key={item.id}
+            aria-pressed={kind === item.id}
+            onClick={() => {
+              reset();
+              setKind(item.id);
+            }}
+          >
+            {t('{v0}の例', { v0: t(item.label) })}
+          </button>
+        ))}
+      </div>
+      <p className="terrain-type-description">{t(example.description)}</p>
+      <button
+        className="text-button terrain-example"
+        onClick={() => {
+          reset();
+          setLat(String(example.lat));
+          setLng(String(example.lng));
+          setSearchLat(String(example.lat));
+          setSearchLng(String(example.lng));
+          setRegion(regionAround(example.lat, example.lng, example.half));
+          setExampleRevision(n => n + 1);
+        }}
+      >
+        {t('参照例を表示：{v0}', { v0: t(example.name) })}
+        <Icon name="ArrowRight" size={15} />
+      </button>
+      <div className="terrain-types" role="group" aria-label={t('衛星データの参照方法')}>
+        <button
+          aria-pressed={method === 'region'}
+          onClick={() => {
+            reset();
+            setMethod('region');
+          }}
+        >
+          {t('航空写真で範囲を選ぶ')}
+        </button>
+        <button
+          aria-pressed={method === 'point'}
+          onClick={() => {
+            reset();
+            setMethod('point');
+          }}
+        >
+          {t('地点の周辺100 mを使う')}
+        </button>
+      </div>
+      {method === 'region' && (
+        <RegionSelector mapsKey={mapsKey} region={region} onChange={changeRegion} />
+      )}
+      {method === 'point' && (
+        <div className="terrain-controls">
+          <label>
+            {t('参照地点の緯度')}
+            <input
+              type="number"
+              step="any"
+              min="-80"
+              max="80"
+              value={lat}
+              onChange={e => {
+                reset();
+                setLat(e.target.value);
+              }}
+            />
+          </label>
+          <label>
+            {t('参照地点の経度')}
+            <input
+              type="number"
+              step="any"
+              min="-180"
+              max="180"
+              value={lng}
+              onChange={e => {
+                reset();
+                setLng(e.target.value);
+              }}
+            />
+          </label>
+        </div>
+      )}
+      <p className="terrain-note">
+        {t(
+          '上の地域・気候区分・国の条件でも絞り込めます。地形の輪郭の自動抽出や、レグールの土壌判定は未対応です。',
+        )}
+      </p>
+      <div className="terrain-types" role="group" aria-label={t('地形候補の探し方')}>
+        <button
+          aria-pressed={searchMode === 'hybrid'}
+          onClick={() => {
+            reset();
+            setSearchMode('hybrid');
+          }}
+        >
+          {t('登録地形と指定範囲を探す')}
+        </button>
+        <button
+          aria-pressed={searchMode === 'catalog'}
+          onClick={() => {
+            reset();
+            setSearchMode('catalog');
+          }}
+        >
+          {t('登録地形だけを比べる')}
+        </button>
+      </div>
+      {searchMode === 'hybrid' && (
+        <>
+          <div className="terrain-controls">
+            <label>
+              {t('探索中心の緯度')}
+              <input
+                type="number"
+                step="any"
+                min="-80"
+                max="80"
+                value={searchLat}
+                onChange={e => {
+                  reset();
+                  setSearchLat(e.target.value);
+                }}
+              />
+            </label>
+            <label>
+              {t('探索中心の経度')}
+              <input
+                type="number"
+                step="any"
+                min="-180"
+                max="180"
+                value={searchLng}
+                onChange={e => {
+                  reset();
+                  setSearchLng(e.target.value);
+                }}
+              />
+            </label>
+            <label>
+              {t('探索半径（km）')}
+              <input
+                type="number"
+                min="150"
+                max="1000"
+                step="50"
+                value={radius}
+                onChange={e => {
+                  reset();
+                  setRadius(e.target.value);
+                }}
+              />
+            </label>
+          </div>
+          <button
+            className="text-button"
+            onClick={() => {
+              reset();
+              setSearchLat(String(referenceCenter.lat));
+              setSearchLng(String(referenceCenter.lng));
+            }}
+          >
+            {t('探索中心を比較元に戻す')}
+          </button>
+          <p className="terrain-note">
+            {t('衛星候補は検索時に探し、未分類として表示します。探索半径は150〜1,000 kmです。')}
+          </p>
+          {!searchValid && (
+            <p role="alert">{t('探索中心の緯度・経度と、半径150〜1,000 kmを確認してください。')}</p>
+          )}
+        </>
+      )}
+      {status === 'blocked' ? (
+        <div className="visual-summary is-fallback">
+          <strong>{t('Earth Engine の接続を確認してください')}</strong>
+          <p>{t('利用登録または権限が必要です。解析結果はまだありません。')}</p>
+          <button className="secondary-button" onClick={check}>
+            {t('接続を再確認')}
+          </button>
+        </div>
+      ) : (
+        <button
+          className="primary-button"
+          disabled={busy || !valid || status !== 'ready'}
+          onClick={() => void run()}
+        >
+          {busy
+            ? t('別の地形と比較しています…')
+            : status === 'checking'
+              ? t('接続を確認しています…')
+              : t('別の場所にある似た地形を探す')}
+          <Icon name="ArrowRight" size={18} />
+        </button>
+      )}
+      {busy && (
+        <button className="text-button" onClick={reset}>
+          {t('解析を中止')}
+        </button>
+      )}
+      {error && (
+        <p ref={errorMessage} className="error-message" role="alert">
+          {t(error)}
+        </p>
+      )}
+      {result && (
+        <div className="terrain-results">
+          <h3 ref={resultsHeading} tabIndex={-1}>
+            {t('{v0} 件の地形候補', { v0: result.candidates.length })}
+          </h3>
+          {result.liveNote && <p role="status">{result.liveNote}</p>}
+          {result.catalogNote && <p role="status">{result.catalogNote}</p>}
+          <p>
+            {t('{v0}年の衛星埋め込みを使用。', { v0: result.year })}
+            {result.method}
+          </p>
+          {typeof result.coverage === 'number' && (
+            <p>
+              {t('参照範囲のデータ被覆率は約{v0}%。類似率ではありません。', {
+                v0: Math.round(result.coverage * 100),
+              })}
+              {result.coverage < 0.5
+                ? t('データのある部分が少ないため、範囲全体を表す比較にはなっていません。')
+                : ''}
+            </p>
+          )}
+          {result.sourceClimate && (
+            <p>
+              {t('比較元の気候：{v0} · {v1}（範囲内の陸地の分類）', {
+                v0: result.sourceClimate.code,
+                v1: t(result.sourceClimate.label),
+              })}
+            </p>
+          )}
+          {!result.candidates.length ? (
+            <p>
+              {t('条件に合う地形候補がありません。探索中心・半径や条件を変えて試してください。')}
+            </p>
+          ) : (
+            <>
+              <div className="terrain-map-switch view-switch" aria-label={t('地形候補の地図表示')}>
+                <button aria-pressed={mapMode === 'globe'} onClick={() => setMapMode('globe')}>
+                  {t('地球儀')}
+                </button>
+                <button aria-pressed={mapMode === 'map'} onClick={() => setMapMode('map')}>
+                  {t('地図')}
+                </button>
+              </div>
+              {mapMode === 'globe' ? (
+                <GlobeView
+                  source={referenceCenter}
+                  places={points}
+                  activeId={active}
+                  onSelect={setActive}
+                  mapsKey={mapsKey}
+                />
+              ) : (
+                <MapView
+                  source={referenceCenter}
+                  places={points}
+                  activeId={active}
+                  onSelect={setActive}
+                  mapsKey={mapsKey}
+                  live
+                  onPickLocation={onPickLocation}
+                  onPickPlace={onPickPlace}
+                />
+              )}
+              <p className="mobile-table-hint">{t('表は左右にスクロールできます。')}</p>
+              <div className="terrain-table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>{t('別の地形・地域')}</th>
+                      <th>{t('比較元から')}</th>
+                      <th>{t('平均標高')}</th>
+                      <th>{t('平均傾斜')}</th>
+                      <th>{t('水域の観測頻度')}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {result.candidates.map(p => (
+                      <tr key={p.id}>
+                        <td>
+                          <button onClick={() => setActive(p.id)}>{p.name}</button>
+                          <PlaceFactors place={{ ...source, ...p }} compact />
+                          <span className="terrain-country">
+                            {[
+                              p.origin === 'live' ? t('未分類の衛星候補') : t('登録地形'),
+                              p.country,
+                              p.climate?.code,
+                            ]
+                              .filter(Boolean)
+                              .join(' · ')}
+                          </span>
+                          <a
+                            href={`https://earth.google.com/web/@${p.lat},${p.lng},0a,40000d,35y,0h,0t,0r`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {t('Google Earth で見る')}
+                          </a>
+                        </td>
+                        <td>{p.distanceKm.toLocaleString(numberLocale())} km</td>
+                        <td>{number(p.elevation, 'm')}</td>
+                        <td>{typeof p.slope === 'number' ? `${p.slope.toFixed(1)}°` : '—'}</td>
+                        <td>{number(p.water, '%')}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+          <p>{result.limitation}</p>
+          <p>
+            {t(
+              '水域の観測頻度は過去の観測値です。現在の水深や類似率を示しません。標高の欠測は「—」で示します。',
+            )}
+          </p>
+          <div className="terrain-sources">
+            {result.sources.map(s => (
+              <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer">
+                {s.title}
+              </a>
+            ))}
+          </div>
+          <small>
+            {result.catalog === 'bigquery' ? t('BigQuery の地形カタログを使用。 ') : ''}
+            {result.attribution}
+          </small>
+        </div>
+      )}
+    </section>
+  );
 }
