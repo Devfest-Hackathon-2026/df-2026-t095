@@ -139,8 +139,7 @@ export const places: Place[] = [
     imagePage: 'https://en.wikipedia.org/wiki/Cheonggyecheon',
     description: 'ソウルの街路より一段低いところを、小さな川が流れています。',
     detail: '清渓広場から川に沿って東へ。橋や飛び石、水辺の道から、ソウルの街を眺められます。',
-    difference:
-      '川幅が狭く、街路の下に整備された水辺です。中心部は人が多いこともあります。',
+    difference: '川幅が狭く、街路の下に整備された水辺です。中心部は人が多いこともあります。',
     bestFor: '街なかで水辺の散歩を楽しめます',
     features: { water: 5, green: 3, quiet: 3, walk: 5, cafes: 4, history: 3 },
     sources: [
