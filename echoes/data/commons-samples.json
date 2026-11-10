@@ -7018,6 +7018,46 @@
         "verification": "場所名・所在地・画像を照合：説明にあるとおり、ビュエシュ川の源流域にあたるジャルジャット渓谷の自然景観が写っています。手前に人物が小さく写っていますが、風景が主な被写体と判断できます。",
         "verified": true
       }
+    ],
+    "wikidata-Q14311": [
+      {
+        "provider": "commons",
+        "pageId": 47581615,
+        "title": "File:El riu Xúquer al seu pas per Fortaleny (País Valencià), 2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:El_riu_X%C3%BAquer_al_seu_pas_per_Fortaleny_(Pa%C3%ADs_Valenci%C3%A0),_2.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/El_riu_X%C3%BAquer_al_seu_pas_per_Fortaleny_%28Pa%C3%ADs_Valenci%C3%A0%29%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/El_riu_X%C3%BAquer_al_seu_pas_per_Fortaleny_%28Pa%C3%ADs_Valenci%C3%A0%29%2C_2.jpg/960px-El_riu_X%C3%BAquer_al_seu_pas_per_Fortaleny_%28Pa%C3%ADs_Valenci%C3%A0%29%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sha1": "23cfc0d7aeb9b4a585142882b75f4a13f51f8c00",
+        "mime": "image/jpeg",
+        "author": "Vicenç Salvador Torres Guerola",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "description": "Fortaleny és un municipi de la Ribera Baixa, al País Valencià. Imatge editada en: Diari La Veu, La Confederació Hidrogràfica del Xúquer no adopta de moment cap mesura de desembassament excepcional, 12-09-2019",
+        "categories": "Júcar River|Self-published work|Pictures by Vicenç Salvador Torres Guerola|Riu Xúquer (Special Area of Conservation)|Riu Xúquer a Fortaleny",
+        "changes": "表示に合わせて縮小・トリミング",
+        "verification": "場所名・所在地・画像を照合：バレンシア州フォルタレニーを流れるフカル川（カタルーニャ語／バレンシア語名：シューケル川）の水面と岸辺の風景が写っています。",
+        "verified": true
+      }
+    ],
+    "wikidata-Q23130": [
+      {
+        "provider": "commons",
+        "pageId": 131855455,
+        "title": "File:Río Gállego, Huesca, España, 2023-01-05, DD 12-16 PAN.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_G%C3%A1llego,_Huesca,_Espa%C3%B1a,_2023-01-05,_DD_12-16_PAN.jpg",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/R%C3%ADo_G%C3%A1llego%2C_Huesca%2C_Espa%C3%B1a%2C_2023-01-05%2C_DD_12-16_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/R%C3%ADo_G%C3%A1llego%2C_Huesca%2C_Espa%C3%B1a%2C_2023-01-05%2C_DD_12-16_PAN.jpg/960px-R%C3%ADo_G%C3%A1llego%2C_Huesca%2C_Espa%C3%B1a%2C_2023-01-05%2C_DD_12-16_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sha1": "dba484aeba069f9a5c5206e7dcd69fd27e276455",
+        "mime": "image/jpeg",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Gállego River, Huesca, Spain",
+        "categories": "Taken with Canon EOS 5DS R|Gállego River|Self-published work|Images of Spain by User:Poco a poco|Spain photographs taken on 2023-01-05|Images by User:Poco a poco|QI candidates by User:Poco a poco|Special Areas of Conservation in Spain with known IDs|Images from Wiki Loves Earth 2023|Images from Wiki Loves Earth 2023 in Spain|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation|Images from Wiki Loves Earth missing SDC creator|Images from Wiki Loves Earth by User:Poco a poco|All media supported by Wikimedia España in 2023|Images by User:Poco a poco taken in 2023",
+        "changes": "表示に合わせて縮小・トリミング",
+        "verification": "場所名・所在地・画像を照合：説明文にあるスペインのガリェゴ川と周囲の山林の景観が写っており、指定された場所の風景が主な被写体となっています。",
+        "verified": true
+      }
     ]
   },
   "photoChecks": {
@@ -7101,6 +7141,12 @@
     "wikidata-Q14299": "2026-11-10T09:24:59.475Z",
     "wikidata-Q14352": "2026-11-10T09:25:11.098Z",
     "wikidata-Q23122": "2026-11-10T09:28:25.850Z",
-    "wikidata-Q14363": "2026-11-10T09:33:18.793Z"
+    "wikidata-Q14363": "2026-11-10T09:33:18.793Z",
+    "wikidata-Q14360": "2026-11-10T09:35:28.416Z",
+    "wikidata-Q8526": "2026-11-10T09:38:32.741Z",
+    "wikidata-Q14305": "2026-11-10T09:40:40.305Z",
+    "wikidata-Q23125": "2026-11-10T09:42:49.284Z",
+    "wikidata-Q14368": "2026-11-10T09:44:57.946Z",
+    "wikidata-Q20360": "2026-11-10T09:47:19.886Z"
   }
 }
