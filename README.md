@@ -19,7 +19,7 @@ npm run dev
 
 - Google Maps / Places と Gemini による、場所の雰囲気を比べる検索
 - Wikimedia Commons の写真と Gemini Embedding 2、Cloud Vision による写真の比較。手持ちの写真も選択・ドロップできます
-- Earth Engine の衛星特徴による、登録した別の地形との比較
+- Earth Engine の衛星埋め込みによる、登録した別の地形との比較
 - 気候区分、観光客数、目的地の条件で絞り込む検索、Google の3D地球儀
 - Firebase による保存・共有と、BigQuery の地点カタログ
 
