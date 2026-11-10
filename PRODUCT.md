@@ -6,7 +6,7 @@
 web
 
 ## Stack
-Next.js と React。Google Cloud の devfest-hackathon-hexagon に接続。アプリはローカルで実行し、将来の Firebase App Hosting / Cloud Run に備える。現在は公開しない。
+Next.js と React。Google Cloud の devfest-hackathon-hexagon に接続。Cloud Run で公開している。ローカルでも実行でき、Firebase App Hosting 用のひな型も残している。
 
 ## Users
 好きな場所から、別の街や地域にある似た場所を探したい人。スマートフォンとPCの両方で使う。
@@ -29,4 +29,4 @@ Firestore は Firebase Authentication のユーザーごとの保存と共有用
 - 写真の観察と、雰囲気・静かさなどの解釈を分ける。
 - 使えない処理と代わりの比較方法を明示する。
 - 利用条件と出典を保ち、写真の選択を利用者に任せない。
-- ローカルで使える状態を保ち、公開は別の依頼として扱う。
+- ローカルで使える状態を保ち、公開環境への反映は別の依頼として扱う。

@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1094" viewBox="0 0 1760 1094" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+<marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2d6048"/></marker>
+<marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2a6f86"/></marker>
+<marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7b8a80"/></marker>
+<marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2d6048"/></marker>
+</defs>
+<rect width="1760" height="1094" fill="#fdfefc"/>
+<text x="32" y="48" font-size="30" fill="#233d32" font-weight="700" text-anchor="start">Elsewhere: system architecture</text>
+<text x="32" y="74" font-size="15" fill="#5b6b61" font-weight="400" text-anchor="start">Finds your next destination from the feel of a place, a photo, or satellite terrain</text>
+<path d="M1176 44 L1220 44" fill="none" stroke="#2a6f86" stroke-width="2" marker-end="url(#ab)"/>
+<text x="1230" y="48" font-size="13" fill="#233d32" font-weight="400" text-anchor="start">Browser, direct</text>
+<path d="M1346 44 L1390 44" fill="none" stroke="#2d6048" stroke-width="2" marker-end="url(#ag)"/>
+<text x="1400" y="48" font-size="13" fill="#233d32" font-weight="400" text-anchor="start">Server, at request time</text>
+<path d="M1562 44 L1606 44" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+<text x="1616" y="48" font-size="13" fill="#233d32" font-weight="400" text-anchor="start">Build time</text>
+<rect x="1176" y="62" width="18" height="14" rx="3" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="1202" y="74" font-size="13" fill="#233d32" font-weight="400" text-anchor="start">AI step</text>
+<rect x="1272" y="62" width="18" height="14" rx="3" fill="#f8efdc" stroke="#e2c88f" stroke-width="1.2"/>
+<text x="1298" y="74" font-size="13" fill="#233d32" font-weight="400" text-anchor="start">Privacy boundary: upload is discarded</text>
+<rect x="32" y="96" width="270" height="754" rx="14" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="48" y="122" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">User&#x27;s browser</text>
+<text x="48" y="141" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Next.js client, React 19</text>
+<rect x="46" y="160" width="242" height="300" rx="8" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="58" y="182" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Three ways to search</text>
+<rect x="56" y="194" width="222" height="78" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="68" y="216" font-size="13.5" fill="#2d6048" font-weight="700" text-anchor="start">Atmosphere</text>
+<text x="68" y="235" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Pick a place you love and the</text>
+<text x="68" y="251" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">qualities to keep</text>
+<rect x="56" y="281" width="222" height="78" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="68" y="303" font-size="13.5" fill="#2d6048" font-weight="700" text-anchor="start">Photo</text>
+<text x="68" y="322" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Use a catalog photo, or drop</text>
+<text x="68" y="338" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">your own (up to 8 MB)</text>
+<rect x="56" y="368" width="222" height="78" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="68" y="390" font-size="13.5" fill="#2d6048" font-weight="700" text-anchor="start">Terrain</text>
+<text x="68" y="409" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Draw a box on aerial imagery,</text>
+<text x="68" y="425" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">up to 40 km on a side</text>
+<rect x="46" y="472" width="242" height="72" rx="8" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="58" y="493" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Filters</text>
+<text x="58" y="511" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Climate zone, visitor numbers,</text>
+<text x="58" y="527" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">sea color, townscape</text>
+<rect x="46" y="554" width="242" height="72" rx="8" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="58" y="575" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Map and 3D globe</text>
+<text x="58" y="593" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Results on a map, or flown to on</text>
+<text x="58" y="609" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Google&#x27;s photorealistic globe</text>
+<rect x="46" y="636" width="242" height="88" rx="8" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="58" y="657" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Accounts and saving</text>
+<text x="58" y="675" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Firebase SDK: anonymous first,</text>
+<text x="58" y="691" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Google sign-in carries saves over.</text>
+<text x="58" y="707" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Share links carry conditions only.</text>
+<rect x="46" y="734" width="242" height="102" rx="8" fill="#e3eff2" stroke="#bcd6dd" stroke-width="1.2"/>
+<text x="58" y="756" font-size="13.5" fill="#2a6f86" font-weight="700" text-anchor="start">What stays out of the browser</text>
+<text x="58" y="776" font-size="12" fill="#233d32" font-weight="400" text-anchor="start">Server API keys and tokens</text>
+<text x="58" y="792" font-size="12" fill="#233d32" font-weight="400" text-anchor="start">never reach it. Location is</text>
+<text x="58" y="808" font-size="12" fill="#233d32" font-weight="400" text-anchor="start">used only when allowed,</text>
+<text x="58" y="824" font-size="12" fill="#233d32" font-weight="400" text-anchor="start">and is never saved.</text>
+<rect x="380" y="96" width="1350" height="112" rx="14" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="396" y="122" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Called directly from the browser</text>
+<text x="670" y="122" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Public keys, restricted to allowed sites and specific APIs</text>
+<rect x="394.0" y="136" width="321.5" height="60" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="406.0" y="157" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Firebase Authentication</text>
+<text x="406.0" y="175" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Anonymous users, Google sign-in</text>
+<rect x="727.5" y="136" width="321.5" height="60" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="739.5" y="157" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Cloud Firestore</text>
+<text x="739.5" y="175" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Favorites, preferences, shares; owner-only rules</text>
+<rect x="1061.0" y="136" width="321.5" height="60" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1073.0" y="157" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Maps JavaScript API</text>
+<text x="1073.0" y="175" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Map, aerial view, 3D globe (maps3d)</text>
+<rect x="1394.5" y="136" width="321.5" height="60" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1406.5" y="157" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">OpenStreetMap tiles</text>
+<text x="1406.5" y="175" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Leaflet map if no Maps key is set</text>
+<path d="M302 152 L379 152" fill="none" stroke="#2a6f86" stroke-width="2.4" marker-end="url(#ab)"/>
+<rect x="380" y="226" width="800" height="624" rx="14" fill="#f2f6ef" stroke="#b9c9b6" stroke-width="1.4"/>
+<text x="396" y="252" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Next.js 16 server</text>
+<text x="396" y="271" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Node 22 route handlers, container image for Cloud Run</text>
+<rect x="400" y="282" width="760" height="76" rx="10" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="414" y="307" font-size="14.5" fill="#2d6048" font-weight="700" text-anchor="start">Place lookup</text>
+<text x="414" y="326" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/search  /resolve</text>
+<text x="414" y="341" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/route  /photo</text>
+<rect x="550.0" y="291" width="138.0" height="58" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="619.0" y="311" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Autocomplete</text>
+<text x="619.0" y="328.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">place input</text>
+<rect x="704.0" y="291" width="138.0" height="58" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="773.0" y="311" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Resolve</text>
+<text x="773.0" y="328.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">place details</text>
+<rect x="858.0" y="291" width="138.0" height="58" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="927.0" y="311" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Route</text>
+<text x="927.0" y="328.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">from allowed location</text>
+<rect x="1012.0" y="291" width="138.0" height="58" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1081.0" y="311" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Photo proxy</text>
+<text x="1081.0" y="328.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">hides the server key</text>
+<rect x="400" y="366" width="760" height="112" rx="10" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="414" y="391" font-size="14.5" fill="#2d6048" font-weight="700" text-anchor="start">Atmosphere</text>
+<text x="414" y="410" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/discover</text>
+<rect x="550.0" y="375" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="603.6" y="395" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Resolve origin</text>
+<text x="603.6" y="412.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">Places details,</text>
+<text x="603.6" y="426.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">climate zone</text>
+<path d="M659.2 412.0 L671.2 412.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="673.2" y="375" width="107.2" height="74" rx="7" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="726.8" y="395" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Find candidates</text>
+<text x="726.8" y="412.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">Gemini, grounded</text>
+<text x="726.8" y="426.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">in Google Maps</text>
+<path d="M782.4 412.0 L794.4 412.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="796.4" y="375" width="107.2" height="74" rx="7" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="850.0" y="395" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Scenery check</text>
+<text x="850.0" y="412.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">Commons photos,</text>
+<text x="850.0" y="426.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">if filter is set</text>
+<path d="M905.6 412.0 L917.6 412.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="919.6" y="375" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="973.2" y="395" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Filter</text>
+<text x="973.2" y="412.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">climate zone,</text>
+<text x="973.2" y="426.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">visitor numbers</text>
+<path d="M1028.8 412.0 L1040.8 412.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="1042.8" y="375" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1096.4" y="395" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Translate</text>
+<text x="1096.4" y="412.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">to Japanese,</text>
+<text x="1096.4" y="426.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">only if needed</text>
+<text x="550" y="468" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Each candidate shows the Google Maps sources it came from.</text>
+<rect x="400" y="486" width="760" height="112" rx="10" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="414" y="511" font-size="14.5" fill="#2d6048" font-weight="700" text-anchor="start">Photo</text>
+<text x="414" y="530" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/visual</text>
+<text x="414" y="545" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/visual/upload</text>
+<rect x="550.0" y="495" width="107.2" height="74" rx="7" fill="#f8efdc" stroke="#e2c88f" stroke-width="1.2"/>
+<text x="603.6" y="515" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Prepare upload</text>
+<text x="603.6" y="532.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">strip EXIF + GPS,</text>
+<text x="603.6" y="546.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">resize, never store</text>
+<path d="M659.2 532.0 L671.2 532.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="673.2" y="495" width="107.2" height="74" rx="7" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="726.8" y="515" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Embed image</text>
+<text x="726.8" y="532.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">768-d vector,</text>
+<text x="726.8" y="546.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">cosine similarity</text>
+<path d="M782.4 532.0 L794.4 532.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="796.4" y="495" width="107.2" height="74" rx="7" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="850.0" y="515" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Label subject</text>
+<text x="850.0" y="532.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">Vision, when cost</text>
+<text x="850.0" y="546.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">saving is off</text>
+<path d="M905.6 532.0 L917.6 532.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="919.6" y="495" width="107.2" height="74" rx="7" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="973.2" y="515" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Verify visually</text>
+<text x="973.2" y="532.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">Gemini reviews</text>
+<text x="973.2" y="546.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">top 6 to 18</text>
+<path d="M1028.8 532.0 L1040.8 532.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="1042.8" y="495" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1096.4" y="515" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Rank</text>
+<text x="1096.4" y="532.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">default 6:4 photo</text>
+<text x="1096.4" y="546.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">to features</text>
+<text x="550" y="588" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">No comparable photo? Falls back to Maps-grounded search and says why.</text>
+<rect x="400" y="606" width="760" height="112" rx="10" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="414" y="631" font-size="14.5" fill="#2d6048" font-weight="700" text-anchor="start">Terrain</text>
+<text x="414" y="650" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">/api/terrain</text>
+<rect x="550.0" y="615" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="603.6" y="635" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Validate box</text>
+<text x="603.6" y="652.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">100 m to 40 km,</text>
+<text x="603.6" y="666.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">up to 900 km²</text>
+<path d="M659.2 652.0 L671.2 652.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="673.2" y="615" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="726.8" y="635" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Region signals</text>
+<text x="726.8" y="652.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">mean + 3×3 layout,</text>
+<text x="726.8" y="666.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">relief, water</text>
+<path d="M782.4 652.0 L794.4 652.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="796.4" y="615" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="850.0" y="635" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Match catalog</text>
+<text x="850.0" y="652.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">56 registered sites,</text>
+<text x="850.0" y="666.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">at least 100 km off</text>
+<path d="M905.6 652.0 L917.6 652.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="919.6" y="615" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="973.2" y="635" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Live sampling</text>
+<text x="973.2" y="652.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">150 to 1,000 km,</text>
+<text x="973.2" y="666.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">cost saving off</text>
+<path d="M1028.8 652.0 L1040.8 652.0" stroke="#2d6048" stroke-width="1.5" fill="none" marker-end="url(#as)"/>
+<rect x="1042.8" y="615" width="107.2" height="74" rx="7" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1096.4" y="635" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="middle">Rank + label</text>
+<text x="1096.4" y="652.0" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">live finds shown</text>
+<text x="1096.4" y="666.5" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="middle">as unclassified</text>
+<text x="550" y="708" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Bounded comparison against registered regions, not a worldwide search.</text>
+<rect x="400" y="726" width="760" height="112" rx="10" fill="#e4ecdf" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="414" y="748" font-size="14" fill="#2d6048" font-weight="700" text-anchor="start">Shared foundation, used by all three searches</text>
+<rect x="414.0" y="758" width="140.0" height="70" rx="7" fill="#ffffff" stroke="#cdd9c9" stroke-width="1.2"/>
+<text x="424.0" y="776" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Cost switch</text>
+<text x="424.0" y="793" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">one setting caps</text>
+<text x="424.0" y="808" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">paid API calls</text>
+<rect x="562.0" y="758" width="140.0" height="70" rx="7" fill="#ffffff" stroke="#cdd9c9" stroke-width="1.2"/>
+<text x="572.0" y="776" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Place catalog</text>
+<text x="572.0" y="793" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">612 places, cloud +</text>
+<text x="572.0" y="808" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">local merged by ID</text>
+<rect x="710.0" y="758" width="140.0" height="70" rx="7" fill="#ffffff" stroke="#cdd9c9" stroke-width="1.2"/>
+<text x="720.0" y="776" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Commons lookup</text>
+<text x="720.0" y="793" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">checks name, place,</text>
+<text x="720.0" y="808" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">subject, license</text>
+<rect x="858.0" y="758" width="140.0" height="70" rx="7" fill="#ffffff" stroke="#cdd9c9" stroke-width="1.2"/>
+<text x="868.0" y="776" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Environment</text>
+<text x="868.0" y="793" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Köppen-Geiger,</text>
+<text x="868.0" y="808" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">World Bank visitors</text>
+<rect x="1006.0" y="758" width="140.0" height="70" rx="7" fill="#ffffff" stroke="#cdd9c9" stroke-width="1.2"/>
+<text x="1016.0" y="776" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Public cache</text>
+<text x="1016.0" y="793" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">.cache/, Commons +</text>
+<text x="1016.0" y="808" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Earth Engine only</text>
+<path d="M302 400 L379 400" fill="none" stroke="#2d6048" stroke-width="3" marker-end="url(#ag)"/>
+<text x="341" y="386" font-size="12.5" fill="#233d32" font-weight="500" text-anchor="middle">/api/*</text>
+<text x="341" y="420" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">HTTPS</text>
+<rect x="1260" y="226" width="470" height="132" rx="14" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="1276" y="252" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Google Maps Platform</text>
+<text x="1276" y="271" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Server-only key</text>
+<rect x="1274.0" y="282" width="140.7" height="66" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1286.0" y="303" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Places API</text>
+<text x="1286.0" y="321" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Autocomplete,</text>
+<text x="1286.0" y="337" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">details, photos</text>
+<rect x="1424.7" y="282" width="140.7" height="66" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1436.7" y="303" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Geocoding API</text>
+<text x="1436.7" y="321" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Map click to</text>
+<text x="1436.7" y="337" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">address</text>
+<rect x="1575.3" y="282" width="140.7" height="66" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1587.3" y="303" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Routes API</text>
+<text x="1587.3" y="321" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Directions from</text>
+<text x="1587.3" y="337" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">current location</text>
+<rect x="1260" y="366" width="470" height="232" rx="14" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="1276" y="392" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Google AI</text>
+<rect x="1274.0" y="402" width="216.0" height="100" rx="8" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="1286.0" y="423" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Gemini 3.8 Flash</text>
+<text x="1286.0" y="441" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Vertex AI generateContent:</text>
+<text x="1286.0" y="457" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Maps-grounded candidates,</text>
+<text x="1286.0" y="473" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">photo checks, explanations</text>
+<rect x="1500.0" y="402" width="216.0" height="100" rx="8" fill="#e8efe6" stroke="#bccdb9" stroke-width="1.2"/>
+<text x="1512.0" y="423" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Gemini Embedding 2</text>
+<text x="1512.0" y="441" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Image vectors, 768-d</text>
+<text x="1512.0" y="457" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Commons and uploads</text>
+<text x="1512.0" y="473" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">us endpoint, embedContent</text>
+<rect x="1274.0" y="512" width="216.0" height="74" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1286.0" y="533" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Cloud Vision API</text>
+<text x="1286.0" y="551" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Subject labels and</text>
+<text x="1286.0" y="567" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">landmark detection</text>
+<rect x="1500.0" y="512" width="216.0" height="74" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1512.0" y="533" font-size="13" fill="#233d32" font-weight="650" text-anchor="start">Cloud Translation</text>
+<text x="1512.0" y="551" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">English output to</text>
+<text x="1512.0" y="567" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Japanese, as a backstop</text>
+<rect x="1260" y="606" width="470" height="112" rx="14" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="1276" y="632" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Google Earth Engine</text>
+<text x="1276" y="651" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Queries bounded to the selected region</text>
+<rect x="1274.0" y="660" width="140.7" height="48" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1286.0" y="681" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="start">Satellite Embedding</text>
+<text x="1286.0" y="700" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">V1, year 2024</text>
+<rect x="1424.7" y="660" width="140.7" height="48" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1436.7" y="681" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="start">Copernicus DEM</text>
+<text x="1436.7" y="700" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Elevation, slope</text>
+<rect x="1575.3" y="660" width="140.7" height="48" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1587.3" y="681" font-size="12.5" fill="#233d32" font-weight="650" text-anchor="start">JRC Surface Water</text>
+<text x="1587.3" y="700" font-size="11.5" fill="#5b6b61" font-weight="400" text-anchor="start">Global water</text>
+<rect x="1260" y="726" width="470" height="48" rx="12" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="1276" y="755" font-size="15" fill="#233d32" font-weight="700" text-anchor="start">Wikimedia Commons, Wikidata</text>
+<text x="1716" y="755" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="end">CC-licensed photos</text>
+<rect x="1260" y="782" width="470" height="68" rx="12" fill="#f7f9f6" stroke="#d3dbd0" stroke-width="1.4"/>
+<text x="1276" y="808" font-size="15" fill="#233d32" font-weight="700" text-anchor="start">BigQuery</text>
+<text x="1352" y="808" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">dataset elsewhere, asia-northeast1</text>
+<text x="1276" y="832" font-size="12.5" fill="#233d32" font-weight="400" text-anchor="start">places  ·  commons_embeddings  ·  terrain_regions</text>
+<path d="M1180 320 L1259 320" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="312" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">API key</text>
+<path d="M1180 422 L1259 422" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="414" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">OAuth token</text>
+<path d="M1180 542 L1259 542" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="534" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">OAuth token</text>
+<path d="M1180 662 L1259 662" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="654" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">OAuth token</text>
+<path d="M1180 750 L1259 750" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="742" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">Public API</text>
+<path d="M1180 816 L1259 816" fill="none" stroke="#2d6048" stroke-width="2.2" marker-end="url(#ag)"/>
+<text x="1220" y="808" font-size="11.5" fill="#5b6b61" font-weight="500" text-anchor="middle">SQL</text>
+<rect x="32" y="878" width="1698" height="186" rx="14" fill="#fbfaf4" stroke="#cfc9b3" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="48" y="904" font-size="16" fill="#233d32" font-weight="700" text-anchor="start">Build-time data pipeline</text>
+<text x="48" y="923" font-size="12.5" fill="#5b6b61" font-weight="400" text-anchor="start">Scripts run by hand. Public data only: no user uploads, no Google Places content</text>
+<rect x="52" y="944" width="330" height="104" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="64" y="965" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Open sources</text>
+<text x="64" y="983" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Wikipedia and Wikidata: coordinates, citations</text>
+<text x="64" y="999" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Wikimedia Commons: photos and licenses</text>
+<text x="64" y="1015" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">Beck et al. Köppen-Geiger V3, 1991 to 2020</text>
+<text x="64" y="1031" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">World Bank: 2019 international arrivals</text>
+<rect x="452" y="944" width="368" height="104" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="464" y="965" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Prepare and audit</text>
+<text x="464" y="983" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">data:discover, data:catalog: grow the place list</text>
+<text x="464" y="999" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">data:photos, catalog:index: verify and embed</text>
+<text x="464" y="1015" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">data:climate, data:tourism, data:factors</text>
+<text x="464" y="1031" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">audit-commons: re-check credits and licenses</text>
+<rect x="890" y="944" width="290" height="104" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="902" y="965" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Shipped with the app</text>
+<text x="902" y="983" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">data/*.json: places, climate, visitors</text>
+<text x="902" y="999" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">lib/photo-credits.json, public/images/</text>
+<text x="902" y="1015" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">.cache/: embeddings, terrain, climate</text>
+<text x="902" y="1031" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">(public data only, by allow-list)</text>
+<rect x="1260" y="944" width="450" height="104" rx="8" fill="#ffffff" stroke="#d3dbd0" stroke-width="1.2"/>
+<text x="1272" y="965" font-size="13.5" fill="#233d32" font-weight="650" text-anchor="start">Load to Google Cloud</text>
+<text x="1272" y="983" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">google:catalog: places and Commons vectors</text>
+<text x="1272" y="999" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">google:terrain: builds region signals with Earth Engine</text>
+<text x="1272" y="1015" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">google:setup: Firebase, restricted keys, Firestore,</text>
+<text x="1272" y="1031" font-size="12" fill="#5b6b61" font-weight="400" text-anchor="start">and the server Maps key in Secret Manager</text>
+<path d="M382 996.0 L451 996.0" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+<path d="M820 996.0 L889 996.0" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+<path d="M1180 996.0 L1259 996.0" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+<path d="M1035 944 L1035 851" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+<path d="M1495 944 L1495 851" fill="none" stroke="#7b8a80" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#ad)"/>
+</svg>
